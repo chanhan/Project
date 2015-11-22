@@ -1,0 +1,4356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aa" xml:space="preserve">
+    <value />
+  </data>
+  <data name="alladd" xml:space="preserve">
+    <value>批量新增</value>
+  </data>
+  <data name="auditman1" xml:space="preserve">
+    <value>工号1</value>
+  </data>
+  <data name="auditman10" xml:space="preserve">
+    <value>工号10</value>
+  </data>
+  <data name="auditman11" xml:space="preserve">
+    <value>工号11</value>
+  </data>
+  <data name="auditman12" xml:space="preserve">
+    <value>工号12</value>
+  </data>
+  <data name="auditman13" xml:space="preserve">
+    <value>工号13</value>
+  </data>
+  <data name="auditman14" xml:space="preserve">
+    <value>工号14</value>
+  </data>
+  <data name="auditman15" xml:space="preserve">
+    <value>工号15</value>
+  </data>
+  <data name="auditman16" xml:space="preserve">
+    <value>工号16</value>
+  </data>
+  <data name="auditman17" xml:space="preserve">
+    <value>工号17</value>
+  </data>
+  <data name="auditman18" xml:space="preserve">
+    <value>工号18</value>
+  </data>
+  <data name="auditman19" xml:space="preserve">
+    <value>工号19</value>
+  </data>
+  <data name="auditman2" xml:space="preserve">
+    <value>工号2</value>
+  </data>
+  <data name="auditman20" xml:space="preserve">
+    <value>工号20</value>
+  </data>
+  <data name="auditman3" xml:space="preserve">
+    <value>工号3</value>
+  </data>
+  <data name="auditman4" xml:space="preserve">
+    <value>工号4</value>
+  </data>
+  <data name="auditman5" xml:space="preserve">
+    <value>工号5</value>
+  </data>
+  <data name="auditman6" xml:space="preserve">
+    <value>工号6</value>
+  </data>
+  <data name="auditman7" xml:space="preserve">
+    <value>工号7</value>
+  </data>
+  <data name="auditman8" xml:space="preserve">
+    <value>工号8</value>
+  </data>
+  <data name="auditman9" xml:space="preserve">
+    <value>工号9</value>
+  </data>
+  <data name="auditmantype1" xml:space="preserve">
+    <value>签核人类型1</value>
+  </data>
+  <data name="auditmantype10" xml:space="preserve">
+    <value>签核人类型10</value>
+  </data>
+  <data name="auditmantype11" xml:space="preserve">
+    <value>签核人类型11</value>
+  </data>
+  <data name="auditmantype12" xml:space="preserve">
+    <value>签核人类型12</value>
+  </data>
+  <data name="auditmantype13" xml:space="preserve">
+    <value>签核人类型13</value>
+  </data>
+  <data name="auditmantype14" xml:space="preserve">
+    <value>签核人类型14</value>
+  </data>
+  <data name="auditmantype15" xml:space="preserve">
+    <value>签核人类型15</value>
+  </data>
+  <data name="auditmantype16" xml:space="preserve">
+    <value>签核人类型16</value>
+  </data>
+  <data name="auditmantype17" xml:space="preserve">
+    <value>签核人类型17</value>
+  </data>
+  <data name="auditmantype18" xml:space="preserve">
+    <value>签核人类型18</value>
+  </data>
+  <data name="auditmantype19" xml:space="preserve">
+    <value>签核人类型19</value>
+  </data>
+  <data name="auditmantype2" xml:space="preserve">
+    <value>签核人类型2</value>
+  </data>
+  <data name="auditmantype20" xml:space="preserve">
+    <value>签核人类型20</value>
+  </data>
+  <data name="auditmantype3" xml:space="preserve">
+    <value>签核人类型3</value>
+  </data>
+  <data name="auditmantype4" xml:space="preserve">
+    <value>签核人类型4</value>
+  </data>
+  <data name="auditmantype5" xml:space="preserve">
+    <value>签核人类型5</value>
+  </data>
+  <data name="auditmantype6" xml:space="preserve">
+    <value>签核人类型6</value>
+  </data>
+  <data name="auditmantype7" xml:space="preserve">
+    <value>签核人类型7</value>
+  </data>
+  <data name="auditmantype8" xml:space="preserve">
+    <value>签核人类型8</value>
+  </data>
+  <data name="auditmantype9" xml:space="preserve">
+    <value>签核人类型9</value>
+  </data>
+  <data name="audittypename1" xml:space="preserve">
+    <value>类型1</value>
+  </data>
+  <data name="audittypename10" xml:space="preserve">
+    <value>类型10</value>
+  </data>
+  <data name="audittypename11" xml:space="preserve">
+    <value>类型11</value>
+  </data>
+  <data name="audittypename12" xml:space="preserve">
+    <value>类型12</value>
+  </data>
+  <data name="audittypename13" xml:space="preserve">
+    <value>类型13</value>
+  </data>
+  <data name="audittypename14" xml:space="preserve">
+    <value>类型14</value>
+  </data>
+  <data name="audittypename15" xml:space="preserve">
+    <value>类型15</value>
+  </data>
+  <data name="audittypename16" xml:space="preserve">
+    <value>类型16</value>
+  </data>
+  <data name="audittypename17" xml:space="preserve">
+    <value>类型17</value>
+  </data>
+  <data name="audittypename18" xml:space="preserve">
+    <value>类型18</value>
+  </data>
+  <data name="audittypename19" xml:space="preserve">
+    <value>类型19</value>
+  </data>
+  <data name="audittypename2" xml:space="preserve">
+    <value>类型2</value>
+  </data>
+  <data name="audittypename20" xml:space="preserve">
+    <value>类型20</value>
+  </data>
+  <data name="audittypename3" xml:space="preserve">
+    <value>类型3</value>
+  </data>
+  <data name="audittypename4" xml:space="preserve">
+    <value>类型4</value>
+  </data>
+  <data name="audittypename5" xml:space="preserve">
+    <value>类型5</value>
+  </data>
+  <data name="audittypename6" xml:space="preserve">
+    <value>类型6</value>
+  </data>
+  <data name="audittypename7" xml:space="preserve">
+    <value>类型7</value>
+  </data>
+  <data name="audittypename8" xml:space="preserve">
+    <value>类型8</value>
+  </data>
+  <data name="audittypename9" xml:space="preserve">
+    <value>类型9</value>
+  </data>
+  <data name="bfw_hrm_importremark" xml:space="preserve">
+    <value>说明: 上传文件格式为Excel, 上传完成后,错误的记录会显示出来,可点击导出下载修改后再导入!</value>
+  </data>
+  <data name="billtypename" xml:space="preserve">
+    <value>单据类别</value>
+  </data>
+  <data name="brnPageSettings" xml:space="preserve">
+    <value>页面设定</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btnAdd1" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btnAddFile" xml:space="preserve">
+    <value>增加附件</value>
+  </data>
+  <data name="btnAdvanceApply" xml:space="preserve">
+    <value>加班预报查询</value>
+  </data>
+  <data name="btnAdvanceImport" xml:space="preserve">
+    <value>预报转入</value>
+  </data>
+  <data name="btnAudit" xml:space="preserve">
+    <value>核准</value>
+  </data>
+  <data name="btnBatchConfirm" xml:space="preserve">
+    <value>批量确认</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btnCancel1" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btnCancelAudit" xml:space="preserve">
+    <value>取消核准</value>
+  </data>
+  <data name="btncancelcheck" xml:space="preserve">
+    <value>取消核准</value>
+  </data>
+  <data name="btnChange" xml:space="preserve">
+    <value>组织异动</value>
+  </data>
+  <data name="btnChangedSave" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="btnChangeSave" xml:space="preserve">
+    <value>交接</value>
+  </data>
+  <data name="btnCheck" xml:space="preserve">
+    <value>验证卡钟网络状况</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="btnComment" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="btnCondition" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="btnCondition1" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="btnCopy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="btncopydocno" xml:space="preserve">
+    <value>复制单号</value>
+  </data>
+  <data name="btnCount" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="btnCountA" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="btnCountB" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btnDelete1" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btnDisable" xml:space="preserve">
+    <value>失效</value>
+  </data>
+  <data name="btnDisable1" xml:space="preserve">
+    <value>失效</value>
+  </data>
+  <data name="btnEditReturn" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="btnEmpShift" xml:space="preserve">
+    <value>例外排班</value>
+  </data>
+  <data name="btnEmpty" xml:space="preserve">
+    <value>清除编组</value>
+  </data>
+  <data name="btnEnable" xml:space="preserve">
+    <value>生效</value>
+  </data>
+  <data name="btnEnable1" xml:space="preserve">
+    <value>生效</value>
+  </data>
+  <data name="btnExceptionApply" xml:space="preserve">
+    <value>加班异常查询</value>
+  </data>
+  <data name="btnExport" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="btnExport1" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="btnExportError" xml:space="preserve">
+    <value>导出错误信息</value>
+  </data>
+  <data name="btnFormQuery" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="btnImport" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="btnImportSave" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="btnInportRealApply" xml:space="preserve">
+    <value>转入</value>
+  </data>
+  <data name="btnLeft" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="btnModify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="btnModify1" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="btnOrgShift" xml:space="preserve">
+    <value>组织排班</value>
+  </data>
+  <data name="btnPageClose" xml:space="preserve">
+    <value>关闭窗口</value>
+  </data>
+  <data name="btnPrint" xml:space="preserve">
+    <value>列  印</value>
+  </data>
+  <data name="btnPrintPreview" xml:space="preserve">
+    <value>列印预览</value>
+  </data>
+  <data name="btnQuery" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="btnQuery1" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="btnRealApply" xml:space="preserve">
+    <value>加班实报查询</value>
+  </data>
+  <data name="btnReset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="btnResetPWD" xml:space="preserve">
+    <value>重置密码</value>
+  </data>
+  <data name="btnReturn" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="btnRight" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSave1" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="btnSendMsg" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="btnsendsign" xml:space="preserve">
+    <value>送签</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="btnTempSave" xml:space="preserve">
+    <value>暂存</value>
+  </data>
+  <data name="btnToQuery" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="btnUnConfirm" xml:space="preserve">
+    <value>取消确认</value>
+  </data>
+  <data name="btnViewOrg" xml:space="preserve">
+    <value>查看组织图A</value>
+  </data>
+  <data name="btnViewOrgB" xml:space="preserve">
+    <value>查看组织图B</value>
+  </data>
+  <data name="BtnViewSchedule" xml:space="preserve">
+    <value>查看进度</value>
+  </data>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btn_add_1" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btn_add_2" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btn_add_3" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btn_add_4" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Btn_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="btn_allclear" xml:space="preserve">
+    <value>全部清除</value>
+  </data>
+  <data name="btn_check" xml:space="preserve">
+    <value>核准</value>
+  </data>
+  <data name="btn_copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Btn_delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btn_delete_1" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btn_delete_2" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btn_delete_3" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btn_delete_4" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btn_Exp" xml:space="preserve">
+    <value>导出选择组织</value>
+  </data>
+  <data name="btn_ExpA" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Btn_Imp" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="btn_replace" xml:space="preserve">
+    <value>批量替换工号</value>
+  </data>
+  <data name="Btn_save" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="Btn_select" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="Btn_select_edit" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="ButtonBatchDisAudit" xml:space="preserve">
+    <value>终止签核</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ButtonChangeAuditFlow" xml:space="preserve">
+    <value>变更流程</value>
+  </data>
+  <data name="ButtonConfirm" xml:space="preserve">
+    <value>核准</value>
+  </data>
+  <data name="ButtonCopyBillNo" xml:space="preserve">
+    <value>复制单号</value>
+  </data>
+  <data name="ButtonExit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="ButtonExport" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ButtonImport" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ButtonImportSave" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="ButtonModify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ButtonOrgAudit" xml:space="preserve">
+    <value>组织送签</value>
+  </data>
+  <data name="ButtonQuery" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="ButtonReSendAudit" xml:space="preserve">
+    <value>重新发起签核</value>
+  </data>
+  <data name="ButtonReset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="ButtonReturn" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="ButtonSendAudit" xml:space="preserve">
+    <value>送签</value>
+  </data>
+  <data name="ButtonSendNotes" xml:space="preserve">
+    <value>发送Notes</value>
+  </data>
+  <data name="ButtonUnConfirm" xml:space="preserve">
+    <value>取消核准</value>
+  </data>
+  <data name="cardMakeupType" xml:space="preserve">
+    <value>补卡类别</value>
+  </data>
+  <data name="CardTime" xml:space="preserve">
+    <value>刷卡时间</value>
+  </data>
+  <data name="chkAbate" xml:space="preserve">
+    <value>显示失效的组织</value>
+  </data>
+  <data name="chkAction" xml:space="preserve">
+    <value>操作日志</value>
+  </data>
+  <data name="chkActiveFlag" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="chkError" xml:space="preserve">
+    <value>错误日志</value>
+  </data>
+  <data name="chkException" xml:space="preserve">
+    <value>同步异常日志</value>
+  </data>
+  <data name="chkIsBGAudit" xml:space="preserve">
+    <value>是否群级(需跨BU签核)</value>
+  </data>
+  <data name="chkIsDirectlyUnder" xml:space="preserve">
+    <value>直属主管</value>
+  </data>
+  <data name="chkIsFamiliar" xml:space="preserve">
+    <value>是否常见问题</value>
+  </data>
+  <data name="chkOnlyFamiliar" xml:space="preserve">
+    <value>仅常见问题</value>
+  </data>
+  <data name="common_import_area" xml:space="preserve">
+    <value>导入区</value>
+  </data>
+  <data name="common_message_uploading" xml:space="preserve">
+    <value>系统加载...</value>
+  </data>
+  <data name="ddlItemConfirm" xml:space="preserve">
+    <value>已确认</value>
+  </data>
+  <data name="ddlItemCurrentMove" xml:space="preserve">
+    <value>当前异动</value>
+  </data>
+  <data name="ddlItemDefault" xml:space="preserve">
+    <value>--请选择--</value>
+  </data>
+  <data name="ddlItemHistoryMove" xml:space="preserve">
+    <value>历史异动</value>
+  </data>
+  <data name="ddlItemNo" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="ddlItemWaitConfirm" xml:space="preserve">
+    <value>待确认</value>
+  </data>
+  <data name="ddlItemYes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ddlManagerCode" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="ddlOTTypeCode" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="ErrorMsg" xml:space="preserve">
+    <value>错误说明</value>
+  </data>
+  <data name="FileUpload" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="FitSexNameAll" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="FitSexNameMan" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="FitSexNameWoman" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="FlowMap" xml:space="preserve">
+    <value>流程图</value>
+  </data>
+  <data name="friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="FromLeftToRight" xml:space="preserve">
+    <value>从左到右</value>
+  </data>
+  <data name="FromTopToBottom" xml:space="preserve">
+    <value>从上到下</value>
+  </data>
+  <data name="gOverTimeSpanv" xml:space="preserve">
+    <value>加班时段</value>
+  </data>
+  <data name="gv" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="gvAbsentQty" xml:space="preserve">
+    <value>缺勤分钟</value>
+  </data>
+  <data name="gvAbsentTotal" xml:space="preserve">
+    <value>当月旷工累计</value>
+  </data>
+  <data name="gvAccountEntity" xml:space="preserve">
+    <value>会计实体</value>
+  </data>
+  <data name="gvAddRess" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="gvAdvanceHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvAdvanceTime" xml:space="preserve">
+    <value>预报时间</value>
+  </data>
+  <data name="gvAlreadDays" xml:space="preserve">
+    <value>已休</value>
+  </data>
+  <data name="gvAMRestETime" xml:space="preserve">
+    <value>止时间</value>
+  </data>
+  <data name="gvAMRestSTime" xml:space="preserve">
+    <value>起时间</value>
+  </data>
+  <data name="gvANNUALCode" xml:space="preserve">
+    <value>年度</value>
+  </data>
+  <data name="gvAPAWARD1" xml:space="preserve">
+    <value>嘉奖次数</value>
+  </data>
+  <data name="gvAPAWARD2" xml:space="preserve">
+    <value>小功次数</value>
+  </data>
+  <data name="gvAPAWARD3" xml:space="preserve">
+    <value>大功次数</value>
+  </data>
+  <data name="gvApplyHours" xml:space="preserve">
+    <value>有效加班时数</value>
+  </data>
+  <data name="gvApproveFlagName" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvApprover" xml:space="preserve">
+    <value>核准人</value>
+  </data>
+  <data name="gvAPPUNISH1" xml:space="preserve">
+    <value>警告次数</value>
+  </data>
+  <data name="gvAPPUNISH2" xml:space="preserve">
+    <value>小过次数</value>
+  </data>
+  <data name="gvAPPUNISH3" xml:space="preserve">
+    <value>大过次数</value>
+  </data>
+  <data name="gvAreaCode" xml:space="preserve">
+    <value>区域代码</value>
+  </data>
+  <data name="gvAreaName" xml:space="preserve">
+    <value>区域简称</value>
+  </data>
+  <data name="gvAttendHandleLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvAttendHandleWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvBellNo" xml:space="preserve">
+    <value>卡钟</value>
+  </data>
+  <data name="gvBUName" xml:space="preserve">
+    <value>单位代码</value>
+  </data>
+  <data name="gvBuOTMQryName" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="gvByName" xml:space="preserve">
+    <value>别名</value>
+  </data>
+  <data name="gvCardNo" xml:space="preserve">
+    <value>一卡通号</value>
+  </data>
+  <data name="gvCardTime" xml:space="preserve">
+    <value>刷卡日期</value>
+  </data>
+  <data name="gvCardTimeMM" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="gvConfirmHours" xml:space="preserve">
+    <value>确认时数</value>
+  </data>
+  <data name="gvConfirmRemark" xml:space="preserve">
+    <value>确认备注</value>
+  </data>
+  <data name="gvCorporationId" xml:space="preserve">
+    <value>法人代码</value>
+  </data>
+  <data name="gvCorporationName" xml:space="preserve">
+    <value>法人简称</value>
+  </data>
+  <data name="gvCostCode" xml:space="preserve">
+    <value>费用代码</value>
+  </data>
+  <data name="gvCountDays" xml:space="preserve">
+    <value>统计天数</value>
+  </data>
+  <data name="gvCreateDate" xml:space="preserve">
+    <value>维护日期</value>
+  </data>
+  <data name="gvCreateUser" xml:space="preserve">
+    <value>维护者</value>
+  </data>
+  <data name="gvdaymax" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="gvdaymin" xml:space="preserve">
+    <value>最小值</value>
+  </data>
+  <data name="gvdayscode" xml:space="preserve">
+    <value>类型代码</value>
+  </data>
+  <data name="gvDepName" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="gvDName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="gvEffectDate" xml:space="preserve">
+    <value>生效日期</value>
+  </data>
+  <data name="gvEmpEndDate" xml:space="preserve">
+    <value>实际结束日</value>
+  </data>
+  <data name="gvEmpJoinDate" xml:space="preserve">
+    <value>入厂日期</value>
+  </data>
+  <data name="gvEmpStartDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="gvEnableStartDate" xml:space="preserve">
+    <value>可休假开始日期</value>
+  </data>
+  <data name="gvEndDate" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="gvEndYears" xml:space="preserve">
+    <value>年末年资</value>
+  </data>
+  <data name="gvErrorMsg" xml:space="preserve">
+    <value>错误原因</value>
+  </data>
+  <data name="gvETime" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="gvExceptionName" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="gvExceptionTypeName" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="gvExpireDate" xml:space="preserve">
+    <value>失效日期</value>
+  </data>
+  <data name="gvExtension" xml:space="preserve">
+    <value>分机</value>
+  </data>
+  <data name="gvFlag" xml:space="preserve">
+    <value>是否允许签到</value>
+  </data>
+  <data name="gvG1Apply" xml:space="preserve">
+    <value>G1</value>
+  </data>
+  <data name="gvG1RelSalary" xml:space="preserve">
+    <value>G1</value>
+  </data>
+  <data name="gvG1Remain" xml:space="preserve">
+    <value>G1加班剩余</value>
+  </data>
+  <data name="gvG23Remain" xml:space="preserve">
+    <value>G2G3加班剩余</value>
+  </data>
+  <data name="gvG2Apply" xml:space="preserve">
+    <value>G2(休息日上班）</value>
+  </data>
+  <data name="gvG2RelSalary" xml:space="preserve">
+    <value>G2(休息日上班）</value>
+  </data>
+  <data name="gvG2Remain" xml:space="preserve">
+    <value>上月可调</value>
+  </data>
+  <data name="gvG3Apply" xml:space="preserve">
+    <value>G3(法定假日上班）</value>
+  </data>
+  <data name="gvG3RelSalary" xml:space="preserve">
+    <value>G3(法定假日上班）</value>
+  </data>
+  <data name="gvGlzcode" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="gvGlzend" xml:space="preserve">
+    <value>迄止职位</value>
+  </data>
+  <data name="gvGlzstart" xml:space="preserve">
+    <value>开始职位</value>
+  </data>
+  <data name="gvgvAlreadDays" xml:space="preserve">
+    <value>已修 (天)</value>
+  </data>
+  <data name="gvgvG2Apply" xml:space="preserve">
+    <value>G2</value>
+  </data>
+  <data name="gvgvG2RelSalary" xml:space="preserve">
+    <value>G2</value>
+  </data>
+  <data name="gvgvG3Apply" xml:space="preserve">
+    <value>G3</value>
+  </data>
+  <data name="gvgvG3RelSalary" xml:space="preserve">
+    <value>G3</value>
+  </data>
+  <data name="gvgvLeaveDays" xml:space="preserve">
+    <value>剩余天数（天）</value>
+  </data>
+  <data name="gvgvLOCALNAME" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvgvLVTotal" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvgvOverTimeType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="gvgvRemark" xml:space="preserve">
+    <value>管控提示</value>
+  </data>
+  <data name="gvgvShiftDesc" xml:space="preserve">
+    <value>班别</value>
+  </data>
+  <data name="gvgvSpecG2Apply" xml:space="preserve">
+    <value>G2</value>
+  </data>
+  <data name="gvgvSpecG2Salary" xml:space="preserve">
+    <value>G2</value>
+  </data>
+  <data name="gvgvSpecG3Apply" xml:space="preserve">
+    <value>G3</value>
+  </data>
+  <data name="gvgvSpecG3Salary" xml:space="preserve">
+    <value>G3</value>
+  </data>
+  <data name="gvgvStandardDays" xml:space="preserve">
+    <value>标准可休（天）</value>
+  </data>
+  <data name="gvgvStatusName" xml:space="preserve">
+    <value>审核状态</value>
+  </data>
+  <data name="gvgvWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadAbsentQty" xml:space="preserve">
+    <value>缺勤分钟</value>
+  </data>
+  <data name="gvHeadAcceptMsg" xml:space="preserve">
+    <value>接受短信</value>
+  </data>
+  <data name="gvHeadActiveFlag" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="gvHeadActivityConfirmHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvHeadActivityDepName" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="gvHeadActivityErrorMsg" xml:space="preserve">
+    <value>错误类型</value>
+  </data>
+  <data name="gvHeadActivityID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="gvHeadActivityLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvHeadActivityOTDate" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="gvHeadActivityOTType" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="gvHeadActivityStatusName" xml:space="preserve">
+    <value>审核状态</value>
+  </data>
+  <data name="gvHeadActivityUpdateDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="gvHeadActivityUpdateUser" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="gvHeadActivityWorkDesc" xml:space="preserve">
+    <value>加班内容</value>
+  </data>
+  <data name="gvHeadActivityWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadAddress" xml:space="preserve">
+    <value>安装位置</value>
+  </data>
+  <data name="gvHeadAdmin" xml:space="preserve">
+    <value>系统管理</value>
+  </data>
+  <data name="gvHeadAdvanceHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvHeadAdvanceTime" xml:space="preserve">
+    <value>预报时间</value>
+  </data>
+  <data name="gvHeadAllowFlag" xml:space="preserve">
+    <value>是否允许BU开户</value>
+  </data>
+  <data name="gvHeadAnswer" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="gvHeadAnswerFlag" xml:space="preserve">
+    <value>是否回复</value>
+  </data>
+  <data name="gvHeadAnswerName" xml:space="preserve">
+    <value>回复人</value>
+  </data>
+  <data name="gvHeadApproveDate" xml:space="preserve">
+    <value>签核时间</value>
+  </data>
+  <data name="gvHeadApproveFlagName" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvHeadApproverName" xml:space="preserve">
+    <value>签核人</value>
+  </data>
+  <data name="gvHeadApRemark" xml:space="preserve">
+    <value>签核意见</value>
+  </data>
+  <data name="gvHeadBeginTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="gvHeadBellNo" xml:space="preserve">
+    <value>卡钟编码</value>
+  </data>
+  <data name="gvHeadBellSize" xml:space="preserve">
+    <value>型号规格</value>
+  </data>
+  <data name="gvHeadBellType" xml:space="preserve">
+    <value>卡钟类别代码</value>
+  </data>
+  <data name="gvHeadBellTypeName" xml:space="preserve">
+    <value>卡钟类别</value>
+  </data>
+  <data name="gvHeadBillNo" xml:space="preserve">
+    <value>签核单号</value>
+  </data>
+  <data name="gvHeadCname" xml:space="preserve">
+    <value>中文名</value>
+  </data>
+  <data name="gvHeadCompanyID" xml:space="preserve">
+    <value>公司代码</value>
+  </data>
+  <data name="gvHeadCompanyName" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="gvHeadConfirmHours" xml:space="preserve">
+    <value>确认时数</value>
+  </data>
+  <data name="gvHeadConfirmRemark" xml:space="preserve">
+    <value>确认备注</value>
+  </data>
+  <data name="gvHeadContactMan" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="gvHeadContactTel" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="gvHeadDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="gvHeadDeleted" xml:space="preserve">
+    <value>是否失效</value>
+  </data>
+  <data name="gvHeadDepCode" xml:space="preserve">
+    <value>组织代码</value>
+  </data>
+  <data name="gvHeadDepName" xml:space="preserve">
+    <value>组织名称</value>
+  </data>
+  <data name="gvHeadDept" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="gvHeadDeputy" xml:space="preserve">
+    <value>代理人</value>
+  </data>
+  <data name="gvHeadDeputyName" xml:space="preserve">
+    <value>代理人姓名</value>
+  </data>
+  <data name="gvHeadDescription" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="gvHeadDescription1" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="gvHeadDocNo" xml:space="preserve">
+    <value>单据号码</value>
+  </data>
+  <data name="gvHeadEdit" xml:space="preserve">
+    <value>编码</value>
+  </data>
+  <data name="gvHeadEffectFlag" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="gvheadempno" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadEndDate" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="gvHeadEndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="gvHeaderAfterValueName" xml:space="preserve">
+    <value>异动后</value>
+  </data>
+  <data name="gvHeaderApplyDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="gvHeaderApplyMan" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gvHeaderBeforeValueName" xml:space="preserve">
+    <value>异动前</value>
+  </data>
+  <data name="gvHeaderBUName" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="gvHeaderConfirmDate" xml:space="preserve">
+    <value>确认日期</value>
+  </data>
+  <data name="gvHeaderConfirmMan" xml:space="preserve">
+    <value>确认人</value>
+  </data>
+  <data name="gvHeaderDataCode" xml:space="preserve">
+    <value>类别代码</value>
+  </data>
+  <data name="gvHeaderDataValue" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="gvHeaderDepCode" xml:space="preserve">
+    <value>部门代码</value>
+  </data>
+  <data name="gvHeaderDepName" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="gvHeaderDeptName" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="gvHeaderEffectDate" xml:space="preserve">
+    <value>生效日期</value>
+  </data>
+  <data name="gvHeaderEffectFlag" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="gvHeaderEndDate" xml:space="preserve">
+    <value>出差日期(迄)</value>
+  </data>
+  <data name="gvHeaderErrorMsg" xml:space="preserve">
+    <value>错误说明</value>
+  </data>
+  <data name="gvHeaderEvectionAddress" xml:space="preserve">
+    <value>出差地址</value>
+  </data>
+  <data name="gvHeaderEvectionDetail" xml:space="preserve">
+    <value>目标计划</value>
+  </data>
+  <data name="gvHeaderEvectionTask" xml:space="preserve">
+    <value>出差任务</value>
+  </data>
+  <data name="gvHeaderEvectionTypeName" xml:space="preserve">
+    <value>出差类别</value>
+  </data>
+  <data name="gvHeaderFitSexName" xml:space="preserve">
+    <value>适用性别</value>
+  </data>
+  <data name="gvHeaderG123MLimit" xml:space="preserve">
+    <value>平时加班(原G1)+休息日上班(原G2)+节假日上班(原G3)每月</value>
+  </data>
+  <data name="gvHeaderG12MLimit" xml:space="preserve">
+    <value>平时加班(原G1)+休息日(原G2)上班每月</value>
+  </data>
+  <data name="gvHeaderG13MLimit" xml:space="preserve">
+    <value>平时加班(原G1)+节假日上班(原G3)每月</value>
+  </data>
+  <data name="gvHeaderG1DLimit" xml:space="preserve">
+    <value>平时加班(原G1)每月上限</value>
+  </data>
+  <data name="gvHeaderG1MLimit" xml:space="preserve">
+    <value>平時加班(原G1)每月上限</value>
+  </data>
+  <data name="gvHeaderG2DLimit" xml:space="preserve">
+    <value>休息日上班(原G2)每月上限</value>
+  </data>
+  <data name="gvHeaderG2MLimit" xml:space="preserve">
+    <value>休息日上班(原G2)每月上限</value>
+  </data>
+  <data name="gvHeaderG3DLimit" xml:space="preserve">
+    <value>节假日上班(原G3)每月上限</value>
+  </data>
+  <data name="gvHeaderHasMoney" xml:space="preserve">
+    <value>薪资给支</value>
+  </data>
+  <data name="gvHeaderISAllowPCM" xml:space="preserve">
+    <value>是否允许个人申请 *</value>
+  </data>
+  <data name="gvHeaderISAllowProject" xml:space="preserve">
+    <value>是否允许专案申报</value>
+  </data>
+  <data name="gvHeaderIsCludeHoliday" xml:space="preserve">
+    <value>是否含节假日</value>
+  </data>
+  <data name="gvHeaderLimitDays" xml:space="preserve">
+    <value>限制天数</value>
+  </data>
+  <data name="gvHeaderLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvHeaderLVTypeCode" xml:space="preserve">
+    <value>类型码</value>
+  </data>
+  <data name="gvHeaderLVTypeName" xml:space="preserve">
+    <value>类型名</value>
+  </data>
+  <data name="gvHeaderMinHours" xml:space="preserve">
+    <value>最小时数</value>
+  </data>
+  <data name="gvHeaderModifier" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gvHeaderModifyDate" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="gvHeaderMoveReason" xml:space="preserve">
+    <value>异动原因</value>
+  </data>
+  <data name="gvHeaderMoveTypeName" xml:space="preserve">
+    <value>异动类别</value>
+  </data>
+  <data name="gvHeaderOrgCode" xml:space="preserve">
+    <value>单位代码</value>
+  </data>
+  <data name="gvHeaderOrgOrgCode" xml:space="preserve">
+    <value>课组编号</value>
+  </data>
+  <data name="gvHeaderOTTypeCode" xml:space="preserve">
+    <value>加班类别代码</value>
+  </data>
+  <data name="gvHeaderOTTypeDetail" xml:space="preserve">
+    <value>类别代码</value>
+  </data>
+  <data name="gvHeaderProve" xml:space="preserve">
+    <value>证明</value>
+  </data>
+  <data name="gvHeaderProxy" xml:space="preserve">
+    <value>代理人</value>
+  </data>
+  <data name="gvHeaderRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="gvHeaderRoleCode" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="gvHeaderRoleName" xml:space="preserve">
+    <value>角色名称</value>
+  </data>
+  <data name="gvHeadErrorMsg" xml:space="preserve">
+    <value>错误说明</value>
+  </data>
+  <data name="gvHeaderSex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="gvHeaderStandardHours" xml:space="preserve">
+    <value>标准时数</value>
+  </data>
+  <data name="gvHeaderStartDate" xml:space="preserve">
+    <value>出差日期(起)</value>
+  </data>
+  <data name="gvHeaderStateName" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvHeaderStatusName" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvHeaderUseState" xml:space="preserve">
+    <value>适用范围</value>
+  </data>
+  <data name="gvHeaderWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadExceptionName" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="gvHeadFaqDate" xml:space="preserve">
+    <value>提问日期</value>
+  </data>
+  <data name="gvHeadFaqTitle" xml:space="preserve">
+    <value>提问标题</value>
+  </data>
+  <data name="gvHeadFaqTypeName" xml:space="preserve">
+    <value>问题类型</value>
+  </data>
+  <data name="gvHeadFormFormName" xml:space="preserve">
+    <value>表单名称</value>
+  </data>
+  <data name="gvHeadFormName" xml:space="preserve">
+    <value>窗口名称</value>
+  </data>
+  <data name="gvHeadFormName1" xml:space="preserve">
+    <value>窗口名称</value>
+  </data>
+  <data name="gvHeadFormPath" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="gvHeadFriday" xml:space="preserve">
+    <value>五</value>
+  </data>
+  <data name="gvHeadFromHost" xml:space="preserve">
+    <value>来源Server</value>
+  </data>
+  <data name="gvHeadFunctionDesc" xml:space="preserve">
+    <value>功能描述</value>
+  </data>
+  <data name="gvHeadFunctionDesc1" xml:space="preserve">
+    <value>功能描述</value>
+  </data>
+  <data name="gvHeadFunctionList" xml:space="preserve">
+    <value>功能码</value>
+  </data>
+  <data name="gvHeadG12UPLMT" xml:space="preserve">
+    <value>G1+G2(休息日上班)</value>
+  </data>
+  <data name="gvHeadG1Apply" xml:space="preserve">
+    <value>G1</value>
+  </data>
+  <data name="gvHeadG1Total" xml:space="preserve">
+    <value>G1合计</value>
+  </data>
+  <data name="gvHeadG2Apply" xml:space="preserve">
+    <value>G2(休息日上班)</value>
+  </data>
+  <data name="gvHeadG2Remain" xml:space="preserve">
+    <value>上月可调</value>
+  </data>
+  <data name="gvHeadG2Total" xml:space="preserve">
+    <value>G2合计</value>
+  </data>
+  <data name="gvHeadG3Apply" xml:space="preserve">
+    <value>G3(法定假日上班)</value>
+  </data>
+  <data name="gvHeadG3Total" xml:space="preserve">
+    <value>G3合计</value>
+  </data>
+  <data name="gvHeadHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvHeadImportRemark" xml:space="preserve">
+    <value>转入有效提示</value>
+  </data>
+  <data name="gvHeadIsBGAudit" xml:space="preserve">
+    <value>是否群组（需跨BU签核）</value>
+  </data>
+  <data name="gvHeadIsDirectlyUnder" xml:space="preserve">
+    <value>直属主管</value>
+  </data>
+  <data name="gvHeadIsManager" xml:space="preserve">
+    <value>直属主管？</value>
+  </data>
+  <data name="gvHeadIsOnline" xml:space="preserve">
+    <value>网络状况</value>
+  </data>
+  <data name="gvHeadISPay" xml:space="preserve">
+    <value>专案加班G2是否发薪</value>
+  </data>
+  <data name="gvHeadIsProject" xml:space="preserve">
+    <value>是否专案</value>
+  </data>
+  <data name="gvHeadIsTW" xml:space="preserve">
+    <value>干部 ?</value>
+  </data>
+  <data name="gvHeadJuese" xml:space="preserve">
+    <value>签核角色</value>
+  </data>
+  <data name="gvHeadKQDate" xml:space="preserve">
+    <value>考勤日</value>
+  </data>
+  <data name="gvHeadLanguage" xml:space="preserve">
+    <value>语言代码</value>
+  </data>
+  <data name="gvHeadLanguageName" xml:space="preserve">
+    <value>语言名称</value>
+  </data>
+  <data name="gvHeadLevelCode" xml:space="preserve">
+    <value>层级代码</value>
+  </data>
+  <data name="gvHeadLevelName" xml:space="preserve">
+    <value>层级名称</value>
+  </data>
+  <data name="gvHeadLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvHeadLoginTime" xml:space="preserve">
+    <value>使用时间</value>
+  </data>
+  <data name="gvHeadLoginTimes" xml:space="preserve">
+    <value>使用次数</value>
+  </data>
+  <data name="gvHeadLogTime" xml:space="preserve">
+    <value>处理时间</value>
+  </data>
+  <data name="gvHeadMAdjust1" xml:space="preserve">
+    <value>当月调休</value>
+  </data>
+  <data name="gvHeadMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="gvHeadmanager" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="gvHeadManagerName" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="gvHeadManufacturer" xml:space="preserve">
+    <value>厂商</value>
+  </data>
+  <data name="gvHeadModifier" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="gvHeadModifyDate" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="gvHeadModuleCode" xml:space="preserve">
+    <value>模组代码</value>
+  </data>
+  <data name="gvHeadModuleCode1" xml:space="preserve">
+    <value>模组代码</value>
+  </data>
+  <data name="gvHeadModuleDescription" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="gvHeadModuleDescription1" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="gvHeadMonday" xml:space="preserve">
+    <value>一</value>
+  </data>
+  <data name="gvHeadMoveShiftDepName" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="gvHeadMoveShiftErrorMsg" xml:space="preserve">
+    <value>ErrorMsg</value>
+  </data>
+  <data name="gvHeadMoveShiftLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvHeadMoveShiftNoWorkDate" xml:space="preserve">
+    <value>上班日期(双休日)</value>
+  </data>
+  <data name="gvHeadMoveShiftNoWorkETime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="gvHeadMoveShiftNoWorkSTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="gvHeadMoveShiftRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="gvHeadMoveShiftTimeQty" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvHeadMoveShiftUpdateDate" xml:space="preserve">
+    <value>维护日期</value>
+  </data>
+  <data name="gvHeadMoveShiftUpdateUser" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="gvHeadMoveShiftWorkDate" xml:space="preserve">
+    <value>调班日期</value>
+  </data>
+  <data name="gvHeadMoveShiftWorkETime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="gvHeadMoveShiftWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadMoveShiftWorkSTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="gvHeadMRelAdjust" xml:space="preserve">
+    <value>当月可调</value>
+  </data>
+  <data name="gvHeadNotes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="gvHeadNoticeDate" xml:space="preserve">
+    <value>公告日期</value>
+  </data>
+  <data name="gvHeadNoticeTitle" xml:space="preserve">
+    <value>公告标题</value>
+  </data>
+  <data name="gvHeadNoticeTypeName" xml:space="preserve">
+    <value>公告类型</value>
+  </data>
+  <data name="gvHeadOffDutyTime" xml:space="preserve">
+    <value>下班时间</value>
+  </data>
+  <data name="gvHeadOnDutyTime" xml:space="preserve">
+    <value>上班时间</value>
+  </data>
+  <data name="gvHeadOrderID" xml:space="preserve">
+    <value>顺序号</value>
+  </data>
+  <data name="gvHeadOrderID1" xml:space="preserve">
+    <value>顺序号</value>
+  </data>
+  <data name="gvHeadOTDate" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="gvHeadOTOffDutyTime" xml:space="preserve">
+    <value>加班结束</value>
+  </data>
+  <data name="gvHeadOTOnDutyTime" xml:space="preserve">
+    <value>加班开始</value>
+  </data>
+  <data name="gvHeadOTType" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="gvHeadOverTimeSpan" xml:space="preserve">
+    <value>加班时段</value>
+  </data>
+  <data name="gvHeadOverTimeType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="gvHeadPaperCount" xml:space="preserve">
+    <value>总投票数</value>
+  </data>
+  <data name="gvHeadPaperDate" xml:space="preserve">
+    <value>发布日期</value>
+  </data>
+  <data name="gvHeadPaperTitle" xml:space="preserve">
+    <value>问卷标题</value>
+  </data>
+  <data name="gvHeadParaDescription" xml:space="preserve">
+    <value>参数描述</value>
+  </data>
+  <data name="gvHeadParamsBellNo" xml:space="preserve">
+    <value>卡钟号</value>
+  </data>
+  <data name="gvHeadParamsErrorMsg" xml:space="preserve">
+    <value>错误说明</value>
+  </data>
+  <data name="gvHeadParamsIsNotKaoQin" xml:space="preserve">
+    <value>免考勤</value>
+  </data>
+  <data name="gvHeadParamsLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvHeadParamsOrgBellNo" xml:space="preserve">
+    <value>卡钟号</value>
+  </data>
+  <data name="gvHeadParamsOrgDepName" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="gvHeadParamsOrgEmpName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvHeadParamsOrgEmpWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadParamsOrgIsNotKaoQin" xml:space="preserve">
+    <value>免考勤</value>
+  </data>
+  <data name="gvHeadParamsWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHeadParaName" xml:space="preserve">
+    <value>参数名称</value>
+  </data>
+  <data name="gvHeadParaValue" xml:space="preserve">
+    <value>参数值</value>
+  </data>
+  <data name="gvHeadParentModuleCode" xml:space="preserve">
+    <value>父模组</value>
+  </data>
+  <data name="gvHeadParentModuleCode1" xml:space="preserve">
+    <value>父模组</value>
+  </data>
+  <data name="gvHeadPersonCode" xml:space="preserve">
+    <value>人员</value>
+  </data>
+  <data name="gvHeadPickComputePW" xml:space="preserve">
+    <value>采集电脑密码</value>
+  </data>
+  <data name="gvHeadPickComputeUser" xml:space="preserve">
+    <value>采集电脑用户</value>
+  </data>
+  <data name="gvHeadPickDataIP" xml:space="preserve">
+    <value>采集电脑IP</value>
+  </data>
+  <data name="gvHeadPMLT" xml:space="preserve">
+    <value>每月加班上限</value>
+  </data>
+  <data name="gvHeadPortIP" xml:space="preserve">
+    <value>端口IP</value>
+  </data>
+  <data name="gvHeadPrivileged" xml:space="preserve">
+    <value>组织权限</value>
+  </data>
+  <data name="gvHeadPrivileged1" xml:space="preserve">
+    <value>组织权限</value>
+  </data>
+  <data name="gvHeadProcessFlag" xml:space="preserve">
+    <value>处理状态</value>
+  </data>
+  <data name="gvHeadProcessOwner" xml:space="preserve">
+    <value>处理人员</value>
+  </data>
+  <data name="gvHeadProduceID" xml:space="preserve">
+    <value>厂商ID</value>
+  </data>
+  <data name="gvHeadProxyNotes" xml:space="preserve">
+    <value>代理人Notes</value>
+  </data>
+  <data name="gvHeadRealHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvHeadReasonName" xml:space="preserve">
+    <value>异常类别</value>
+  </data>
+  <data name="gvHeadReasonRemark" xml:space="preserve">
+    <value>异常原因</value>
+  </data>
+  <data name="gvHeadRemain" xml:space="preserve">
+    <value>剩余加班时数</value>
+  </data>
+  <data name="gvHeadRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="gvHeadRoleCode" xml:space="preserve">
+    <value>群组代码</value>
+  </data>
+  <data name="gvHeadRoleName" xml:space="preserve">
+    <value>群组名称</value>
+  </data>
+  <data name="gvHeadRolesCode" xml:space="preserve">
+    <value>群组</value>
+  </data>
+  <data name="gvHeadRolesName" xml:space="preserve">
+    <value>群组名称</value>
+  </data>
+  <data name="gvHeadRulesAbsentType" xml:space="preserve">
+    <value>缺勤类别</value>
+  </data>
+  <data name="gvHeadRulesAbsentTypeDesc" xml:space="preserve">
+    <value>缺勤时数描述</value>
+  </data>
+  <data name="gvHeadRulesAbsentTypeValue" xml:space="preserve">
+    <value>缺勤类别描述</value>
+  </data>
+  <data name="gvHeadRulesEffectDate" xml:space="preserve">
+    <value>生效日</value>
+  </data>
+  <data name="gvHeadRulesEmolument" xml:space="preserve">
+    <value>薪资处理</value>
+  </data>
+  <data name="gvHeadRulesExpireDate" xml:space="preserve">
+    <value>失效日</value>
+  </data>
+  <data name="gvHeadRulesFormula" xml:space="preserve">
+    <value>扣薪公式</value>
+  </data>
+  <data name="gvHeadRulesPNumber" xml:space="preserve">
+    <value>次数</value>
+  </data>
+  <data name="gvHeadRulesPunishType" xml:space="preserve">
+    <value>惩罚类型</value>
+  </data>
+  <data name="gvHeadRulesPunishTypeValue" xml:space="preserve">
+    <value>惩罚类型描述</value>
+  </data>
+  <data name="gvHeadRulesRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="gvHeadRulesThreshold0" xml:space="preserve">
+    <value>上限时数</value>
+  </data>
+  <data name="gvHeadRulesThreshold1" xml:space="preserve">
+    <value>下限时数</value>
+  </data>
+  <data name="gvHeadRulesUpdateDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="gvHeadRulesUpdateUser" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="gvHeadSaturday" xml:space="preserve">
+    <value>六</value>
+  </data>
+  <data name="gvHeadServiceName" xml:space="preserve">
+    <value>服务名称</value>
+  </data>
+  <data name="gvHeadServicePhone" xml:space="preserve">
+    <value>服务电话</value>
+  </data>
+  <data name="gvHeadShiftDays" xml:space="preserve">
+    <value>天数</value>
+  </data>
+  <data name="gvHeadShiftDesc" xml:space="preserve">
+    <value>班别</value>
+  </data>
+  <data name="gvheadsignname" xml:space="preserve">
+    <value>签核人</value>
+  </data>
+  <data name="gvHeadStartDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="gvHeadStartEndDate" xml:space="preserve">
+    <value>起止时间</value>
+  </data>
+  <data name="gvHeadStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvHeadStatusName" xml:space="preserve">
+    <value>审核状态</value>
+  </data>
+  <data name="gvHeadSunday" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="gvHeadTel" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="gvHeadText" xml:space="preserve">
+    <value>描述说明</value>
+  </data>
+  <data name="gvHeadThursday" xml:space="preserve">
+    <value>四</value>
+  </data>
+  <data name="gvHeadToHost" xml:space="preserve">
+    <value>目的Server</value>
+  </data>
+  <data name="gvHeadTransactionType" xml:space="preserve">
+    <value>单据类型</value>
+  </data>
+  <data name="gvHeadTuesday" xml:space="preserve">
+    <value>二</value>
+  </data>
+  <data name="gvHeadtype" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="gvHeadTypeName" xml:space="preserve">
+    <value>表单类型</value>
+  </data>
+  <data name="gvHeadupdatedate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="gvHeadupdateuser" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gvHeadURL" xml:space="preserve">
+    <value>网页地址</value>
+  </data>
+  <data name="gvHeadURL1" xml:space="preserve">
+    <value>网页地址</value>
+  </data>
+  <data name="gvHeadUseDept" xml:space="preserve">
+    <value>用户单位</value>
+  </data>
+  <data name="gvHeadUserYM" xml:space="preserve">
+    <value>启用日期</value>
+  </data>
+  <data name="gvHeadWednesday" xml:space="preserve">
+    <value>三</value>
+  </data>
+  <data name="gvHeadWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="gvHeadWorkDesc" xml:space="preserve">
+    <value>加班内容</value>
+  </data>
+  <data name="gvHeadWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvHolidayFlag" xml:space="preserve">
+    <value>节假日</value>
+  </data>
+  <data name="gvIdentityNo" xml:space="preserve">
+    <value>身份证号</value>
+  </data>
+  <data name="gvIMPROVELEVEL10" xml:space="preserve">
+    <value>提案10级</value>
+  </data>
+  <data name="gvIMPROVELEVEL15" xml:space="preserve">
+    <value>提案1-5级</value>
+  </data>
+  <data name="gvIMPROVELEVEL67" xml:space="preserve">
+    <value>提案6-7级</value>
+  </data>
+  <data name="gvIMPROVELEVEL89" xml:space="preserve">
+    <value>提案8-9级</value>
+  </data>
+  <data name="gvIMPROVEREALVALUE" xml:space="preserve">
+    <value>折合件数</value>
+  </data>
+  <data name="gvIMPROVETARGETVALUE" xml:space="preserve">
+    <value>应达件数</value>
+  </data>
+  <data name="gvImproveValue" xml:space="preserve">
+    <value>折合-应达</value>
+  </data>
+  <data name="gvIsKaoQin" xml:space="preserve">
+    <value>是否考勤</value>
+  </data>
+  <data name="gvIsLactation" xml:space="preserve">
+    <value>是否哺乳期</value>
+  </data>
+  <data name="gvIsMakeUp" xml:space="preserve">
+    <value>是否补卡</value>
+  </data>
+  <data name="gvIsProject" xml:space="preserve">
+    <value>是否专案</value>
+  </data>
+  <data name="gvItemDesc" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="gvItemName" xml:space="preserve">
+    <value>项次</value>
+  </data>
+  <data name="gvJoinDate" xml:space="preserve">
+    <value>入职日期</value>
+  </data>
+  <data name="gvKQABSENT1" xml:space="preserve">
+    <value>旷工次数(小于一天)</value>
+  </data>
+  <data name="gvKQABSENT2" xml:space="preserve">
+    <value>旷工次数(大于一天)</value>
+  </data>
+  <data name="gvKQAFFAIRLEAVE" xml:space="preserve">
+    <value>事假天数</value>
+  </data>
+  <data name="gvKQDate" xml:space="preserve">
+    <value>考勤日</value>
+  </data>
+  <data name="gvKQEARLY1" xml:space="preserve">
+    <value>早退次数(小于30分钟)</value>
+  </data>
+  <data name="gvKQEARLY2" xml:space="preserve">
+    <value>早退次数(大于30分钟)</value>
+  </data>
+  <data name="gvKQLATE1" xml:space="preserve">
+    <value>迟到次数(小于30分钟)</value>
+  </data>
+  <data name="gvKQLATE2" xml:space="preserve">
+    <value>迟到次数(大于30分钟)</value>
+  </data>
+  <data name="gvKQMJoinDate" xml:space="preserve">
+    <value>入集团日期</value>
+  </data>
+  <data name="gvKQMLeaveDays" xml:space="preserve">
+    <value>目前可休</value>
+  </data>
+  <data name="gvKQMReasonName" xml:space="preserve">
+    <value>异常类别</value>
+  </data>
+  <data name="gvKQMShiftDesc" xml:space="preserve">
+    <value>班别</value>
+  </data>
+  <data name="gvKQSICKLEAVE" xml:space="preserve">
+    <value>病假天数</value>
+  </data>
+  <data name="gvLeaveDate" xml:space="preserve">
+    <value>离职日期</value>
+  </data>
+  <data name="gvLeaveDays" xml:space="preserve">
+    <value>已休</value>
+  </data>
+  <data name="gvLeaveRecDays" xml:space="preserve">
+    <value>扣减天数</value>
+  </data>
+  <data name="gvLeaveType" xml:space="preserve">
+    <value>请假类别</value>
+  </data>
+  <data name="gvLeaveTypeName" xml:space="preserve">
+    <value>代理原因</value>
+  </data>
+  <data name="gvLeaveYear" xml:space="preserve">
+    <value>年份</value>
+  </data>
+  <data name="gvLevel" xml:space="preserve">
+    <value>资位</value>
+  </data>
+  <data name="gvLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvLVTotal" xml:space="preserve">
+    <value>当次申请休息时数</value>
+  </data>
+  <data name="gvLVTotalDays" xml:space="preserve">
+    <value>天数</value>
+  </data>
+  <data name="gvLVTypeName" xml:space="preserve">
+    <value>请假类别</value>
+  </data>
+  <data name="gvMAdjust1" xml:space="preserve">
+    <value>当月调休</value>
+  </data>
+  <data name="gvManager" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="gvModifier" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="gvModifierMan" xml:space="preserve">
+    <value>维护人</value>
+  </data>
+  <data name="gvModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="gvModuleCode" xml:space="preserve">
+    <value>模组代码</value>
+  </data>
+  <data name="gvModuleName" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="gvMRelAdjust" xml:space="preserve">
+    <value>当月可调</value>
+  </data>
+  <data name="gvNextYearDays" xml:space="preserve">
+    <value>次年休假天数</value>
+  </data>
+  <data name="gvOffDutyTime" xml:space="preserve">
+    <value>下班时间</value>
+  </data>
+  <data name="gvOnDutyTime" xml:space="preserve">
+    <value>上班时间</value>
+  </data>
+  <data name="gvOrgName" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="gvOTDate" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="gvOTMAdvanceApproveDate" xml:space="preserve">
+    <value>签核时间</value>
+  </data>
+  <data name="gvOTMAdvanceApproverName" xml:space="preserve">
+    <value>签核人</value>
+  </data>
+  <data name="gvOTMAdvanceApRemark" xml:space="preserve">
+    <value>签核意见</value>
+  </data>
+  <data name="gvOTMAdvanceBeginTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="gvOTMAdvanceBillNo" xml:space="preserve">
+    <value>签核单号</value>
+  </data>
+  <data name="gvOTMAdvanceBuName" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="gvOTMAdvanceDepName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="gvOTMAdvanceEndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="gvOTMAdvanceG1Total" xml:space="preserve">
+    <value>G1合计</value>
+  </data>
+  <data name="gvOTMAdvanceG2Total" xml:space="preserve">
+    <value>G2(休息日上班)合计</value>
+  </data>
+  <data name="gvOTMAdvanceG3Total" xml:space="preserve">
+    <value>G3(法定假日上班)合计</value>
+  </data>
+  <data name="gvOTMAdvanceHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvOTMAdvanceImportFlag" xml:space="preserve">
+    <value>转入有效</value>
+  </data>
+  <data name="gvOTMAdvanceLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvOTMAdvanceModifier" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gvOTMAdvanceModifyDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="gvOTMAdvanceOTDate" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="gvOTMAdvanceOTType" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="gvOTMAdvanceOverTimeType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="gvOTMAdvanceRemark" xml:space="preserve">
+    <value>管控提示</value>
+  </data>
+  <data name="gvOTMAdvanceStatusName" xml:space="preserve">
+    <value>审核状态</value>
+  </data>
+  <data name="gvOTMAdvanceWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="gvOTMAdvanceWorkDesc" xml:space="preserve">
+    <value>加班内容</value>
+  </data>
+  <data name="gvOTMAdvanceWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvOTMExceptionBeginTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="gvOTMExceptionBillNo" xml:space="preserve">
+    <value>签核单号</value>
+  </data>
+  <data name="gvOTMExceptionBuName" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="gvOTMExceptionDiffReasonName" xml:space="preserve">
+    <value>异常类别</value>
+  </data>
+  <data name="gvOTMExceptionDName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="gvOTMExceptionEndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="gvOTMExceptionKQShift" xml:space="preserve">
+    <value>班别</value>
+  </data>
+  <data name="gvOTMExceptionKQTime" xml:space="preserve">
+    <value>刷卡</value>
+  </data>
+  <data name="gvOTMExceptionLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvOTMExceptionModifier" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gvOTMExceptionModifyDate" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="gvOTMExceptionOTDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="gvOTMExceptionOTType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="gvOTMExceptionOverTimeType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="gvOTMExceptionRealHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvOTMExceptionReMark" xml:space="preserve">
+    <value>管控提示</value>
+  </data>
+  <data name="gvOTMExceptionReMarks" xml:space="preserve">
+    <value>异常原因</value>
+  </data>
+  <data name="gvOTMExceptionStatusName" xml:space="preserve">
+    <value>表单状态</value>
+  </data>
+  <data name="gvOTMExceptionWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="gvOTMExceptionWorkDesc" xml:space="preserve">
+    <value>加班内容</value>
+  </data>
+  <data name="gvOTMExceptionWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvOTMRealAdvanceHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvOTMRealAdvanceTime" xml:space="preserve">
+    <value>预报时间</value>
+  </data>
+  <data name="gvOTMRealApproveDate" xml:space="preserve">
+    <value>签核时间</value>
+  </data>
+  <data name="gvOTMRealApproverName" xml:space="preserve">
+    <value>签核人</value>
+  </data>
+  <data name="gvOTMRealApRemark" xml:space="preserve">
+    <value>签核意见</value>
+  </data>
+  <data name="gvOTMRealBellNo" xml:space="preserve">
+    <value>卡钟编号</value>
+  </data>
+  <data name="gvOTMRealBillNo" xml:space="preserve">
+    <value>签核单号</value>
+  </data>
+  <data name="gvOTMRealBuName" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="gvOTMRealCardNo" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="gvOTMRealCardTime" xml:space="preserve">
+    <value>刷卡时间</value>
+  </data>
+  <data name="gvOTMRealConfirmHours" xml:space="preserve">
+    <value>确认时数</value>
+  </data>
+  <data name="gvOTMRealConfirmRemark" xml:space="preserve">
+    <value>确认备注</value>
+  </data>
+  <data name="gvOTMRealDepName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="gvOTMRealG1Total" xml:space="preserve">
+    <value>G1合计</value>
+  </data>
+  <data name="gvOTMRealG2Total" xml:space="preserve">
+    <value>G2合计</value>
+  </data>
+  <data name="gvOTMRealG3Total" xml:space="preserve">
+    <value>G3合计</value>
+  </data>
+  <data name="gvOTMRealIsProject" xml:space="preserve">
+    <value>是否专案</value>
+  </data>
+  <data name="gvOTMRealLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="gvOTMRealModifier" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gvOTMRealModifyDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="gvOTMRealOTDate" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="gvOTMRealOTType" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="gvOTMRealOverTimeSpan" xml:space="preserve">
+    <value>加班时段</value>
+  </data>
+  <data name="gvOTMRealOverTimeType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="gvOTMRealReadTime" xml:space="preserve">
+    <value>读卡时间</value>
+  </data>
+  <data name="gvOTMRealRealHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvOTMRealRemark" xml:space="preserve">
+    <value>管控提示</value>
+  </data>
+  <data name="gvOTMRealShiftDesc" xml:space="preserve">
+    <value>班别描述</value>
+  </data>
+  <data name="gvOTMRealStatusName" xml:space="preserve">
+    <value>审核状态</value>
+  </data>
+  <data name="gvOTMRealWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="gvOTMRealWorkDesc" xml:space="preserve">
+    <value>加班内容</value>
+  </data>
+  <data name="gvOTMRealWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvOTOffDutyTime" xml:space="preserve">
+    <value>加班结束</value>
+  </data>
+  <data name="gvOTOnDutyTime" xml:space="preserve">
+    <value>加班开始</value>
+  </data>
+  <data name="gvOTType" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="gvOutFoxconnYears" xml:space="preserve">
+    <value>富士康经历年资</value>
+  </data>
+  <data name="gvOutWorkYears" xml:space="preserve">
+    <value>厂外年资</value>
+  </data>
+  <data name="gvOverTimeType" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="gvParentDepName" xml:space="preserve">
+    <value>父组织</value>
+  </data>
+  <data name="gvPDepName" xml:space="preserve">
+    <value>组织描述</value>
+  </data>
+  <data name="gvPMRestETime" xml:space="preserve">
+    <value>止时间</value>
+  </data>
+  <data name="gvPMRestQty" xml:space="preserve">
+    <value>休息时数</value>
+  </data>
+  <data name="gvPMRestSTime" xml:space="preserve">
+    <value>起时间</value>
+  </data>
+  <data name="gvPrepEndDate" xml:space="preserve">
+    <value>预结束日期</value>
+  </data>
+  <data name="gvProxy" xml:space="preserve">
+    <value>代理人</value>
+  </data>
+  <data name="gvQTY" xml:space="preserve">
+    <value>累计数</value>
+  </data>
+  <data name="gvRealEndDate" xml:space="preserve">
+    <value>实际结束日期</value>
+  </data>
+  <data name="gvRealHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="gvReason" xml:space="preserve">
+    <value>原因</value>
+  </data>
+  <data name="gvReasonName" xml:space="preserve">
+    <value>异常名称</value>
+  </data>
+  <data name="gvReasonNo" xml:space="preserve">
+    <value>异常编号</value>
+  </data>
+  <data name="gvReasonRemark" xml:space="preserve">
+    <value>异常原因</value>
+  </data>
+  <data name="gvRelSalaryHours" xml:space="preserve">
+    <value>实发加班时数</value>
+  </data>
+  <data name="gvRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="gvSalaryFlag" xml:space="preserve">
+    <value>扣薪否</value>
+  </data>
+  <data name="gvScore" xml:space="preserve">
+    <value>加减数</value>
+  </data>
+  <data name="gvSex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="gvShareOrgCode" xml:space="preserve">
+    <value>公用单位</value>
+  </data>
+  <data name="gvShift" xml:space="preserve">
+    <value>班别</value>
+  </data>
+  <data name="gvShiftDesc" xml:space="preserve">
+    <value>班别描述</value>
+  </data>
+  <data name="gvShiftNo" xml:space="preserve">
+    <value>班别编号</value>
+  </data>
+  <data name="gvShiftTypeName" xml:space="preserve">
+    <value>是否直落</value>
+  </data>
+  <data name="gvshiweicode" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="gvshiweiend" xml:space="preserve">
+    <value>迄止资位</value>
+  </data>
+  <data name="gvshiweistart" xml:space="preserve">
+    <value>开始资位</value>
+  </data>
+  <data name="gvSpecApplyHours" xml:space="preserve">
+    <value>专案有效时数</value>
+  </data>
+  <data name="gvSpecG1Apply" xml:space="preserve">
+    <value>G1</value>
+  </data>
+  <data name="gvSpecG1Salary" xml:space="preserve">
+    <value>G1</value>
+  </data>
+  <data name="gvSpecG2Apply" xml:space="preserve">
+    <value>G2(休息日上班）</value>
+  </data>
+  <data name="gvSpecG2Salary" xml:space="preserve">
+    <value>G2(休息日上班）</value>
+  </data>
+  <data name="gvSpecG3Apply" xml:space="preserve">
+    <value>G3(法定假日上班）</value>
+  </data>
+  <data name="gvSpecG3Salary" xml:space="preserve">
+    <value>G3(法定假日上班）</value>
+  </data>
+  <data name="gvSpecrelSalary" xml:space="preserve">
+    <value>专案实报时数</value>
+  </data>
+  <data name="gvStandardDays" xml:space="preserve">
+    <value>标准可休</value>
+  </data>
+  <data name="gvStartDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="gvStartEndDate" xml:space="preserve">
+    <value>起止日期</value>
+  </data>
+  <data name="gvStartYears" xml:space="preserve">
+    <value>年初年资</value>
+  </data>
+  <data name="gvStateName" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvStatus" xml:space="preserve">
+    <value>在职状态</value>
+  </data>
+  <data name="gvStatusName" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvSTime" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="gvSubDepName" xml:space="preserve">
+    <value>所属部门</value>
+  </data>
+  <data name="gvSupportDeptName" xml:space="preserve">
+    <value>支援部门 </value>
+  </data>
+  <data name="gvSupportOrder" xml:space="preserve">
+    <value>支援序号</value>
+  </data>
+  <data name="gvThisLVTotal" xml:space="preserve">
+    <value>查询时段休假时数</value>
+  </data>
+  <data name="gvTimeQty" xml:space="preserve">
+    <value>标准时数</value>
+  </data>
+  <data name="gvTimproveValue" xml:space="preserve">
+    <value>[(折合-应达)/应达]*5</value>
+  </data>
+  <data name="gvTRAINREALVALUE" xml:space="preserve">
+    <value>已修学分</value>
+  </data>
+  <data name="gvTRAINTARGETVALUE" xml:space="preserve">
+    <value>应休学分</value>
+  </data>
+  <data name="gvTrainValue" xml:space="preserve">
+    <value>已修-应休</value>
+  </data>
+  <data name="gvUpdateDate" xml:space="preserve">
+    <value>统计日期</value>
+  </data>
+  <data name="gvWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="gvWeekDay" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="gvWeekNo" xml:space="preserve">
+    <value>周别</value>
+  </data>
+  <data name="gvWorkDay" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="gvWorkDesc" xml:space="preserve">
+    <value>加班内容</value>
+  </data>
+  <data name="gvWorkFlag" xml:space="preserve">
+    <value>工作日</value>
+  </data>
+  <data name="gvWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="gvYearMonth" xml:space="preserve">
+    <value>年月</value>
+  </data>
+  <data name="gv_deal_person" xml:space="preserve">
+    <value>处理人</value>
+  </data>
+  <data name="gv_ismail" xml:space="preserve">
+    <value>是否已发邮件</value>
+  </data>
+  <data name="importremark" xml:space="preserve">
+    <value>说明:上传文件格式为Excel,上传完成后,错误的记录会显示出来,可点击导出下载修改后再导入!</value>
+  </data>
+  <data name="InfoGetExcelModel" xml:space="preserve">
+    <value>点击下载Excel模板</value>
+  </data>
+  <data name="istiaoxiu" xml:space="preserve">
+    <value>是否调休</value>
+  </data>
+  <data name="jindutu" xml:space="preserve">
+    <value>进度图</value>
+  </data>
+  <data name="KQDate" xml:space="preserve">
+    <value>考勤日</value>
+  </data>
+  <data name="labbeiz" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="labelApplyDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="labelBeginTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="labelCardTime" xml:space="preserve">
+    <value>刷卡时间*</value>
+  </data>
+  <data name="labelDepcode" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="labelEmployeeNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="labelEndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="labelFlag" xml:space="preserve">
+    <value>只检测管控提示不保存</value>
+  </data>
+  <data name="labelHours" xml:space="preserve">
+    <value>时数</value>
+  </data>
+  <data name="labelKQDate" xml:space="preserve">
+    <value>考勤日*</value>
+  </data>
+  <data name="labelMakeupType" xml:space="preserve">
+    <value>补卡类别 *</value>
+  </data>
+  <data name="labelMonthAllHours" xml:space="preserve">
+    <value>月累计加班</value>
+  </data>
+  <data name="labelName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="labelOTDateFrom" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="labelOTType" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="labelPersonType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="labelPlanAdjust" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="Labelquerybatchworkno" xml:space="preserve">
+    <value>批量查询（输入工号以回车键区分）</value>
+  </data>
+  <data name="labelReasonRemark" xml:space="preserve">
+    <value>异常原因</value>
+  </data>
+  <data name="labelReasonType" xml:space="preserve">
+    <value>异常类别*</value>
+  </data>
+  <data name="labelRemark" xml:space="preserve">
+    <value>当月累计异常次数达3次者需扣薪</value>
+  </data>
+  <data name="labelUploadText" xml:space="preserve">
+    <value>点击下载Excel模板</value>
+  </data>
+  <data name="labelWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="labelWorkDesc" xml:space="preserve">
+    <value>加班内容*</value>
+  </data>
+  <data name="lblAbsentType" xml:space="preserve">
+    <value>缺勤类别*</value>
+  </data>
+  <data name="lblAbsentTypeDesc" xml:space="preserve">
+    <value>缺勤时数描述*</value>
+  </data>
+  <data name="lblAcceptmsg" xml:space="preserve">
+    <value>是否接受tmsg</value>
+  </data>
+  <data name="lblAccountEntity" xml:space="preserve">
+    <value>会计实体(Y/N) *</value>
+  </data>
+  <data name="lblActivityHours" xml:space="preserve">
+    <value>时数*</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>安装位置*</value>
+  </data>
+  <data name="lblAfterValue" xml:space="preserve">
+    <value>异动后</value>
+  </data>
+  <data name="lblAllowFlag" xml:space="preserve">
+    <value>是否允许BU开户*</value>
+  </data>
+  <data name="lblAnnexFile" xml:space="preserve">
+    <value>附件:</value>
+  </data>
+  <data name="lblAnnexFilePath" xml:space="preserve">
+    <value>上传附件:</value>
+  </data>
+  <data name="lblAnswerContent" xml:space="preserve">
+    <value>回复内容</value>
+  </data>
+  <data name="lblAnswerDate" xml:space="preserve">
+    <value>回复日期</value>
+  </data>
+  <data name="lblAnswerEmail" xml:space="preserve">
+    <value>回复人Mail：</value>
+  </data>
+  <data name="lblAnswerName" xml:space="preserve">
+    <value>回复人:</value>
+  </data>
+  <data name="lblApplyMan" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="lblApproveFlag" xml:space="preserve">
+    <value>签核状态</value>
+  </data>
+  <data name="lblApprover" xml:space="preserve">
+    <value>核准人</value>
+  </data>
+  <data name="lblArea" xml:space="preserve">
+    <value>厂区</value>
+  </data>
+  <data name="lblAttDepName" xml:space="preserve">
+    <value>组织名称*</value>
+  </data>
+  <data name="lblAttendanceDate" xml:space="preserve">
+    <value>考勤日</value>
+  </data>
+  <data name="lblAttendHandleStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblAuthorizedFunctionList" xml:space="preserve">
+    <value>已授权功能码</value>
+  </data>
+  <data name="lblAuthorTel" xml:space="preserve">
+    <value>联系电话:</value>
+  </data>
+  <data name="lblBeforeValue" xml:space="preserve">
+    <value>异动前:</value>
+  </data>
+  <data name="lblBellNo" xml:space="preserve">
+    <value>卡钟编码</value>
+  </data>
+  <data name="lblBellSize" xml:space="preserve">
+    <value>型号规格*</value>
+  </data>
+  <data name="lblBellType" xml:space="preserve">
+    <value>卡钟类别*</value>
+  </data>
+  <data name="lblBeSel" xml:space="preserve">
+    <value>候选人员</value>
+  </data>
+  <data name="lblBillNo" xml:space="preserve">
+    <value>签核单号</value>
+  </data>
+  <data name="lblBUCode" xml:space="preserve">
+    <value>单位代码*</value>
+  </data>
+  <data name="lblBUDepName" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="lblByName" xml:space="preserve">
+    <value>别名</value>
+  </data>
+  <data name="lblCardDate" xml:space="preserve">
+    <value>刷卡日期</value>
+  </data>
+  <data name="lblCardNo" xml:space="preserve">
+    <value>一卡通号</value>
+  </data>
+  <data name="lblchangeyes" xml:space="preserve">
+    <value>转入有效</value>
+  </data>
+  <data name="lblChineseName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblChoiceDeptLevel" xml:space="preserve">
+    <value>请选择要显示的组织层级</value>
+  </data>
+  <data name="lblCname" xml:space="preserve">
+    <value>中文名*</value>
+  </data>
+  <data name="lblCompanyID" xml:space="preserve">
+    <value>公司代码*</value>
+  </data>
+  <data name="lblCondition" xml:space="preserve">
+    <value>查询条件</value>
+  </data>
+  <data name="lblContactMan" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="lblContactTel" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="lblCorporation" xml:space="preserve">
+    <value>法人代码</value>
+  </data>
+  <data name="lblCostCode" xml:space="preserve">
+    <value>费用代码</value>
+  </data>
+  <data name="lblCountDate" xml:space="preserve">
+    <value>按统计日期</value>
+  </data>
+  <data name="lblCountType" xml:space="preserve">
+    <value>计算方式</value>
+  </data>
+  <data name="lblCredit" xml:space="preserve">
+    <value>学分</value>
+  </data>
+  <data name="lblDataValue" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="lblDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="lblDay" xml:space="preserve">
+    <value>应发天数</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="lblDep" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>组织扩建</value>
+  </data>
+  <data name="lblDepcode" xml:space="preserve">
+    <value>单位*</value>
+  </data>
+  <data name="lblDepLevel" xml:space="preserve">
+    <value>层级名称</value>
+  </data>
+  <data name="lblDepName" xml:space="preserve">
+    <value>组织*</value>
+  </data>
+  <data name="lblDept" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="lblDeptArea" xml:space="preserve">
+    <value>区域简称</value>
+  </data>
+  <data name="lblDeptDept" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="lblDeptLevelCode" xml:space="preserve">
+    <value>层级代码*</value>
+  </data>
+  <data name="lblDeptName" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="lblDeputUnit" xml:space="preserve">
+    <value>代理单位</value>
+  </data>
+  <data name="lblDeputy" xml:space="preserve">
+    <value>代理人</value>
+  </data>
+  <data name="lblDeputyDate" xml:space="preserve">
+    <value>代理日期</value>
+  </data>
+  <data name="lblDeputyLog" xml:space="preserve">
+    <value>代理记录</value>
+  </data>
+  <data name="lblDeputyName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblDeputyNotes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="lblDescription1" xml:space="preserve">
+    <value>模组描述</value>
+  </data>
+  <data name="lblDiffReason" xml:space="preserve">
+    <value>异常类别</value>
+  </data>
+  <data name="lblDisplayArea" xml:space="preserve">
+    <value>显示区</value>
+  </data>
+  <data name="lblDisplayArea1" xml:space="preserve">
+    <value>显示区</value>
+  </data>
+  <data name="lblDocno" xml:space="preserve">
+    <value>单据编号</value>
+  </data>
+  <data name="lblEdit" xml:space="preserve">
+    <value>编辑区</value>
+  </data>
+  <data name="lblEditArea" xml:space="preserve">
+    <value>编辑区</value>
+  </data>
+  <data name="lblEditArea1" xml:space="preserve">
+    <value>编辑区</value>
+  </data>
+  <data name="lblEditDepName" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="lblEditLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblEditWorkNo" xml:space="preserve">
+    <value>工号*1</value>
+  </data>
+  <data name="lblEffectBellNo" xml:space="preserve">
+    <value>有效卡钟</value>
+  </data>
+  <data name="lblEffectDate" xml:space="preserve">
+    <value>生效日</value>
+  </data>
+  <data name="lblEffectEffectDate" xml:space="preserve">
+    <value>生效日期*</value>
+  </data>
+  <data name="lblEmolument" xml:space="preserve">
+    <value>薪资处理*</value>
+  </data>
+  <data name="lblEmpEmail" xml:space="preserve">
+    <value>Mail：</value>
+  </data>
+  <data name="lblEmpInfo" xml:space="preserve">
+    <value>员工基本资料</value>
+  </data>
+  <data name="lblEmployeeNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblEmpName" xml:space="preserve">
+    <value>姓名:</value>
+  </data>
+  <data name="lblEmpNo" xml:space="preserve">
+    <value>工号:</value>
+  </data>
+  <data name="lblEmport" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="lblEmpPhone" xml:space="preserve">
+    <value>电话:</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>实际结束日</value>
+  </data>
+  <data name="lblEvectionAddress" xml:space="preserve">
+    <value>出差地址</value>
+  </data>
+  <data name="lblEvectionType" xml:space="preserve">
+    <value>出差类别</value>
+  </data>
+  <data name="lblExceptionType" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="lblExpireDate" xml:space="preserve">
+    <value>失效日</value>
+  </data>
+  <data name="lblExtension" xml:space="preserve">
+    <value>分机</value>
+  </data>
+  <data name="lblFaq" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="lblFaqContent" xml:space="preserve">
+    <value>提问内容:</value>
+  </data>
+  <data name="lblFaqDate" xml:space="preserve">
+    <value>提问日期:</value>
+  </data>
+  <data name="lblFaqEmpName" xml:space="preserve">
+    <value>提问人姓名:</value>
+  </data>
+  <data name="lblFaqEmpNo" xml:space="preserve">
+    <value>提问人工号:</value>
+  </data>
+  <data name="lblFaqTitle" xml:space="preserve">
+    <value>提问标题:</value>
+  </data>
+  <data name="lblFaqTypeId" xml:space="preserve">
+    <value>问题类型:</value>
+  </data>
+  <data name="lblFaqTypeName" xml:space="preserve">
+    <value>问题类型:</value>
+  </data>
+  <data name="lblFitSexName" xml:space="preserve">
+    <value>适用性别*</value>
+  </data>
+  <data name="lblFlag" xml:space="preserve">
+    <value>Create zh-tw Resource?</value>
+  </data>
+  <data name="lblFlagA" xml:space="preserve">
+    <value>指定日白班或前一天晚班</value>
+  </data>
+  <data name="lblFlagB" xml:space="preserve">
+    <value>指定日白班且前一天晚班</value>
+  </data>
+  <data name="lblFormDownLoad" xml:space="preserve">
+    <value>表单下载</value>
+  </data>
+  <data name="lblFormFile" xml:space="preserve">
+    <value>表单:</value>
+  </data>
+  <data name="lblFormName" xml:space="preserve">
+    <value>窗口名称</value>
+  </data>
+  <data name="lblFormName1" xml:space="preserve">
+    <value>窗口名称</value>
+  </data>
+  <data name="lblFormRemark" xml:space="preserve">
+    <value>备注:</value>
+  </data>
+  <data name="lblFormula" xml:space="preserve">
+    <value>扣薪公式</value>
+  </data>
+  <data name="lblFromdate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="lblFromDepName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="lblFromhost" xml:space="preserve">
+    <value>来源Server</value>
+  </data>
+  <data name="lblFromPersoncode" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblFromPersonName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblFromRoleName" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="lblFunctionDesc" xml:space="preserve">
+    <value>功能描述</value>
+  </data>
+  <data name="lblFunctionDesc1" xml:space="preserve">
+    <value>功能描述</value>
+  </data>
+  <data name="lblFunctionList" xml:space="preserve">
+    <value>功能码</value>
+  </data>
+  <data name="lblFunctionList1" xml:space="preserve">
+    <value>功能码</value>
+  </data>
+  <data name="lblG123mLimit" xml:space="preserve">
+    <value>平时加班(原G1)+休息日上班(原G2)+节假日上班(原G3)每月上限 *</value>
+  </data>
+  <data name="lblG12mLimit" xml:space="preserve">
+    <value>平时加班(原G1)+休息日上班(原G2)每月上限 *</value>
+  </data>
+  <data name="lblG13mLimit" xml:space="preserve">
+    <value>平时加班(原G1)+节假日上班(原G3)每月上限 *</value>
+  </data>
+  <data name="lblG1dLimit" xml:space="preserve">
+    <value>平时加班(原G1)每日上限</value>
+  </data>
+  <data name="lblG1mLimit" xml:space="preserve">
+    <value>平时加班(原G1)每月上限</value>
+  </data>
+  <data name="lblG2dLimit" xml:space="preserve">
+    <value>休息日上班(原G2)每日上限</value>
+  </data>
+  <data name="lblG2mLimit" xml:space="preserve">
+    <value>休息日上班(原G2)每月上限</value>
+  </data>
+  <data name="lblG3dLimit" xml:space="preserve">
+    <value>节假日上班(原G3)每日上限</value>
+  </data>
+  <data name="lblG3mLimit" xml:space="preserve">
+    <value>节假日上班(原G3)每月上限</value>
+  </data>
+  <data name="lblGrid" xml:space="preserve">
+    <value>显示区</value>
+  </data>
+  <data name="lblHasMoney" xml:space="preserve">
+    <value>薪资给支</value>
+  </data>
+  <data name="lblHisFlag" xml:space="preserve">
+    <value>是否查询已备份历史资料</value>
+  </data>
+  <data name="lblHistoryMove" xml:space="preserve">
+    <value>是否历史异动</value>
+  </data>
+  <data name="lblHoliDayFlag" xml:space="preserve">
+    <value>节假日（G3)*</value>
+  </data>
+  <data name="lblHours" xml:space="preserve">
+    <value>确认时数</value>
+  </data>
+  <data name="lblIdentityNo" xml:space="preserve">
+    <value>身份证号</value>
+  </data>
+  <data name="lblIfadmin" xml:space="preserve">
+    <value>系统管理*</value>
+  </data>
+  <data name="lblImport" xml:space="preserve">
+    <value>导出区</value>
+  </data>
+  <data name="lblImportArea" xml:space="preserve">
+    <value>导入区</value>
+  </data>
+  <data name="lblIsAllowPCM" xml:space="preserve">
+    <value>是否允许个人申请*</value>
+  </data>
+  <data name="lblISAllowProject" xml:space="preserve">
+    <value>是否允许专案提报*</value>
+  </data>
+  <data name="lblIscludeHoliday" xml:space="preserve">
+    <value>是否含节假日*</value>
+  </data>
+  <data name="lblIsFillCard" xml:space="preserve">
+    <value>是否补卡</value>
+  </data>
+  <data name="lblIsKaoQin" xml:space="preserve">
+    <value>是否考勤*</value>
+  </data>
+  <data name="lblIsLactation" xml:space="preserve">
+    <value>是否哺乳期*</value>
+  </data>
+  <data name="lblIsMakeup" xml:space="preserve">
+    <value>是否补卡</value>
+  </data>
+  <data name="lblIsNotKaoQin" xml:space="preserve">
+    <value>免考勤</value>
+  </data>
+  <data name="lblIsProject" xml:space="preserve">
+    <value>是否专案</value>
+  </data>
+  <data name="lblIsSupporter" xml:space="preserve">
+    <value>是否支援</value>
+  </data>
+  <data name="lblJionDate" xml:space="preserve">
+    <value>入厂日期*</value>
+  </data>
+  <data name="lblJoinBGDate" xml:space="preserve">
+    <value>入厂日期</value>
+  </data>
+  <data name="lblJoinDate" xml:space="preserve">
+    <value>入职日期</value>
+  </data>
+  <data name="lblKaoQin" xml:space="preserve">
+    <value>考勤</value>
+  </data>
+  <data name="lblKaoqinStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblKaoQinUnusualDetails" xml:space="preserve">
+    <value>当月考勤异常明细</value>
+  </data>
+  <data name="lblKQDate" xml:space="preserve">
+    <value>考勤日</value>
+  </data>
+  <data name="lblKQMBellNo" xml:space="preserve">
+    <value>卡钟</value>
+  </data>
+  <data name="lblKQParamsLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblKQParamsWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblLanguage" xml:space="preserve">
+    <value>语言*</value>
+  </data>
+  <data name="lblLastNotice" xml:space="preserve">
+    <value>系统最新公告</value>
+  </data>
+  <data name="lbllblAfterValue" xml:space="preserve">
+    <value>异动后*</value>
+  </data>
+  <data name="lbllblBillNo" xml:space="preserve">
+    <value>申请单号</value>
+  </data>
+  <data name="lbllblDepName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="lbllblEffectDate" xml:space="preserve">
+    <value>生效日期</value>
+  </data>
+  <data name="lbllblFormName" xml:space="preserve">
+    <value>名称*</value>
+  </data>
+  <data name="lbllblLeaveDate" xml:space="preserve">
+    <value>出差日期</value>
+  </data>
+  <data name="lbllblModuleCode" xml:space="preserve">
+    <value>模组代码</value>
+  </data>
+  <data name="lbllblMoveType" xml:space="preserve">
+    <value>异动类别 *</value>
+  </data>
+  <data name="lblLeaveCount" xml:space="preserve">
+    <value>请假统计</value>
+  </data>
+  <data name="lblLeaveDate" xml:space="preserve">
+    <value>离职日期</value>
+  </data>
+  <data name="lblLeaveQryDate" xml:space="preserve">
+    <value>起止日期</value>
+  </data>
+  <data name="lblleaveQryStatus" xml:space="preserve">
+    <value>签核状态</value>
+  </data>
+  <data name="lblLeaveStatusName" xml:space="preserve">
+    <value>在职状态</value>
+  </data>
+  <data name="lblLeaveType" xml:space="preserve">
+    <value>请假类别</value>
+  </data>
+  <data name="lblLeaveType1" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="lblLeaveYear" xml:space="preserve">
+    <value>年份</value>
+  </data>
+  <data name="lbllEmployeeNo" xml:space="preserve">
+    <value>工号 *</value>
+  </data>
+  <data name="lblLevel" xml:space="preserve">
+    <value>资位</value>
+  </data>
+  <data name="lblLevelCode" xml:space="preserve">
+    <value>资位</value>
+  </data>
+  <data name="lblLevelName" xml:space="preserve">
+    <value>层级名称</value>
+  </data>
+  <data name="lblLimitDays" xml:space="preserve">
+    <value>限制天数</value>
+  </data>
+  <data name="lblLocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lbllOTDateFrom" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="lbllOttypeDetail" xml:space="preserve">
+    <value>类别定义</value>
+  </data>
+  <data name="lbllUploadText" xml:space="preserve">
+    <value>请选择上传文件:</value>
+  </data>
+  <data name="lblLvTypeCode" xml:space="preserve">
+    <value>类型码 *[A~Za~z]</value>
+  </data>
+  <data name="lblLvTypeName" xml:space="preserve">
+    <value>类型名 *</value>
+  </data>
+  <data name="lbllWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="lblManager" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="lblManufacturer" xml:space="preserve">
+    <value>厂商*</value>
+  </data>
+  <data name="lblMinHours" xml:space="preserve">
+    <value>最小时数 *</value>
+  </data>
+  <data name="lblMinute0" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="lblMinute1" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="lblModifier" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="lblModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="lblModuleCode" xml:space="preserve">
+    <value>模组代码</value>
+  </data>
+  <data name="lblModuleCode1" xml:space="preserve">
+    <value>模组代码*</value>
+  </data>
+  <data name="lblMonthAllHours" xml:space="preserve">
+    <value>月累计加班</value>
+  </data>
+  <data name="lblMoveReason" xml:space="preserve">
+    <value>异动原因</value>
+  </data>
+  <data name="lblMoveState" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblMoveType" xml:space="preserve">
+    <value>异动类别</value>
+  </data>
+  <data name="lblMSG" xml:space="preserve">
+    <value>短信内容</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblNetSignDate" xml:space="preserve">
+    <value>起止日期*</value>
+  </data>
+  <data name="lblNewDepName" xml:space="preserve">
+    <value>切入部门代码*</value>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="lblNotes" xml:space="preserve">
+    <value>Notes*</value>
+  </data>
+  <data name="lblNotice" xml:space="preserve">
+    <value>系统公告</value>
+  </data>
+  <data name="lblNoticeAuthor" xml:space="preserve">
+    <value>公告人:</value>
+  </data>
+  <data name="lblNoticeContent" xml:space="preserve">
+    <value>公告内容:</value>
+  </data>
+  <data name="lblNoticeDate" xml:space="preserve">
+    <value>公告时间:</value>
+  </data>
+  <data name="lblNoticeDept" xml:space="preserve">
+    <value>公告单位:</value>
+  </data>
+  <data name="lblNoticeTitle" xml:space="preserve">
+    <value>公告标题:</value>
+  </data>
+  <data name="lblNoticeTypeId" xml:space="preserve">
+    <value>告类型:</value>
+  </data>
+  <data name="lblNoWorkDate" xml:space="preserve">
+    <value>上班日期(双休日)</value>
+  </data>
+  <data name="lblNoWorkETime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="lblNoWorkSTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="lblOrderID" xml:space="preserve">
+    <value>顺序号*</value>
+  </data>
+  <data name="lblOrderID1" xml:space="preserve">
+    <value>顺序号*</value>
+  </data>
+  <data name="lblOrgCode" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="lblOrgName" xml:space="preserve">
+    <value>组织名称</value>
+  </data>
+  <data name="lblOrgShift" xml:space="preserve">
+    <value>组织排班</value>
+  </data>
+  <data name="lblOTDateForm" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="lblOTDateFrom" xml:space="preserve">
+    <value>加班日期*</value>
+  </data>
+  <data name="lblOTMMonthTotal" xml:space="preserve">
+    <value>加班汇总查询</value>
+  </data>
+  <data name="lblOTMonthDetail" xml:space="preserve">
+    <value>加班明细查询</value>
+  </data>
+  <data name="lblOTStatus" xml:space="preserve">
+    <value>核准</value>
+  </data>
+  <data name="lblOTType" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="lblOttypeCode" xml:space="preserve">
+    <value>加班类别*</value>
+  </data>
+  <data name="lblOTTypeQryCode" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="lblPaperDate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPaperTitle" xml:space="preserve">
+    <value>调查主题:</value>
+  </data>
+  <data name="lblParameterArea" xml:space="preserve">
+    <value>考勤参数设定(单位)</value>
+  </data>
+  <data name="lblParameterEmpArea" xml:space="preserve">
+    <value>考勤参数设定(人员)</value>
+  </data>
+  <data name="lblParaName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParaValue" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="lblParentDepCode" xml:space="preserve">
+    <value>父组织</value>
+  </data>
+  <data name="lblParentmodulecode" xml:space="preserve">
+    <value>父模组</value>
+  </data>
+  <data name="lblParentmodulecode1" xml:space="preserve">
+    <value>父模组</value>
+  </data>
+  <data name="lblPersoncode" xml:space="preserve">
+    <value>人员*</value>
+  </data>
+  <data name="lblPersonType" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="lblPickComputePW" xml:space="preserve">
+    <value>采集电脑密码</value>
+  </data>
+  <data name="lblPickComputeUser" xml:space="preserve">
+    <value>采集电脑用户</value>
+  </data>
+  <data name="lblPickDataIP" xml:space="preserve">
+    <value>采集电脑IP*</value>
+  </data>
+  <data name="lblPlaceName" xml:space="preserve">
+    <value>鞋柜位置</value>
+  </data>
+  <data name="lblPlusDemeritPoints" xml:space="preserve">
+    <value>加扣分项查询</value>
+  </data>
+  <data name="lblPNumber" xml:space="preserve">
+    <value>次数*</value>
+  </data>
+  <data name="lblPortIP" xml:space="preserve">
+    <value>端口IP*</value>
+  </data>
+  <data name="lblPrepEndDate" xml:space="preserve">
+    <value>预结束日期</value>
+  </data>
+  <data name="lblPrivileged" xml:space="preserve">
+    <value>组织权限</value>
+  </data>
+  <data name="lblPrivileged1" xml:space="preserve">
+    <value>组织权限</value>
+  </data>
+  <data name="lblProcessflag" xml:space="preserve">
+    <value>处理状态</value>
+  </data>
+  <data name="lblProcessowner" xml:space="preserve">
+    <value>处理人员</value>
+  </data>
+  <data name="lblProduceID" xml:space="preserve">
+    <value>厂商ID*</value>
+  </data>
+  <data name="lblProposalsImprove" xml:space="preserve">
+    <value>提案改善</value>
+  </data>
+  <data name="lblProve" xml:space="preserve">
+    <value>证明</value>
+  </data>
+  <data name="lblPunishType" xml:space="preserve">
+    <value>惩罚类型*</value>
+  </data>
+  <data name="lblQueryBatchWorkNo" xml:space="preserve">
+    <value>批量查询(输入工号以回车键区分)</value>
+  </data>
+  <data name="lblQuestionAndSurvey" xml:space="preserve">
+    <value>问卷调查</value>
+  </data>
+  <data name="lblReasonName" xml:space="preserve">
+    <value>异常名*</value>
+  </data>
+  <data name="lblReasonNo" xml:space="preserve">
+    <value>异常编号 *[A~Za~z]</value>
+  </data>
+  <data name="lblReasonType" xml:space="preserve">
+    <value>异常原因</value>
+  </data>
+  <data name="lblReGetDepcode" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="lblReGetStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblReGetWorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="lblReportTitle" xml:space="preserve">
+    <value>夜宵补助统计报表</value>
+  </data>
+  <data name="lblRewardsAndPunishments" xml:space="preserve">
+    <value>奖惩</value>
+  </data>
+  <data name="lblRolecode" xml:space="preserve">
+    <value>群组*</value>
+  </data>
+  <data name="lblRoleName" xml:space="preserve">
+    <value>角色名称</value>
+  </data>
+  <data name="lblRoleRoleCode" xml:space="preserve">
+    <value>角色*</value>
+  </data>
+  <data name="lblRolesAcceptMSG" xml:space="preserve">
+    <value>接受短信*</value>
+  </data>
+  <data name="lblRolesCode" xml:space="preserve">
+    <value>群组*</value>
+  </data>
+  <data name="lblRolesName" xml:space="preserve">
+    <value>群组名称</value>
+  </data>
+  <data name="lblRolesRoleSet" xml:space="preserve">
+    <value>角色设定</value>
+  </data>
+  <data name="lblSalaryFlag" xml:space="preserve">
+    <value>扣薪否*</value>
+  </data>
+  <data name="lblScheduling" xml:space="preserve">
+    <value>未来7天排班</value>
+  </data>
+  <data name="lblSearchCondition" xml:space="preserve">
+    <value>查询条件</value>
+  </data>
+  <data name="lblSel" xml:space="preserve">
+    <value>选中人员</value>
+  </data>
+  <data name="lblSelFaqDate" xml:space="preserve">
+    <value>提问日期:</value>
+  </data>
+  <data name="lblSelFaqTitle" xml:space="preserve">
+    <value>提问标题:</value>
+  </data>
+  <data name="lblSelFaqType" xml:space="preserve">
+    <value>提问类型:</value>
+  </data>
+  <data name="lblSendTo" xml:space="preserve">
+    <value>按类别发送</value>
+  </data>
+  <data name="lblSendWorkNo" xml:space="preserve">
+    <value>按工号发送</value>
+  </data>
+  <data name="lblServiceHotline" xml:space="preserve">
+    <value>服务热线</value>
+  </data>
+  <data name="lblServiceName" xml:space="preserve">
+    <value>服务名称:</value>
+  </data>
+  <data name="lblServicePhone" xml:space="preserve">
+    <value>服务电话:</value>
+  </data>
+  <data name="lblSex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="lblShareDepcode" xml:space="preserve">
+    <value>公用单位</value>
+  </data>
+  <data name="lblShift" xml:space="preserve">
+    <value>班别</value>
+  </data>
+  <data name="lblShiftDate" xml:space="preserve">
+    <value>排班日期*</value>
+  </data>
+  <data name="lblShiftDesc" xml:space="preserve">
+    <value>班别描述</value>
+  </data>
+  <data name="lblShiftN" xml:space="preserve">
+    <value>班别*</value>
+  </data>
+  <data name="lblShiftNo" xml:space="preserve">
+    <value>班别编号</value>
+  </data>
+  <data name="lblShiftNoType" xml:space="preserve">
+    <value>班别类别*</value>
+  </data>
+  <data name="lblShiftType" xml:space="preserve">
+    <value>是否直落*</value>
+  </data>
+  <data name="lblStandardHours" xml:space="preserve">
+    <value>标准时数*</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>开始日</value>
+  </data>
+  <data name="lblState" xml:space="preserve">
+    <value>表单状态</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>在职状态</value>
+  </data>
+  <data name="lblStatusName" xml:space="preserve">
+    <value>在职</value>
+  </data>
+  <data name="lblSubDepName" xml:space="preserve">
+    <value>所属部门*</value>
+  </data>
+  <data name="lblSupportDepName" xml:space="preserve">
+    <value>支援部门</value>
+  </data>
+  <data name="lblSYB" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="lblSYC" xml:space="preserve">
+    <value>事业处</value>
+  </data>
+  <data name="lblTeamCode" xml:space="preserve">
+    <value>课组</value>
+  </data>
+  <data name="lblTechnical" xml:space="preserve">
+    <value>职系</value>
+  </data>
+  <data name="lblTechnicalName" xml:space="preserve">
+    <value>职系</value>
+  </data>
+  <data name="lblTel" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="lblThisYearLeaveDetial" xml:space="preserve">
+    <value>当年请假明细查询</value>
+  </data>
+  <data name="lblThreshold0" xml:space="preserve">
+    <value>上限时数*</value>
+  </data>
+  <data name="lblThreshold1" xml:space="preserve">
+    <value>下限时数*</value>
+  </data>
+  <data name="lblTimeCut0" xml:space="preserve">
+    <value>工作时段*</value>
+  </data>
+  <data name="lblTimeCut1" xml:space="preserve">
+    <value>中间休息*</value>
+  </data>
+  <data name="lblTimeCut2" xml:space="preserve">
+    <value>加班前休息</value>
+  </data>
+  <data name="lblTimeQty" xml:space="preserve">
+    <value>标准时数</value>
+  </data>
+  <data name="lblTimeQtyHours" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="lblTodate" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="lblToDepName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="lblTohost" xml:space="preserve">
+    <value>目的Server</value>
+  </data>
+  <data name="lblToPersoncode" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblToPersonName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lblToRoleName" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="lblTotalRecordsTitle" xml:space="preserve">
+    <value>总记录数:</value>
+  </data>
+  <data name="lblTransactiontype" xml:space="preserve">
+    <value>单据类型:</value>
+  </data>
+  <data name="lblTWCadreEdit" xml:space="preserve">
+    <value>派驻干部资料编辑区</value>
+  </data>
+  <data name="lblTypeCode" xml:space="preserve">
+    <value>类别代码</value>
+  </data>
+  <data name="lblTypeId" xml:space="preserve">
+    <value>表单类型:</value>
+  </data>
+  <data name="lblTypeName" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="lblUpdate_Date" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="lblUpdate_User" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="lblUploadDate" xml:space="preserve">
+    <value>上传日期:</value>
+  </data>
+  <data name="lblUploadForm" xml:space="preserve">
+    <value>上传表单:</value>
+  </data>
+  <data name="lbluploadInfo" xml:space="preserve">
+    <value>说明:上传文件格式为Excel,上传完成后,错误的记录会显示出来!</value>
+  </data>
+  <data name="lbluploadInfo2" xml:space="preserve">
+    <value>说明:上传文件格式为Excel,上传完成后,错误的记录会显示出来,可点击导出下载修改后再导入!</value>
+  </data>
+  <data name="lbluploadMsg" xml:space="preserve">
+    <value>说明:上传文件格式为Excel,上传完成后,错误的记录会显示出来,可点击导出下载修改后再导入!</value>
+  </data>
+  <data name="lblUploadText" xml:space="preserve">
+    <value>点击下载Excel模板</value>
+  </data>
+  <data name="lblUploadTip" xml:space="preserve">
+    <value>请选择上传的文件</value>
+  </data>
+  <data name="lblUrl" xml:space="preserve">
+    <value>网页地址</value>
+  </data>
+  <data name="lblUrl1" xml:space="preserve">
+    <value>网页地址</value>
+  </data>
+  <data name="lblUseDept" xml:space="preserve">
+    <value>用户单位</value>
+  </data>
+  <data name="lblUserYM" xml:space="preserve">
+    <value>启用年月</value>
+  </data>
+  <data name="lblUseState" xml:space="preserve">
+    <value>适用范围</value>
+  </data>
+  <data name="lblWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="lblWeekDay" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="lblWeekNo" xml:space="preserve">
+    <value>周别</value>
+  </data>
+  <data name="lblWorkDate" xml:space="preserve">
+    <value>调班日期</value>
+  </data>
+  <data name="lblWorkDay" xml:space="preserve">
+    <value>日期(G2)*</value>
+  </data>
+  <data name="lblWorkDesc" xml:space="preserve">
+    <value>加班内容*</value>
+  </data>
+  <data name="lblWorkETime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="lblWorkFlag" xml:space="preserve">
+    <value>工作日*</value>
+  </data>
+  <data name="lblWorkNo" xml:space="preserve">
+    <value>工号*</value>
+  </data>
+  <data name="lblWorkSTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="lblYear" xml:space="preserve">
+    <value>年份</value>
+  </data>
+  <data name="lblYearMonth" xml:space="preserve">
+    <value>年月</value>
+  </data>
+  <data name="lbl_chucai" xml:space="preserve">
+    <value>出差类型</value>
+  </data>
+  <data name="lbl_chucai1" xml:space="preserve">
+    <value>出差类型</value>
+  </data>
+  <data name="lbl_chucaidays" xml:space="preserve">
+    <value>出差天数类型</value>
+  </data>
+  <data name="lbl_chucaidays1" xml:space="preserve">
+    <value>出差天数类型</value>
+  </data>
+  <data name="lbl_copy" xml:space="preserve">
+    <value>复制到</value>
+  </data>
+  <data name="lbl_day_2" xml:space="preserve">
+    <value>出差天数设定</value>
+  </data>
+  <data name="lbl_day_head" xml:space="preserve">
+    <value>出差天数类型</value>
+  </data>
+  <data name="lbl_doctype" xml:space="preserve">
+    <value>单据类别</value>
+  </data>
+  <data name="lbl_doctype1" xml:space="preserve">
+    <value>单据类型</value>
+  </data>
+  <data name="lbl_doctype_1" xml:space="preserve">
+    <value>单据类型</value>
+  </data>
+  <data name="lbl_empno" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lbl_expare" xml:space="preserve">
+    <value>导入区</value>
+  </data>
+  <data name="lbl_glz_1" xml:space="preserve">
+    <value>管理职范围</value>
+  </data>
+  <data name="lbl_glz_type" xml:space="preserve">
+    <value>管理职类型</value>
+  </data>
+  <data name="lbl_leavedays" xml:space="preserve">
+    <value>请假天数类型</value>
+  </data>
+  <data name="lbl_leavedaystype1" xml:space="preserve">
+    <value>请假天数类型</value>
+  </data>
+  <data name="lbl_leavetype" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="lbl_leavetype1" xml:space="preserve">
+    <value>加班了性</value>
+  </data>
+  <data name="lbl_leavetype_1" xml:space="preserve">
+    <value>请假天数类型</value>
+  </data>
+  <data name="lbl_LevelCode" xml:space="preserve">
+    <value>资位*</value>
+  </data>
+  <data name="lbl_LocalName" xml:space="preserve">
+    <value>姓名* </value>
+  </data>
+  <data name="lbl_manger" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="lbl_name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lbl_N_empno" xml:space="preserve">
+    <value>新工号</value>
+  </data>
+  <data name="lbl_overtimetype" xml:space="preserve">
+    <value>加班类型</value>
+  </data>
+  <data name="lbl_replaceempno" xml:space="preserve">
+    <value>替换工号</value>
+  </data>
+  <data name="lbl_select_1" xml:space="preserve">
+    <value>查询条件</value>
+  </data>
+  <data name="lbl_Sex" xml:space="preserve">
+    <value>性别*</value>
+  </data>
+  <data name="lbl_shiwei" xml:space="preserve">
+    <value>师资位</value>
+  </data>
+  <data name="lbl_shiwei1" xml:space="preserve">
+    <value>师资位</value>
+  </data>
+  <data name="lbl_shiwei_1" xml:space="preserve">
+    <value>师资位类型</value>
+  </data>
+  <data name="lbl_shiwei_type" xml:space="preserve">
+    <value>师位范围</value>
+  </data>
+  <data name="lbl_shuomin" xml:space="preserve">
+    <value>说明:上传文件格式为Excel,上传完成后,错误的记录会显示出来,可点击导出下载修改后再导入!</value>
+  </data>
+  <data name="lbl_sign_log" xml:space="preserve">
+    <value>签核流程记录</value>
+  </data>
+  <data name="lbl_sign_map" xml:space="preserve">
+    <value>表单流转流程</value>
+  </data>
+  <data name="lbl_Status" xml:space="preserve">
+    <value>状态*</value>
+  </data>
+  <data name="lbl_SupportDepName" xml:space="preserve">
+    <value>支援部门*</value>
+  </data>
+  <data name="lbl_Unit" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="lbl_Unit_edit" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="lbl_wenzi" xml:space="preserve">
+    <value>输入天数区间</value>
+  </data>
+  <data name="lbl_Y_empno" xml:space="preserve">
+    <value>员工号</value>
+  </data>
+  <data name="lbl_zuzhi" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="LeaveDays" xml:space="preserve">
+    <value>请假天数类型</value>
+  </data>
+  <data name="leaveType" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="litBrowseTimesTag" xml:space="preserve">
+    <value>浏览次数:</value>
+  </data>
+  <data name="lnkFontLarge" xml:space="preserve">
+    <value>大</value>
+  </data>
+  <data name="lnkFontMedium" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="lnkFontSmall" xml:space="preserve">
+    <value>小</value>
+  </data>
+  <data name="lnkMoreInfo" xml:space="preserve">
+    <value>更多&gt;&gt;</value>
+  </data>
+  <data name="localname1" xml:space="preserve">
+    <value>签核人1</value>
+  </data>
+  <data name="localname10" xml:space="preserve">
+    <value>签核人10</value>
+  </data>
+  <data name="localname11" xml:space="preserve">
+    <value>签核人11</value>
+  </data>
+  <data name="localname12" xml:space="preserve">
+    <value>签核人12</value>
+  </data>
+  <data name="localname13" xml:space="preserve">
+    <value>签核人13</value>
+  </data>
+  <data name="localname14" xml:space="preserve">
+    <value>签核人14</value>
+  </data>
+  <data name="localname15" xml:space="preserve">
+    <value>签核人15</value>
+  </data>
+  <data name="localname16" xml:space="preserve">
+    <value>签核人16</value>
+  </data>
+  <data name="localname17" xml:space="preserve">
+    <value>签核人17</value>
+  </data>
+  <data name="localname18" xml:space="preserve">
+    <value>签核人18</value>
+  </data>
+  <data name="localname19" xml:space="preserve">
+    <value>签核人19</value>
+  </data>
+  <data name="localname2" xml:space="preserve">
+    <value>签核人2</value>
+  </data>
+  <data name="localname20" xml:space="preserve">
+    <value>签核人20</value>
+  </data>
+  <data name="localname3" xml:space="preserve">
+    <value>签核人3</value>
+  </data>
+  <data name="localname4" xml:space="preserve">
+    <value>签核人4</value>
+  </data>
+  <data name="localname5" xml:space="preserve">
+    <value>签核人5</value>
+  </data>
+  <data name="localname6" xml:space="preserve">
+    <value>签核人6</value>
+  </data>
+  <data name="localname7" xml:space="preserve">
+    <value>签核人7</value>
+  </data>
+  <data name="localname8" xml:space="preserve">
+    <value>签核人8</value>
+  </data>
+  <data name="localname9" xml:space="preserve">
+    <value>签核人9</value>
+  </data>
+  <data name="MakeupTypeName" xml:space="preserve">
+    <value>补卡类别</value>
+  </data>
+  <data name="Manger" xml:space="preserve">
+    <value>管理职</value>
+  </data>
+  <data name="monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="orgcode" xml:space="preserve">
+    <value>部门代码</value>
+  </data>
+  <data name="orgname" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="outtype" xml:space="preserve">
+    <value>出差类型</value>
+  </data>
+  <data name="outtypeDays" xml:space="preserve">
+    <value>出差天数类型</value>
+  </data>
+  <data name="Overtimetype" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="PowerChangeFrom" xml:space="preserve">
+    <value>原权限拥有者</value>
+  </data>
+  <data name="PowerChangeTo" xml:space="preserve">
+    <value>现权限交接者</value>
+  </data>
+  <data name="printnotice" xml:space="preserve">
+    <value>列印注意事项</value>
+  </data>
+  <data name="printnoticeconfig" xml:space="preserve">
+    <value>页面设定:清除页首和面尾字符,上下左右边界值为6</value>
+  </data>
+  <data name="queryBatchWorkno" xml:space="preserve">
+    <value>批量查询(输入工号以回车键区分)</value>
+  </data>
+  <data name="Reason1" xml:space="preserve">
+    <value>条件1</value>
+  </data>
+  <data name="Reason2" xml:space="preserve">
+    <value>条件2</value>
+  </data>
+  <data name="Reason3" xml:space="preserve">
+    <value>条件3</value>
+  </data>
+  <data name="Reason4" xml:space="preserve">
+    <value>条件4</value>
+  </data>
+  <data name="ReasonName" xml:space="preserve">
+    <value>异常类别</value>
+  </data>
+  <data name="ReasonRemark" xml:space="preserve">
+    <value>异常愿意你</value>
+  </data>
+  <data name="saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>请先选择数据在进行相关操作!</value>
+  </data>
+  <data name="SendNotes1" xml:space="preserve">
+    <value>发送Notes1</value>
+  </data>
+  <data name="SendNotes2" xml:space="preserve">
+    <value>发送Notes2</value>
+  </data>
+  <data name="SendNotes3" xml:space="preserve">
+    <value>发送Notes3</value>
+  </data>
+  <data name="SendNotes4" xml:space="preserve">
+    <value>发送Notes4</value>
+  </data>
+  <data name="Shiwei" xml:space="preserve">
+    <value>师资位 </value>
+  </data>
+  <data name="SingScheduleAuditMan1" xml:space="preserve">
+    <value>签核人1</value>
+  </data>
+  <data name="SingScheduleAuditMan2" xml:space="preserve">
+    <value>签核人2</value>
+  </data>
+  <data name="SingScheduleAuditMan3" xml:space="preserve">
+    <value>签核人3</value>
+  </data>
+  <data name="SingScheduleAuditMan4" xml:space="preserve">
+    <value>签核人4</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>年月</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>表单名称:</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>回复内容:</value>
+  </data>
+  <data name="sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="tabDept" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="tabEdit" xml:space="preserve">
+    <value>编辑区</value>
+  </data>
+  <data name="TabHeadCompany" xml:space="preserve">
+    <value>关联公司</value>
+  </data>
+  <data name="TabHeadDepLevel" xml:space="preserve">
+    <value>组织层级设定</value>
+  </data>
+  <data name="TabHeadDept" xml:space="preserve">
+    <value>关联组织</value>
+  </data>
+  <data name="TabHeadPerson" xml:space="preserve">
+    <value>用户资料</value>
+  </data>
+  <data name="TabHeadPowerChange" xml:space="preserve">
+    <value>权限交接</value>
+  </data>
+  <data name="tabShow" xml:space="preserve">
+    <value>显示区</value>
+  </data>
+  <data name="templateddown" xml:space="preserve">
+    <value>点击下载Excel模板</value>
+  </data>
+  <data name="ThisLVTotal" xml:space="preserve">
+    <value>查询时段休息时数</value>
+  </data>
+  <data name="thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="UserLabelBatchOtDate" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="UserLabelIsMoveLeave" xml:space="preserve">
+    <value>是否调休</value>
+  </data>
+  <data name="wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="workFlowDecSalary" xml:space="preserve">
+    <value>记录扣薪次数</value>
+  </data>
+  <data name="workFlowDeTimes" xml:space="preserve">
+    <value>月累计</value>
+  </data>
+  <data name="WorkNo" xml:space="preserve">
+    <value>工号</value>
+  </data>
+  <data name="lblComeYears" xml:space="preserve">
+    <value>集团年资</value>
+  </data>
+  <data name="lbllblEndDate" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="lbllblJoinDate" xml:space="preserve">
+    <value>入集团日期</value>
+  </data>
+  <data name="lbllblStartDate" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="lblLVLVTypeCode" xml:space="preserve">
+    <value>请假类别</value>
+  </data>
+  <data name="lblLVTotal" xml:space="preserve">
+    <value>时数（H）</value>
+  </data>
+  <data name="lblLVTotalDays" xml:space="preserve">
+    <value>天数</value>
+  </data>
+  <data name="lblProxy" xml:space="preserve">
+    <value>代理人</value>
+  </data>
+  <data name="lblReason" xml:space="preserve">
+    <value>原因</value>
+  </data>
+  <data name="btnOrgAudit" xml:space="preserve">
+    <value>组织送签</value>
+  </data>
+  <data name="btnSendAudit" xml:space="preserve">
+    <value>送签</value>
+  </data>
+  <data name="gvApproverDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="gvAuditDate" xml:space="preserve">
+    <value>签核日期</value>
+  </data>
+  <data name="gvAuditer" xml:space="preserve">
+    <value>签核人</value>
+  </data>
+  <data name="gvAuditIdea" xml:space="preserve">
+    <value>签核意见</value>
+  </data>
+  <data name="gvBillNo" xml:space="preserve">
+    <value>签核单号</value>
+  </data>
+  <data name="gvEvectionAddress" xml:space="preserve">
+    <value>洽公单位</value>
+  </data>
+  <data name="gvEvectionBy" xml:space="preserve">
+    <value>外出方式</value>
+  </data>
+  <data name="gvEvectionReason" xml:space="preserve">
+    <value>外出原因</value>
+  </data>
+  <data name="gvEvectionRoad" xml:space="preserve">
+    <value>洽公路线</value>
+  </data>
+  <data name="gvEvectionTask" xml:space="preserve">
+    <value>洽公事由</value>
+  </data>
+  <data name="gvEvectionTel" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="gvEvectionTime" xml:space="preserve">
+    <value>外出时间</value>
+  </data>
+  <data name="gvEvectionTypeName" xml:space="preserve">
+    <value>外出范围</value>
+  </data>
+  <data name="gvMotorMan" xml:space="preserve">
+    <value>司机</value>
+  </data>
+  <data name="gvReturnTime" xml:space="preserve">
+    <value>预计返回时间</value>
+  </data>
+  <data name="lblApproveDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="lblEvectionStatus" xml:space="preserve">
+    <value>签核状态</value>
+  </data>
+  <data name="lblEvectionTime" xml:space="preserve">
+    <value>外出时间</value>
+  </data>
+  <data name="lblEvectionTypeApply" xml:space="preserve">
+    <value>外出范围</value>
+  </data>
+  <data name="lblEvectionObject" xml:space="preserve">
+    <value>洽谈对象</value>
+  </data>
+  <data name="lblRealReturnTime" xml:space="preserve">
+    <value>实际返回时间</value>
+  </data>
+  <data name="lblReturnTime" xml:space="preserve">
+    <value>预计返回时间</value>
+  </data>
+  <data name="lblEvectionBy" xml:space="preserve">
+    <value>外出方式</value>
+  </data>
+  <data name="lblEvectionReason" xml:space="preserve">
+    <value>外出原因</value>
+  </data>
+  <data name="lblEvectionRoad" xml:space="preserve">
+    <value>外出路线</value>
+  </data>
+  <data name="lblEvectionTask" xml:space="preserve">
+    <value>外出事由</value>
+  </data>
+  <data name="lblEvectionTel" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="radioBallCar" xml:space="preserve">
+    <value>球车</value>
+  </data>
+  <data name="radioOthers" xml:space="preserve">
+    <value>步行</value>
+  </data>
+  <data name="radioOwnCar" xml:space="preserve">
+    <value>自搭车</value>
+  </data>
+  <data name="radioUserCar" xml:space="preserve">
+    <value>派车</value>
+  </data>
+  <data name="radioWalk" xml:space="preserve">
+    <value>步行</value>
+  </data>
+  <data name="lblCarer" xml:space="preserve">
+    <value>司机</value>
+  </data>
+  <data name="lblOthers" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="lblEvectionApplyAddress" xml:space="preserve">
+    <value>洽谈单位</value>
+  </data>
+  <data name="lblUserLabelConsortAllowance" xml:space="preserve">
+    <value>配偶外租津贴 *</value>
+  </data>
+  <data name="lblUserLabelConsortDepCode" xml:space="preserve">
+    <value>配偶所在事业群 *</value>
+  </data>
+  <data name="lblUserLabelConsortInFoxconn" xml:space="preserve">
+    <value>配偶是否在集团 *</value>
+  </data>
+  <data name="lblUserLabelConsortLevelCode" xml:space="preserve">
+    <value>资位 *</value>
+  </data>
+  <data name="lblUserLabelConsortWorkName" xml:space="preserve">
+    <value>配偶姓名 *</value>
+  </data>
+  <data name="lblUserLabelConsortWorkNo" xml:space="preserve">
+    <value>配偶工号 *</value>
+  </data>
+  <data name="lb_jindu" xml:space="preserve">
+    <value>查看进度</value>
+  </data>
+  <data name="lblDepAlias" xml:space="preserve">
+    <value>组织别名</value>
+  </data>
+  <data name="lblDepShortName" xml:space="preserve">
+    <value>组织简称</value>
+  </data>
+  <data name="lblFactoryCode" xml:space="preserve">
+    <value>所属厂区</value>
+  </data>
+  <data name="gvAdvanceAdjust" xml:space="preserve">
+    <value>当月可休</value>
+  </data>
+  <data name="gvRestAdjust" xml:space="preserve">
+    <value>预支调休</value>
+  </data>
+  <data name="btnAuditAll" xml:space="preserve">
+    <value>核准全部</value>
+  </data>
+  <data name="btnBatchCancelAudit" xml:space="preserve">
+    <value>批量取消核准</value>
+  </data>
+  <data name="btnOrgRecal" xml:space="preserve">
+    <value>组织计算</value>
+  </data>
+  <data name="btnRecalculate" xml:space="preserve">
+    <value>人员计算</value>
+  </data>
+  <data name="btnNormalQuery" xml:space="preserve">
+    <value>正常加班查询</value>
+  </data>
+  <data name="btnSpecQuery" xml:space="preserve">
+    <value>专案加班查询</value>
+  </data>
+  <data name="gvMonthG2RelSalary" xml:space="preserve">
+    <value>实发加班时数G2</value>
+  </data>
+  <data name="gvSpecG2RelSalary" xml:space="preserve">
+    <value>专案实报时数G2</value>
+  </data>
+  <data name="lblApply" xml:space="preserve">
+    <value>有效加班时数</value>
+  </data>
+  <data name="lblMRelAdjust" xml:space="preserve">
+    <value>当月可调</value>
+  </data>
+  <data name="lblOverTimeType" xml:space="preserve">
+    <value>加班类别</value>
+  </data>
+  <data name="lblRelSalary" xml:space="preserve">
+    <value>实发加班时数</value>
+  </data>
+  <data name="lblSpcApply" xml:space="preserve">
+    <value>专案实发时数</value>
+  </data>
+  <data name="lblEndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="lblStartTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="lblEmergencyContactPerson" xml:space="preserve">
+    <value>紧急联络人</value>
+  </data>
+  <data name="lblEmergencyTelephone" xml:space="preserve">
+    <value>紧急电话</value>
+  </data>
+  <data name="btnCopyBillNo" xml:space="preserve">
+    <value>复制单号</value>
+  </data>
+  <data name="lblIsKaoQin1" xml:space="preserve">
+    <value>是否属于考勤系统</value>
+  </data>
+  <data name="lblListFlag" xml:space="preserve">
+    <value>选单是否显示</value>
+  </data>
+  <data name="lblFucntionImage" xml:space="preserve">
+    <value>默认显示图表</value>
+  </data>
+  <data name="lblFunctionComment" xml:space="preserve">
+    <value>功能备注</value>
+  </data>
+  <data name="lblFunctionMenuType" xml:space="preserve">
+    <value>功能类型</value>
+  </data>
+  <data name="lblFunctionMouseImage" xml:space="preserve">
+    <value>鼠标移上显示图表</value>
+  </data>
+  <data name="lblFunctionVersion" xml:space="preserve">
+    <value>版本序号</value>
+  </data>
+  <data name="lblFunctionImage" xml:space="preserve">
+    <value>默认显示图表</value>
+  </data>
+  <data name="gvHeadEmpType" xml:space="preserve">
+    <value>员工类别</value>
+  </data>
+  <data name="gvHeadIpAddress" xml:space="preserve">
+    <value>管控IP</value>
+  </data>
+  <data name="gvHeadIpControlFlag" xml:space="preserve">
+    <value>是否IP管控</value>
+  </data>
+  <data name="gvHeadSalaryLogonEnabled" xml:space="preserve">
+    <value>是否有权限修改薪资系统</value>
+  </data>
+  <data name="gvHeadUserChangePwd" xml:space="preserve">
+    <value>是否有权限修改密码</value>
+  </data>
+  <data name="gvHeadUserComment" xml:space="preserve">
+    <value>描述信息</value>
+  </data>
+  <data name="gvHeadUserStartPwd" xml:space="preserve">
+    <value>是否初始化密码</value>
+  </data>
+  <data name="lalUserComment" xml:space="preserve">
+    <value>描述信息</value>
+  </data>
+  <data name="lblEmpType" xml:space="preserve">
+    <value>员工类别</value>
+  </data>
+  <data name="lblIpAddress" xml:space="preserve">
+    <value>管控IP</value>
+  </data>
+  <data name="lblIpControlFlag" xml:space="preserve">
+    <value>是否IP管控</value>
+  </data>
+  <data name="lblSalaryLogonEnable" xml:space="preserve">
+    <value>是否有权限登录薪资系统</value>
+  </data>
+  <data name="lblUserStartPwd" xml:space="preserve">
+    <value>是否初始化密码</value>
+  </data>
+  <data name="gvDeptAlias" xml:space="preserve">
+    <value>组织别名</value>
+  </data>
+  <data name="gvDeptShortName" xml:space="preserve">
+    <value>组织简称</value>
+  </data>
+  <data name="gvFactoryCode" xml:space="preserve">
+    <value>所属厂区</value>
+  </data>
+  <data name="lbllBillNo" xml:space="preserve">
+    <value>申请单号</value>
+  </data>
+  <data name="lblLeaveTypeName" xml:space="preserve">
+    <value>请假类别</value>
+  </data>
+  <data name="lbllEndDate" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="lbllLVTypeCode" xml:space="preserve">
+    <value>请假类别</value>
+  </data>
+  <data name="lbllStartDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="lblProxyName" xml:space="preserve">
+    <value>代理人姓名</value>
+  </data>
+  <data name="lblProxyNotes" xml:space="preserve">
+    <value>代理人Notes</value>
+  </data>
+  <data name="lblProxyWorkNo" xml:space="preserve">
+    <value>代理人工号*</value>
+  </data>
+  <data name="lblSelectWindow" xml:space="preserve">
+    <value>提醒窗口</value>
+  </data>
+  <data name="lblTestifyFlag" xml:space="preserve">
+    <value>是否需要上传证明附件</value>
+  </data>
+  <data name="gvAllowance" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="lblStatu" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="gvAbsent" xml:space="preserve">
+    <value>旷工(天)</value>
+  </data>
+  <data name="gvAbsentRemark" xml:space="preserve">
+    <value>备注说明(缺勤时间或其他说明)</value>
+  </data>
+  <data name="gvBirthControlLeave" xml:space="preserve">
+    <value>节育假(天)</value>
+  </data>
+  <data name="gvCompassionateLeave" xml:space="preserve">
+    <value>丧假(天)</value>
+  </data>
+  <data name="gvLateEarly" xml:space="preserve">
+    <value>迟到早退(分钟)</value>
+  </data>
+  <data name="gvLeaveApplyYear" xml:space="preserve">
+    <value>年休假(天)</value>
+  </data>
+  <data name="gvLongAffairLeave" xml:space="preserve">
+    <value>因私事假(长假天数)</value>
+  </data>
+  <data name="gvMarkUpCount" xml:space="preserve">
+    <value>未刷补卡次数(天)</value>
+  </data>
+  <data name="gvMarriageLeave" xml:space="preserve">
+    <value>婚假(天)</value>
+  </data>
+  <data name="gvMaternityLeave" xml:space="preserve">
+    <value>产假(天)</value>
+  </data>
+  <data name="gvSabbaticalLeave" xml:space="preserve">
+    <value>公休假(天)</value>
+  </data>
+  <data name="gvShortAffairLeave" xml:space="preserve">
+    <value>事假(天)</value>
+  </data>
+  <data name="gvSickLeave" xml:space="preserve">
+    <value>病假(天)</value>
+  </data>
+  <data name="gvTreatmentLeave" xml:space="preserve">
+    <value>医疗期(天)</value>
+  </data>
+  <data name="lblUserChangePwd" xml:space="preserve">
+    <value>是否有权限修改密码</value>
+  </data>
+  <data name="gvApRemark" xml:space="preserve">
+    <value>其他外出方式 </value>
+  </data>
+</root>

@@ -1,0 +1,2296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{510AEC13-AA82-4C50-8936-6119BAC2E25A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPOI">
+      <HintPath>E:\BaiduYunDownload\LWME.NPOIDemo\ReferenceDLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Attendance.Web\AnnexFiles\20111019145549ajax.doc" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Blue\Theme_Blue.skin" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Green\Theme_Green.skin" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\Theme_Yellow.skin" />
+    <Content Include="Attendance.Web\CSS\Images_new\glowtab.psd" />
+    <Content Include="Attendance.Web\ExcelModel\BUCalendarSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\EmpOtherMoveSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\EmpShiftSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\EmpSupportInSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\EmpSupportOutSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\HrmOrgManagerSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\HRMTWCadreSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\KaoQinDataSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\KQMMakeupSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\KQMOrgEmployee.xls" />
+    <Content Include="Attendance.Web\ExcelModel\KQParamEmployeeSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\LeaveApplySample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\LeaveYearImportSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\MoveShiftSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\NetSignInSetSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\OtmActivityApplySample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\OtmAdvanceApplySampleLHZB.xls" />
+    <Content Include="Attendance.Web\ExcelModel\OtmRemainSample.xls" />
+    <Content Include="Attendance.Web\ExcelModel\OTMTotalQryTmp.xls" />
+    <Content Include="Attendance.Web\ExcelModel\WFMAuditSample.xls" />
+    <Content Include="Attendance.Web\Web.config" />
+    <Content Include="Attendance.Web\WorkFlowForm\AjaxProcess\AbnormalAttendanceHandle.ashx" />
+    <Content Include="Attendance.Web\WorkFlowForm\AjaxProcess\GetOtHours.ashx" />
+    <Content Include="Attendance.Web\WorkFlowForm\AjaxProcess\GetOTType.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Attendance.BLL\Attendance.BLL.csproj" />
+    <Content Include="Attendance.Common\Attendance.Common.csproj" />
+    <Content Include="Attendance.DALFactory\Attendance.DALFactory.csproj" />
+    <Content Include="Attendance.IDAL\Attendance.IDAL.csproj" />
+    <Content Include="Attendance.Model\Attendance.Model.csproj" />
+    <Content Include="Attendance.OracleDAL\Attendance.OracleDAL.csproj" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Green\Style_Green.css" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\BottomBG.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\NAV1.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\NAV2.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\navBG.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\navPIC1.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\navPIC2.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\titie.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\titieLeft.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\images\titieRight.jpg" />
+    <Content Include="Attendance.Web\App_Themes\Theme_Yellow\Style_Yellow.css" />
+    <Content Include="Attendance.Web\Attendance.Web.csproj" />
+    <Content Include="Attendance.Web\Attendance.Web.csproj.user" />
+    <Content Include="Attendance.Web\bin\Attendance.BLL.dll" />
+    <Content Include="Attendance.Web\bin\Attendance.BLL.pdb" />
+    <Content Include="Attendance.Web\bin\Attendance.Common.dll" />
+    <Content Include="Attendance.Web\bin\Attendance.Common.pdb" />
+    <Content Include="Attendance.Web\bin\Attendance.DALFactory.dll" />
+    <Content Include="Attendance.Web\bin\Attendance.DALFactory.pdb" />
+    <Content Include="Attendance.Web\bin\Attendance.IDAL.dll" />
+    <Content Include="Attendance.Web\bin\Attendance.IDAL.pdb" />
+    <Content Include="Attendance.Web\bin\Attendance.Model.dll" />
+    <Content Include="Attendance.Web\bin\Attendance.Model.pdb" />
+    <Content Include="Attendance.Web\bin\Attendance.OracleDAL.dll" />
+    <Content Include="Attendance.Web\bin\Attendance.OracleDAL.pdb" />
+    <Content Include="Attendance.Web\CommonFrame.aspx" />
+    <Content Include="Attendance.Web\ControlLib\BaseControl.ascx" />
+    <Content Include="Attendance.Web\ControlLib\PageNavigator.ascx" />
+    <Content Include="Attendance.Web\ControlLib\Title.ascx" />
+    <Content Include="Attendance.Web\CSS\CommonCss.css" />
+    <Content Include="Attendance.Web\CSS\CommonCss1.css" />
+    <Content Include="Attendance.Web\CSS\CommonCssForIndex.css" />
+    <Content Include="Attendance.Web\CSS\CommonStyle.css" />
+    <Content Include="Attendance.Web\CSS\FlowMap.css" />
+    <Content Include="Attendance.Web\CSS\hrlogin.css" />
+    <Content Include="Attendance.Web\CSS\Images\12_01.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_02.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_03.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_04.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_06.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_07.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_08.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_09.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_10.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_12.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_13.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_14.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_16.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_17.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_18.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_19.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\12_21.jpg" />
+    <Content Include="Attendance.Web\CSS\Images\accept.png" />
+    <Content Include="Attendance.Web\CSS\Images\calendar.gif" />
+    <Content Include="Attendance.Web\CSS\Images\clocks.gif" />
+    <Content Include="Attendance.Web\CSS\Images\debug_break_disabled_marker.png" />
+    <Content Include="Attendance.Web\CSS\Images\debug_break_marker.png" />
+    <Content Include="Attendance.Web\CSS\Images\down.bmp" />
+    <Content Include="Attendance.Web\CSS\Images\downarrows_white.gif" />
+    <Content Include="Attendance.Web\CSS\Images\expand.gif" />
+    <Content Include="Attendance.Web\CSS\Images\goforw.png" />
+    <Content Include="Attendance.Web\CSS\Images\gorev.png" />
+    <Content Include="Attendance.Web\CSS\Images\ig_treefolder.gif" />
+    <Content Include="Attendance.Web\CSS\Images\ig_treefolderopen.gif" />
+    <Content Include="Attendance.Web\CSS\Images\ig_treeMinus.gif" />
+    <Content Include="Attendance.Web\CSS\Images\ig_treePlus.gif" />
+    <Content Include="Attendance.Web\CSS\Images\inputbg.bmp" />
+    <Content Include="Attendance.Web\CSS\Images\next.png" />
+    <Content Include="Attendance.Web\CSS\Images\nextg.gif" />
+    <Content Include="Attendance.Web\CSS\Images\nextn.gif" />
+    <Content Include="Attendance.Web\CSS\Images\overbg.bmp" />
+    <Content Include="Attendance.Web\CSS\Images\prev.png" />
+    <Content Include="Attendance.Web\CSS\Images\prevg.gif" />
+    <Content Include="Attendance.Web\CSS\Images\prevn.gif" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-icons_222222_256x240.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Attendance.Web\CSS\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Attendance.Web\CSS\Images\up.bmp" />
+    <Content Include="Attendance.Web\CSS\Images\uparrows_white.gif" />
+    <Content Include="Attendance.Web\CSS\Images\zoom.png" />
+    <Content Include="Attendance.Web\CSS\Images_new\266.jpg" />
+    <Content Include="Attendance.Web\CSS\Images_new\about.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\About_left.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\About_right.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\arrow.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\backgroud_001.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\backgroud_002.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\backgroud_003.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\background001.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\background_top.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\back_line.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\bottom01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\btncenter.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\btnleft.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\btnright.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\btnright_long.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\bt_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\bt_save.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\building.jpg" />
+    <Content Include="Attendance.Web\CSS\Images_new\button.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\button_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\button_center.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\button_left.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\button_right.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\cha.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\close.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\contentTitleBg.jpg" />
+    <Content Include="Attendance.Web\CSS\Images_new\datagridDataRight.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\datagriddele.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\datagridKey.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\datagridredo.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\datagrid_change.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\datagrid_search.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\deleteItem.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\department.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\displayall.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\displaybottom.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\displaytop.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\down.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\download.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\DownLoad2.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\dropdown_arrow.PNG" />
+    <Content Include="Attendance.Web\CSS\Images_new\EmployeeCancel.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EmployeeRemove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_02.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_03.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_04.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_05.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_06.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_07.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_08.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_BUTTON_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_BUTTON_04.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_BUTTON_06.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\EMP_BUTTON_08.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\exit.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Explanation.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Fminus.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\foxconn.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Frame_left_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\FuntionModel.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\glowtab-left.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\glowtab.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\gou.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\gridviewEdit.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Group.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\help.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\home.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\I.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\indicator.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\L.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\leaveRemove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left001.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left001_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left002.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left002_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left003.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left003_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left004.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left004_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\leftmiddl001.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\leftmiddl001_new.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\leftmiddl002.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\leftmiddl003.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\leftRemove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\LeftRemove01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_back01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_back_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_back_02.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_back_03.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_back_03_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_main01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_main02.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_main_001.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_main_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_main_01_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_main_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_middl_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\left_middl_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Little_memo_bottom.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Little_memo_middle.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Little_memo_top.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Loading.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\login_btn.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\login_btn.jpg" />
+    <Content Include="Attendance.Web\CSS\Images_new\login_btn01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\login_user.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\login_user.png" />
+    <Content Include="Attendance.Web\CSS\Images_new\login_user01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Lose.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\MapEnd.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\MapStart.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\MapSup.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\memo_bottom.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\memo_middle.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\memo_top.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\New.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\NewsTitle.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\NewTop.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\new_button.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\nextd.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\orgRemove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\orgRemoveRight.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\orgtopcenter.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\orgtopleft.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\orgtopright.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_back_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\ORG_label_center.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\ORG_label_left.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\ORG_label_right.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_line.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_main_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_main_02.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_main_02_large.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_main_02_morelarge.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_main_line.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_main_line01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_manager_center.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_manger_left.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_manger_right.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_middle_back.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Org_remove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_top01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_top01_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_top01_a_new.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_top01_new.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_top02.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\org_tree.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\photo.jpg" />
+    <Content Include="Attendance.Web\CSS\Images_new\PostCancel.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\quastion.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\refresh.jpg" />
+    <Content Include="Attendance.Web\CSS\Images_new\remove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Remove_cancel.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Remove_cancel01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Reset_btn.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\rightRemove.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\rightRemove01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\save.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\search.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\search01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\search_01.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\search_btn.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Search_button.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\search_new.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\selectdept.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\T.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\title_left.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\title_right.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top01_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top01_b.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top02_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top02_b.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top03_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top03_b.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top04_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top04_b.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top05.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top05_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top05_b.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top06_a.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\top06_b.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\Tplus.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\tree_shiyechu.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\UnLock.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\up.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\xmfh.gif" />
+    <Content Include="Attendance.Web\CSS\Images_new\xm_back.gif" />
+    <Content Include="Attendance.Web\CSS\jquery-ui-custom.css" />
+    <Content Include="Attendance.Web\CSS\StyleLogin.css" />
+    <Content Include="Attendance.Web\HomePage\Faq.aspx" />
+    <Content Include="Attendance.Web\HomePage\FaqDetail.aspx" />
+    <Content Include="Attendance.Web\HomePage\Form.aspx" />
+    <Content Include="Attendance.Web\HomePage\Notice.aspx" />
+    <Content Include="Attendance.Web\HomePage\NoticeDetail.aspx" />
+    <Content Include="Attendance.Web\HomePage\Paper.aspx" />
+    <Content Include="Attendance.Web\HomePage\PaperDetail.aspx" />
+    <Content Include="Attendance.Web\HomePage\Service.aspx" />
+    <Content Include="Attendance.Web\HRM\AreaSelector.aspx" />
+    <Content Include="Attendance.Web\HRM\CorporationSelector.aspx" />
+    <Content Include="Attendance.Web\HRM\DepartmentForm.aspx" />
+    <Content Include="Attendance.Web\HRM\DepartmentLayoutBForm.aspx" />
+    <Content Include="Attendance.Web\HRM\DepartmentLayoutForm.aspx" />
+    <Content Include="Attendance.Web\HRM\EmployeeData\HrmEmpOtherMoveEditForm.aspx" />
+    <Content Include="Attendance.Web\HRM\EmployeeData\HrmEmpOtherMoveForm.aspx" />
+    <Content Include="Attendance.Web\HRM\EmployeeData\HrmEmpPremiumInfo.aspx" />
+    <Content Include="Attendance.Web\HRM\EmployeeData\SingleDataPickForm.aspx" />
+    <Content Include="Attendance.Web\HRM\EmployeeData\TreeDataPickForm.aspx" />
+    <Content Include="Attendance.Web\HRM\HrmDepartmentEditForm.aspx" />
+    <Content Include="Attendance.Web\HRM\HrmDepartmentForm.aspx" />
+    <Content Include="Attendance.Web\HRM\HrmManagerInfoForm.aspx" />
+    <Content Include="Attendance.Web\HRM\HrmTWCadreEditForm.aspx" />
+    <Content Include="Attendance.Web\HRM\HrmTWCadreForm.aspx" />
+    <Content Include="Attendance.Web\HRM\LevelSelector.aspx" />
+    <Content Include="Attendance.Web\HRM\OrgEmployeeEditForm.aspx" />
+    <Content Include="Attendance.Web\HRM\OrgEmployeeForm.aspx" />
+    <Content Include="Attendance.Web\HRM\OrgEmployeeQueryForm.aspx" />
+    <Content Include="Attendance.Web\HRM\SingleDataPickForm.aspx" />
+    <Content Include="Attendance.Web\HRM\Support\HrmEmpSupportInEditForm.aspx" />
+    <Content Include="Attendance.Web\HRM\Support\HrmEmpSupportInForm.aspx" />
+    <Content Include="Attendance.Web\HRM\Support\HrmEmpSupportOutEditForm.aspx" />
+    <Content Include="Attendance.Web\HRM\Support\HrmEmpSupportOutForm.aspx" />
+    <Content Include="Attendance.Web\HRM\Support\SingleDataPickForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyConfirmForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyEditForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLH.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyImportForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveTestifyForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveUploadFileForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\Query\KQMAbsentMonthForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\Query\KQMMakeupReportForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\Query\NightAllowanceToExcel.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\Query\ReportKaoQinSumForm.aspx" />
+    <Content Include="Attendance.Web\Hr\KQM\Query\ReportKQMKaoQinDayForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMEmpDataPickForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMEvectionApplyEditForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMEvectionApplyForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMKaoQinQryForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMLeaveApplyApprovedForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMLeaveApplyApproveForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMLeaveApplyEditForm_LHZB.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMLeaveApplyForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMLeaveApproveCenterForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMMonthtotalQueryForm.aspx" />
+    <Content Include="Attendance.Web\Hr\PCM\PCMSelfServiceForm.aspx" />
+    <Content Include="Attendance.Web\Index.aspx" />
+    <Content Include="Attendance.Web\JavaScript\DropDownCheckList.js" />
+    <Content Include="Attendance.Web\JavaScript\jquery-1.5.1.min.js" />
+    <Content Include="Attendance.Web\JavaScript\jquery-ui-custom.js" />
+    <Content Include="Attendance.Web\JavaScript\jquery.js" />
+    <Content Include="Attendance.Web\JavaScript\jquery_ui_lang.js" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\ConfigSendMessageEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\ConfigSendMessageForm.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\KQMLeaveYearImport.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\KQMReGetKaoQin.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\ScheduleData.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\ScheduleEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\ScheduleOrgShift.aspx" />
+    <Content Include="Attendance.Web\KQM\AttendanceData\SendMessage.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\BUCalendar.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\ExceptReason.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KQMBellCardForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KQMBGCalendarForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KqmParameterEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KqmParameterEmpEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KqmParameterEmpForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KqmParameterForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\KqmRules.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\LeaveTypeForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\NetSignInSetForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\OTMTypeForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\RelationSelector.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\ToolPingKQMBellCardForm.aspx" />
+    <Content Include="Attendance.Web\KQM\BasicData\WorkShift.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMEmployeeShiftEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMEmployeeShiftForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMEvectionApplyEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMEvectionApplyForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMMoveShiftEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMMoveShiftForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMOrgShiftEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\KaoQinData\KQMOrgShiftForm.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMActivityApplyEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMActivityApplyForm.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMMonthTotalEditForm.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMMonthTotalForm.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMRealApplyForm.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMRealImpFrAdv.aspx" />
+    <Content Include="Attendance.Web\KQM\OTM\OTMRemainForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\KaoQinQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\KQMBellCardQueryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\KQMEvectionQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\KQMLeaveApplyYearQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\KqmLeaveQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\KQMSelfServiceForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\MakeupReportForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\NightAllowanceQry.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\OTM\OTMDetailQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\OTM\OTMExceptionQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\OTM\OTMRealQryForm.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\OTM\OTMTotalQry.aspx" />
+    <Content Include="Attendance.Web\KQM\Query\PAMEmpQryForm.aspx" />
+    <Content Include="Attendance.Web\LoginIn.aspx" />
+    <Content Include="Attendance.Web\MainForm.aspx" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.ControlText.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.ControlText.en-US.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.ControlText.zh-CN.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.ControlText.zh-TW.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.FunctionText.Designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.FunctionText.en-US.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.FunctionText.zh-CN.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.FunctionText.zh-TW.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.Message.Designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.Message.en-US.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.Message.zh-CN.designer.cs.dll" />
+    <Content Include="Attendance.Web\obj\Debug\TempPE\App_GlobalResources.Message.zh-TW.designer.cs.dll" />
+    <Content Include="Attendance.Web\SystemManage\SystemData\FaqManage.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemData\FormManage.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemData\NoticeEditForm.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemData\NoticeManager.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemData\ParameterForm.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\AuthorityDetailForm.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\AuthorityForm.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\ChangPwd.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\CompanyAssignForm.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\CompanySelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\DepartmentAssignForm.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\DepLevelSelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\EmpTypeSelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\ImportExcel.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\LanguageSelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\LeftMenu.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\Module.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\ModuleFrame.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\ModuleSelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\PersonLevel.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\PersonManage.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\PowerChange.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\PrivilegedSelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\RoleCode.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\RolesCode.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\RolesRoleSet.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\RolesSelector.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\Synclog.aspx" />
+    <Content Include="Attendance.Web\SystemManage\SystemSafety\test.aspx" />
+    <Content Include="Attendance.Web\Validate.aspx" />
+    <Content Include="Attendance.Web\WFReporter\AbsentReporter.aspx" />
+    <Content Include="Attendance.Web\WFReporter\InnerTeacherSalary.aspx" />
+    <Content Include="Attendance.Web\WFReporter\LeaveReportView.aspx" />
+    <Content Include="Attendance.Web\WFReporter\OtherAllowanceForm.aspx" />
+    <Content Include="Attendance.Web\WFReporter\OtherSubsidyReporter.aspx" />
+    <Content Include="Attendance.Web\WFReporter\OTReporter.aspx" />
+    <Content Include="Attendance.Web\WFReporter\PostSubsidy.aspx" />
+    <Content Include="Attendance.Web\WFReporter\RewardReporter.aspx" />
+    <Content Include="Attendance.Web\WFReporter\SalaryExceptionReporter.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\AbnormalAttendanceHandle.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\OTMAdvanceApplyEditForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\OTMBatchOtApply.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\OverTime_Form.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\PCMAdvanceApplyEditForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\PCMAdvanceApplyForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\PCMOTMActivityApplyForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\PCMWorkFlowCardMakeupList.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\WorkFlowCardMakeupList.aspx" />
+    <Content Include="Attendance.Web\WorkFlowForm\WorkFlowMakeupEditForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\css\MyStyles.css" />
+    <Content Include="Attendance.Web\WorkFlow\SigningScheduleQuery.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\SignLogAndMap.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WFMBillApprovedForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WFMBillCenterApproveForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WFMBillCenterForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WFMManagerLeaveForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WFM_WFMManagerLeaveEditForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\Wf_UesrControl\Wf_ButtonControl.ascx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowBillChangeAuditFlowForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowDayset.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowImportForm.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowLimit.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowProjectApply.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowProjectApplyAdd.aspx" />
+    <Content Include="Attendance.Web\WorkFlow\WorkFlowSet.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance.BLL\BLLBase.cs" />
+    <Compile Include="Attendance.BLL\HRM\DepartmentBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\EmployeeData\GdsAttEmployeesVBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\EmployeeData\HrmEmpMoveTempBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\EmployeeData\HrmEmpOtherMoveBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\EmployeeData\HrmEmpOtherMoveImportBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\EmployeeData\HrmEmpPremiumInfoBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\HrmDepartmentBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\OrgEmployeeBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\OrgmanagerBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\Support\EmpSupportInBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\Support\EmpSupportOutBll.cs" />
+    <Compile Include="Attendance.BLL\HRM\TWCadreBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\KQM\KaoQinData\KQMLeaveApplyExportBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLHBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\KQM\Query\KQMAbsentMonthBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\KQM\Query\ReportKaoQinSumBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\PCM\Bll_LeaveApplyApprove.cs" />
+    <Compile Include="Attendance.BLL\Hr\PCM\GetEmpViewBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\PCM\KaoQinDataBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\PCM\MonthtotalBll.cs" />
+    <Compile Include="Attendance.BLL\Hr\PCM\PCMLeaveApplyBll.cs" />
+    <Compile Include="Attendance.BLL\ImportExcel\ImportExcelBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\AttendanceData\ConfigSendMessageFormBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\AttendanceData\KQMLeaveYearImportBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\AttendanceData\KQMReGetKaoQinBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\AttendanceData\SchduleDataBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\AttendanceData\SendMessageBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\BellCardBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\BGCalendarBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\BUCalendarBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\EmployeeBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\ExceptReasonBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\KqmParameterEditBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\KqmParameterEmpBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\KqmParameterEmpEditBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\KqmParameterEmpTempBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\KqmRulesBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\LeaveTypeBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\NetSignInSetBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\OTMTypeBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\RelationSelectorBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\TypeDataBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\BasicData\WorkShiftBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\KaoQinData\EmployeeShiftBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\KaoQinData\KQMEvectionApplyBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\KaoQinData\KQMMoveShiftBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\KaoQinData\KQMMoveShiftTempBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\OTM\OTMActivityApplyBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\OTM\OTMActivityApplyTempBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\OTM\OTMRemainBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\OTM\RealapplyBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\BellCardQueryBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\KaoQinQryBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\KQMEvectionQryFormBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\KQMLeaveApplyYearQryBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\KqmLeaveQryFormBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\KQMSelfServiceBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\NightAllowanceToExcelBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\OTM\OTMDetailQryBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\OTM\OTMExceptionQryBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\OTM\OTMRealQryBll.cs" />
+    <Compile Include="Attendance.BLL\KQM\Query\OTM\OTMTotalQryBll.cs" />
+    <Compile Include="Attendance.BLL\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\AnswerBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\EmpAnswerBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\EmpPaperBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\FaqBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\FormManageBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\InfoNoticesBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\PaperBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\ParameterBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\QuestionBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemData\ServiceBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\AuthorityBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\ChangPwdBLL.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\CompanyAssignBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\DepartmentAssignBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\ModuleBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\PersonBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\PersonLevelBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\PowerChangeBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\RoleBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\RolesBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\RolesRoleBll.cs" />
+    <Compile Include="Attendance.BLL\SystemManage\SystemSafety\SynclogBll.cs" />
+    <Compile Include="Attendance.BLL\WFReporter\AbsentReportBll.cs" />
+    <Compile Include="Attendance.BLL\WFReporter\InnerTeacherSalaryBll.cs" />
+    <Compile Include="Attendance.BLL\WFReporter\OTReporterBll.cs" />
+    <Compile Include="Attendance.BLL\WFReporter\RewardReporterBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\Bll_AbnormalAttendanceHandle.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\Bll_SigningScheduleQuery.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\OverTimeBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WFMManagerLeaveData.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WFProjectApplyBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WFSignCenterBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WFSignLogAndMap.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WorkFlowBillChangeAuditFlowBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WorkFlowCardMakeupBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WorkFlowLimitBll.cs" />
+    <Compile Include="Attendance.BLL\WorkFlow\WorkFlowSetBll.cs" />
+    <Compile Include="Attendance.Common\Attributes\ORMAttributes.cs" />
+    <Compile Include="Attendance.Common\Attributes\RefClassAttribute.cs" />
+    <Compile Include="Attendance.Common\CustomReportCredentials.cs" />
+    <Compile Include="Attendance.Common\EncryptClass.cs" />
+    <Compile Include="Attendance.Common\GlobalData.cs" />
+    <Compile Include="Attendance.Common\ORMHelper.cs" />
+    <Compile Include="Attendance.Common\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.DALFactory\DAlFactory.cs" />
+    <Compile Include="Attendance.DALFactory\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.IDAL\HRM\EmployeeData\IGdsAttEmployeesVDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\EmployeeData\IHrmEmpMoveTempDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\EmployeeData\IHrmEmpOtherMoveDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\EmployeeData\IHrmEmpOtherMoveImportDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\EmployeeData\IHrmEmpPremiumInfoDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\IDepartmentDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\IHrmDepartmentDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\IOrgEmployeeDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\IOrgmanagerDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\ITWCadreDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\Support\IEmpSupportInDal.cs" />
+    <Compile Include="Attendance.IDAL\HRM\Support\IEmpSupportOutDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\KQM\KaoQinData\IKQMLeaveApplyExportDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\KQM\KaoQinData\IKQMLeaveApplyForm_ZBLHDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\KQM\Query\IKQMAbsentMonthDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\KQM\Query\IReportKaoQinSumDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\PCM\IDal_LeaveApplyApprove.cs" />
+    <Compile Include="Attendance.IDAL\Hr\PCM\IGetEmpViewDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\PCM\IKaoQinDataDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\PCM\IMonthtotalDal.cs" />
+    <Compile Include="Attendance.IDAL\Hr\PCM\IPCMLeaveApplyDal.cs" />
+    <Compile Include="Attendance.IDAL\ImportExcel\IImportExcelDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\AttendanceData\IConfigSendMessageDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\AttendanceData\IKQMLeaveYearImportDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\AttendanceData\IKQMReGetKaoQinDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\AttendanceData\ISchduleDataDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\AttendanceData\ISendMessageDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IBellCardDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IBGCalendarDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IBUcalendarDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IEmployeeDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IExceptReasonDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IKqmParameterEditDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IKqmParameterEmpDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IKqmParameterEmpEditDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IKqmParameterEmpTempDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IKqmRulesDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\ILeaveTypeDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\INetSignInSetDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IOTMTypeDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IRelationSelectorDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\ITypeDataDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\BasicData\IWorkShiftDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\KaoQinData\IEmployeeShiftDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\KaoQinData\IKQMEvectionApplyDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\KaoQinData\IKQMMoveShiftDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\KaoQinData\IKQMMoveShiftTempDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\OTM\IOTMActivityApplyDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\OTM\IOTMActivityApplyTempDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\OTM\IOTMRemainDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\OTM\IRealapplyDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\IBellCardQueryDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\IKaoQinQryDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\IKQMEvectionQryFormDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\IKQMLeaveApplyYearQryDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\IKqmLeaveQryFormDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\IKQMSelfServiceDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\INightAllowanceToExcelDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\OTM\IOTMDetailQryDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\OTM\IOTMExceptionQryDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\OTM\IOTMRealQryDal.cs" />
+    <Compile Include="Attendance.IDAL\KQM\Query\OTM\IOTMTotalQryDal.cs" />
+    <Compile Include="Attendance.IDAL\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IAnswerDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IEmpAnswerDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IEmpPaperDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IFaqDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IFormManageDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IInfoNoticesDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IPaperDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IParameterDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IQuestionDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemData\IServiceDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IAuthorityDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IChangPwdDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\ICompanyAssignDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IDepartmentAssignDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IModuleDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IPersonDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IPersonLevelDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IPowerChangeDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IRoleDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IRolesDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\IRolesRoleDal.cs" />
+    <Compile Include="Attendance.IDAL\SystemManage\SystemSafety\ISynclogDal.cs" />
+    <Compile Include="Attendance.IDAL\WFReporter\IAbsentReportDal.cs" />
+    <Compile Include="Attendance.IDAL\WFReporter\IInnerTeacherSalaryDal.cs" />
+    <Compile Include="Attendance.IDAL\WFReporter\IOTReporterDal.cs" />
+    <Compile Include="Attendance.IDAL\WFReporter\IRewardReporterDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IDal_AbnormalAttendanceHandle.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IDal_SigningScheduleQuery.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IOverTimeDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWFMManagerLeaveData.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWFProjectApplyDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWFSignCenterDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWFSignLogAndMap.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWorkFlowBillChangeAuditFlowDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWorkFlowCardMakeupDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWorkFlowLimitDal.cs" />
+    <Compile Include="Attendance.IDAL\WorkFlow\IWorkFlowSetDal.cs" />
+    <Compile Include="Attendance.Model\HRM\DepartmentModel.cs" />
+    <Compile Include="Attendance.Model\HRM\EmployeeData\GdsAttEmployeesVModel.cs" />
+    <Compile Include="Attendance.Model\HRM\EmployeeData\HrmEmpMoveTempModel.cs" />
+    <Compile Include="Attendance.Model\HRM\EmployeeData\HrmEmpOtherMoveModel.cs" />
+    <Compile Include="Attendance.Model\HRM\EmployeeData\HrmEmpPremiumInfoModel.cs" />
+    <Compile Include="Attendance.Model\HRM\OrgmanagerModel.cs" />
+    <Compile Include="Attendance.Model\HRM\Support\EmpSupportInModel.cs" />
+    <Compile Include="Attendance.Model\HRM\Support\EmpSupportOutModel.cs" />
+    <Compile Include="Attendance.Model\HRM\TWCadreModel.cs" />
+    <Compile Include="Attendance.Model\Hr\PCM\GetEmpViewModel.cs" />
+    <Compile Include="Attendance.Model\Hr\PCM\KaoQinDataModel.cs" />
+    <Compile Include="Attendance.Model\ImportExcel\ImportExcelModel.cs" />
+    <Compile Include="Attendance.Model\KQM\AttendanceData\ConfigSendMessageModel.cs" />
+    <Compile Include="Attendance.Model\KQM\AttendanceData\KQMLeaveYearImportModel.cs" />
+    <Compile Include="Attendance.Model\KQM\AttendanceData\KQMReGetKaoQinModel.cs" />
+    <Compile Include="Attendance.Model\KQM\AttendanceData\ScheduleDataModel.cs" />
+    <Compile Include="Attendance.Model\KQM\AttendanceData\SendMessageModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\AttKQParamsEmpEditModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\AttKQParamsEmpModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\AttKQParamsEmpTempModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\AttKQParamsOrgModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\AttTypeModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\BellCardModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\BGCalendarModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\BUCalendarModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\EmployeeModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\ExceptReasonModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\KqmRulesModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\LeaveTypeModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\NetSignInSetModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\TypeDataModel.cs" />
+    <Compile Include="Attendance.Model\KQM\BasicData\WorkShiftModel.cs" />
+    <Compile Include="Attendance.Model\KQM\KaoQinData\EmployeeShiftModel.cs" />
+    <Compile Include="Attendance.Model\KQM\KaoQinData\KQMEvectionApplyModel.cs" />
+    <Compile Include="Attendance.Model\KQM\KaoQinData\LeaveApplyTempModel.cs" />
+    <Compile Include="Attendance.Model\KQM\KaoQinData\LeaveApplyViewModel.cs" />
+    <Compile Include="Attendance.Model\KQM\KaoQinData\MoveShiftModel.cs" />
+    <Compile Include="Attendance.Model\KQM\KaoQinData\MoveShiftTempModel.cs" />
+    <Compile Include="Attendance.Model\KQM\OTM\ActivityModel.cs" />
+    <Compile Include="Attendance.Model\KQM\OTM\ActivityTempModel.cs" />
+    <Compile Include="Attendance.Model\KQM\OTM\OTMRemainModel.cs" />
+    <Compile Include="Attendance.Model\KQM\OTM\RealapplyModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\BellCardDatahisVModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\BellCardDataModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\EvectionApplyVModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\KaoQinDataQueryModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\KQMLeaveApplyYearQryModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\KqmLeaveQryFormModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\NightAllowanceToExcelModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\OTM\OTMAdvanceApplyQryModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\OTM\OTMExceptionApplyQryModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\OTM\OTMRealApplyQryModel.cs" />
+    <Compile Include="Attendance.Model\KQM\Query\OTM\OTMTotalQryModel.cs" />
+    <Compile Include="Attendance.Model\ModelBase.cs" />
+    <Compile Include="Attendance.Model\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\AnswerModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\EmpAnswerModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\EmpPaperModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\FaqModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\FormModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\InfoNoticesModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\PaperModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\ParameterModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\QuestionModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemData\ServiceModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\AuthorityModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\LoginInModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\ModuleModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\PersonLevelModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\PersonModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\RoleModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\RolesModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\RolesRoleModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\SynclogModel.cs" />
+    <Compile Include="Attendance.Model\SystemManage\SystemSafety\UserModel.cs" />
+    <Compile Include="Attendance.Model\WFReporter\AbsentReporterModel.cs" />
+    <Compile Include="Attendance.Model\WFReporter\RewardReporterModel.cs" />
+    <Compile Include="Attendance.Model\WFReporter\TeacherInModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\Mod_AbnormalAttendanceHandle.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\Mod_SigningScheduleQuery.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\OverTimeModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\WorkFlowApplyModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\WorkFlowBillChangeAuditFlowModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\WorkFlowCardMakeupModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\WorkFLowLimitModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\WorkFlowSetModel.cs" />
+    <Compile Include="Attendance.Model\WorkFlow\WorkFlowSignModel.cs" />
+    <Compile Include="Attendance.OracleDAL\DALBase.cs" />
+    <Compile Include="Attendance.OracleDAL\DALHelper.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\DepartmentDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\EmployeeData\GdsAttEmployeesVDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\EmployeeData\HrmEmpMoveTempDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\EmployeeData\HrmEmpOtherMoveDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\EmployeeData\HrmEmpOtherMoveImportDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\EmployeeData\HrmEmpPremiumInfoDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\HrmDepartmentDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\OrgEmployeeDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\OrgmanagerDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\Support\EmpSupportInDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\Support\EmpSupportOutDal.cs" />
+    <Compile Include="Attendance.OracleDAL\HRM\TWCadreDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\KQM\KaoQinData\KQMLeaveApplyExportDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLHDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\KQM\Query\KQMAbsentMonthDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\KQM\Query\ReportKaoQinSumDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\PCM\Dal_LeaveApplyApprove.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\PCM\GetEmpViewDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\PCM\KaoQinDataDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\PCM\MonthtotalDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Hr\PCM\PCMLeaveApplyDal.cs" />
+    <Compile Include="Attendance.OracleDAL\ImportExcel\ImportExcelDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\AttendanceData\ConfigSendMessageDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\AttendanceData\KQMLeaveYearImportDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\AttendanceData\KQMReGetKaoQinDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\AttendanceData\SchduleDataDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\AttendanceData\SendMessageDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\BellCardDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\BGCalendarDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\BUCalendarDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\EmployeeDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\ExceptReasonDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\KqmParameterEditDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\KqmParameterEmpDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\KqmParameterEmpEditDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\KqmParameterEmpTempDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\KqmRulesDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\LeaveTypeDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\NetSignInSetDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\OTMTypeDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\RelationSelectorDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\TypeDataDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\BasicData\WorkShiftDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\KaoQinData\EmployeeShiftDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\KaoQinData\KQMEvectionApplyDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\KaoQinData\KQMMoveShiftDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\KaoQinData\KQMMoveShiftTempDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\OTM\OTMActivityApplyDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\OTM\OTMActivityApplyTempDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\OTM\OTMRemainDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\OTM\RealapplyDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\BellCardQueryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\KaoQinQryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\KQMEvectionQryFormDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\KQMLeaveApplyYearQryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\KqmLeaveQryFormDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\KQMSelfServiceDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\NightAllowanceToExcelDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\OTM\OTMDetailQryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\OTM\OTMExceptionQryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\OTM\OTMRealQryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\KQM\Query\OTM\OTMTotalQryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\AnswerDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\EmpAnswerDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\EmpPaperDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\FaqDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\FormManageDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\InfoNoticesDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\PaperDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\ParameterDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\QuestionDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemData\ServiceDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\AuthorityDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\ChangPwdDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\CompanyAssignDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\DepartmentAssignDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\ModuleDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\PersonDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\PersonLevelDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\PowerChangeDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\RoleDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\RolesDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\RolesRoleDal.cs" />
+    <Compile Include="Attendance.OracleDAL\SystemManage\SystemSafety\SynclogDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WFReporter\AbsentReporterDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WFReporter\InnerTeacherSalaryDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WFReporter\OTReporterDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WFReporter\RewardReporterDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\Dal_AbnormalAttendanceHandle.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\Dal_SigningScheduleQuery.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\OverTimeDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WFMManagerLeaveData.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WFProjectApplyDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WFSignCenterDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WFSignLogAndMap.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WorkFlowBillChangeAuditFlowDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WorkFlowCardMakeupDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WorkFlowLimitDal.cs" />
+    <Compile Include="Attendance.OracleDAL\WorkFlow\WorkFLowSetDal.cs" />
+    <Compile Include="Attendance.Web\App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\App_Code\NPOIHelper.cs" />
+    <Compile Include="Attendance.Web\App_Code\PageHelper.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\ControlText.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\ControlText.en-US.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\ControlText.zh-CN.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\ControlText.zh-TW.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\FunctionText.Designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\FunctionText.en-US.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\FunctionText.zh-CN.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\FunctionText.zh-TW.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\Message.Designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\Message.en-US.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\Message.zh-CN.designer.cs" />
+    <Compile Include="Attendance.Web\App_GlobalResources\Message.zh-TW.designer.cs" />
+    <Compile Include="Attendance.Web\CommonFrame.aspx.cs">
+      <DependentUpon>CommonFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\CommonFrame.aspx.designer.cs">
+      <DependentUpon>CommonFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\ControlLib\BaseControl.ascx.cs">
+      <DependentUpon>BaseControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\ControlLib\BaseControl.ascx.designer.cs">
+      <DependentUpon>BaseControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\ControlLib\PageNavigator.ascx.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\ControlLib\PageNavigator.ascx.designer.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\ControlLib\Title.ascx.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\ControlLib\Title.ascx.designer.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Faq.aspx.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Faq.aspx.designer.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\FaqDetail.aspx.cs">
+      <DependentUpon>FaqDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\FaqDetail.aspx.designer.cs">
+      <DependentUpon>FaqDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\NoticeDetail.aspx.cs">
+      <DependentUpon>NoticeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\NoticeDetail.aspx.designer.cs">
+      <DependentUpon>NoticeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Paper.aspx.cs">
+      <DependentUpon>Paper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Paper.aspx.designer.cs">
+      <DependentUpon>Paper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\PaperDetail.aspx.cs">
+      <DependentUpon>PaperDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\PaperDetail.aspx.designer.cs">
+      <DependentUpon>PaperDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HomePage\Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\AreaSelector.aspx.cs">
+      <DependentUpon>AreaSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\AreaSelector.aspx.designer.cs">
+      <DependentUpon>AreaSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\CorporationSelector.aspx.cs">
+      <DependentUpon>CorporationSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\CorporationSelector.aspx.designer.cs">
+      <DependentUpon>CorporationSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\DepartmentForm.aspx.cs">
+      <DependentUpon>DepartmentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\DepartmentForm.aspx.designer.cs">
+      <DependentUpon>DepartmentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\DepartmentLayoutBForm.aspx.cs">
+      <DependentUpon>DepartmentLayoutBForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\DepartmentLayoutBForm.aspx.designer.cs">
+      <DependentUpon>DepartmentLayoutBForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\DepartmentLayoutForm.aspx.cs">
+      <DependentUpon>DepartmentLayoutForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\DepartmentLayoutForm.aspx.designer.cs">
+      <DependentUpon>DepartmentLayoutForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\HrmEmpOtherMoveEditForm.aspx.cs">
+      <DependentUpon>HrmEmpOtherMoveEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\HrmEmpOtherMoveEditForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpOtherMoveEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\HrmEmpOtherMoveForm.aspx.cs">
+      <DependentUpon>HrmEmpOtherMoveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\HrmEmpOtherMoveForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpOtherMoveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\HrmEmpPremiumInfo.aspx.cs">
+      <DependentUpon>HrmEmpPremiumInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\HrmEmpPremiumInfo.aspx.designer.cs">
+      <DependentUpon>HrmEmpPremiumInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\SingleDataPickForm.aspx.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\SingleDataPickForm.aspx.designer.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\TreeDataPickForm.aspx.cs">
+      <DependentUpon>TreeDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\EmployeeData\TreeDataPickForm.aspx.designer.cs">
+      <DependentUpon>TreeDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmDepartmentEditForm.aspx.cs">
+      <DependentUpon>HrmDepartmentEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmDepartmentEditForm.aspx.designer.cs">
+      <DependentUpon>HrmDepartmentEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmDepartmentForm.aspx.cs">
+      <DependentUpon>HrmDepartmentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmDepartmentForm.aspx.designer.cs">
+      <DependentUpon>HrmDepartmentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmManagerInfoForm.aspx.cs">
+      <DependentUpon>HrmManagerInfoForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmManagerInfoForm.aspx.designer.cs">
+      <DependentUpon>HrmManagerInfoForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmTWCadreEditForm.aspx.cs">
+      <DependentUpon>HrmTWCadreEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmTWCadreEditForm.aspx.designer.cs">
+      <DependentUpon>HrmTWCadreEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmTWCadreForm.aspx.cs">
+      <DependentUpon>HrmTWCadreForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\HrmTWCadreForm.aspx.designer.cs">
+      <DependentUpon>HrmTWCadreForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\LevelSelector.aspx.cs">
+      <DependentUpon>LevelSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\LevelSelector.aspx.designer.cs">
+      <DependentUpon>LevelSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\OrgEmployeeEditForm.aspx.cs">
+      <DependentUpon>OrgEmployeeEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\OrgEmployeeEditForm.aspx.designer.cs">
+      <DependentUpon>OrgEmployeeEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\OrgEmployeeForm.aspx.cs">
+      <DependentUpon>OrgEmployeeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\OrgEmployeeForm.aspx.designer.cs">
+      <DependentUpon>OrgEmployeeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\OrgEmployeeQueryForm.aspx.cs">
+      <DependentUpon>OrgEmployeeQueryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\OrgEmployeeQueryForm.aspx.designer.cs">
+      <DependentUpon>OrgEmployeeQueryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\SingleDataPickForm.aspx.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\SingleDataPickForm.aspx.designer.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportInEditForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportInEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportInEditForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportInEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportInForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportInForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportInForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportInForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportOutEditForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportOutEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportOutEditForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportOutEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportOutForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportOutForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\HrmEmpSupportOutForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportOutForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\SingleDataPickForm.aspx.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\HRM\Support\SingleDataPickForm.aspx.designer.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyConfirmForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyConfirmForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyConfirmForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyConfirmForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyEditForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyEditForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLH.aspx.cs">
+      <DependentUpon>KQMLeaveApplyForm_ZBLH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLH.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyForm_ZBLH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyImportForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyImportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveApplyImportForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyImportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveTestifyForm.aspx.cs">
+      <DependentUpon>KQMLeaveTestifyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveTestifyForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveTestifyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveUploadFileForm.aspx.cs">
+      <DependentUpon>KQMLeaveUploadFileForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\KaoQinData\KQMLeaveUploadFileForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveUploadFileForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\KQMAbsentMonthForm.aspx.cs">
+      <DependentUpon>KQMAbsentMonthForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\KQMAbsentMonthForm.aspx.designer.cs">
+      <DependentUpon>KQMAbsentMonthForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\KQMMakeupReportForm.aspx.cs">
+      <DependentUpon>KQMMakeupReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\KQMMakeupReportForm.aspx.designer.cs">
+      <DependentUpon>KQMMakeupReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\NightAllowanceToExcel.aspx.cs">
+      <DependentUpon>NightAllowanceToExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\NightAllowanceToExcel.aspx.designer.cs">
+      <DependentUpon>NightAllowanceToExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\ReportKaoQinSumForm.aspx.cs">
+      <DependentUpon>ReportKaoQinSumForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\ReportKaoQinSumForm.aspx.designer.cs">
+      <DependentUpon>ReportKaoQinSumForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\ReportKQMKaoQinDayForm.aspx.cs">
+      <DependentUpon>ReportKQMKaoQinDayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\KQM\Query\ReportKQMKaoQinDayForm.aspx.designer.cs">
+      <DependentUpon>ReportKQMKaoQinDayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMEmpDataPickForm.aspx.cs">
+      <DependentUpon>PCMEmpDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMEmpDataPickForm.aspx.designer.cs">
+      <DependentUpon>PCMEmpDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMEvectionApplyEditForm.aspx.cs">
+      <DependentUpon>PCMEvectionApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMEvectionApplyEditForm.aspx.designer.cs">
+      <DependentUpon>PCMEvectionApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMEvectionApplyForm.aspx.cs">
+      <DependentUpon>PCMEvectionApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMEvectionApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMEvectionApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMKaoQinQryForm.aspx.cs">
+      <DependentUpon>PCMKaoQinQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMKaoQinQryForm.aspx.designer.cs">
+      <DependentUpon>PCMKaoQinQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyApprovedForm.aspx.cs">
+      <DependentUpon>PCMLeaveApplyApprovedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyApprovedForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyApprovedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyApproveForm.aspx.cs">
+      <DependentUpon>PCMLeaveApplyApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyApproveForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyEditForm_LHZB.aspx.cs">
+      <DependentUpon>PCMLeaveApplyEditForm_LHZB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyEditForm_LHZB.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyEditForm_LHZB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyForm.aspx.cs">
+      <DependentUpon>PCMLeaveApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApproveCenterForm.aspx.cs">
+      <DependentUpon>PCMLeaveApproveCenterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMLeaveApproveCenterForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApproveCenterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMMonthtotalQueryForm.aspx.cs">
+      <DependentUpon>PCMMonthtotalQueryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMMonthtotalQueryForm.aspx.designer.cs">
+      <DependentUpon>PCMMonthtotalQueryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMSelfServiceForm.aspx.cs">
+      <DependentUpon>PCMSelfServiceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Hr\PCM\PCMSelfServiceForm.aspx.designer.cs">
+      <DependentUpon>PCMSelfServiceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ConfigSendMessageEditForm.aspx.cs">
+      <DependentUpon>ConfigSendMessageEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ConfigSendMessageEditForm.aspx.designer.cs">
+      <DependentUpon>ConfigSendMessageEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ConfigSendMessageForm.aspx.cs">
+      <DependentUpon>ConfigSendMessageForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ConfigSendMessageForm.aspx.designer.cs">
+      <DependentUpon>ConfigSendMessageForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\KQMLeaveYearImport.aspx.cs">
+      <DependentUpon>KQMLeaveYearImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\KQMLeaveYearImport.aspx.designer.cs">
+      <DependentUpon>KQMLeaveYearImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\KQMReGetKaoQin.aspx.cs">
+      <DependentUpon>KQMReGetKaoQin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\KQMReGetKaoQin.aspx.designer.cs">
+      <DependentUpon>KQMReGetKaoQin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ScheduleData.aspx.cs">
+      <DependentUpon>ScheduleData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ScheduleData.aspx.designer.cs">
+      <DependentUpon>ScheduleData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ScheduleEditForm.aspx.cs">
+      <DependentUpon>ScheduleEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ScheduleEditForm.aspx.designer.cs">
+      <DependentUpon>ScheduleEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ScheduleOrgShift.aspx.cs">
+      <DependentUpon>ScheduleOrgShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\ScheduleOrgShift.aspx.designer.cs">
+      <DependentUpon>ScheduleOrgShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\AttendanceData\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\BUCalendar.aspx.cs">
+      <DependentUpon>BUCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\BUCalendar.aspx.designer.cs">
+      <DependentUpon>BUCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\ExceptReason.aspx.cs">
+      <DependentUpon>ExceptReason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\ExceptReason.aspx.designer.cs">
+      <DependentUpon>ExceptReason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KQMBellCardForm.aspx.cs">
+      <DependentUpon>KQMBellCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KQMBellCardForm.aspx.designer.cs">
+      <DependentUpon>KQMBellCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KQMBGCalendarForm.aspx.cs">
+      <DependentUpon>KQMBGCalendarForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KQMBGCalendarForm.aspx.designer.cs">
+      <DependentUpon>KQMBGCalendarForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterEditForm.aspx.cs">
+      <DependentUpon>KqmParameterEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterEditForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterEmpEditForm.aspx.cs">
+      <DependentUpon>KqmParameterEmpEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterEmpEditForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterEmpEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterEmpForm.aspx.cs">
+      <DependentUpon>KqmParameterEmpForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterEmpForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterEmpForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterForm.aspx.cs">
+      <DependentUpon>KqmParameterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmParameterForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmRules.aspx.cs">
+      <DependentUpon>KqmRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\KqmRules.aspx.designer.cs">
+      <DependentUpon>KqmRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\LeaveTypeForm.aspx.cs">
+      <DependentUpon>LeaveTypeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\LeaveTypeForm.aspx.designer.cs">
+      <DependentUpon>LeaveTypeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\NetSignInSetForm.aspx.cs">
+      <DependentUpon>NetSignInSetForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\NetSignInSetForm.aspx.designer.cs">
+      <DependentUpon>NetSignInSetForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\OTMTypeForm.aspx.cs">
+      <DependentUpon>OTMTypeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\OTMTypeForm.aspx.designer.cs">
+      <DependentUpon>OTMTypeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\RelationSelector.aspx.cs">
+      <DependentUpon>RelationSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\RelationSelector.aspx.designer.cs">
+      <DependentUpon>RelationSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\ToolPingKQMBellCardForm.aspx.cs">
+      <DependentUpon>ToolPingKQMBellCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\ToolPingKQMBellCardForm.aspx.designer.cs">
+      <DependentUpon>ToolPingKQMBellCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\WorkShift.aspx.cs">
+      <DependentUpon>WorkShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\BasicData\WorkShift.aspx.designer.cs">
+      <DependentUpon>WorkShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEmployeeShiftEditForm.aspx.cs">
+      <DependentUpon>KQMEmployeeShiftEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEmployeeShiftEditForm.aspx.designer.cs">
+      <DependentUpon>KQMEmployeeShiftEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEmployeeShiftForm.aspx.cs">
+      <DependentUpon>KQMEmployeeShiftForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEmployeeShiftForm.aspx.designer.cs">
+      <DependentUpon>KQMEmployeeShiftForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEvectionApplyEditForm.aspx.cs">
+      <DependentUpon>KQMEvectionApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEvectionApplyEditForm.aspx.designer.cs">
+      <DependentUpon>KQMEvectionApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEvectionApplyForm.aspx.cs">
+      <DependentUpon>KQMEvectionApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMEvectionApplyForm.aspx.designer.cs">
+      <DependentUpon>KQMEvectionApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMMoveShiftEditForm.aspx.cs">
+      <DependentUpon>KQMMoveShiftEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMMoveShiftEditForm.aspx.designer.cs">
+      <DependentUpon>KQMMoveShiftEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMMoveShiftForm.aspx.cs">
+      <DependentUpon>KQMMoveShiftForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMMoveShiftForm.aspx.designer.cs">
+      <DependentUpon>KQMMoveShiftForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMOrgShiftEditForm.aspx.cs">
+      <DependentUpon>KQMOrgShiftEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMOrgShiftEditForm.aspx.designer.cs">
+      <DependentUpon>KQMOrgShiftEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMOrgShiftForm.aspx.cs">
+      <DependentUpon>KQMOrgShiftForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\KaoQinData\KQMOrgShiftForm.aspx.designer.cs">
+      <DependentUpon>KQMOrgShiftForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMActivityApplyEditForm.aspx.cs">
+      <DependentUpon>OTMActivityApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMActivityApplyEditForm.aspx.designer.cs">
+      <DependentUpon>OTMActivityApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMActivityApplyForm.aspx.cs">
+      <DependentUpon>OTMActivityApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMActivityApplyForm.aspx.designer.cs">
+      <DependentUpon>OTMActivityApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMMonthTotalEditForm.aspx.cs">
+      <DependentUpon>OTMMonthTotalEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMMonthTotalEditForm.aspx.designer.cs">
+      <DependentUpon>OTMMonthTotalEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMMonthTotalForm.aspx.cs">
+      <DependentUpon>OTMMonthTotalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMMonthTotalForm.aspx.designer.cs">
+      <DependentUpon>OTMMonthTotalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMRealApplyForm.aspx.cs">
+      <DependentUpon>OTMRealApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMRealApplyForm.aspx.designer.cs">
+      <DependentUpon>OTMRealApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMRealImpFrAdv.aspx.cs">
+      <DependentUpon>OTMRealImpFrAdv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMRealImpFrAdv.aspx.designer.cs">
+      <DependentUpon>OTMRealImpFrAdv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMRemainForm.aspx.cs">
+      <DependentUpon>OTMRemainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\OTM\OTMRemainForm.aspx.designer.cs">
+      <DependentUpon>OTMRemainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KaoQinQryForm.aspx.cs">
+      <DependentUpon>KaoQinQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KaoQinQryForm.aspx.designer.cs">
+      <DependentUpon>KaoQinQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMBellCardQueryForm.aspx.cs">
+      <DependentUpon>KQMBellCardQueryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMBellCardQueryForm.aspx.designer.cs">
+      <DependentUpon>KQMBellCardQueryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMEvectionQryForm.aspx.cs">
+      <DependentUpon>KQMEvectionQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMEvectionQryForm.aspx.designer.cs">
+      <DependentUpon>KQMEvectionQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMLeaveApplyYearQryForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyYearQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMLeaveApplyYearQryForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyYearQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KqmLeaveQryForm.aspx.cs">
+      <DependentUpon>KqmLeaveQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KqmLeaveQryForm.aspx.designer.cs">
+      <DependentUpon>KqmLeaveQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMSelfServiceForm.aspx.cs">
+      <DependentUpon>KQMSelfServiceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\KQMSelfServiceForm.aspx.designer.cs">
+      <DependentUpon>KQMSelfServiceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\MakeupReportForm.aspx.cs">
+      <DependentUpon>MakeupReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\MakeupReportForm.aspx.designer.cs">
+      <DependentUpon>MakeupReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\NightAllowanceQry.aspx.cs">
+      <DependentUpon>NightAllowanceQry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\NightAllowanceQry.aspx.designer.cs">
+      <DependentUpon>NightAllowanceQry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMDetailQryForm.aspx.cs">
+      <DependentUpon>OTMDetailQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMDetailQryForm.aspx.designer.cs">
+      <DependentUpon>OTMDetailQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMExceptionQryForm.aspx.cs">
+      <DependentUpon>OTMExceptionQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMExceptionQryForm.aspx.designer.cs">
+      <DependentUpon>OTMExceptionQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMRealQryForm.aspx.cs">
+      <DependentUpon>OTMRealQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMRealQryForm.aspx.designer.cs">
+      <DependentUpon>OTMRealQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMTotalQry.aspx.cs">
+      <DependentUpon>OTMTotalQry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\OTM\OTMTotalQry.aspx.designer.cs">
+      <DependentUpon>OTMTotalQry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\PAMEmpQryForm.aspx.cs">
+      <DependentUpon>PAMEmpQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\KQM\Query\PAMEmpQryForm.aspx.designer.cs">
+      <DependentUpon>PAMEmpQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\LoginIn.aspx.cs">
+      <DependentUpon>LoginIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\LoginIn.aspx.designer.cs">
+      <DependentUpon>LoginIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendance.Web\SystemManage\SystemData\FaqManage.aspx.cs">
+      <DependentUpon>FaqManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\FaqManage.aspx.designer.cs">
+      <DependentUpon>FaqManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\FormManage.aspx.cs">
+      <DependentUpon>FormManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\FormManage.aspx.designer.cs">
+      <DependentUpon>FormManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\NoticeEditForm.aspx.cs">
+      <DependentUpon>NoticeEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\NoticeEditForm.aspx.designer.cs">
+      <DependentUpon>NoticeEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\NoticeManager.aspx.cs">
+      <DependentUpon>NoticeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\NoticeManager.aspx.designer.cs">
+      <DependentUpon>NoticeManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\ParameterForm.aspx.cs">
+      <DependentUpon>ParameterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemData\ParameterForm.aspx.designer.cs">
+      <DependentUpon>ParameterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\AuthorityDetailForm.aspx.cs">
+      <DependentUpon>AuthorityDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\AuthorityDetailForm.aspx.designer.cs">
+      <DependentUpon>AuthorityDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\AuthorityForm.aspx.cs">
+      <DependentUpon>AuthorityForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\AuthorityForm.aspx.designer.cs">
+      <DependentUpon>AuthorityForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ChangPwd.aspx.cs">
+      <DependentUpon>ChangPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ChangPwd.aspx.designer.cs">
+      <DependentUpon>ChangPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\CompanyAssignForm.aspx.cs">
+      <DependentUpon>CompanyAssignForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\CompanyAssignForm.aspx.designer.cs">
+      <DependentUpon>CompanyAssignForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\CompanySelector.aspx.cs">
+      <DependentUpon>CompanySelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\CompanySelector.aspx.designer.cs">
+      <DependentUpon>CompanySelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\DepartmentAssignForm.aspx.cs">
+      <DependentUpon>DepartmentAssignForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\DepartmentAssignForm.aspx.designer.cs">
+      <DependentUpon>DepartmentAssignForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\DepLevelSelector.aspx.cs">
+      <DependentUpon>DepLevelSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\DepLevelSelector.aspx.designer.cs">
+      <DependentUpon>DepLevelSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\EmpTypeSelector.aspx.cs">
+      <DependentUpon>EmpTypeSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\EmpTypeSelector.aspx.designer.cs">
+      <DependentUpon>EmpTypeSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ImportExcel.aspx.cs">
+      <DependentUpon>ImportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ImportExcel.aspx.designer.cs">
+      <DependentUpon>ImportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\LanguageSelector.aspx.cs">
+      <DependentUpon>LanguageSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\LanguageSelector.aspx.designer.cs">
+      <DependentUpon>LanguageSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\LeftMenu.aspx.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\LeftMenu.aspx.designer.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\Module.aspx.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\Module.aspx.designer.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ModuleFrame.aspx.cs">
+      <DependentUpon>ModuleFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ModuleFrame.aspx.designer.cs">
+      <DependentUpon>ModuleFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ModuleSelector.aspx.cs">
+      <DependentUpon>ModuleSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\ModuleSelector.aspx.designer.cs">
+      <DependentUpon>ModuleSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PersonLevel.aspx.cs">
+      <DependentUpon>PersonLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PersonLevel.aspx.designer.cs">
+      <DependentUpon>PersonLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PersonManage.aspx.cs">
+      <DependentUpon>PersonManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PersonManage.aspx.designer.cs">
+      <DependentUpon>PersonManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PowerChange.aspx.cs">
+      <DependentUpon>PowerChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PowerChange.aspx.designer.cs">
+      <DependentUpon>PowerChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PrivilegedSelector.aspx.cs">
+      <DependentUpon>PrivilegedSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\PrivilegedSelector.aspx.designer.cs">
+      <DependentUpon>PrivilegedSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RoleCode.aspx.cs">
+      <DependentUpon>RoleCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RoleCode.aspx.designer.cs">
+      <DependentUpon>RoleCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RolesCode.aspx.cs">
+      <DependentUpon>RolesCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RolesCode.aspx.designer.cs">
+      <DependentUpon>RolesCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RolesRoleSet.aspx.cs">
+      <DependentUpon>RolesRoleSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RolesRoleSet.aspx.designer.cs">
+      <DependentUpon>RolesRoleSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RolesSelector.aspx.cs">
+      <DependentUpon>RolesSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\RolesSelector.aspx.designer.cs">
+      <DependentUpon>RolesSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\Synclog.aspx.cs">
+      <DependentUpon>Synclog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\Synclog.aspx.designer.cs">
+      <DependentUpon>Synclog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\SystemManage\SystemSafety\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\Validate.aspx.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\Validate.aspx.designer.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\AbsentReporter.aspx.cs">
+      <DependentUpon>AbsentReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\AbsentReporter.aspx.designer.cs">
+      <DependentUpon>AbsentReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\InnerTeacherSalary.aspx.cs">
+      <DependentUpon>InnerTeacherSalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\InnerTeacherSalary.aspx.designer.cs">
+      <DependentUpon>InnerTeacherSalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\LeaveReportView.aspx.cs">
+      <DependentUpon>LeaveReportView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\LeaveReportView.aspx.designer.cs">
+      <DependentUpon>LeaveReportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\OtherAllowanceForm.aspx.cs">
+      <DependentUpon>OtherAllowanceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\OtherAllowanceForm.aspx.designer.cs">
+      <DependentUpon>OtherAllowanceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\OtherSubsidyReporter.aspx.cs">
+      <DependentUpon>OtherSubsidyReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\OtherSubsidyReporter.aspx.designer.cs">
+      <DependentUpon>OtherSubsidyReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\OTReporter.aspx.cs">
+      <DependentUpon>OTReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\OTReporter.aspx.designer.cs">
+      <DependentUpon>OTReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\PostSubsidy.aspx.cs">
+      <DependentUpon>PostSubsidy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\PostSubsidy.aspx.designer.cs">
+      <DependentUpon>PostSubsidy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\RewardReporter.aspx.cs">
+      <DependentUpon>RewardReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\RewardReporter.aspx.designer.cs">
+      <DependentUpon>RewardReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\SalaryExceptionReporter.aspx.cs">
+      <DependentUpon>SalaryExceptionReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WFReporter\SalaryExceptionReporter.aspx.designer.cs">
+      <DependentUpon>SalaryExceptionReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\AbnormalAttendanceHandle.aspx.cs">
+      <DependentUpon>AbnormalAttendanceHandle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\AbnormalAttendanceHandle.aspx.designer.cs">
+      <DependentUpon>AbnormalAttendanceHandle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\AjaxProcess\AbnormalAttendanceHandle.ashx.cs">
+      <DependentUpon>AbnormalAttendanceHandle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\AjaxProcess\GetOtHours.ashx.cs">
+      <DependentUpon>GetOtHours.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\AjaxProcess\GetOTType.ashx.cs">
+      <DependentUpon>GetOTType.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\OTMAdvanceApplyEditForm.aspx.cs">
+      <DependentUpon>OTMAdvanceApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\OTMAdvanceApplyEditForm.aspx.designer.cs">
+      <DependentUpon>OTMAdvanceApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\OTMBatchOtApply.aspx.cs">
+      <DependentUpon>OTMBatchOtApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\OTMBatchOtApply.aspx.designer.cs">
+      <DependentUpon>OTMBatchOtApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\OverTime_Form.aspx.cs">
+      <DependentUpon>OverTime_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\OverTime_Form.aspx.designer.cs">
+      <DependentUpon>OverTime_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMAdvanceApplyEditForm.aspx.cs">
+      <DependentUpon>PCMAdvanceApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMAdvanceApplyEditForm.aspx.designer.cs">
+      <DependentUpon>PCMAdvanceApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMAdvanceApplyForm.aspx.cs">
+      <DependentUpon>PCMAdvanceApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMAdvanceApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMAdvanceApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMOTMActivityApplyForm.aspx.cs">
+      <DependentUpon>PCMOTMActivityApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMOTMActivityApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMOTMActivityApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMWorkFlowCardMakeupList.aspx.cs">
+      <DependentUpon>PCMWorkFlowCardMakeupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\PCMWorkFlowCardMakeupList.aspx.designer.cs">
+      <DependentUpon>PCMWorkFlowCardMakeupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\WorkFlowCardMakeupList.aspx.cs">
+      <DependentUpon>WorkFlowCardMakeupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\WorkFlowCardMakeupList.aspx.designer.cs">
+      <DependentUpon>WorkFlowCardMakeupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\WorkFlowMakeupEditForm.aspx.cs">
+      <DependentUpon>WorkFlowMakeupEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlowForm\WorkFlowMakeupEditForm.aspx.designer.cs">
+      <DependentUpon>WorkFlowMakeupEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\SigningScheduleQuery.aspx.cs">
+      <DependentUpon>SigningScheduleQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\SigningScheduleQuery.aspx.designer.cs">
+      <DependentUpon>SigningScheduleQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\SignLogAndMap.aspx.cs">
+      <DependentUpon>SignLogAndMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\SignLogAndMap.aspx.designer.cs">
+      <DependentUpon>SignLogAndMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMBillApprovedForm.aspx.cs">
+      <DependentUpon>WFMBillApprovedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMBillApprovedForm.aspx.designer.cs">
+      <DependentUpon>WFMBillApprovedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMBillCenterApproveForm.aspx.cs">
+      <DependentUpon>WFMBillCenterApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMBillCenterApproveForm.aspx.designer.cs">
+      <DependentUpon>WFMBillCenterApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMBillCenterForm.aspx.cs">
+      <DependentUpon>WFMBillCenterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMBillCenterForm.aspx.designer.cs">
+      <DependentUpon>WFMBillCenterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMManagerLeaveForm.aspx.cs">
+      <DependentUpon>WFMManagerLeaveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFMManagerLeaveForm.aspx.designer.cs">
+      <DependentUpon>WFMManagerLeaveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFM_WFMManagerLeaveEditForm.aspx.cs">
+      <DependentUpon>WFM_WFMManagerLeaveEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WFM_WFMManagerLeaveEditForm.aspx.designer.cs">
+      <DependentUpon>WFM_WFMManagerLeaveEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\Wf_UesrControl\Wf_ButtonControl.ascx.cs">
+      <DependentUpon>Wf_ButtonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\Wf_UesrControl\Wf_ButtonControl.ascx.designer.cs">
+      <DependentUpon>Wf_ButtonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowBillChangeAuditFlowForm.aspx.cs">
+      <DependentUpon>WorkFlowBillChangeAuditFlowForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowBillChangeAuditFlowForm.aspx.designer.cs">
+      <DependentUpon>WorkFlowBillChangeAuditFlowForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowDayset.aspx.cs">
+      <DependentUpon>WorkFlowDayset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowDayset.aspx.designer.cs">
+      <DependentUpon>WorkFlowDayset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowImportForm.aspx.cs">
+      <DependentUpon>WorkFlowImportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowImportForm.aspx.designer.cs">
+      <DependentUpon>WorkFlowImportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowLimit.aspx.cs">
+      <DependentUpon>WorkFlowLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowLimit.aspx.designer.cs">
+      <DependentUpon>WorkFlowLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowProjectApply.aspx.cs">
+      <DependentUpon>WorkFlowProjectApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowProjectApply.aspx.designer.cs">
+      <DependentUpon>WorkFlowProjectApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowProjectApplyAdd.aspx.cs">
+      <DependentUpon>WorkFlowProjectApplyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowProjectApplyAdd.aspx.designer.cs">
+      <DependentUpon>WorkFlowProjectApplyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowSet.aspx.cs">
+      <DependentUpon>WorkFlowSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.Web\WorkFlow\WorkFlowSet.aspx.designer.cs">
+      <DependentUpon>WorkFlowSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\ControlText.en-US.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\ControlText.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\ControlText.zh-CN.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\ControlText.zh-TW.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\FunctionText.en-US.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\FunctionText.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\FunctionText.zh-CN.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\FunctionText.zh-TW.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\Message.en-US.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\Message.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\Message.zh-CN.resx" />
+    <EmbeddedResource Include="Attendance.Web\App_GlobalResources\Message.zh-TW.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35721</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35721/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

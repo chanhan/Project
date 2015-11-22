@@ -1,0 +1,14 @@
+D:\Projects\Wcf\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Projects\Wcf\Test\bin\Debug\Test.exe
+D:\Projects\Wcf\Test\bin\Debug\Test.pdb
+D:\Projects\Wcf\Test\bin\Debug\DataAccess.dll
+D:\Projects\Wcf\Test\bin\Debug\DataAccess.pdb
+D:\Projects\Wcf\Test\obj\Debug\Test.exe
+D:\Projects\Wcf\Test\obj\Debug\Test.pdb
+D:\Projects\Wcf\Test\bin\Debug\Test.exe.config
+D:\Projects\Wcf\Test\bin\Debug\Wcf.dll
+D:\Projects\Wcf\Test\bin\Debug\WCFModel.dll
+D:\Projects\Wcf\Test\bin\Debug\Wcf.pdb
+D:\Projects\Wcf\Test\bin\Debug\WCFModel.pdb
+D:\Projects\Wcf\Test\bin\Debug\WCFMessage.dll
+D:\Projects\Wcf\Test\bin\Debug\WCFMessage.pdb

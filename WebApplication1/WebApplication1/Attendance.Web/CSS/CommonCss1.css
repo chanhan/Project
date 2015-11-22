@@ -1,0 +1,634 @@
+﻿*
+{
+	padding: 0;
+	margin: 0;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+}
+div, dl, dt, dd, th, td, ul, ol, li, form, p, img, table
+{
+	border: 0;
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+body
+{
+	text-align: center;
+	background: #e4e4e4;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "宋体";
+}
+.commonBtn
+{
+	color: White;
+	vertical-align: middle;
+	font-size: 13px;
+	font-family: "宋體";
+	border-style: none;
+	height: 26px;
+	width: 65px;
+	cursor: pointer;
+	background: url(images/BtnBack.gif) no-repeat;
+	margin: auto 15px auto 15px;
+}
+.commonText, select
+{
+	border: solid 1px Silver;
+	height: 20px;
+	vertical-align: middle;
+	font-size: small;
+	background-color: #fff;
+}
+.commonText
+{
+	height: 17px;
+	padding-top: 3px;
+}
+.commonCheck input
+{
+	border: 0;
+	vertical-align: middle;
+}
+.clear
+{
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+#divContainer
+{
+	margin: 0 auto;
+	width: 1200px;
+	text-align: left;
+	border: 0;
+	padding: 0;
+}
+.content
+{
+	width: 1001px;
+	height: auto;
+	margin: 0px auto auto auto;
+	padding: 0px 0px auto 0px;
+}
+.contentTitle
+{
+	color: #3f3f3f;
+	font-weight: bold;
+	font-family: "宋體";
+	font-size: 16px;
+	vertical-align: middle;
+	width: 740px;
+	height: 23px\9;
+	height: 26px;
+	padding-left: 50px;
+	padding-top: 7px\9;
+	padding-top: 4px;
+	background: url(images/contentTitleBg.jpg) no-repeat;
+	margin-top: 15px;
+}
+.messageLabel
+{
+	background: #eeeeee;
+	color: #ff3333;
+	vertical-align: middle;
+	text-align: center;
+	border: dotted 1px gray;
+	padding-top: 2px !important;
+	padding-top: 4px;
+	height: 18px !important;
+	height: 16px;
+	font-size: 12px;
+}
+.AspNetPager
+{
+	color: #999;
+	margin-top: 5px;
+	float: right;
+	margin-right: 5px;
+}
+.AspNetPager a, .AspNetPager .NowIndex
+{
+	text-decoration: none;
+	float: left;
+	padding: 0 5px;
+	border: 1px solid #ddd;
+	background: #ffff;
+	margin: 0 2px;
+	font-size: 11px;
+	color: #000;
+}
+.AspNetPager a:hover
+{
+	background-color: #E61636;
+	color: #fff;
+	border: 1px solid #E61636;
+	text-decoration: none;
+}
+.AspNetPager .NowIndex
+{
+	font-weight: bold;
+	color: #fff;
+	background: #E61636;
+	border: 1px solid #E61636;
+}
+
+/*LeftMenu*/
+.LeftNav
+{
+	width: 186px;
+	height: auto;
+	float: left;
+	margin: 0px 0px auto 0px;
+	right: 0px;
+}
+.LeftNavHead
+{
+	width: 146px;
+	height: 18px;
+	padding-left: 40px !important;
+	padding-left: 37px;
+	padding-top: 7px;
+	background: url(images/LeftNavHead.jpg) no-repeat;
+}
+.LeftNavHead h1
+{
+	font-size: 12px;
+	color: #000;
+}
+.LeftNavBG
+{
+	width: 186px;
+	background: url(images/LeftNavBG.jpg) repeat-y;
+}
+.LeftNavBtn
+{
+	width: 178px;
+	height: auto;
+	margin-left: 4px !important;
+	margin-left: 2px;
+	float: left;
+}
+.LeftNavBtn ul li a
+{
+	width: 178px;
+	height: 30px;
+	height: 28px\9;
+	padding-top: 12px;
+	padding-top: 14px\9;
+	color: #323232;
+	font-weight: bold;
+	vertical-align: middle;
+	float: left;
+}
+.LeftNavBtn ul li a:hover
+{
+	background: url(images/LeftMenuBg2.jpg) no-repeat;
+}
+.LeftNavBtn ul li a img
+{
+	vertical-align: middle;
+	margin-left: 25px;
+	width: 17px;
+	height: 17px;
+}
+.LeftNavBtn ul li a p
+{
+	padding-left: 15px;
+	display: inline;
+}
+.LeftNavBtn ul li div a
+{
+	color: #323232;
+	padding-top: 5px;
+	padding-top: 8px\9;
+	font-size: 13px;
+	font-weight: normal;
+	text-align: left;
+	padding-left: 40px;
+	display: block;
+	float: left;
+	width: 137px;
+	height: 20px;
+	height: 18px\9;
+	background-image: url(images/Symbol2.gif);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	border: dotted 1px silver;
+	border-width: 0px 0px 1px 0px;
+}
+.LeftNavBtn ul li div a:hover
+{
+	color: #F18A30;
+	background-image: url(images/Symbol1.gif);
+	background-position: 20px center;
+}
+.LeftNavBottom
+{
+	width: 186px;
+	height: 28px;
+	background: url(images/LeftNavBottom.jpg) no-repeat;
+}
+.PhoneBG
+{
+	width: 165px;
+	height: 58px;
+	background: #def9ce;
+	margin-left: 2px !important;
+	margin-left: 1px;
+	float: left;
+	padding-left: 15px;
+	padding-top: 4px;
+}
+.PhoneHotline
+{
+	width: 151px;
+	height: 20px;
+	background: url(images/kefurexian.jpg) no-repeat;
+	float: left;
+}
+.PhoneBG a
+{
+	width: 132px;
+	height: 20px;
+	background: url(images/106.jpg) no-repeat;
+	float: left;
+	margin-top: 12px;
+}
+
+.LeftMenuBtn
+{
+	background: url(images/LeftMenuBg1.jpg) no-repeat;
+}
+.LeftMenuBtnAct
+{
+	background: url(images/LeftMenuBg2.jpg) no-repeat;
+}
+/*LeftMenu End*/
+
+/*Content*/
+.box
+{
+	padding: 0px;
+	margin: 0px auto auto 0px;
+	width: 814px;
+	height: auto;
+	float: left;
+}
+.RightContent
+{
+	height: auto;
+	margin-left: 7px !important;
+	margin-left: 4px;
+	float: left;
+}
+.RightShadow
+{
+	width: 7px;
+	float: left;
+	background: url(images/RightContentShadow.jpg) repeat-y;
+	margin-top: 5px;
+}
+.RightContentBG
+{
+	width: 800px;
+	height: auto;
+	float: left;
+	background: #FFF;
+	overflow: hidden;
+}
+.RightContentNav
+{
+	width: 790px;
+	overflow: hidden;
+	margin: 0 5px 0 5px !important;
+	margin: 0px 2px 0px 2px;
+	float: left;
+}
+.tableTitle
+{
+	width: 790px;
+	height: 34px;
+	margin-top: 20px;
+}
+.tableTitle td.tableTitletd2
+{
+	width: 702px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+.tableTitle td.tableTitletd2 h2
+{
+	font-size: 14px;
+	vertical-align: middle;
+}
+.tableTitle td.tableTitletd3 h1 a
+{
+	width: 60px;
+	font-size: 13px;
+	color: #595959;
+	padding-top: 0px;
+	vertical-align: middle;
+}
+.tableTitle td.tableTitletd1Yellow
+{
+	width: 4px;
+	background: url(images/tableLeftBG.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd4Yellow
+{
+	width: 4px;
+	background: url(images/tableRightBG.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd1Green
+{
+	width: 4px;
+	background: url(images/tableLeftBG2.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd4Green
+{
+	width: 4px;
+	background: url(images/tableRightBG2.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd1Orange
+{
+	width: 4px;
+	background: url(images/tableLeftBG3.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd4Orange
+{
+	width: 4px;
+	background: url(images/tableRightBG3.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd1Blue
+{
+	width: 4px;
+	background: url(images/tableLeftBG4.jpg) no-repeat;
+}
+.tableTitle td.tableTitletd4Blue
+{
+	width: 4px;
+	background: url(images/tableRightBG4.jpg) no-repeat;
+}
+.InfoTable
+{
+	width: 790px;
+	border: 1px solid #d9d5d5;
+	border-width: 0 1px 0 1px;
+}
+.InfoTable tr th
+{
+	background: #f5f4f4;
+	font-size: 13px;
+	color: #000;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #d9d5d5;
+	border-width: 0 0 1px 0;
+}
+.InfoTable tr td
+{
+	font-size: 12px;
+	color: #000;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #d9d5d5;
+	border-width: 0 0 1px 0;
+}
+.InfoTable tr td a
+{
+	color: #000;
+}
+.divMessageInfo
+{
+	text-align: center;
+	border: dotted 1px silver;
+	font-size: small;
+	width: 99.6%;
+	margin-top: 10px;
+	height: 17px;
+	padding-top: 5px;
+	vertical-align: middle;
+	background-color: #f8f8f8;
+}
+.TableContainer
+{
+	margin-top: 10px;
+}
+.TableContainer td.tbTopLeft
+{
+	width: 5px;
+	height: 4px;
+	background: url(images/content_top_left.gif) no-repeat;
+}
+.TableContainer td.tbTopMiddle
+{
+	background: url(images/content_top_center.gif);
+}
+.TableContainer td.tbTopRight
+{
+	width: 5px;
+	background: url(images/content_top_right.gif) no-repeat;
+}
+.TableContainer td.tbMiddleLeft
+{
+	border: 1px solid #d5d5d5;
+	border-width: 0px 0px 0px 1px;
+	background-color: #ececec;
+}
+.TableContainer td.tbMiddleRight
+{
+	border: 1px solid #d5d5d5;
+	border-width: 0px 1px 0px 0px;
+	background-color: #ececec;
+}
+.TableContainer td.tbBottomLeft
+{
+	height: 4px;
+	width: 5px;
+	background: url(images/content_bottom_left.gif) no-repeat;
+}
+.TableContainer td.tbBottomMiddle
+{
+	background: url(images/content_bottom_center.gif);
+}
+.TableContainer td.tbBottomRight
+{
+	width: 5px;
+	background: url(images/content_bottom_right.gif) no-repeat;
+}
+.GridViewStyle tr th
+{
+	background: #ececec;
+	font-size: 13px;
+	color: #000;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #d5d5d5;
+	border-width: 0 0 1px 0;
+}
+.GridViewStyle tr td
+{
+	font-size: 12px;
+	color: #000;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #d5d5d5;
+	border-width: 0 0 1px 0;
+}
+.GridViewStyle tr td a
+{
+	color: #000;
+}
+.QueryTable
+{
+	background: #ececec;
+}
+.QueryTable tr td
+{
+	font-size: small;
+	vertical-align: middle;
+	height: 30px;
+}
+.DataContainer
+{
+	width: 100%;
+	padding-bottom: 3px !important; *padding-bottom:20px!important;padding-bottom:20px;overflow:auto;overflow-x:auto;overflow-y:hidden;
+}
+.Blank
+{
+	height: 20px;
+	width: 785px;
+	float: left;
+	margin-left: 5px;
+}
+.RightContentBottom
+{
+	width: 797px !important;
+	width: 794px;
+	height: 8px;
+	margin-left: 3px;
+	background: url(images/RightContentBottom.jpg) repeat-x;
+	float: left;
+}
+.RightContentBottom2
+{
+	width: 7px;
+	height: 8px;
+	background: url(images/RightContentBottom2.jpg) no-repeat;
+	float: left;
+}
+/*Content End*/
+
+/*Bottom*/
+.bottomLink
+{
+	height: 17px;
+	margin: 0 auto;
+	line-height: 17px;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+.bottomLink img
+{
+	width: 7px;
+	height: 17px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.bottomLink em
+{
+	font-size: 12px;
+	font-family: "宋体";
+	padding-right: 7px;
+	font-style: normal;
+	font-weight: bold;
+}
+.bottomLink a
+{
+	font-size: 12px;
+	font-family: "宋体";
+	padding-right: 7px;
+	color: #000;
+}
+.Copyright
+{
+	width: 100%;
+	height: 17px;
+	margin-top: 15px;
+	font-size: 12px;
+	font-family: "宋体";
+	padding-right: 7px;
+	color: #000;
+}
+/*Bottom End*/
+
+.NoticeInfoHead
+{
+	width: 100%;
+	height: 38px;
+	background: url(images/NewsTitle.gif) repeat-x;
+	text-align: center;
+}
+.NoticeInfoHead h1
+{
+	height: 38px;
+	line-height: 38px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #FFF;
+	display: inline;
+}
+.NoticeInfoTitleBG
+{
+	width: 100%;
+	height: 124px;
+	background: #c6c9c2;
+	font-size:14px;
+}
+.NoticeInfoContent
+{
+	width:790px;
+	height:500px;
+	overflow:auto;
+}
+.NoticeInfoContent p
+{
+	width:700px;
+	font-size: small;
+	font-family: "宋体";
+	color: #000;
+	float: left;
+	line-height: 25px;
+	text-align:left;
+	vertical-align: middle;
+	margin:20px 20px auto 20px;
+}
+.FaqQuestionInfoBG
+{
+	width: 100%;
+	height: 130px;
+	background: #c6c9c2;
+	font-size:14px;
+}
+.FaqAnswerInfoBG
+{
+	width:100%;
+	height:150px;
+	overflow:auto;
+	background-color: #e5eddc;
+}

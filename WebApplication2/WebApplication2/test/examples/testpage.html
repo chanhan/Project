@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<head>
+    <!-- Standard Meta -->
+    <meta charset="gb18030" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properities -->
+    <title>Homepage Example - Semantic</title>
+    <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="/test/packaged/css/semantic.min.css">
+    <style>
+        body {
+            /*background-color: #063851;
+            font-size: 15px;
+            margin: 0 auto;*/
+            overflow-x: auto;
+            /*padding: 0;*/
+        }
+
+        .grid .column:hover .icon {
+            /*color: #009fda;*/
+            color: red;
+            transform: scale(1.5);
+        }
+
+        .ui.comments .comment {
+            font-size: 0.85em;
+        }
+
+        .ui.one.items > .item {
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 96%;
+            border-bottom: inherit;
+        }
+
+        .backtotop {
+            bottom: 53px;
+            margin-left: 80%;
+            position: fixed;
+            z-index: 19;
+        }
+
+        .backtolist {
+            bottom: 123px;
+            margin-left: 85%;
+            position: fixed;
+            z-index: 19;
+            display: none;
+        }
+
+        #textComment {
+            bottom: 0;
+            background-color: white;
+            margin-left: 0;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            display: none;
+        }
+
+        #launch {
+            position: fixed;
+            top: 0px;
+            z-index: 500;
+            width: 70px;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        #loader {
+            position: fixed;
+            bottom: 0px;
+            z-index: 500;
+            top: initial;
+        }
+
+        .ui.attached.right.button {
+            padding-left: 0.4em;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1) !important;
+        }
+        /*#launch2 {
+            position: fixed;
+            top: 33px;
+            z-index: 500;
+            width: 70px;
+        }
+
+        .m_player {
+            bottom: 0px;
+            position: fixed;
+            z-index: 500;
+            top: 0px;
+        }*/
+        #menu {
+            bottom: 0px;
+            position: fixed;
+            z-index: 500;
+            top: 0px;
+            opacity: 0.5;
+        }
+
+            #menu a {
+                font-size: 0.7125rem;
+            }
+        /*#menu2 {
+            bottom: 0px;
+            position: fixed;
+            z-index: 500;
+            top: 63px;
+        }*/
+        .mask {
+            background-image: url("images/bg_cover.png");
+            left: 0;
+            position: fixed;
+            top: 0;
+            z-index: 499;
+        }
+
+        .ui.sidebar {
+            margin-left: -75px !important;
+            width: 75px !important;
+        }
+
+        .ui.vertical.menu .item > .menu > .item {
+            font-size: 0.875em;
+            padding: 0.5rem 0;
+        }
+        .ui.menu .item:before {
+            background-image:initial;
+        }
+    </style>
+    <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+    <script type='text/javascript'>
+        //<![CDATA[
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='jquery.js' type='text/javascript' %3E%3C/script%3E"));
+        }//]]>
+    </script>
+    <script type="text/javascript">
+        var ISSHOW = true;//标示显示评论页
+        var TOPNUM = 0;//帖子上边距，用于返回列表定位到原来位置用
+        var ITEMID;//帖子ID
+        var ISLOADING = false;//标示图片或评论是否正在加载
+        var img = new Image();
+        var imgSrc = ['/test/packaged/images/dog2.jpg', '/test/packaged/images/dog.jpg'];
+        var startX, startY, endX, endY, min_move_x = 20, min_move_y = 20; //起始滑动X坐标 起始滑动Y坐标 停止滑动X坐标 停止滑动Y坐标 X方向最小滑动距离（大于此距离，认为是滑动） Y方向最小滑动距离（大于此距离，认为是滑动）
+        var IMAGEWIDTH, PROCESSID; //打分的图片宽度 打分的图片ID
+        var percent = 0, upbar, bottombar, upprocess, bottomprocess; //打分进度条进度 图片上方进度条 图片下方进度条 图片上方进度条div（设置进度条颜色用） 图片下方进度条div（设置进度条颜色用）
+        var redSet = false, tealSet = false, greenSet = false;//用于控制三种颜色进度条用，防止重复设置颜色，用于提高函数执行效率，
+        var start = false;//控制触屏事件，标示是否触发touchstart事件
+        var move = false;//控制触屏事件，标示是否触发touchmove事件
+        var end = false;//控制触屏事件，标示是否触发touchend事件
+        var imgArr = [];//已打过分的图片ID
+        var prelen = 0;//上次的滑动长度
+        var menushow = false;//标示菜单是否显示
+        var supportTouch = "ontouchstart" in document.documentElement;//是否支持触屏
+        //第一次加载评论
+        function getComment(id) {
+            var html = '<div id="comment_' + id + '" class="ui threaded comments" style="padding-top: 6px"><div class="comment"><a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a><div class="content"><a class="author">华寅</a><div class="text">爱酷学习网很好啊，视频教程都很清晰！</div></div></div><div class="comment"><a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a><div class="content"><a class="author">华寅</a><div class="text">谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳。被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常。</div></div></div><div class="comment"><a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a><div class="content"><a class="author">华寅</a><div class="text">爱酷学习网很好啊，视频教程都很清晰！</div></div></div></div>';
+            return html;
+        }
+        //加载更多评论
+        function showMore(id) {
+            if (!ISLOADING) {
+                var html = '<div class="comment"><a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a><div class="content"><a class="author">安卡拦</a><div class="text">如果爱酷学习网能提供私信功能就好啦。</div></div></div><div class="comment"><a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a><div class="content"><a class="author">安卡拦</a><div class="text"> 人生若只如初见，何事秋风悲画扇。<br>等闲变却故人心，却道故人心易变。<br>骊山语罢清宵半，泪雨霖铃终不怨。<br>何如薄幸锦衣郎，比翼连枝当日愿。<br></div></div></div><div class="comment"><a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a><div class="content"><a class="author">安卡拦</a><div class="text">如果爱酷学习网能提供私信功能就好啦。</div></div></div>';
+                ISLOADING = true;
+                $('#comment_' + id + ' .comment').last().after(html);
+            }
+        }
+        //加载评论
+        function loadComment(id) {
+            var html = getComment(id);
+            $('#item_' + id).append(html);
+        }
+        //获取页面某一元素的绝对X,Y坐标，可以用offset()：
+        //var X = $(‘#DivID’).offset().top;
+        //var Y = $(‘#DivID’).offset().left;
+
+        //获取相对(父元素)位置:
+        //var X = $(‘#DivID’).position().top;
+        //var Y = $(‘#DivID’).position().left;
+
+        //通过getBoundingClientRect方法获取对象位置，包含： left , top , right , bottom 4个参数值。
+        //<div onmouseover="test(event)"></div>
+        //function test(e){
+        //    //这里可得到鼠标X坐标
+        //    var pointX = e.pageX;
+        //    //这里可以得到鼠标Y坐标
+        //    var pointY = e.pageY;
+        //}
+        //alert($(window).height()); //浏览器当前窗口可视区域高度
+        //alert($(document).height()); //浏览器当前窗口文档的高度
+        //alert($(document.body).height());//浏览器当前窗口文档body的高度
+        //alert($(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin
+        //alert($(window).width()); //浏览器当前窗口可视区域宽度
+        //alert($(document).width());//浏览器当前窗口文档对象宽度
+        //alert($(document.body).width());//浏览器当前窗口文档body的高度
+        //alert($(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin
+
+        //设置图片样式
+        function setImage(image) {
+            var width = $(image).parent().parent().width();
+            var id = image.id.split('_')[1];
+            //alert(width);
+            img.src = $(image).attr("src");
+            var w = img.width;
+            //var h = img.height;
+            if (width > w) {//图片宽度比屏幕小，显示原始图片
+                $(image).css("width", w + "px").css("margin-left", ((width - w) * (1 - 0.618)) + "px").parent('.image').css('background-color', 'inherit');//黄金分割,去掉背景色
+                $('#upprocess_' + id).css("width", w + "px").css("margin-left", ((width - w) * (1 - 0.618)) + "px");
+                $('#bottomprocess_' + id).css("width", w + "px").css("margin-left", ((width - w) * (1 - 0.618)) + "px");
+
+            }
+            if (width <= w) {//图片宽度比屏幕大，显示和屏幕一样大
+                $(image).css("width", width + "px").css("margin-left", "0");
+                $('#upprocess_' + id).css("width", width + "px").css("margin-left", "0");
+                $('#bottomprocess_' + id).css("width", width + "px").css("margin-left", "0");
+            }
+        }
+        //调整窗口大小，调整图片
+        function changeImage() {
+            $(".image img").each(function () {
+                setImage(this);
+            });
+        }
+
+        //function reachBottom() {
+        //    var scrollTop = 0;
+        //    var clientHeight = 0;
+        //    var scrollHeight = 0;
+        //    if (document.documentElement && document.documentElement.scrollTop) {
+        //        scrollTop = document.documentElement.scrollTop;
+        //    } else if (document.body) {
+        //        scrollTop = document.body.scrollTop;
+        //    }
+        //    if (document.body.clientHeight && document.documentElement.clientHeight) {
+        //        clientHeight = (document.body.clientHeight < document.documentElement.clientHeight) ? document.body.clientHeight : document.documentElement.clientHeight;
+        //    } else {
+        //        clientHeight = (document.body.clientHeight > document.documentElement.clientHeight) ? document.body.clientHeight : document.documentElement.clientHeight;
+        //    }
+        //    scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        //    if (scrollTop + clientHeight == scrollHeight) {
+        //        return true;
+        //    } else {
+        //        return false;
+        //    }
+        //}
+
+        ///*单指拖动*/
+        //var obj = document.getElementById('id');
+        //obj.addEventListener('touchmove', function (event) {
+        //    // 如果这个元素的位置内只有一个手指的话
+        //    if (event.targetTouches.length == 1) {
+        //        event.preventDefault();// 阻止浏览器默认事件，重要
+        //        var touch = event.targetTouches[0];
+        //        // 把元素放在手指所在的位置
+        //        obj.style.left = touch.pageX - 50 + 'px';
+        //        obj.style.top = touch.pageY - 50 + 'px';
+        //    }
+        //}, false);
+
+        //function touch2(obj) {
+        //    obj.addEventListener('touchmove', function (event) {
+        //        alert('移动了' + event.targetTouches.length + '个手指');
+        //        // 如果这个元素的位置内只有一个手指的话
+        //        if (event.targetTouches.length == 1) {
+        //            event.preventDefault();// 阻止浏览器默认事件，重要
+        //            $(obj).transition('tada').transition('bounce', '2000ms').transition('horizontal flip in').transition('vertical flip in');
+        //        }
+        //    }, false);
+        //}
+
+        //初始化图片
+        function initImg() {
+            if (this.complete || this.readyState == "complete") {
+                setImage(this);
+                //touch2(this);
+                //  var t = new touchmonitor({ obj: this, min_move_x: 30, preventDefaultEvents: false });
+                //touchmonitor({ obj: this, min_move_x: 30, wipeUp: function () { alert("向上滑动") }, wipeDown: function () { alert("向下滑动") }, })
+            }
+        }
+        //显示更多图片列表
+        function getItem() {
+            if (!ISLOADING) {
+                var obj = $('.items .item');
+                var num = obj.size() + 1;
+                var html = '<div class="item" id="item_' + num + '"><div class="content"><a class="ui label red description">人生若只如初见，何事秋风悲画扇。<br>等闲变却故人心，却道故人心易变。<br>骊山语罢清宵半，泪雨霖铃终不怨。<br>何如薄幸锦衣郎，比翼连枝当日愿。<br></a></div><div class="image"><img class="ui rounded image" id=img_' + num + '></div><div class="ui divider"></div><div class="ui"><a class="ui black label"><i class="mail icon"></i><label>8.6</label>分</a><a class="ui green label"><i class="mail icon"></i><label>5</label>人评分</a> <a class="ui black label"><i class="heart icon"></i><nobr><label>100</label>人收藏</nobr></a><a class="ui red label" id="commentbtn_' + num + '"><i class="mail icon"></i><label>100</label>条评论</a></div><div class="ui divider"></div></div>';
+                obj.last().after(html);
+                $('#item_' + num + ' img').attr('src', '/test/packaged/images/dog.jpg').load(initImg);
+                ISLOADING = true;
+            }
+        }
+        //滑动事件
+        //function scrollPage() {
+        //    var scrollTop = $(this).scrollTop();
+        //    var scrollHeight = $(document).height();
+        //    var windowHeight = $(this).height();
+        //    $('#showmsg').html($('#showmsg').html() + scrollHeight + '==' + scrollTop + '==' + windowHeight + '<br>');
+        //    if ((scrollHeight - scrollTop - windowHeight == 0) && !ISLOADING) {//滚动条滑到距离底部20px且图片或评论没有正在加载
+        //        if (ISSHOW == true) {//显示更多图片列表
+        //            getItem();
+        //            ISLOADING = false;
+        //        }
+        //        else {
+        //            if ($('#comment_' + ITEMID)) {//评论已加载，显示更多评论
+        //                showMore(ITEMID);
+        //                ISLOADING = false;
+        //            }
+        //        }
+        //        //$('#loader').removeClass('active');
+        //        //if (scrollTop == 0) alert('到最上面了');
+        //    }
+        //}
+        var handler
+        function scrollPage2() {
+            var scrollTop = $(window).scrollTop();
+            var scrollHeight = $(document).height();
+            var windowHeight = $(window).height();
+            //alert(scrollHeight - scrollTop - windowHeight);
+            if ((scrollTop + windowHeight) / scrollHeight >= 0.8 && !ISLOADING) {//滚动条滑到其顶部高度与窗口和占文档高度0.8且图片或评论没有正在加载
+                $('#loader').addClass('active');//显示正在加载
+                //handler=  setTimeout(function () {
+                //    if (!$('#loader').hasClass('active'))
+                //        $('#loader').addClass('active');
+                //}, 6000);
+                if (ISSHOW == true) {//显示更多图片列表
+                    getItem();
+                    ISLOADING = false;
+                }
+                else {
+                    if ($('#comment_' + ITEMID)) {//评论已加载，显示更多评论
+                        showMore(ITEMID);
+                        ISLOADING = false;
+                    }
+                }
+                //if (handler) handler.abort();
+                $('#loader').removeClass('active');
+                //if (scrollTop == 0) alert('到最上面了');
+            }
+        }
+
+
+
+        //获取本地存储(打过分的图片)
+        function getLocalData() {
+            var a = localStorage.getItem("userid@mojingpic.com");//userid@mojingpic.com为用注册用户ID或者邮箱
+            if (a != null) imgArr = a.split(',');
+        }
+
+        //存储打过分的图片ID
+        function setLocalData(id) {
+            imgArr.push(id);
+            localStorage.setItem("userid@mojingpic.com", imgArr);
+        }
+        //获取打分图片宽度等相关信息
+        function getWidth(image) {
+            var width = $(image).parent().parent().width();
+            img.src = $(image).attr("src");
+            IMAGEWIDTH = img.width > width ? width : img.width;
+            PROCESSID = image.id.split('_')[1];
+            upbar = $('#upbar_' + PROCESSID);
+            bottombar = $('#bottombar_' + PROCESSID);
+            upprocess = $('#upprocess_' + PROCESSID);
+            bottomprocess = $('#bottomprocess_' + PROCESSID);
+        }
+
+        //转换评分，四色五入
+        function formateGrade() {
+            var grade = percent / 10;
+            var grade2 = Math.floor(grade);
+            grade = grade - grade2 >= 0.5 ? grade2 + 1 : grade2;
+            //grade = grade > 10 ? 10 : grade;
+            return grade;
+        }
+
+        //打分时，设置进度条样式
+        function changeProcessBar() {
+            //       var len = Math.sqrt(Math.pow((startX - endX), 2) + Math.pow((startY - endY), 2));
+            var len = Math.abs(startX - endX);
+            len = len > IMAGEWIDTH ? IMAGEWIDTH : len;//手指滑动接触点不一致造成
+            if (prelen > len) {//先向右滑再向左滑，将标示设置为初始状态
+                redSet = false;
+                tealSet = false;
+                greenSet = false;
+            }
+            prelen = len;//记下上次move的长度
+            percent = (len / IMAGEWIDTH) * 100;//滑动距离占图片宽度的百分比
+            if (!redSet && percent <= 50) {//5分
+                upprocess.removeClass('teal green').addClass('red');
+                bottomprocess.removeClass('teal green').addClass('red');
+                redSet = true;//标示已设置过颜色，防止重复设置，提高效率
+            } else if (!tealSet && percent > 50 && percent <= 80) {//5到8分
+                upprocess.removeClass('red green').addClass('teal');
+                bottomprocess.removeClass('red green').addClass('teal');
+                tealSet = true;
+            } else if (!greenSet && percent > 80 && percent <= 100) {//8到10分
+                upprocess.removeClass('teal red').addClass('green');
+                bottomprocess.removeClass('teal red').addClass('green');
+                greenSet = true;
+            }
+            upbar.css('width', percent + '%');
+            bottombar.css('width', percent + '%');//设置进度条宽度
+        }
+        //从左边缘10%以内开始向右的滑动，才认为是打分
+        function slider(img) {
+            return (startX - $(img).offset().left) / IMAGEWIDTH <= 0.1;
+        }
+
+        //图片touchstart事件或mouseover事件（不支持触屏的设备）
+        function touchStart(e) {
+            var event = window.event;
+            //  alert('移动了' + event.targetTouches.length + '个手指');
+            if (supportTouch) {
+                // 如果这个元素的位置内只有一个手指的话
+                if (event.targetTouches.length == 1) {
+                    //    event.preventDefault();// 在此处调用会阻止click事件
+                    var touch = event.targetTouches[0];
+                    startX = touch.pageX;//触摸坐标
+                    startY = touch.pageY;
+                    getWidth(this);
+                }
+            } else {//不支持触屏的设备
+                startX = e.pageX;
+                startY = e.pageY;
+                getWidth(this);
+            }
+            if (slider(this)) {//从左边缘10%以内开始向右的滑动，才认为是打分
+                start = true;
+            }
+        }
+        //滑动屏幕滑动
+        function pageScroll(e) {
+            var event = window.event;
+            if (supportTouch) {
+                if (event.targetTouches.length == 1) {
+                    scrollPage2();
+                }
+            } else {
+                scrollPage2();
+            }
+        }
+        //滑动菜单，阻止图片滑动
+        function touchMenu() {
+            window.event.preventDefault();
+        }
+        function touchMove(e) {
+            if (!start) return;//未触摸，则返回，防止从左边缘10%以外开始向右的滑动的类似情况发生
+            getLocalData();
+            if (imgArr.indexOf(this.id.split('_')[1]) >= 0) {//判断是否已评分
+                alert('图片' + this.id.split('_')[1] + '已评分');
+                return;
+            }
+            var event = window.event;
+            if (supportTouch) {
+                if (event.targetTouches.length == 1) {
+                    var touch = event.targetTouches[0];
+                    endX = touch.pageX;
+                    endY = touch.pageY;
+                    if (Math.abs(startX - endX) >= min_move_x) {//左右滑动
+                        event.preventDefault();// 左右滑动阻止浏览器默认事件，上下滑动不阻止
+                        if (startX - endX < 0) {//从左往右滑动是打分
+                            changeProcessBar();
+                        }
+                    } else if (Math.abs(startY - endY) >= min_move_y) {//上下滑动
+
+                    }
+                }
+            } else {
+
+                endX = e.pageX;
+                endY = e.pageY;
+                if (Math.abs(startX - endX) >= min_move_x) {
+                    e.preventDefault();// 阻止浏览器默认事件，重要
+                    if (startX - endX < 0) {
+                        changeProcessBar();
+                    }
+                } else if (Math.abs(startY - endY) >= min_move_y) {//上下滑动
+
+                }
+            }
+            move = true;
+        }
+        //打分后设置为初始状态
+        function reSet() {
+            redSet = false;
+            tealSet = false;
+            greenSet = false;
+            start = false;
+            move = false;
+            end = false;
+        }
+        //打分处理，写入数据库
+        function showGrade(obj) {
+            reSet();
+            $(obj).transition('horizontal flip in').transition('vertical flip in').transition('shake', function () { alert(formateGrade() + '分'); });
+        }
+        //触摸结束事件
+        function touchEnd() {
+            //alert(move);
+            if (!move) return;
+            if (Math.abs(startX - endX) >= min_move_x) {
+                setLocalData(this.id.split('_')[1]);//本地存储打过分的图片
+                showGrade(this);
+                if (startX > endX) {
+                    //alert(this.id + '向左滑动');
+                } else if (startX < endX) {
+                    //alert(this.id + '向右滑动');
+                    //   if (!ISSHOW) $(this).parents('.item').click();
+                }
+            }
+        }
+        //显示或隐藏评论
+        function toggleComment() {
+            var items = $(this).parents('.item');
+            ITEMID = items[0].id.split('_')[1];//发表帖子的唯一标识
+            if (ISSHOW) {
+                TOPNUM = items.offset().top;//记下帖子的top，返回列表时定位用
+            }
+            items.siblings('.item').toggle();
+            var comment = items.children('.ui.threaded.comments[id^=comment_]');
+            var textComment = $('#textComment');
+            var backlist = $('#divList');
+            if (ISSHOW) {
+                window.scrollTo(0, 0);//放在最顶端
+                if (comment.size() > 0) {//有评论就显示
+                    comment.show();
+                } else {//没有评论就加载
+                    $('#loader').addClass('active');
+                    loadComment(ITEMID);
+                    $('#loader').removeClass('active');
+                }
+                textComment.show();//评论显示
+                backlist.show();//返回按钮显示
+            }
+            else {
+                window.scrollTo(0, TOPNUM); //返回列表时定位到之前的位置
+                if (comment.size() > 0) {//有评论就隐藏
+                    comment.hide();
+                }
+                textComment.hide();
+                backlist.hide();
+            }
+            ISSHOW = !ISSHOW;//切换显示状态
+        }
+        //显示菜单
+        function showleft() {
+            $('#divMask').toggle();
+            $('#divMask').width($(document).width() + 'px').height($(document).height() + 'px');
+            var left;
+            if (!menushow) {//控制菜单按钮位置
+                left = $('#launch').offset().left + $('#menu').width();
+            }
+            else {
+                left = $('#launch').offset().left - $('#menu').width();
+            }
+            //$('#menu').sidebar({ overlay: true }).sidebar('toggle');
+            //$('#launch').animate({ 'left': left + 'px' }, 600, '', function () {  menushow = !menushow; });
+            $('#launch').hide('fast', function () {//显示动画，回调显示菜单
+                $('#menu').sidebar({ overlay: true }).sidebar('toggle');
+                $(this).animate({ 'left': left + 'px' }, 350, '', function () { }).show('fast', function () { menushow = !menushow; });
+            });
+
+        }
+
+        //function showleft2() {
+        //    if (!menushow) {
+        //        $('#menu2').css('left', '0px');
+
+        //    } else {
+        //        $('#menu2').css('left', -(1*$('#menu2').width())+'px');
+        //    }
+        //    menushow = !menushow;
+        //}
+        //是否支持触屏
+        $(function () {
+            localStorage.clear();
+            $('.image img').each(function (i) {
+                $(this).attr('src', imgSrc[i]).load(initImg);//兼容chrome safari
+            });
+
+            var moveEvent = supportTouch ? "touchmove" : "mousemove",
+            startEvent = supportTouch ? "touchstart" : "mouseover",
+            endEvent = supportTouch ? "touchend" : "mouseout";
+            //图片绑定触摸事件
+            $('body').on(startEvent, '.image img', touchStart);
+            $('body').on(moveEvent, '.image img', touchMove);
+            $('body').on(endEvent, '.image img', touchEnd);
+            //菜单绑定触摸事件
+            $('body').on(moveEvent, '#menu,#divMask', touchMenu);
+            $('body').on(moveEvent, '.ui.one.items', pageScroll);//防止初始状态下滚动条在底部，不会触发scroll事件
+            //评论按钮绑定触摸事件
+            $('body').on('click', 'a[id^=commentbtn_]', toggleComment);//
+            //$('body').on('click', '.image img', function () { return false; });
+            //$('body').on('click', 'a[id^=commentbtn_],div[id^=commentbtn2_]', loadComment);
+            //$('body').on('click', 'div[id^=more_]', showMore);
+            //    $(window).scroll(scrollPage2).resize(changeImage)//底部滑动 调整窗口大小
+            $(window).resize(changeImage)//调整窗口大小
+            $('.backtotop i').popup().click(function () { window.scrollTo(0, 0); });//返回顶部按钮
+            $('.backtolist i').popup().click(function () { $('#commentbtn_' + ITEMID).click(); });//返回列表按钮
+            //$('div[id^=comment_]').hide(); window.scrollTo(0, 0);
+            $('#divMask').click(function () { if (menushow) $('#launch').click(); });//点击图片列表出，关闭菜单
+        })
+    </script>
+    <script src="/test/packaged/javascript/semantic.min.js"></script>
+    <script src="jquery.easing.1.3.js"></script>
+    <script src="stickysidebar.jquery.js"></script>
+    <!-- <script src="touchmonitor.js"></script>-->
+</head>
+<body>
+    <!--<div class="ui labeled icon menu fluid grid">
+        <a class="red item four wide column">
+            <i class="star icon"></i><nobr><label>8.6</label>分</nobr>
+        </a>
+        <a class="teal item four wide column">
+            <i class="user icon"></i><nobr><label>5</label>人评分</nobr>
+        </a>
+        <a class="green item four wide column">
+            <i class="heart icon"></i><nobr><label>100</label>人收藏</nobr>
+        </a>
+        <a class="red item four wide column">
+            <i class="comment icon"></i><nobr><label>100</label>条评论</nobr>
+        </a>
+    </div>-->
+    <div id="showmsg"></div>
+    <div class="ui one items">
+        <div class="item" id="item_001" style="min-height:initial;margin-bottom:0.5em">
+            <div class="ui threaded comments">
+                <div class="comment">
+                    <a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a>
+                    <div class="content" style="padding-top:1em">
+                        <a class="author">华寅</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui label" style="margin-top: 2px; background-color: initial; font-size: 1em;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;爱酷学习网的视频教程类目免费在线观看高清视频教程的网站爱酷学习网的视频教程类目免费在线观看高清视频教程的网站
+            </div>
+            <div class="ui top attached progress" style="top:0" id="upprocess_001">
+                <div class="bar" id="upbar_001"></div>
+            </div>
+            <div class="image">
+                <img class="ui rounded image" id="img_001">
+            </div>
+            <div class="ui bottom attached progress" id="bottomprocess_001">
+                <div class="bar" id="bottombar_001"></div>
+            </div>
+            <!--<div class="ui three labels" style="padding-top: 8px">
+                <a class="ui black label">
+                    <i class="star icon"></i><nobr><label>8.6</label>分</nobr>
+                </a>
+                <a class="ui green label">
+                    <i class="user icon"></i><nobr><label>5</label>人评分</nobr>
+                </a>
+                <a class="ui black label">
+                    <i class="heart icon"></i><nobr><label>100</label>人收藏</nobr>
+                </a>
+                <a class="ui red label" id="commentbtn_001">
+                    <i class="comment icon"></i><nobr><label>100</label>条评论</nobr>
+                </a>
+            </div>-->
+            <div class="ui labeled icon menu fluid grid" style="margin-top: 5px; margin-bottom: 0; box-shadow: initial">
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom:0">
+                    <i class="red star icon"></i><label>8.6</label>
+                </a>
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="teal user icon"></i><label>5</label>
+                </a>
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="green heart icon"></i><label>100</label>
+                </a>
+                <a class="item four wide column" id="commentbtn_001"  style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="red comment icon"></i><label>100</label>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="item_002" style="min-height:initial;margin-bottom:0.5em">
+            <div class="ui threaded comments">
+                <div class="comment">
+                    <a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a>
+                    <div class="content" style="padding-top:1em">
+                        <a class="author">华寅</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui label" style="margin-top: 2px; background-color: initial; font-size: 1em;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记得金銮同唱第，春风上国繁华。如今薄宦老天涯。十年岐路，空负曲江花。
+                闻说阆山通阆苑，楼高不见君家。孤城寒日等闲斜。离愁难尽，红树远连霞。
+            </div>
+            <div class="ui top attached progress" style="top:0" id="upprocess_002">
+                <div class="bar" id="upbar_002"></div>
+            </div>
+            <div class="image">
+                <img class="ui rounded image" id="img_002">
+            </div>
+            <div class="ui bottom attached progress" id="bottomprocess_002">
+                <div class="bar" id="bottombar_002"></div>
+            </div>
+            <!--<div class="ui three labels" style="padding-top: 8px">
+            <a class="ui black label">
+                <i class="star icon"></i><nobr><label>8.6</label>分</nobr>
+            </a>
+            <a class="ui green label">
+                <i class="user icon"></i><nobr><label>5</label>人评分</nobr>
+            </a>
+            <a class="ui black label">
+                <i class="heart icon"></i><nobr><label>100</label>人收藏</nobr>
+            </a>
+            <a class="ui red label" id="commentbtn_001">
+                <i class="comment icon"></i><nobr><label>100</label>条评论</nobr>
+            </a>
+        </div>-->
+            <div class="ui labeled icon menu fluid grid" style="margin-top: 5px; margin-bottom: 0; box-shadow:initial">
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom:0">
+                    <i class="red star icon"></i><label>8.6</label>
+                </a>
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="teal user icon"></i><label>5</label>
+                </a>
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="green heart icon"></i><label>100</label>
+                </a>
+                <a class="item four wide column" id="commentbtn_002" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="red comment icon"></i><label>100</label>
+                </a>
+            </div>
+        </div>
+        <!--<div class="item" id="item_003" style="min-height: initial; margin-bottom: 0.5em; ">
+            <div class="ui threaded comments">
+                <div class="comment">
+                    <a class="avatar"><img src="/test/packaged/images/dog2.jpg"></a>
+                    <div class="content" style="padding-top:1em">
+                        <a class="author">华寅</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui label" style="margin-top: 2px; background-color: initial; font-size: 1em;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记得金銮同唱第，春风上国繁华。如今薄宦老天涯。十年岐路，空负曲江花。
+                闻说阆山通阆苑，楼高不见君家。孤城寒日等闲斜。离愁难尽，红树远连霞。
+            </div>
+            <div class="ui top striped attached progress" style="top:0" id="upprocess_002">
+                <div class="bar" id="upbar_003"></div>
+            </div>
+            <div class="image">
+                <img class="ui rounded image" id="img_003">
+            </div>
+            <div class="ui bottom striped attached progress" id="bottomprocess_003">
+                <div class="bar" id="bottombar_003"></div>
+            </div>
+            <div class="ui three labels" style="padding-top: 8px">
+                <a class="ui black label">
+                    <i class="star icon"></i><nobr><label>8.6</label>分</nobr>
+                </a>
+                <a class="ui green label">
+                    <i class="user icon"></i><nobr><label>5</label>人评分</nobr>
+                </a>
+                <a class="ui black label">
+                    <i class="heart icon"></i><nobr><label>100</label>人收藏</nobr>
+                </a>
+                <a class="ui red label" id="commentbtn_003">
+                    <i class="comment icon"></i><nobr><label>100</label>条评论</nobr>
+                </a>
+            </div>
+            <div class="ui labeled icon menu fluid grid" style="margin-top:5px;margin-bottom:0;">
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom:0">
+                    <i class="red star icon"></i><label>8.6</label>
+                </a>
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="teal user icon"></i><label>5</label>
+                </a>
+                <a class="item four wide column" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="green heart icon"></i><label>100</label>
+                </a>
+                <a class="item four wide column" id="commentbtn_001" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0; ">
+                    <i class="red comment icon"></i><label>100</label>
+                </a>
+            </div>
+        </div>-->
+    </div>
+    <div class="backtolist" id="divList">
+        <i class="double angle left icon big red link" data-variation="small"></i>
+    </div>
+    <div class="backtotop" id="divTop">
+        <i class="big hand up icon red link" data-variation="small"></i>
+    </div>
+    <div class="ui grid" id="textComment">
+        <div class="fourteen wide column" style="margin: 0; padding: 0">
+            <div class="ui form field">
+                <textarea style="min-height:initial;height:3em;" placeholder="说说你的故事吧。。。"></textarea>
+            </div>
+        </div>
+        <div class="one wide column" style="padding-left: 0.5%; vertical-align: bottom; margin: 1px; padding-right: 0">
+            <i class="icon right"></i>
+        </div>
+    </div>
+    <div class="ui black small launch right attached button" style="width: 30px;" id="launch" onclick="showleft()">
+        <i class="icon list layout"></i>
+    </div>
+    <!--<div class="small ui vertical inverted labeled icon sidebar menu " id="menu">
+        <div class="item">
+            <a href="/">
+                <b>简单介绍</b>
+            </a>
+            <div class="menu">
+
+                <a class="item" href="/introduction/variations.html">变化</a>
+
+                <a class="item" href="/introduction/definitions.html">定义</a>
+
+                <a class="item" href="/introduction.html">有什么新奇的玩意儿？</a>
+
+                <a class="item" href="/introduction/types.html">样式（种类）</a>
+
+                <a class="item" href="/introduction/overview.html">概述</a>
+
+            </div>
+        </div>
+        <div class="item">
+            <b>关于项目</b>
+            <div class="menu">
+
+                <a class="item" href="/project/contributing.html">加入我们</a>
+
+                <a class="item" href="/project/development.html">本地文档服务器</a>
+
+            </div>
+        </div>
+
+    </div>-->
+    <div class="ui vertical labeled inverted icon menu sidebar" id="menu">
+        <a class="red item" href="/">
+            <i class="mail icon"></i>
+            一周最热
+        </a>
+        <a class="teal item" href="/test/examples/testpage.html">
+            <i class="lab icon"></i>
+            最新上传
+        </a>
+        <a class="green item">
+            <i class="star icon"></i>
+            今日排行
+        </a>
+    </div>
+    <div id="divMask" class="mask" style="display: none"></div>
+    <div class="ui text loader" id="loader">拼命加载中...</div>
+</body>

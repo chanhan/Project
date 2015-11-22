@@ -1,0 +1,124 @@
+﻿.divBody
+{
+	width: 100%;
+	height: 147px;
+	overflow:hidden;
+}
+.titleLeft
+{
+	width: 330px;
+	height: 147px;
+	background: url(images/titieLeft.jpg) repeat-x;
+	float: left;
+}
+.title
+{
+	width: 130px;
+	height: 147px;
+	background: url(images/titie.jpg) repeat-x;
+	float: left;
+}
+.titleRight
+{
+	width: 740px;
+	height: 147px;
+	background: url(images/titieRight.jpg) no-repeat;
+	float:left;
+}
+.LOGO
+{
+	width:352px;
+	margin-left:-781px;
+	height: 61px;
+	margin-top:40px;
+	float:left;
+	z-index:1;
+}
+.navBG
+{
+	width: 100%;
+	height: 59px;
+	background: url(images/navBG.jpg) repeat-x;
+	float: left;
+}
+.LeftFoot
+{
+	width: 118px;
+	height: 48px;
+	margin:0px 0px 0px 90px !important;
+	margin:0px 0px 0px 46px;
+	float:left;
+	background: url(images/navPIC1.jpg) no-repeat;
+}
+.rightFoot
+{
+	width: 82px;
+	height: 48px;
+	float:right;
+	margin-right:115px !important;
+	margin-right:56px;
+	background: url(images/navPIC2.jpg) no-repeat;
+}
+.NavBtn
+{
+	width: 732px;
+	height: 48px;
+	float:left;
+	margin-left:31px;
+	vertical-align: middle;
+}
+.NavBtn ul li {
+    float: left;
+    display: inline;
+    margin: 0 0 0 -2px;
+    padding: 0 2px 0 2px;
+}
+
+.NavBtn ul li a
+{
+	float: left;
+	display: block;
+	width: 120px;
+	height: 35px;
+	height: 32px\9;
+	padding-top: 13px;
+	padding-top: 16px\9;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.NavBtn ul li a:hover
+{
+	float: left;
+	display: block;
+	width: 120px;
+	height: 35px;
+	height: 32px\9;
+	padding-top: 13px;
+	padding-top: 16px\9;
+	font-size: 18px;
+	font-weight: bold;
+	background: url(images/NAV2.jpg) no-repeat;
+	color: White;
+	text-align: center;
+}
+.NavBtnLink
+{
+	background: url(images/NAV1.jpg) no-repeat;
+	color: Black;
+}
+.NavBtnLinkAct
+{
+	background: url(images/NAV2.jpg) no-repeat;
+	color: White;
+}
+.BottomBG
+{
+	width: 100%;
+	height: 68px;
+	background: url(images/BottomBG.jpg) repeat-x;
+	float: left;
+	margin-top: 20px !important;
+	margin-top:7px;
+	text-align:center;
+}

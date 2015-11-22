@@ -1,0 +1,7 @@
+D:\Projects\WCFDemo\WCFIData\bin\Debug\WCFIData.dll
+D:\Projects\WCFDemo\WCFIData\bin\Debug\WCFIData.pdb
+D:\Projects\WCFDemo\WCFIData\obj\Debug\WCFIData.dll
+D:\Projects\WCFDemo\WCFIData\obj\Debug\WCFIData.pdb
+D:\Projects\WCFDemo\WCFIData\bin\Debug\WCFData.dll
+D:\Projects\WCFDemo\WCFIData\bin\Debug\WCFData.pdb
+D:\Projects\WCFDemo\WCFIData\obj\Debug\WCFIService.csprojResolveAssemblyReference.cache

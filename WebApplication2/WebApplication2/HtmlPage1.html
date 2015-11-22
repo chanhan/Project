@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script>
+        var student = new Object();
+        function stu(stuname, age) {
+            this.stuname = stuname;
+            this.age = age;
+            this.show = function() {
+                return "name:" + this.stuname + "   age:" + this.age;
+            }
+        }
+        student['chennhan'] = new stu('陈函', 27);
+        student['han'] = new stu('ahan', 17);
+
+        for (var prop in student) {
+            alert(student[prop].stuname);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

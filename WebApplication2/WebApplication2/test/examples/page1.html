@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<head>
+    <!-- Standard Meta -->
+    <!--<meta charset="utf-8" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properities -->
+    <title>Homepage Example - Semantic</title>
+    <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="../packaged/css/semantic.css">
+    <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+    <!--<script src="jquery.js"></script>-->
+    <script type="text/javascript">
+        //cdn加载jquery不成功，取本地juqery
+        !window.jQuery && document.write("<script src='jquery.js'><\/script>");
+        function disableimage(o) {
+            var obj = $(o);
+            obj.addClass('disabled');
+        }
+        function enableimage(o) {
+            var obj = $(o);
+            obj.removeClass('disabled').removeClass('medium').addClass('large');
+        }
+        function shomodal() {
+            $('#modal1').modal('show');
+        }
+        function showleft() {
+            $('.ui.sidebar').sidebar('toggle');
+        }
+        function showAnimate() {
+            $('.cat.image').transition('tada');
+        }
+        $(function () {
+            // $('.ui.sidebar').sidebar();
+            $('.event.example .image').dimmer({ on: 'hover' });
+            $('.ui.accordion').accordion();
+            $('.dog.shape').eq(0).shape('flip over').end().eq(1).shape('flip back');
+            $('#aaaaa').popup();
+            $('#rate1').rating();
+            $('#rate1 i').popup();
+            $('.ui.rating').rating();
+            $('.ui.cube.shape').shape();
+            $('.ui.radio.checkbox').checkbox();
+            $('.ui.dropdown').dropdown();
+            var obj = $('.ui.checkbox').checkbox();//取的是div，还以为是checkbox，$('.ui.checkbox')效果是一样的，checkbox()有毛用？原来作用是选中改变状态，dropdown模块与此类似，需加上  $('.ui.dropdown').dropdown();才能响应点击改变样式，其中dropdown()中可以加方法名和参数
+            //alert(typeof obj[0])
+            //alert(obj[0].children[0].id);
+        })
+    </script>
+    <script src="../packaged/javascript/semantic.js"></script>
+</head>
+<body style="font-size:12px">
+
+    <!--<div class="ui two column middle aligned relaxed grid basic segment">
+        <div class="column">
+            <div class="ui form segment">
+                <div class="field">
+                    <label>用户名</label>
+                    <div class="ui left labeled icon input">
+                        <input type="text" placeholder="用户名（使用邮件地址）">
+                        <i class="user icon"></i>
+                        <div class="ui corner label">
+                            <i class="asterisk icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>密码</label>
+                    <div class="ui left labeled icon input">
+                        <input type="password">
+                        <i class="lock icon"></i>
+                        <div class="ui corner label">
+                            <i class="asterisk icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui blue submit button">注册成爱酷学习网用户</div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            Or
+        </div>
+        <div class="center aligned column">
+            <div class="huge green ui labeled icon button">
+                <i class="signup icon"></i>
+                登录爱酷学习网
+            </div>
+        </div>
+    </div>-->
+    <div class="ui circular rotate  reveal">
+        <img class="visible content" src="../packaged/images/apple2.jpg">
+        <img class="hidden content" src="../packaged/images/apple2.jpg">
+    </div>
+    <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+    <div class="ui horizontal icon divider">
+        <i class="circular heart icon"></i><i class="circular heart icon"></i><i class="circular heart icon"></i><i class="circular heart icon"></i><i class="circular heart icon"></i>
+    </div>
+    <p>愛酷學習網是一個免費提供高清在線觀看視頻教程的網站，這裡有各類視頻教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等視頻教程。我們還提供了Android, iOS, Windows Phone客戶端，讓你在手機等移動設備上也能隨時隨地觀看視頻教程。</p>
+
+    <div class="ui segment">
+        <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        <div class="ui active dimmer">
+            <div class="ui text loader">正在加载中...</div>
+        </div>
+    </div>
+    <!-- <img class="ui medium image" src="../packaged/images/dog.jpg" onmouseout="enableimage(this)" onmouseover="    disableimage(this)">-->
+    <!--<img class="ui avatar image left floated" src="../packaged/images/dog2.jpg">
+    <img class="ui circular image right floated" src="../packaged/images/dog2.jpg">-->
+    <!--<div class="ui large images">
+        <img src="../packaged/images/dog.jpg">
+        <img src="../packaged/images/dog2.jpg">
+        <img src="../packaged/images/dog2.jpg">
+        <img src="../packaged/images/dog.jpg">
+    </div>-->
+    <div class="ui shape">
+        <div class="sides">
+            <div class="active side">This side starts visible.</div>
+            <div class="side">This is yet another side</div>
+            <div class="side">This is the last side</div>
+        </div>
+    </div>
+
+    <div class="ui dropdown">
+        <div class="text">选择</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div class="item">编辑</div>
+            <div class="item">删除</div>
+            <div class="item">隐藏</div>
+        </div>
+    </div>
+    <div class="ui teal buttons">
+        <div class="ui button">保存</div>
+        <div class="ui teal floating dropdown icon button">
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item"><i class="edit icon"></i>编辑文章</div>
+                <div class="item"><i class="delete icon"></i>删除文章</div>
+                <div class="item"><i class="hide icon"></i>隐藏文章</div>
+            </div>
+        </div>
+    </div>
+    <div class="ui form">
+        <div class="grouped inline fields">
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" checked="">
+                    <label>苹果</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit">
+                    <label>桔子</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit">
+                    <label>梨子</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit">
+                    <label>柚子</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui form">
+        <div class="inline field">
+            <div class="ui checkbox">
+                <input type="checkbox" id="chk1">
+                <label>复选框样式</label>
+            </div>
+        </div>
+        <div class="inline field">
+            <div class="ui slider checkbox">
+                <input type="checkbox" id="chk2">
+                <label>滑块样式</label>
+            </div>
+            <label></label>
+        </div>
+        <div class="inline field">
+            <div class="ui toggle checkbox">
+                <input type="checkbox" id="chk3">
+                <label>切换样式</label>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <i class="archive icon"></i>
+        <i class="attachment icon"></i>
+        <i class="browser icon"></i>
+        <i class="bug icon"></i>
+        <i class="calendar icon"></i>
+        <i class="cart icon"></i>
+        <i class="certificate icon"></i>
+        <i class="chat icon"></i>
+        <i class="cloud icon"></i>
+        <i class="add icon"></i>
+        <i class="add sign box icon"></i>
+        <i class="black users icon"></i>
+        <i class="blue user icon"></i>
+        <i class="red users icon"></i>
+        <i class="green user icon"></i>
+        <i class="purple chat icon"></i>
+        <i class="teal comment icon"></i>
+        <i class="teal comment icon inverted"></i>
+    </div>
+    <div class="ui label">
+        爱酷学习网的视频教程类目
+        <div class="detail">1558</div>
+    </div>
+    <div class="ui label">
+        <i class="mail icon"></i> 23
+    </div>
+    <div class="ui label">
+        计算机类视频教程
+        <i class="delete icon"></i>
+    </div>
+    <div class="yellow ui message">
+        <div class="ui left red corner label">
+            <i class="heart icon"></i>
+        </div>
+        边角标签必须在容器内使用position: relative才能正确显示。
+    </div>
+    <div class="ui segment">
+        <div class="ui right red corner label">
+            <i class="heart icon"></i>
+        </div>
+        <div class="ui left corner label">
+            <div class="text">新</div>
+        </div>
+        这是一个新上传的视频教程。
+    </div>
+    <div class="ui left floated medium image">
+        <img src="/images/demo/highres2.jpg">
+        <a class="ui left corner label">
+            <div class="text">新</div>
+        </a>
+    </div>
+    <div class="ui left floated medium image">
+        <a class="ui right red corner label">
+            <i class="heart icon"></i>
+        </a>
+        <img src="../packaged/images/dog2.jpg">
+    </div>
+    <div class="ui two column grid" style="display: block;">
+        <div class="row">
+            <div class="column">
+                <div class="ui raised segment">
+                    <div class="ui ribbon label">计算机</div>
+                    <p>计算机类视频教程。</p>
+                    <div class="ui teal ribbon label">历史</div>
+                    <p>历史类视频教程。</p>
+                    <div class="ui red ribbon label">体育</div>
+                    <p>体育类视频教务。</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui raised segment">
+                    <div class="ui ribbon label">计算机</div>
+                    <p>计算机类视频教程。</p>
+                    <div class="ui teal ribbon label">历史</div>
+                    <p>历史类视频教程。</p>
+                    <div class="ui red ribbon label">体育</div>
+                    <p>体育类视频教务。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui three column grid" style="display: block;">
+        <div class="row">
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui top attached label">HTML</div>
+                    <p>这是HTML内容。</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui bottom attached label">CSS</div>
+                    <p>这是CSS内容。</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui top right attached label">代码</div>
+                    <p>这是代码。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui top left attached label">视图</div>
+                    <p>这是视图。</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui bottom left attached label">用户视图</div>
+                    <p>这是用户视图。</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui bottom right attached label">管理员视图</div>
+                    <p>这是管理员视图。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <a class="ui black label">
+            First
+        </a>
+        <a class="ui green label">
+            Fun
+        </a>
+        <a class="ui red label">
+            Happy
+        </a>
+        <a class="ui blue label">
+            Smart
+        </a>
+        <a class="ui orange label">
+            Radical
+        </a>
+        <a class="ui purple label">
+            Insane
+        </a>
+        <a class="ui teal label">
+            Exciting
+        </a>
+    </div>
+    <div class="ui compact menu">
+        <a class="item">
+            <i class="icon mail"></i> 消息
+            <div class="floating ui red label">22</div>
+        </a>
+        <a class="item">
+            <i class="icon users"></i> 朋友
+            <div class="floating ui teal label">22</div>
+        </a>
+    </div>
+    <div class="ui piled segment">
+        <h2>标题头</h2>
+        <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+        <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+        <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+    </div>
+    <div class="ui top attached segment">
+        <p>This segment is on top</p>
+    </div>
+    <div class="ui attached segment">
+        <p>This segment is attached on both sides</p>
+    </div>
+    <div class="ui bottom attached segment">
+        <p>This segment is on bottom</p>
+    </div>
+    <div class="ui massive icon input">
+        <input type="text" placeholder="最大型输入控件...">
+        <i class="search icon"></i>
+    </div>
+    <div class="ui progress" style="display: block;">
+        <div class="bar"></div>
+    </div>
+    <div class="ui blue progress" style="display: block;">
+        <div class="bar"></div>
+    </div>
+    <div class="ui message">
+        <i class="close icon"></i>
+        <div class="header">
+            下载视频教程
+        </div>
+        <p>爱酷学习网的所有视频教程都是可以下载的哦。</p>
+    </div>
+    <!--<div class="ui grid">
+        <div class="four wide column">
+            <div class="ui labeled vertical fluid inverted icon menu">
+                <a class="item">
+                    <i class="icon mail"></i>
+                    Java视频教程
+                </a>
+                <a class="item">
+                    <i class="icon lab"></i>
+                    Python/Ruby视频教程
+                </a>
+                <a class="item">
+                    <i class="icon star"></i>
+                    前端视频教程
+                </a>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui inverted segment">
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui segment">
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui segment">
+            </div>
+        </div>
+    </div>-->
+    <!--<div class="ui segment field">
+        <div class="ui left labeled icon  input">
+            <input type="text" placeholder="用户名">
+            <i class="user icon"></i>
+            <div class="ui corner label">
+                <i class="icon asterisk"></i>
+            </div>
+        </div>
+    </div>-->
+    <!--<div class="ui form segment inverted" style="width:50%">
+        <div class="field">
+            <label>用户名</label>
+            <div class="ui left labeled icon  input">
+                <input type="text" placeholder="用户名">
+                <i class="user icon"></i>
+                <div class="ui corner label">
+                    <i class="icon asterisk"></i>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>密码</label>
+            <div class="ui left labeled icon input">
+                <input type="password">
+                <i class="lock icon"></i>
+                <div class="ui corner label">
+                    <i class="icon red asterisk"></i>
+                </div>
+            </div>
+        </div>
+        <div class="ui error message">
+            <div class="header">发生了错误</div>
+        </div>
+        <div class="ui blue submit button">登录</div>
+    </div>-->
+    <div class="ui breadcrumb">
+        <a class="section">食物</a>
+        <i class="right arrow icon divider"></i>
+        <a class="section">水果</a>
+        <i class="right arrow icon divider"></i>
+        <div class="active section">苹果</div>
+    </div>
+    <div class="ui feed segment">
+        <div class="event">
+            <div class="label">
+                <img src="/images/demo/avatar.jpg">
+            </div>
+            <div class="content">
+                <div class="date">
+                    3天前
+                </div>
+                <div class="summary">
+                    <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>正式上线！
+                </div>
+                <div class="extra images">
+                    <img src="/images/demo/item1.jpg">
+                    <img src="/images/demo/item2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="event">
+            <div class="label">
+                <img src="/images/demo/avatar.jpg">
+            </div>
+            <div class="content">
+                <div class="date">
+                    3天前
+                </div>
+                <div class="summary">
+                    <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>新增订阅功能。
+                </div>
+                <div class="extra text">
+                    爱酷学习网加入最新评论功能。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui heart rating">
+        <i class="icon"></i>
+        <i class="icon"></i>
+        <i class="icon"></i>
+        <i class="icon"></i>
+        <i class="icon"></i>
+    </div>
+    <div id="rate1" class="ui heart rating">
+        <i class="icon active" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+    </div>
+    <div class="ui cube shape">
+        <div class="sides">
+            <div class="side active">
+                <div class="content">
+                    <div class="center">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="content">
+                    <div class="center">
+                        2
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="content">
+                    <div class="center">
+                        3
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="content">
+                    <div class="center">
+                        4
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="content">
+                    <div class="center">
+                        5
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="content">
+                    <div class="center">
+                        6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui ignored divider"></div>
+    <div class="ui ignored icon direction buttons">
+        <div class="ui button" data-animation="flip" data-direction="left" title="Flip Left"><i class="left long arrow icon"></i></div>
+        <div class="ui button" data-animation="flip" data-direction="up" title="Flip Up"><i class="up long arrow icon"></i></div>
+        <div class="ui icon button" data-animation="flip" data-direction="down" title="Flip Down"><i class="down long arrow icon"></i></div>
+        <div class="ui icon button" data-animation="flip" data-direction="right" title="Flip Right"><i class="right long arrow icon"></i></div>
+    </div>
+    <div class="ui ignored icon direction buttons">
+        <div class="ui button" data-animation="flip" data-direction="over" title="Flip Over"><i class="retweet icon"></i></div>
+        <div class="ui button" data-animation="flip" data-direction="back" title="Flip Back"><i class="flipped retweet icon"></i></div>
+    </div>
+    <img id="aaaaa" src="../packaged/images/dog.jpg" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！" class="ui avatar image">
+    <div class="dog ui shape">
+        <div class="sides">
+            <div class="active side">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="image">
+                            <a class="ui like corner label">
+                                <i class="like icon"></i>
+                            </a>
+                            <img src="/images/demo/highres2.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="name">Cute Dog</div>
+                            <p class="description">This dog has some things going for it. Its pretty cute and looks like it'd be fun to cuddle up with.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="image">
+                            <a class="ui like corner label">
+                                <i class="like icon"></i>
+                            </a>
+                            <img src="/images/demo/highres5.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="name">Silly Dog</div>
+                            <p class="description">Silly dogs can be quite fun to have as companions. You never know what kind of ridiculous thing they will do.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="image">
+                            <a class="ui like corner label">
+                                <i class="like icon"></i>
+                            </a>
+                            <img src="/images/demo/highres4.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="meta">5 days ago</div>
+                            <div class="name">Faithful Dog</div>
+                            <p class="description">Sometimes its more important to have a dog you know you can trust. But not every dog is trustworthy, you can tell by looking at its smile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dog ui shape">
+        <div class="sides">
+            <div class="active side">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="image">
+                            <a class="ui like corner label">
+                                <i class="like icon"></i>
+                            </a>
+                            <img src="/images/demo/highres.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="name">Cute Dog</div>
+                            <p class="description">This dog has some things going for it. Its pretty cute and looks like it'd be fun to cuddle up with.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="image">
+                            <a class="ui like corner label">
+                                <i class="like icon"></i>
+                            </a>
+                            <img src="/images/demo/highres4.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="name">Silly Dog</div>
+                            <p class="description">Silly dogs can be quite fun to have as companions. You never know what kind of ridiculous thing they will do.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="image">
+                            <a class="ui like corner label">
+                                <i class="like icon"></i>
+                            </a>
+                            <img src="/images/demo/highres6.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="meta">5 days ago</div>
+                            <div class="name">Faithful Dog</div>
+                            <p class="description">Sometimes its more important to have a dog you know you can trust. But not every dog is trustworthy, you can tell by looking at its smile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui accordion">
+        <div class="active title">
+            <i class="dropdown icon"></i>
+            爱酷学习网是什么？
+        </div>
+        <div class="active content">
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="title">
+            <i class="dropdown icon"></i>
+            爱酷学习网使用了什么技术？
+        </div>
+        <div class="content">
+            <p>Java, Mybatis, Shiro, SpringMVC, Bootstrap, Semantic UI, jQuery等。</p>
+        </div>
+        <div class="title">
+            <i class="dropdown icon"></i>
+            爱酷学习网比其它网站好在哪？
+        </div>
+        <div class="content">
+            <p>最大的好在于降低学习成本。</p>
+            <p>爱酷学习网的绝大部分视频教程都是免费观看的，另外，爱酷学习网的视频教程都是下载的哦。</p>
+        </div>
+    </div>
+    <!--<div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            对话框标题
+        </div>
+        <div class="content">
+            <div class="left">
+                左边的内容。
+            </div>
+            <div class="right">
+                右边的内容。
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui button">取消</div>
+            <div class="ui button">确定</div>
+        </div>
+    </div>-->
+    <div id="modal1" class="ui test modal transition hidden" style="margin-top: -250px;">
+        <i class="close icon"></i>
+        <div class="header">
+            创建视频教程专辑
+        </div>
+        <div class="content">
+            <div class="left">
+                <img class="ui medium image" src="../packaged/images/dog2.jpg">
+            </div>
+            <div class="right">
+                <div class="ui header">你确定要创建一个视频教程专辑吗？</div>
+                <p>如果你确定要创建视频专辑专辑请单击确定。</p>
+                <p>如果你觉得暂时还不需要创建视频教程专辑，请点击否。</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black button">
+                不创建
+            </div>
+            <div class="ui positive right labeled icon button">
+                创建
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
+    <div class="ui button" onclick="shomodal()">
+        模态对话框
+    </div>
+    <div id="rate1" class="ui heart rating">
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+        <i class="icon" data-title="翻译支持" data-content="这是由爱酷学习网翻译的哦！"></i>
+    </div>
+    <div class="event example">
+        <div class="ui medium image dimmable">
+            <div class="ui dimmer">
+                <div class="content">
+                    <div class="center">
+                        <h2 class="ui header">Puppy</h2>
+                        <div class="ui green button">Vote</div>
+                        <a class="ui button">View</a>
+                    </div>
+                </div>
+            </div>
+            <img src="../packaged/images/dog.jpg">
+        </div>
+        <div class="ui circular image dimmable">
+            <div class="ui dimmer" style="">
+                <div class="content">
+                    <div class="center">
+                        <div class="ui green button">Vote</div>
+                        <a class="ui button">View</a>
+                    </div>
+                </div>
+            </div>
+            <img src="../packaged/images/dog2.jpg">
+        </div>
+    </div> 
+    <div class="ui left sidebar vertical menu">
+        <div class="header item">左边的侧边栏</div>
+        <a class="item" href="http://www.icoolxue.com">爱酷学习网</a>
+        <a class="item" href="http://www.icoolxue.com">爱酷学习网</a>
+        <a class="item" href="http://www.icoolxue.com">爱酷学习网</a>
+    </div>
+    <div class="ui variation toggle buttons">
+        <div class="ui button active" onclick="showleft()" data-variation=".left">
+            左边
+        </div>
+        <div class="ui button" data-variation=".top">
+            上边
+        </div>
+        <div class="ui button" data-variation=".right">
+            右边
+        </div>
+        <div class="ui button" data-variation=".bottom">
+            底部
+        </div>
+    </div>
+    <div onmouseover="showAnimate()"  class="sticky-wrapper fixed" style="height: 314px;"><img src="../packaged/images/dog.jpg" class="ui cat image transition visible small" style=""></div>
+</body>

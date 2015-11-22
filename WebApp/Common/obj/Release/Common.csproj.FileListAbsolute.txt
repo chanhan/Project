@@ -1,0 +1,5 @@
+D:\Projects\WebApp\Common\bin\Release\Common.dll
+D:\Projects\WebApp\Common\bin\Release\Common.pdb
+D:\Projects\WebApp\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Projects\WebApp\Common\obj\Release\Common.dll
+D:\Projects\WebApp\Common\obj\Release\Common.pdb

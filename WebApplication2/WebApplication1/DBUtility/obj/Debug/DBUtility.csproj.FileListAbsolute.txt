@@ -1,0 +1,5 @@
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DBUtility\bin\Debug\Maticsoft.DBUtility.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DBUtility\bin\Debug\Maticsoft.DBUtility.pdb
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DBUtility\obj\Debug\Maticsoft.DBUtility.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DBUtility\obj\Debug\Maticsoft.DBUtility.pdb

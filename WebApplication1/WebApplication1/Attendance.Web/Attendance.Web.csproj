@@ -1,0 +1,2138 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED458F07-C62E-447C-A238-DAC330B82DA7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GDSBG.MiABU.Attendance.Web</RootNamespace>
+    <AssemblyName>Attendance.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>"%24/Attendance_New/Attendance", YHZBBAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="CryptoUtil, Version=1.0.524.28607, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\CryptoUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="dotnetSMSInterface, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\dotnetSMSInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="DropDownCheckList, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\DropDownCheckList.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.71.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Excel.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.Excel.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Web.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.Web.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.Misc.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.Misc.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.Shared.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.Shared.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebCalcManager.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebCalcManager.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebChart.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebChart.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebGauge.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebGauge.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebGrid.ExcelExport.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebGrid.ExcelExport.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebGrid.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebGrid.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebListbar.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebListbar.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebNavigator.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebNavigator.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebTab.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebTab.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebToolbar.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.UltraWebToolbar.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebCombo.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebCombo.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebDataInput.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebDataInput.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebDateChooser.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebDateChooser.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebHtmlEditor.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebHtmlEditor.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebNavBar.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebNavBar.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebSchedule.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebSchedule.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebScheduleDataProvider.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebScheduleDataProvider.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.WebSpellChecker.v7.1, Version=7.1.20071.40, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Infragistics2.WebUI.WebSpellChecker.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Whidsoft.WebControls.OrgChart, Version=3.20.9910.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDLL\Whidsoft.WebControls.OrgChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\NPOIHelper.cs" />
+    <Compile Include="App_GlobalResources\ControlText.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ControlText.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlText.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ControlText.zh-CN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlText.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ControlText.zh-TW.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlText.zh-TW.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\FunctionText.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunctionText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\FunctionText.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunctionText.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\FunctionText.zh-CN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunctionText.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\FunctionText.zh-TW.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunctionText.zh-TW.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Message.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Message.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Message.zh-CN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Message.zh-TW.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.zh-TW.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFrame.aspx.cs">
+      <DependentUpon>CommonFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFrame.aspx.designer.cs">
+      <DependentUpon>CommonFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlLib\BaseControl.ascx.cs">
+      <DependentUpon>BaseControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlLib\BaseControl.ascx.designer.cs">
+      <DependentUpon>BaseControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlLib\Title.ascx.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlLib\Title.ascx.designer.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlLib\PageNavigator.ascx.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlLib\PageNavigator.ascx.designer.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\PageHelper.cs" />
+    <Compile Include="HomePage\Faq.aspx.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Faq.aspx.designer.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\FaqDetail.aspx.cs">
+      <DependentUpon>FaqDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\FaqDetail.aspx.designer.cs">
+      <DependentUpon>FaqDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\NoticeDetail.aspx.cs">
+      <DependentUpon>NoticeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\NoticeDetail.aspx.designer.cs">
+      <DependentUpon>NoticeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Paper.aspx.cs">
+      <DependentUpon>Paper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Paper.aspx.designer.cs">
+      <DependentUpon>Paper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\PaperDetail.aspx.cs">
+      <DependentUpon>PaperDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\PaperDetail.aspx.designer.cs">
+      <DependentUpon>PaperDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\AreaSelector.aspx.cs">
+      <DependentUpon>AreaSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\AreaSelector.aspx.designer.cs">
+      <DependentUpon>AreaSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\CorporationSelector.aspx.cs">
+      <DependentUpon>CorporationSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\CorporationSelector.aspx.designer.cs">
+      <DependentUpon>CorporationSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\DepartmentForm.aspx.cs">
+      <DependentUpon>DepartmentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\DepartmentForm.aspx.designer.cs">
+      <DependentUpon>DepartmentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\DepartmentLayoutBForm.aspx.cs">
+      <DependentUpon>DepartmentLayoutBForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\DepartmentLayoutBForm.aspx.designer.cs">
+      <DependentUpon>DepartmentLayoutBForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\DepartmentLayoutForm.aspx.cs">
+      <DependentUpon>DepartmentLayoutForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\DepartmentLayoutForm.aspx.designer.cs">
+      <DependentUpon>DepartmentLayoutForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveEditForm.aspx.cs">
+      <DependentUpon>HrmEmpOtherMoveEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveEditForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpOtherMoveEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveForm.aspx.cs">
+      <DependentUpon>HrmEmpOtherMoveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpOtherMoveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\HrmEmpPremiumInfo.aspx.cs">
+      <DependentUpon>HrmEmpPremiumInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\HrmEmpPremiumInfo.aspx.designer.cs">
+      <DependentUpon>HrmEmpPremiumInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\SingleDataPickForm.aspx.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\SingleDataPickForm.aspx.designer.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\TreeDataPickForm.aspx.cs">
+      <DependentUpon>TreeDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\EmployeeData\TreeDataPickForm.aspx.designer.cs">
+      <DependentUpon>TreeDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\HrmDepartmentEditForm.aspx.cs">
+      <DependentUpon>HrmDepartmentEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\HrmDepartmentEditForm.aspx.designer.cs">
+      <DependentUpon>HrmDepartmentEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\HrmDepartmentForm.aspx.cs">
+      <DependentUpon>HrmDepartmentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\HrmDepartmentForm.aspx.designer.cs">
+      <DependentUpon>HrmDepartmentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\HrmManagerInfoForm.aspx.cs">
+      <DependentUpon>HrmManagerInfoForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\HrmManagerInfoForm.aspx.designer.cs">
+      <DependentUpon>HrmManagerInfoForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\HrmTWCadreEditForm.aspx.cs">
+      <DependentUpon>HrmTWCadreEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\HrmTWCadreEditForm.aspx.designer.cs">
+      <DependentUpon>HrmTWCadreEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\HrmTWCadreForm.aspx.cs">
+      <DependentUpon>HrmTWCadreForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\HrmTWCadreForm.aspx.designer.cs">
+      <DependentUpon>HrmTWCadreForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\LevelSelector.aspx.cs">
+      <DependentUpon>LevelSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\LevelSelector.aspx.designer.cs">
+      <DependentUpon>LevelSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\OrgEmployeeEditForm.aspx.cs">
+      <DependentUpon>OrgEmployeeEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\OrgEmployeeEditForm.aspx.designer.cs">
+      <DependentUpon>OrgEmployeeEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\OrgEmployeeForm.aspx.cs">
+      <DependentUpon>OrgEmployeeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\OrgEmployeeForm.aspx.designer.cs">
+      <DependentUpon>OrgEmployeeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\OrgEmployeeQueryForm.aspx.cs">
+      <DependentUpon>OrgEmployeeQueryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\OrgEmployeeQueryForm.aspx.designer.cs">
+      <DependentUpon>OrgEmployeeQueryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\SingleDataPickForm.aspx.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\SingleDataPickForm.aspx.designer.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportInEditForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportInEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportInEditForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportInEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportInForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportInForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportInForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportInForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportOutEditForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportOutEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportOutEditForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportOutEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportOutForm.aspx.cs">
+      <DependentUpon>HrmEmpSupportOutForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\Support\HrmEmpSupportOutForm.aspx.designer.cs">
+      <DependentUpon>HrmEmpSupportOutForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Support\SingleDataPickForm.aspx.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRM\Support\SingleDataPickForm.aspx.designer.cs">
+      <DependentUpon>SingleDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyConfirmForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyConfirmForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyConfirmForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyConfirmForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyEditForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyEditForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLH.aspx.cs">
+      <DependentUpon>KQMLeaveApplyForm_ZBLH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLH.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyForm_ZBLH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyImportForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyImportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyImportForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyImportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveTestifyForm.aspx.cs">
+      <DependentUpon>KQMLeaveTestifyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveTestifyForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveTestifyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveUploadFileForm.aspx.cs">
+      <DependentUpon>KQMLeaveUploadFileForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveUploadFileForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveUploadFileForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\KQMAbsentMonthForm.aspx.cs">
+      <DependentUpon>KQMAbsentMonthForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\KQMAbsentMonthForm.aspx.designer.cs">
+      <DependentUpon>KQMAbsentMonthForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\KQMMakeupReportForm.aspx.cs">
+      <DependentUpon>KQMMakeupReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\KQMMakeupReportForm.aspx.designer.cs">
+      <DependentUpon>KQMMakeupReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\NightAllowanceToExcel.aspx.cs">
+      <DependentUpon>NightAllowanceToExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\NightAllowanceToExcel.aspx.designer.cs">
+      <DependentUpon>NightAllowanceToExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\ReportKaoQinSumForm.aspx.cs">
+      <DependentUpon>ReportKaoQinSumForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\ReportKaoQinSumForm.aspx.designer.cs">
+      <DependentUpon>ReportKaoQinSumForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\ReportKQMKaoQinDayForm.aspx.cs">
+      <DependentUpon>ReportKQMKaoQinDayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\KQM\Query\ReportKQMKaoQinDayForm.aspx.designer.cs">
+      <DependentUpon>ReportKQMKaoQinDayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMEmpDataPickForm.aspx.cs">
+      <DependentUpon>PCMEmpDataPickForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMEmpDataPickForm.aspx.designer.cs">
+      <DependentUpon>PCMEmpDataPickForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMEvectionApplyEditForm.aspx.cs">
+      <DependentUpon>PCMEvectionApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMEvectionApplyEditForm.aspx.designer.cs">
+      <DependentUpon>PCMEvectionApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMEvectionApplyForm.aspx.cs">
+      <DependentUpon>PCMEvectionApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMEvectionApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMEvectionApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMKaoQinQryForm.aspx.cs">
+      <DependentUpon>PCMKaoQinQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMKaoQinQryForm.aspx.designer.cs">
+      <DependentUpon>PCMKaoQinQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyApprovedForm.aspx.cs">
+      <DependentUpon>PCMLeaveApplyApprovedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyApprovedForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyApprovedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyApproveForm.aspx.cs">
+      <DependentUpon>PCMLeaveApplyApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyApproveForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyEditForm_LHZB.aspx.cs">
+      <DependentUpon>PCMLeaveApplyEditForm_LHZB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyEditForm_LHZB.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyEditForm_LHZB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyForm.aspx.cs">
+      <DependentUpon>PCMLeaveApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApproveCenterForm.aspx.cs">
+      <DependentUpon>PCMLeaveApproveCenterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMLeaveApproveCenterForm.aspx.designer.cs">
+      <DependentUpon>PCMLeaveApproveCenterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMMonthtotalQueryForm.aspx.cs">
+      <DependentUpon>PCMMonthtotalQueryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMMonthtotalQueryForm.aspx.designer.cs">
+      <DependentUpon>PCMMonthtotalQueryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMSelfServiceForm.aspx.cs">
+      <DependentUpon>PCMSelfServiceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\PCM\PCMSelfServiceForm.aspx.designer.cs">
+      <DependentUpon>PCMSelfServiceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ConfigSendMessageEditForm.aspx.cs">
+      <DependentUpon>ConfigSendMessageEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ConfigSendMessageEditForm.aspx.designer.cs">
+      <DependentUpon>ConfigSendMessageEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ConfigSendMessageForm.aspx.cs">
+      <DependentUpon>ConfigSendMessageForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ConfigSendMessageForm.aspx.designer.cs">
+      <DependentUpon>ConfigSendMessageForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\KQMLeaveYearImport.aspx.cs">
+      <DependentUpon>KQMLeaveYearImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\KQMLeaveYearImport.aspx.designer.cs">
+      <DependentUpon>KQMLeaveYearImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\KQMReGetKaoQin.aspx.cs">
+      <DependentUpon>KQMReGetKaoQin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\KQMReGetKaoQin.aspx.designer.cs">
+      <DependentUpon>KQMReGetKaoQin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ScheduleData.aspx.cs">
+      <DependentUpon>ScheduleData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ScheduleData.aspx.designer.cs">
+      <DependentUpon>ScheduleData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ScheduleEditForm.aspx.cs">
+      <DependentUpon>ScheduleEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ScheduleEditForm.aspx.designer.cs">
+      <DependentUpon>ScheduleEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ScheduleOrgShift.aspx.cs">
+      <DependentUpon>ScheduleOrgShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\ScheduleOrgShift.aspx.designer.cs">
+      <DependentUpon>ScheduleOrgShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\AttendanceData\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\BUCalendar.aspx.cs">
+      <DependentUpon>BUCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\BUCalendar.aspx.designer.cs">
+      <DependentUpon>BUCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\ExceptReason.aspx.cs">
+      <DependentUpon>ExceptReason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\ExceptReason.aspx.designer.cs">
+      <DependentUpon>ExceptReason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KQMBellCardForm.aspx.cs">
+      <DependentUpon>KQMBellCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KQMBellCardForm.aspx.designer.cs">
+      <DependentUpon>KQMBellCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KQMBGCalendarForm.aspx.cs">
+      <DependentUpon>KQMBGCalendarForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KQMBGCalendarForm.aspx.designer.cs">
+      <DependentUpon>KQMBGCalendarForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterEditForm.aspx.cs">
+      <DependentUpon>KqmParameterEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterEditForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterEmpEditForm.aspx.cs">
+      <DependentUpon>KqmParameterEmpEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterEmpEditForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterEmpEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterEmpForm.aspx.cs">
+      <DependentUpon>KqmParameterEmpForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterEmpForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterEmpForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterForm.aspx.cs">
+      <DependentUpon>KqmParameterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmParameterForm.aspx.designer.cs">
+      <DependentUpon>KqmParameterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmRules.aspx.cs">
+      <DependentUpon>KqmRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\KqmRules.aspx.designer.cs">
+      <DependentUpon>KqmRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\LeaveTypeForm.aspx.cs">
+      <DependentUpon>LeaveTypeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\LeaveTypeForm.aspx.designer.cs">
+      <DependentUpon>LeaveTypeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\NetSignInSetForm.aspx.cs">
+      <DependentUpon>NetSignInSetForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\NetSignInSetForm.aspx.designer.cs">
+      <DependentUpon>NetSignInSetForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\OTMTypeForm.aspx.cs">
+      <DependentUpon>OTMTypeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\OTMTypeForm.aspx.designer.cs">
+      <DependentUpon>OTMTypeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\RelationSelector.aspx.cs">
+      <DependentUpon>RelationSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\RelationSelector.aspx.designer.cs">
+      <DependentUpon>RelationSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\ToolPingKQMBellCardForm.aspx.cs">
+      <DependentUpon>ToolPingKQMBellCardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\ToolPingKQMBellCardForm.aspx.designer.cs">
+      <DependentUpon>ToolPingKQMBellCardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\BasicData\WorkShift.aspx.cs">
+      <DependentUpon>WorkShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\BasicData\WorkShift.aspx.designer.cs">
+      <DependentUpon>WorkShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEmployeeShiftEditForm.aspx.cs">
+      <DependentUpon>KQMEmployeeShiftEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEmployeeShiftEditForm.aspx.designer.cs">
+      <DependentUpon>KQMEmployeeShiftEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEmployeeShiftForm.aspx.cs">
+      <DependentUpon>KQMEmployeeShiftForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEmployeeShiftForm.aspx.designer.cs">
+      <DependentUpon>KQMEmployeeShiftForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEvectionApplyEditForm.aspx.cs">
+      <DependentUpon>KQMEvectionApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEvectionApplyEditForm.aspx.designer.cs">
+      <DependentUpon>KQMEvectionApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEvectionApplyForm.aspx.cs">
+      <DependentUpon>KQMEvectionApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMEvectionApplyForm.aspx.designer.cs">
+      <DependentUpon>KQMEvectionApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMMoveShiftEditForm.aspx.cs">
+      <DependentUpon>KQMMoveShiftEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMMoveShiftEditForm.aspx.designer.cs">
+      <DependentUpon>KQMMoveShiftEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMMoveShiftForm.aspx.cs">
+      <DependentUpon>KQMMoveShiftForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMMoveShiftForm.aspx.designer.cs">
+      <DependentUpon>KQMMoveShiftForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMOrgShiftEditForm.aspx.cs">
+      <DependentUpon>KQMOrgShiftEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMOrgShiftEditForm.aspx.designer.cs">
+      <DependentUpon>KQMOrgShiftEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMOrgShiftForm.aspx.cs">
+      <DependentUpon>KQMOrgShiftForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\KaoQinData\KQMOrgShiftForm.aspx.designer.cs">
+      <DependentUpon>KQMOrgShiftForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMActivityApplyEditForm.aspx.cs">
+      <DependentUpon>OTMActivityApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMActivityApplyEditForm.aspx.designer.cs">
+      <DependentUpon>OTMActivityApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMActivityApplyForm.aspx.cs">
+      <DependentUpon>OTMActivityApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMActivityApplyForm.aspx.designer.cs">
+      <DependentUpon>OTMActivityApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMMonthTotalEditForm.aspx.cs">
+      <DependentUpon>OTMMonthTotalEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMMonthTotalEditForm.aspx.designer.cs">
+      <DependentUpon>OTMMonthTotalEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMMonthTotalForm.aspx.cs">
+      <DependentUpon>OTMMonthTotalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMMonthTotalForm.aspx.designer.cs">
+      <DependentUpon>OTMMonthTotalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMRealApplyForm.aspx.cs">
+      <DependentUpon>OTMRealApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMRealApplyForm.aspx.designer.cs">
+      <DependentUpon>OTMRealApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMRealImpFrAdv.aspx.cs">
+      <DependentUpon>OTMRealImpFrAdv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMRealImpFrAdv.aspx.designer.cs">
+      <DependentUpon>OTMRealImpFrAdv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMRemainForm.aspx.cs">
+      <DependentUpon>OTMRemainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\OTM\OTMRemainForm.aspx.designer.cs">
+      <DependentUpon>OTMRemainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\KaoQinQryForm.aspx.cs">
+      <DependentUpon>KaoQinQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\KaoQinQryForm.aspx.designer.cs">
+      <DependentUpon>KaoQinQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\KQMBellCardQueryForm.aspx.cs">
+      <DependentUpon>KQMBellCardQueryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\KQMBellCardQueryForm.aspx.designer.cs">
+      <DependentUpon>KQMBellCardQueryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\KQMEvectionQryForm.aspx.cs">
+      <DependentUpon>KQMEvectionQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\KQMEvectionQryForm.aspx.designer.cs">
+      <DependentUpon>KQMEvectionQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\KQMLeaveApplyYearQryForm.aspx.cs">
+      <DependentUpon>KQMLeaveApplyYearQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\KQMLeaveApplyYearQryForm.aspx.designer.cs">
+      <DependentUpon>KQMLeaveApplyYearQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\KqmLeaveQryForm.aspx.cs">
+      <DependentUpon>KqmLeaveQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\KqmLeaveQryForm.aspx.designer.cs">
+      <DependentUpon>KqmLeaveQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\KQMSelfServiceForm.aspx.cs">
+      <DependentUpon>KQMSelfServiceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\KQMSelfServiceForm.aspx.designer.cs">
+      <DependentUpon>KQMSelfServiceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\MakeupReportForm.aspx.cs">
+      <DependentUpon>MakeupReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\MakeupReportForm.aspx.designer.cs">
+      <DependentUpon>MakeupReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\NightAllowanceQry.aspx.cs">
+      <DependentUpon>NightAllowanceQry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\NightAllowanceQry.aspx.designer.cs">
+      <DependentUpon>NightAllowanceQry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMDetailQryForm.aspx.cs">
+      <DependentUpon>OTMDetailQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMDetailQryForm.aspx.designer.cs">
+      <DependentUpon>OTMDetailQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMExceptionQryForm.aspx.cs">
+      <DependentUpon>OTMExceptionQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMExceptionQryForm.aspx.designer.cs">
+      <DependentUpon>OTMExceptionQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMRealQryForm.aspx.cs">
+      <DependentUpon>OTMRealQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMRealQryForm.aspx.designer.cs">
+      <DependentUpon>OTMRealQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMTotalQry.aspx.cs">
+      <DependentUpon>OTMTotalQry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\OTM\OTMTotalQry.aspx.designer.cs">
+      <DependentUpon>OTMTotalQry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KQM\Query\PAMEmpQryForm.aspx.cs">
+      <DependentUpon>PAMEmpQryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KQM\Query\PAMEmpQryForm.aspx.designer.cs">
+      <DependentUpon>PAMEmpQryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginIn.aspx.cs">
+      <DependentUpon>LoginIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginIn.aspx.designer.cs">
+      <DependentUpon>LoginIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\SystemData\FaqManage.aspx.cs">
+      <DependentUpon>FaqManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\FaqManage.aspx.designer.cs">
+      <DependentUpon>FaqManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\FormManage.aspx.cs">
+      <DependentUpon>FormManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\FormManage.aspx.designer.cs">
+      <DependentUpon>FormManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\NoticeEditForm.aspx.cs">
+      <DependentUpon>NoticeEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\NoticeEditForm.aspx.designer.cs">
+      <DependentUpon>NoticeEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\NoticeManager.aspx.cs">
+      <DependentUpon>NoticeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\NoticeManager.aspx.designer.cs">
+      <DependentUpon>NoticeManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\ParameterForm.aspx.cs">
+      <DependentUpon>ParameterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemData\ParameterForm.aspx.designer.cs">
+      <DependentUpon>ParameterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\AuthorityDetailForm.aspx.cs">
+      <DependentUpon>AuthorityDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\AuthorityDetailForm.aspx.designer.cs">
+      <DependentUpon>AuthorityDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\AuthorityForm.aspx.cs">
+      <DependentUpon>AuthorityForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\AuthorityForm.aspx.designer.cs">
+      <DependentUpon>AuthorityForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ChangPwd.aspx.cs">
+      <DependentUpon>ChangPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ChangPwd.aspx.designer.cs">
+      <DependentUpon>ChangPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\CompanyAssignForm.aspx.cs">
+      <DependentUpon>CompanyAssignForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\CompanyAssignForm.aspx.designer.cs">
+      <DependentUpon>CompanyAssignForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\CompanySelector.aspx.cs">
+      <DependentUpon>CompanySelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\CompanySelector.aspx.designer.cs">
+      <DependentUpon>CompanySelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\DepartmentAssignForm.aspx.cs">
+      <DependentUpon>DepartmentAssignForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\DepartmentAssignForm.aspx.designer.cs">
+      <DependentUpon>DepartmentAssignForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\DepLevelSelector.aspx.cs">
+      <DependentUpon>DepLevelSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\DepLevelSelector.aspx.designer.cs">
+      <DependentUpon>DepLevelSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\EmpTypeSelector.aspx.cs">
+      <DependentUpon>EmpTypeSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\EmpTypeSelector.aspx.designer.cs">
+      <DependentUpon>EmpTypeSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ImportExcel.aspx.cs">
+      <DependentUpon>ImportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ImportExcel.aspx.designer.cs">
+      <DependentUpon>ImportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\LanguageSelector.aspx.cs">
+      <DependentUpon>LanguageSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\LanguageSelector.aspx.designer.cs">
+      <DependentUpon>LanguageSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\LeftMenu.aspx.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\LeftMenu.aspx.designer.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\Module.aspx.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\Module.aspx.designer.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ModuleFrame.aspx.cs">
+      <DependentUpon>ModuleFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ModuleFrame.aspx.designer.cs">
+      <DependentUpon>ModuleFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ModuleSelector.aspx.cs">
+      <DependentUpon>ModuleSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\ModuleSelector.aspx.designer.cs">
+      <DependentUpon>ModuleSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PersonLevel.aspx.cs">
+      <DependentUpon>PersonLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PersonLevel.aspx.designer.cs">
+      <DependentUpon>PersonLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PersonManage.aspx.cs">
+      <DependentUpon>PersonManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PersonManage.aspx.designer.cs">
+      <DependentUpon>PersonManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PowerChange.aspx.cs">
+      <DependentUpon>PowerChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PowerChange.aspx.designer.cs">
+      <DependentUpon>PowerChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PrivilegedSelector.aspx.cs">
+      <DependentUpon>PrivilegedSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\PrivilegedSelector.aspx.designer.cs">
+      <DependentUpon>PrivilegedSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RoleCode.aspx.cs">
+      <DependentUpon>RoleCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RoleCode.aspx.designer.cs">
+      <DependentUpon>RoleCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RolesCode.aspx.cs">
+      <DependentUpon>RolesCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RolesCode.aspx.designer.cs">
+      <DependentUpon>RolesCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RolesRoleSet.aspx.cs">
+      <DependentUpon>RolesRoleSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RolesRoleSet.aspx.designer.cs">
+      <DependentUpon>RolesRoleSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RolesSelector.aspx.cs">
+      <DependentUpon>RolesSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\RolesSelector.aspx.designer.cs">
+      <DependentUpon>RolesSelector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\Synclog.aspx.cs">
+      <DependentUpon>Synclog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\Synclog.aspx.designer.cs">
+      <DependentUpon>Synclog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SystemSafety\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validate.aspx.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validate.aspx.designer.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\AbsentReporter.aspx.cs">
+      <DependentUpon>AbsentReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\AbsentReporter.aspx.designer.cs">
+      <DependentUpon>AbsentReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\InnerTeacherSalary.aspx.cs">
+      <DependentUpon>InnerTeacherSalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\InnerTeacherSalary.aspx.designer.cs">
+      <DependentUpon>InnerTeacherSalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\LeaveReportView.aspx.cs">
+      <DependentUpon>LeaveReportView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\LeaveReportView.aspx.designer.cs">
+      <DependentUpon>LeaveReportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\OtherAllowanceForm.aspx.cs">
+      <DependentUpon>OtherAllowanceForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\OtherAllowanceForm.aspx.designer.cs">
+      <DependentUpon>OtherAllowanceForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\OtherSubsidyReporter.aspx.cs">
+      <DependentUpon>OtherSubsidyReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\OtherSubsidyReporter.aspx.designer.cs">
+      <DependentUpon>OtherSubsidyReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\OTReporter.aspx.cs">
+      <DependentUpon>OTReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\OTReporter.aspx.designer.cs">
+      <DependentUpon>OTReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\PostSubsidy.aspx.cs">
+      <DependentUpon>PostSubsidy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\PostSubsidy.aspx.designer.cs">
+      <DependentUpon>PostSubsidy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\RewardReporter.aspx.cs">
+      <DependentUpon>RewardReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\RewardReporter.aspx.designer.cs">
+      <DependentUpon>RewardReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFReporter\SalaryExceptionReporter.aspx.cs">
+      <DependentUpon>SalaryExceptionReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFReporter\SalaryExceptionReporter.aspx.designer.cs">
+      <DependentUpon>SalaryExceptionReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\AbnormalAttendanceHandle.aspx.cs">
+      <DependentUpon>AbnormalAttendanceHandle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\AbnormalAttendanceHandle.aspx.designer.cs">
+      <DependentUpon>AbnormalAttendanceHandle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\AjaxProcess\AbnormalAttendanceHandle.ashx.cs">
+      <DependentUpon>AbnormalAttendanceHandle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\AjaxProcess\GetOtHours.ashx.cs">
+      <DependentUpon>GetOtHours.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\AjaxProcess\GetOTType.ashx.cs">
+      <DependentUpon>GetOTType.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\OTMAdvanceApplyEditForm.aspx.cs">
+      <DependentUpon>OTMAdvanceApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\OTMAdvanceApplyEditForm.aspx.designer.cs">
+      <DependentUpon>OTMAdvanceApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\OTMBatchOtApply.aspx.cs">
+      <DependentUpon>OTMBatchOtApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\OTMBatchOtApply.aspx.designer.cs">
+      <DependentUpon>OTMBatchOtApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\OverTime_Form.aspx.cs">
+      <DependentUpon>OverTime_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\OverTime_Form.aspx.designer.cs">
+      <DependentUpon>OverTime_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMAdvanceApplyEditForm.aspx.cs">
+      <DependentUpon>PCMAdvanceApplyEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMAdvanceApplyEditForm.aspx.designer.cs">
+      <DependentUpon>PCMAdvanceApplyEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMAdvanceApplyForm.aspx.cs">
+      <DependentUpon>PCMAdvanceApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMAdvanceApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMAdvanceApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMOTMActivityApplyForm.aspx.cs">
+      <DependentUpon>PCMOTMActivityApplyForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMOTMActivityApplyForm.aspx.designer.cs">
+      <DependentUpon>PCMOTMActivityApplyForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMWorkFlowCardMakeupList.aspx.cs">
+      <DependentUpon>PCMWorkFlowCardMakeupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\PCMWorkFlowCardMakeupList.aspx.designer.cs">
+      <DependentUpon>PCMWorkFlowCardMakeupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\WorkFlowCardMakeupList.aspx.cs">
+      <DependentUpon>WorkFlowCardMakeupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\WorkFlowCardMakeupList.aspx.designer.cs">
+      <DependentUpon>WorkFlowCardMakeupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowForm\WorkFlowMakeupEditForm.aspx.cs">
+      <DependentUpon>WorkFlowMakeupEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlowForm\WorkFlowMakeupEditForm.aspx.designer.cs">
+      <DependentUpon>WorkFlowMakeupEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\SigningScheduleQuery.aspx.cs">
+      <DependentUpon>SigningScheduleQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\SigningScheduleQuery.aspx.designer.cs">
+      <DependentUpon>SigningScheduleQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\SignLogAndMap.aspx.cs">
+      <DependentUpon>SignLogAndMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\SignLogAndMap.aspx.designer.cs">
+      <DependentUpon>SignLogAndMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WFMBillApprovedForm.aspx.cs">
+      <DependentUpon>WFMBillApprovedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WFMBillApprovedForm.aspx.designer.cs">
+      <DependentUpon>WFMBillApprovedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WFMBillCenterApproveForm.aspx.cs">
+      <DependentUpon>WFMBillCenterApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WFMBillCenterApproveForm.aspx.designer.cs">
+      <DependentUpon>WFMBillCenterApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WFMBillCenterForm.aspx.cs">
+      <DependentUpon>WFMBillCenterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WFMBillCenterForm.aspx.designer.cs">
+      <DependentUpon>WFMBillCenterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WFMManagerLeaveForm.aspx.cs">
+      <DependentUpon>WFMManagerLeaveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WFMManagerLeaveForm.aspx.designer.cs">
+      <DependentUpon>WFMManagerLeaveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WFM_WFMManagerLeaveEditForm.aspx.cs">
+      <DependentUpon>WFM_WFMManagerLeaveEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WFM_WFMManagerLeaveEditForm.aspx.designer.cs">
+      <DependentUpon>WFM_WFMManagerLeaveEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\Wf_UesrControl\Wf_ButtonControl.ascx.cs">
+      <DependentUpon>Wf_ButtonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Wf_UesrControl\Wf_ButtonControl.ascx.designer.cs">
+      <DependentUpon>Wf_ButtonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowBillChangeAuditFlowForm.aspx.cs">
+      <DependentUpon>WorkFlowBillChangeAuditFlowForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowBillChangeAuditFlowForm.aspx.designer.cs">
+      <DependentUpon>WorkFlowBillChangeAuditFlowForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowDayset.aspx.cs">
+      <DependentUpon>WorkFlowDayset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowDayset.aspx.designer.cs">
+      <DependentUpon>WorkFlowDayset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowImportForm.aspx.cs">
+      <DependentUpon>WorkFlowImportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowImportForm.aspx.designer.cs">
+      <DependentUpon>WorkFlowImportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowLimit.aspx.cs">
+      <DependentUpon>WorkFlowLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowLimit.aspx.designer.cs">
+      <DependentUpon>WorkFlowLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowProjectApply.aspx.cs">
+      <DependentUpon>WorkFlowProjectApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowProjectApply.aspx.designer.cs">
+      <DependentUpon>WorkFlowProjectApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowProjectApplyAdd.aspx.cs">
+      <DependentUpon>WorkFlowProjectApplyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowProjectApplyAdd.aspx.designer.cs">
+      <DependentUpon>WorkFlowProjectApplyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowSet.aspx.cs">
+      <DependentUpon>WorkFlowSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlowSet.aspx.designer.cs">
+      <DependentUpon>WorkFlowSet.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance.BLL\Attendance.BLL.csproj">
+      <Project>{B83CACED-D288-472A-916A-49EA5B5B8A4A}</Project>
+      <Name>Attendance.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.Common\Attendance.Common.csproj">
+      <Project>{29CCFADC-3E99-4E60-BD1E-7431C5B7B0E7}</Project>
+      <Name>Attendance.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.Model\Attendance.Model.csproj">
+      <Project>{167A1761-B496-4E40-BDB2-3A1F7AD7D2BB}</Project>
+      <Name>Attendance.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.OracleDAL\Attendance.OracleDAL.csproj">
+      <Project>{6DE47D36-6957-4EB9-8F1B-45F9325D80A5}</Project>
+      <Name>Attendance.OracleDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Theme_Blue\Theme_Blue.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Theme_Green\Style_Green.css" />
+    <Content Include="App_Themes\Theme_Green\Theme_Green.skin" />
+    <Content Include="CSS\CommonCss1.css" />
+    <Content Include="CSS\StyleLogin.css" />
+    <Content Include="JavaScript\jquery.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Theme_Yellow\images\BottomBG.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\NAV1.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\NAV2.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\navBG.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\navPIC1.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\navPIC2.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\titie.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\images\titieLeft.jpg" />
+    <Content Include="App_Themes\Theme_Yellow\Style_Yellow.css" />
+    <Content Include="App_Themes\Theme_Yellow\Theme_Yellow.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Theme_Yellow\images\titieRight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ControlText.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ControlText.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Message.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Message.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CSS\jquery-ui-custom.css" />
+    <Content Include="JavaScript\jquery-ui-custom.js" />
+    <Content Include="JavaScript\jquery_ui_lang.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ControlText.zh-TW.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ControlText.zh-TW.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ControlText.zh-CN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ControlText.zh-CN.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ControlText.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ControlText.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Message.zh-TW.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Message.zh-TW.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Message.zh-CN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Message.zh-CN.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Message.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Message.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\FunctionText.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>FunctionText.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\FunctionText.zh-CN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>FunctionText.zh-CN.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\FunctionText.zh-TW.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>FunctionText.zh-TW.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\FunctionText.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>FunctionText.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlLib\BaseControl.ascx" />
+    <Content Include="ControlLib\Title.ascx" />
+    <Content Include="CSS\CommonCssForIndex.css" />
+    <Content Include="CSS\CommonStyle.css" />
+    <Content Include="CSS\FlowMap.css" />
+    <Content Include="CSS\hrlogin.css" />
+    <Content Include="CSS\Images\12_01.jpg" />
+    <Content Include="CSS\Images\12_02.jpg" />
+    <Content Include="CSS\Images\12_03.jpg" />
+    <Content Include="CSS\Images\12_04.jpg" />
+    <Content Include="CSS\Images\12_06.jpg" />
+    <Content Include="CSS\Images\12_07.jpg" />
+    <Content Include="CSS\Images\12_08.jpg" />
+    <Content Include="CSS\Images\12_09.jpg" />
+    <Content Include="CSS\Images\12_10.jpg" />
+    <Content Include="CSS\Images\12_12.jpg" />
+    <Content Include="CSS\Images\12_13.jpg" />
+    <Content Include="CSS\Images\12_14.jpg" />
+    <Content Include="CSS\Images\12_16.jpg" />
+    <Content Include="CSS\Images\12_17.jpg" />
+    <Content Include="CSS\Images\12_18.jpg" />
+    <Content Include="CSS\Images\12_19.jpg" />
+    <Content Include="CSS\Images\12_21.jpg" />
+    <Content Include="CSS\Images\calendar.gif" />
+    <Content Include="CSS\Images\clocks.gif" />
+    <Content Include="CSS\Images\down.bmp" />
+    <Content Include="CSS\Images\expand.gif" />
+    <Content Include="CSS\Images\ig_treeMinus.gif" />
+    <Content Include="CSS\Images\inputbg.bmp" />
+    <Content Include="CSS\Images\overbg.bmp" />
+    <Content Include="CSS\Images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="CSS\Images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="CSS\Images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="CSS\Images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="CSS\Images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="CSS\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="CSS\Images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="CSS\Images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="CSS\Images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="CSS\Images\ui-icons_222222_256x240.png" />
+    <Content Include="CSS\Images\ui-icons_228ef1_256x240.png" />
+    <Content Include="CSS\Images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="CSS\Images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="CSS\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\Images\up.bmp" />
+    <Content Include="CSS\Images_new\266.jpg" />
+    <Content Include="CSS\Images_new\about.gif" />
+    <Content Include="CSS\Images_new\About_left.gif" />
+    <Content Include="CSS\Images_new\About_right.gif" />
+    <Content Include="CSS\Images_new\arrow.gif" />
+    <Content Include="CSS\Images_new\backgroud_001.gif" />
+    <Content Include="CSS\Images_new\backgroud_002.gif" />
+    <Content Include="CSS\Images_new\backgroud_003.gif" />
+    <Content Include="CSS\Images_new\background001.gif" />
+    <Content Include="CSS\Images_new\background_top.gif" />
+    <Content Include="CSS\Images_new\back_line.gif" />
+    <Content Include="CSS\Images_new\bottom01.gif" />
+    <Content Include="CSS\Images_new\btncenter.gif" />
+    <Content Include="CSS\Images_new\btnleft.gif" />
+    <Content Include="CSS\Images_new\btnright.gif" />
+    <Content Include="CSS\Images_new\btnright_long.gif" />
+    <Content Include="CSS\Images_new\bt_back.gif" />
+    <Content Include="CSS\Images_new\bt_save.gif" />
+    <Content Include="CSS\Images_new\building.jpg" />
+    <Content Include="CSS\Images_new\button.gif" />
+    <Content Include="CSS\Images_new\button_back.gif" />
+    <Content Include="CSS\Images_new\button_center.gif" />
+    <Content Include="CSS\Images_new\button_left.gif" />
+    <Content Include="CSS\Images_new\button_right.gif" />
+    <Content Include="CSS\Images_new\cha.gif" />
+    <Content Include="CSS\Images_new\close.gif" />
+    <Content Include="CSS\Images_new\contentTitleBg.jpg" />
+    <Content Include="CSS\Images_new\datagridDataRight.gif" />
+    <Content Include="CSS\Images_new\datagriddele.gif" />
+    <Content Include="CSS\Images_new\datagridKey.gif" />
+    <Content Include="CSS\Images_new\datagridredo.gif" />
+    <Content Include="CSS\Images_new\datagrid_change.gif" />
+    <Content Include="CSS\Images_new\datagrid_search.gif" />
+    <Content Include="CSS\Images_new\deleteItem.gif" />
+    <Content Include="CSS\Images_new\department.gif" />
+    <Content Include="CSS\Images_new\displayall.gif" />
+    <Content Include="CSS\Images_new\displaybottom.gif" />
+    <Content Include="CSS\Images_new\displaytop.gif" />
+    <Content Include="CSS\Images_new\down.gif" />
+    <Content Include="CSS\Images_new\download.gif" />
+    <Content Include="CSS\Images_new\DownLoad2.gif" />
+    <Content Include="CSS\Images_new\dropdown_arrow.PNG" />
+    <Content Include="CSS\Images_new\EmployeeCancel.gif" />
+    <Content Include="CSS\Images_new\EmployeeRemove.gif" />
+    <Content Include="CSS\Images_new\EMP_01.gif" />
+    <Content Include="CSS\Images_new\EMP_02.gif" />
+    <Content Include="CSS\Images_new\EMP_03.gif" />
+    <Content Include="CSS\Images_new\EMP_04.gif" />
+    <Content Include="CSS\Images_new\EMP_05.gif" />
+    <Content Include="CSS\Images_new\EMP_06.gif" />
+    <Content Include="CSS\Images_new\EMP_07.gif" />
+    <Content Include="CSS\Images_new\EMP_08.gif" />
+    <Content Include="CSS\Images_new\EMP_BUTTON_01.gif" />
+    <Content Include="CSS\Images_new\EMP_BUTTON_04.gif" />
+    <Content Include="CSS\Images_new\EMP_BUTTON_06.gif" />
+    <Content Include="CSS\Images_new\EMP_BUTTON_08.gif" />
+    <Content Include="CSS\Images_new\exit.gif" />
+    <Content Include="CSS\Images_new\Explanation.gif" />
+    <Content Include="CSS\Images_new\Fminus.gif" />
+    <Content Include="CSS\Images_new\foxconn.gif" />
+    <Content Include="CSS\Images_new\Frame_left_back.gif" />
+    <Content Include="CSS\Images_new\FuntionModel.gif" />
+    <Content Include="CSS\Images_new\glowtab-left.gif" />
+    <Content Include="CSS\Images_new\glowtab.gif" />
+    <Content Include="CSS\Images_new\gou.gif" />
+    <Content Include="CSS\Images_new\gridviewEdit.gif" />
+    <Content Include="CSS\Images_new\Group.gif" />
+    <Content Include="CSS\Images_new\help.gif" />
+    <Content Include="CSS\Images_new\home.gif" />
+    <Content Include="CSS\Images_new\I.gif" />
+    <Content Include="CSS\Images_new\indicator.gif" />
+    <Content Include="CSS\Images_new\L.gif" />
+    <Content Include="CSS\Images_new\leaveRemove.gif" />
+    <Content Include="CSS\Images_new\left001.gif" />
+    <Content Include="CSS\Images_new\left001_a.gif" />
+    <Content Include="CSS\Images_new\left002.gif" />
+    <Content Include="CSS\Images_new\left002_a.gif" />
+    <Content Include="CSS\Images_new\left003.gif" />
+    <Content Include="CSS\Images_new\left003_a.gif" />
+    <Content Include="CSS\Images_new\left004.gif" />
+    <Content Include="CSS\Images_new\left004_a.gif" />
+    <Content Include="CSS\Images_new\leftmiddl001.gif" />
+    <Content Include="CSS\Images_new\leftmiddl001_new.gif" />
+    <Content Include="CSS\Images_new\leftmiddl002.gif" />
+    <Content Include="CSS\Images_new\leftmiddl003.gif" />
+    <Content Include="CSS\Images_new\leftRemove.gif" />
+    <Content Include="CSS\Images_new\LeftRemove01.gif" />
+    <Content Include="CSS\Images_new\left_back.gif" />
+    <Content Include="CSS\Images_new\left_back01.gif" />
+    <Content Include="CSS\Images_new\left_back_01.gif" />
+    <Content Include="CSS\Images_new\left_back_02.gif" />
+    <Content Include="CSS\Images_new\left_back_03.gif" />
+    <Content Include="CSS\Images_new\left_back_03_a.gif" />
+    <Content Include="CSS\Images_new\left_main01.gif" />
+    <Content Include="CSS\Images_new\left_main02.gif" />
+    <Content Include="CSS\Images_new\left_main_001.gif" />
+    <Content Include="CSS\Images_new\left_main_01.gif" />
+    <Content Include="CSS\Images_new\left_main_01_a.gif" />
+    <Content Include="CSS\Images_new\left_main_back.gif" />
+    <Content Include="CSS\Images_new\left_middl_01.gif" />
+    <Content Include="CSS\Images_new\left_middl_back.gif" />
+    <Content Include="CSS\Images_new\Little_memo_bottom.gif" />
+    <Content Include="CSS\Images_new\Little_memo_middle.gif" />
+    <Content Include="CSS\Images_new\Little_memo_top.gif" />
+    <Content Include="CSS\Images_new\Loading.gif" />
+    <Content Include="CSS\Images_new\login_btn.gif" />
+    <Content Include="CSS\Images_new\login_btn.jpg" />
+    <Content Include="CSS\Images_new\login_btn01.gif" />
+    <Content Include="CSS\Images_new\login_user.gif" />
+    <Content Include="CSS\Images_new\login_user.png" />
+    <Content Include="CSS\Images_new\login_user01.gif" />
+    <Content Include="CSS\Images_new\Lose.gif" />
+    <Content Include="CSS\Images_new\MapEnd.gif" />
+    <Content Include="CSS\Images_new\MapStart.gif" />
+    <Content Include="CSS\Images_new\MapSup.gif" />
+    <Content Include="CSS\Images_new\memo_bottom.gif" />
+    <Content Include="CSS\Images_new\memo_middle.gif" />
+    <Content Include="CSS\Images_new\memo_top.gif" />
+    <Content Include="CSS\Images_new\New.gif" />
+    <Content Include="CSS\Images_new\NewsTitle.gif" />
+    <Content Include="CSS\Images_new\NewTop.gif" />
+    <Content Include="CSS\Images_new\new_button.gif" />
+    <Content Include="CSS\Images_new\nextd.gif" />
+    <Content Include="CSS\Images_new\orgRemove.gif" />
+    <Content Include="CSS\Images_new\orgRemoveRight.gif" />
+    <Content Include="CSS\Images_new\orgtopcenter.gif" />
+    <Content Include="CSS\Images_new\orgtopleft.gif" />
+    <Content Include="CSS\Images_new\orgtopright.gif" />
+    <Content Include="CSS\Images_new\org_back_01.gif" />
+    <Content Include="CSS\Images_new\ORG_label_center.gif" />
+    <Content Include="CSS\Images_new\ORG_label_left.gif" />
+    <Content Include="CSS\Images_new\ORG_label_right.gif" />
+    <Content Include="CSS\Images_new\org_line.gif" />
+    <Content Include="CSS\Images_new\org_main_01.gif" />
+    <Content Include="CSS\Images_new\org_main_02.gif" />
+    <Content Include="CSS\Images_new\org_main_02_large.gif" />
+    <Content Include="CSS\Images_new\org_main_02_morelarge.gif" />
+    <Content Include="CSS\Images_new\org_main_line.gif" />
+    <Content Include="CSS\Images_new\org_main_line01.gif" />
+    <Content Include="CSS\Images_new\org_manager_center.gif" />
+    <Content Include="CSS\Images_new\org_manger_left.gif" />
+    <Content Include="CSS\Images_new\org_manger_right.gif" />
+    <Content Include="CSS\Images_new\org_middle_back.gif" />
+    <Content Include="CSS\Images_new\Org_remove.gif" />
+    <Content Include="CSS\Images_new\org_top01.gif" />
+    <Content Include="CSS\Images_new\org_top01_a.gif" />
+    <Content Include="CSS\Images_new\org_top01_a_new.gif" />
+    <Content Include="CSS\Images_new\org_top01_new.gif" />
+    <Content Include="CSS\Images_new\org_top02.gif" />
+    <Content Include="CSS\Images_new\org_tree.gif" />
+    <Content Include="CSS\Images_new\photo.jpg" />
+    <Content Include="CSS\Images_new\PostCancel.gif" />
+    <Content Include="CSS\Images_new\quastion.gif" />
+    <Content Include="CSS\Images_new\refresh.jpg" />
+    <Content Include="CSS\Images_new\remove.gif" />
+    <Content Include="CSS\Images_new\Remove_cancel.gif" />
+    <Content Include="CSS\Images_new\Remove_cancel01.gif" />
+    <Content Include="CSS\Images_new\Reset_btn.gif" />
+    <Content Include="CSS\Images_new\rightRemove.gif" />
+    <Content Include="CSS\Images_new\rightRemove01.gif" />
+    <Content Include="CSS\Images_new\save.gif" />
+    <Content Include="CSS\Images_new\search.gif" />
+    <Content Include="CSS\Images_new\search01.gif" />
+    <Content Include="CSS\Images_new\search_01.gif" />
+    <Content Include="CSS\Images_new\search_btn.gif" />
+    <Content Include="CSS\Images_new\Search_button.gif" />
+    <Content Include="CSS\Images_new\search_new.gif" />
+    <Content Include="CSS\Images_new\selectdept.gif" />
+    <Content Include="CSS\Images_new\T.gif" />
+    <Content Include="CSS\Images_new\title_left.gif" />
+    <Content Include="CSS\Images_new\title_right.gif" />
+    <Content Include="CSS\Images_new\top01_a.gif" />
+    <Content Include="CSS\Images_new\top01_b.gif" />
+    <Content Include="CSS\Images_new\top02_a.gif" />
+    <Content Include="CSS\Images_new\top02_b.gif" />
+    <Content Include="CSS\Images_new\top03_a.gif" />
+    <Content Include="CSS\Images_new\top03_b.gif" />
+    <Content Include="CSS\Images_new\top04_a.gif" />
+    <Content Include="CSS\Images_new\top04_b.gif" />
+    <Content Include="CSS\Images_new\top05.gif" />
+    <Content Include="CSS\Images_new\top05_a.gif" />
+    <Content Include="CSS\Images_new\top05_b.gif" />
+    <Content Include="CSS\Images_new\top06_a.gif" />
+    <Content Include="CSS\Images_new\top06_b.gif" />
+    <Content Include="CSS\Images_new\Tplus.gif" />
+    <Content Include="CSS\Images_new\tree_shiyechu.gif" />
+    <Content Include="CSS\Images_new\UnLock.gif" />
+    <Content Include="CSS\Images_new\up.gif" />
+    <Content Include="CSS\Images_new\xmfh.gif" />
+    <Content Include="CSS\Images_new\xm_back.gif" />
+    <Content Include="HRM\AreaSelector.aspx" />
+    <Content Include="HRM\CorporationSelector.aspx" />
+    <Content Include="HRM\DepartmentForm.aspx" />
+    <Content Include="HRM\DepartmentLayoutBForm.aspx" />
+    <Content Include="HRM\DepartmentLayoutForm.aspx" />
+    <Content Include="HRM\EmployeeData\HrmEmpOtherMoveEditForm.aspx" />
+    <Content Include="HRM\EmployeeData\HrmEmpOtherMoveForm.aspx" />
+    <Content Include="HRM\EmployeeData\SingleDataPickForm.aspx" />
+    <Content Include="HRM\EmployeeData\TreeDataPickForm.aspx" />
+    <Content Include="HRM\HrmDepartmentEditForm.aspx" />
+    <Content Include="HRM\HrmDepartmentForm.aspx" />
+    <Content Include="HRM\HrmManagerInfoForm.aspx" />
+    <Content Include="HRM\HrmTWCadreEditForm.aspx" />
+    <Content Include="HRM\HrmTWCadreForm.aspx" />
+    <Content Include="HRM\LevelSelector.aspx" />
+    <Content Include="HRM\OrgEmployeeEditForm.aspx" />
+    <Content Include="HRM\OrgEmployeeForm.aspx" />
+    <Content Include="HRM\OrgEmployeeQueryForm.aspx" />
+    <Content Include="HRM\SingleDataPickForm.aspx" />
+    <Content Include="HRM\Support\HrmEmpSupportInEditForm.aspx" />
+    <Content Include="HRM\Support\HrmEmpSupportInForm.aspx" />
+    <Content Include="HRM\Support\HrmEmpSupportOutEditForm.aspx" />
+    <Content Include="HRM\Support\HrmEmpSupportOutForm.aspx" />
+    <Content Include="HRM\Support\SingleDataPickForm.aspx" />
+    <Content Include="Hr\KQM\Query\KQMAbsentMonthForm.aspx" />
+    <Content Include="Hr\KQM\Query\KQMMakeupReportForm.aspx" />
+    <Content Include="Hr\KQM\Query\NightAllowanceToExcel.aspx" />
+    <Content Include="Hr\KQM\Query\ReportKaoQinSumForm.aspx" />
+    <Content Include="Hr\KQM\Query\ReportKQMKaoQinDayForm.aspx" />
+    <Content Include="Hr\PCM\PCMKaoQinQryForm.aspx" />
+    <Content Include="Hr\PCM\PCMMonthtotalQueryForm.aspx" />
+    <Content Include="Hr\PCM\PCMSelfServiceForm.aspx" />
+    <Content Include="JavaScript\DropDownCheckList.js" />
+    <Content Include="ControlLib\PageNavigator.ascx" />
+    <Content Include="CSS\Images\accept.png" />
+    <Content Include="CSS\Images\debug_break_disabled_marker.png" />
+    <Content Include="CSS\Images\debug_break_marker.png" />
+    <Content Include="CSS\Images\downarrows_white.gif" />
+    <Content Include="CSS\Images\goforw.png" />
+    <Content Include="CSS\Images\gorev.png" />
+    <Content Include="CSS\Images\ig_treefolder.gif" />
+    <Content Include="CSS\Images\ig_treefolderopen.gif" />
+    <Content Include="CSS\Images\next.png" />
+    <Content Include="CSS\Images\nextg.gif" />
+    <Content Include="CSS\Images\nextn.gif" />
+    <Content Include="CSS\Images\prev.png" />
+    <Content Include="CSS\Images\prevg.gif" />
+    <Content Include="CSS\Images\prevn.gif" />
+    <Content Include="CSS\Images\uparrows_white.gif" />
+    <Content Include="CSS\Images\zoom.png" />
+    <Content Include="CSS\CommonCss.css" />
+    <Content Include="JavaScript\jquery-1.5.1.min.js" />
+    <Content Include="KQM\AttendanceData\ConfigSendMessageEditForm.aspx" />
+    <Content Include="KQM\AttendanceData\ConfigSendMessageForm.aspx" />
+    <Content Include="KQM\AttendanceData\KQMLeaveYearImport.aspx" />
+    <Content Include="KQM\AttendanceData\KQMReGetKaoQin.aspx" />
+    <Content Include="KQM\AttendanceData\ScheduleData.aspx" />
+    <Content Include="KQM\AttendanceData\ScheduleEditForm.aspx" />
+    <Content Include="KQM\AttendanceData\ScheduleOrgShift.aspx" />
+    <Content Include="KQM\AttendanceData\SendMessage.aspx" />
+    <Content Include="KQM\BasicData\BUCalendar.aspx" />
+    <Content Include="KQM\BasicData\ExceptReason.aspx" />
+    <Content Include="KQM\BasicData\KQMBellCardForm.aspx" />
+    <Content Include="KQM\BasicData\KQMBGCalendarForm.aspx" />
+    <Content Include="KQM\BasicData\KqmParameterEditForm.aspx" />
+    <Content Include="KQM\BasicData\KqmParameterEmpEditForm.aspx" />
+    <Content Include="KQM\BasicData\KqmParameterEmpForm.aspx" />
+    <Content Include="KQM\BasicData\KqmParameterForm.aspx" />
+    <Content Include="KQM\BasicData\KqmRules.aspx" />
+    <Content Include="KQM\BasicData\LeaveTypeForm.aspx" />
+    <Content Include="KQM\BasicData\NetSignInSetForm.aspx" />
+    <Content Include="KQM\BasicData\OTMTypeForm.aspx" />
+    <Content Include="KQM\BasicData\RelationSelector.aspx" />
+    <Content Include="KQM\BasicData\ToolPingKQMBellCardForm.aspx" />
+    <Content Include="KQM\BasicData\WorkShift.aspx" />
+    <Content Include="KQM\KaoQinData\KQMEmployeeShiftEditForm.aspx" />
+    <Content Include="KQM\KaoQinData\KQMEmployeeShiftForm.aspx" />
+    <Content Include="KQM\KaoQinData\KQMMoveShiftEditForm.aspx" />
+    <Content Include="KQM\KaoQinData\KQMMoveShiftForm.aspx" />
+    <Content Include="KQM\KaoQinData\KQMOrgShiftEditForm.aspx" />
+    <Content Include="KQM\KaoQinData\KQMOrgShiftForm.aspx" />
+    <Content Include="KQM\OTM\OTMActivityApplyEditForm.aspx" />
+    <Content Include="KQM\OTM\OTMActivityApplyForm.aspx" />
+    <Content Include="KQM\OTM\OTMRealApplyForm.aspx" />
+    <Content Include="KQM\OTM\OTMRealImpFrAdv.aspx" />
+    <Content Include="KQM\OTM\OTMRemainForm.aspx" />
+    <Content Include="KQM\Query\KaoQinQryForm.aspx" />
+    <Content Include="KQM\Query\KQMBellCardQueryForm.aspx" />
+    <Content Include="KQM\Query\KQMEvectionQryForm.aspx" />
+    <Content Include="KQM\Query\KQMLeaveApplyYearQryForm.aspx" />
+    <Content Include="KQM\Query\KqmLeaveQryForm.aspx" />
+    <Content Include="KQM\Query\KQMSelfServiceForm.aspx" />
+    <Content Include="KQM\Query\MakeupReportForm.aspx" />
+    <Content Include="KQM\Query\NightAllowanceQry.aspx" />
+    <Content Include="KQM\Query\OTM\OTMDetailQryForm.aspx" />
+    <Content Include="KQM\Query\OTM\OTMExceptionQryForm.aspx" />
+    <Content Include="KQM\Query\OTM\OTMRealQryForm.aspx" />
+    <Content Include="KQM\Query\OTM\OTMTotalQry.aspx" />
+    <Content Include="KQM\Query\PAMEmpQryForm.aspx" />
+    <Content Include="SystemManage\SystemData\FaqManage.aspx" />
+    <Content Include="SystemManage\SystemData\FormManage.aspx" />
+    <Content Include="SystemManage\SystemData\NoticeEditForm.aspx" />
+    <Content Include="SystemManage\SystemData\NoticeManager.aspx" />
+    <Content Include="SystemManage\SystemData\ParameterForm.aspx" />
+    <Content Include="SystemManage\SystemSafety\AuthorityDetailForm.aspx" />
+    <Content Include="SystemManage\SystemSafety\AuthorityForm.aspx" />
+    <Content Include="SystemManage\SystemSafety\ChangPwd.aspx" />
+    <Content Include="SystemManage\SystemSafety\CompanyAssignForm.aspx" />
+    <Content Include="SystemManage\SystemSafety\CompanySelector.aspx" />
+    <Content Include="SystemManage\SystemSafety\DepartmentAssignForm.aspx" />
+    <Content Include="SystemManage\SystemSafety\DepLevelSelector.aspx" />
+    <Content Include="SystemManage\SystemSafety\ImportExcel.aspx" />
+    <Content Include="SystemManage\SystemSafety\LanguageSelector.aspx" />
+    <Content Include="SystemManage\SystemSafety\LeftMenu.aspx" />
+    <Content Include="SystemManage\SystemSafety\Module.aspx" />
+    <Content Include="SystemManage\SystemSafety\ModuleFrame.aspx" />
+    <Content Include="SystemManage\SystemSafety\ModuleSelector.aspx" />
+    <Content Include="SystemManage\SystemSafety\PersonLevel.aspx" />
+    <Content Include="SystemManage\SystemSafety\PersonManage.aspx" />
+    <Content Include="SystemManage\SystemSafety\PowerChange.aspx" />
+    <Content Include="SystemManage\SystemSafety\PrivilegedSelector.aspx" />
+    <Content Include="SystemManage\SystemSafety\RoleCode.aspx" />
+    <Content Include="SystemManage\SystemSafety\RolesCode.aspx" />
+    <Content Include="SystemManage\SystemSafety\RolesRoleSet.aspx" />
+    <Content Include="SystemManage\SystemSafety\RolesSelector.aspx" />
+    <Content Include="SystemManage\SystemSafety\Synclog.aspx" />
+    <Content Include="SystemManage\SystemSafety\test.aspx" />
+    <Content Include="WorkFlowForm\AbnormalAttendanceHandle.aspx" />
+    <Content Include="WorkFlowForm\OTMAdvanceApplyEditForm.aspx" />
+    <Content Include="WorkFlowForm\OTMBatchOtApply.aspx" />
+    <Content Include="WorkFlowForm\WorkFlowCardMakeupList.aspx" />
+    <Content Include="WorkFlowForm\WorkFlowMakeupEditForm.aspx" />
+    <Content Include="WorkFlow\css\MyStyles.css" />
+    <Content Include="WorkFlow\SigningScheduleQuery.aspx" />
+    <Content Include="WorkFlow\SignLogAndMap.aspx" />
+    <Content Include="WorkFlow\WFMManagerLeaveForm.aspx" />
+    <Content Include="WorkFlow\WFM_WFMManagerLeaveEditForm.aspx" />
+    <Content Include="WorkFlow\Wf_UesrControl\Wf_ButtonControl.ascx" />
+    <Content Include="WorkFlow\WorkFlowDayset.aspx" />
+    <Content Include="WorkFlow\WorkFlowImportForm.aspx" />
+    <Content Include="WorkFlow\WorkFlowLimit.aspx" />
+    <Content Include="WorkFlow\WorkFlowSet.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AnnexFiles\20111019145549ajax.doc" />
+    <None Include="CSS\Images_new\glowtab.psd" />
+    <None Include="ExcelModel\BUCalendarSample.xls" />
+    <None Include="ExcelModel\EmpOtherMoveSample.xls" />
+    <None Include="ExcelModel\EmpShiftSample.xls" />
+    <None Include="ExcelModel\EmpSupportInSample.xls" />
+    <None Include="ExcelModel\EmpSupportOutSample.xls" />
+    <None Include="ExcelModel\HrmOrgManagerSample.xls" />
+    <None Include="ExcelModel\HRMTWCadreSample.xls" />
+    <None Include="ExcelModel\KaoQinDataSample.xls" />
+    <None Include="ExcelModel\KQMMakeupSample.xls" />
+    <None Include="ExcelModel\KQMOrgEmployee.xls" />
+    <None Include="ExcelModel\KQParamEmployeeSample.xls" />
+    <None Include="ExcelModel\LeaveApplySample.xls" />
+    <None Include="ExcelModel\LeaveYearImportSample.xls" />
+    <None Include="ExcelModel\MoveShiftSample.xls" />
+    <None Include="ExcelModel\NetSignInSetSample.xls" />
+    <None Include="ExcelModel\OtmActivityApplySample.xls" />
+    <None Include="ExcelModel\OtmAdvanceApplySampleLHZB.xls" />
+    <None Include="ExcelModel\OtmRemainSample.xls" />
+    <None Include="ExcelModel\OTMTotalQryTmp.xls" />
+    <None Include="ExcelModel\WFMAuditSample.xls" />
+    <Content Include="CSS\Images\ig_treePlus.gif" />
+    <Content Include="HRM\EmployeeData\HrmEmpPremiumInfo.aspx" />
+    <Content Include="Hr\KQM\KaoQinData\KQMLeaveApplyConfirmForm.aspx" />
+    <Content Include="Hr\KQM\KaoQinData\KQMLeaveTestifyForm.aspx" />
+    <Content Include="Hr\KQM\KaoQinData\KQMLeaveUploadFileForm.aspx" />
+    <Content Include="Hr\PCM\PCMEmpDataPickForm.aspx" />
+    <Content Include="Hr\PCM\PCMEvectionApplyEditForm.aspx" />
+    <Content Include="Hr\PCM\PCMEvectionApplyForm.aspx" />
+    <Content Include="Hr\PCM\PCMLeaveApplyApprovedForm.aspx" />
+    <Content Include="Hr\PCM\PCMLeaveApplyApproveForm.aspx" />
+    <Content Include="Hr\PCM\PCMLeaveApplyEditForm_LHZB.aspx" />
+    <Content Include="Hr\PCM\PCMLeaveApplyForm.aspx" />
+    <Content Include="Hr\PCM\PCMLeaveApproveCenterForm.aspx" />
+    <Content Include="KQM\OTM\OTMMonthTotalEditForm.aspx" />
+    <Content Include="KQM\OTM\OTMMonthTotalForm.aspx" />
+    <Content Include="SystemManage\SystemSafety\EmpTypeSelector.aspx" />
+    <Content Include="WFReporter\AbsentReporter.aspx" />
+    <Content Include="WFReporter\InnerTeacherSalary.aspx" />
+    <Content Include="WFReporter\LeaveReportView.aspx" />
+    <Content Include="WFReporter\OtherAllowanceForm.aspx" />
+    <Content Include="WFReporter\OtherSubsidyReporter.aspx" />
+    <Content Include="WFReporter\OTReporter.aspx" />
+    <Content Include="WFReporter\PostSubsidy.aspx" />
+    <Content Include="WFReporter\RewardReporter.aspx" />
+    <Content Include="WFReporter\SalaryExceptionReporter.aspx" />
+    <Content Include="WorkFlowForm\AjaxProcess\GetOTType.ashx" />
+    <Content Include="WorkFlowForm\AjaxProcess\GetOtHours.ashx" />
+    <Content Include="bin\Attendance.BLL.dll" />
+    <Content Include="bin\Attendance.BLL.pdb" />
+    <Content Include="bin\Attendance.Common.dll" />
+    <Content Include="bin\Attendance.Common.pdb" />
+    <Content Include="bin\Attendance.DALFactory.dll" />
+    <Content Include="bin\Attendance.DALFactory.pdb" />
+    <Content Include="bin\Attendance.IDAL.dll" />
+    <Content Include="bin\Attendance.IDAL.pdb" />
+    <Content Include="bin\Attendance.Model.dll" />
+    <Content Include="bin\Attendance.Model.pdb" />
+    <Content Include="bin\Attendance.OracleDAL.dll" />
+    <Content Include="bin\Attendance.OracleDAL.pdb" />
+    <Content Include="CommonFrame.aspx" />
+    <Content Include="HomePage\Faq.aspx" />
+    <Content Include="HomePage\FaqDetail.aspx" />
+    <Content Include="HomePage\Form.aspx" />
+    <Content Include="HomePage\Notice.aspx" />
+    <Content Include="HomePage\NoticeDetail.aspx" />
+    <Content Include="HomePage\Paper.aspx" />
+    <Content Include="HomePage\PaperDetail.aspx" />
+    <Content Include="HomePage\Service.aspx" />
+    <Content Include="Hr\KQM\KaoQinData\KQMLeaveApplyEditForm.aspx" />
+    <Content Include="Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLH.aspx" />
+    <Content Include="Hr\KQM\KaoQinData\KQMLeaveApplyImportForm.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="KQM\KaoQinData\KQMEvectionApplyEditForm.aspx" />
+    <Content Include="KQM\KaoQinData\KQMEvectionApplyForm.aspx" />
+    <Content Include="LoginIn.aspx" />
+    <Content Include="MainForm.aspx" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.ControlText.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.ControlText.en-US.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.ControlText.zh-CN.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.ControlText.zh-TW.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.FunctionText.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.FunctionText.en-US.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.FunctionText.zh-CN.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.FunctionText.zh-TW.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Message.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Message.en-US.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Message.zh-CN.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Message.zh-TW.designer.cs.dll" />
+    <Content Include="Validate.aspx" />
+    <Content Include="WorkFlowForm\AjaxProcess\AbnormalAttendanceHandle.ashx" />
+    <Content Include="WorkFlowForm\OverTime_Form.aspx" />
+    <Content Include="WorkFlowForm\PCMAdvanceApplyEditForm.aspx" />
+    <Content Include="WorkFlowForm\PCMAdvanceApplyForm.aspx" />
+    <Content Include="WorkFlowForm\PCMOTMActivityApplyForm.aspx" />
+    <Content Include="WorkFlowForm\PCMWorkFlowCardMakeupList.aspx" />
+    <Content Include="WorkFlow\WFMBillApprovedForm.aspx" />
+    <Content Include="WorkFlow\WFMBillCenterApproveForm.aspx" />
+    <Content Include="WorkFlow\WFMBillCenterForm.aspx" />
+    <Content Include="WorkFlow\WorkFlowBillChangeAuditFlowForm.aspx" />
+    <Content Include="WorkFlow\WorkFlowProjectApply.aspx" />
+    <Content Include="WorkFlow\WorkFlowProjectApplyAdd.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ExportFileTemp\" />
+    <Folder Include="Testify\" />
+    <Folder Include="WorkFlow\Img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4821</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

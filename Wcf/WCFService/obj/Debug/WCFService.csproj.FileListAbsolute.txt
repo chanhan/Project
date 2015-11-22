@@ -1,0 +1,12 @@
+D:\Projects\Wcf\WCFService\bin\Debug\WCFService.exe.config
+D:\Projects\Wcf\WCFService\bin\Debug\WCFService.exe
+D:\Projects\Wcf\WCFService\bin\Debug\WCFService.pdb
+D:\Projects\Wcf\WCFService\bin\Debug\DataAccess.dll
+D:\Projects\Wcf\WCFService\bin\Debug\IWCFService.dll
+D:\Projects\Wcf\WCFService\bin\Debug\WCFModel.dll
+D:\Projects\Wcf\WCFService\bin\Debug\DataAccess.pdb
+D:\Projects\Wcf\WCFService\bin\Debug\IWCFService.pdb
+D:\Projects\Wcf\WCFService\bin\Debug\WCFModel.pdb
+D:\Projects\Wcf\WCFService\obj\Debug\WCFService.csprojResolveAssemblyReference.cache
+D:\Projects\Wcf\WCFService\obj\Debug\WCFService.exe
+D:\Projects\Wcf\WCFService\obj\Debug\WCFService.pdb

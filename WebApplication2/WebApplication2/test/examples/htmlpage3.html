@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+</head>
+<body>
+    <canvas id="maincanvas" width="800" height="600">
+        Sorry, your browser doesn't support canvas, please use Firefox3.6+, Safari5+, Chrome, IE9 etc.
+    </canvas>
+</body>
+</html>
+<script>
+    var canvas = document.getElementById('maincanvas');
+    var ctx = canvas.getContext("2d");
+    var myImage = document.createElement('img');
+    myImage.src = "../packaged/images/dog.jpg";
+    myImage.onload = function () {
+        ctx.drawImage(myImage, 30, 10, myImage.naturalWidth, myImage.naturalHeight);
+        var radialGradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 1, canvas.width / 2, canvas.height / 2, 400);
+        radialGradient.addColorStop(0, 'rgba(247, 247, 247, 0)');
+        radialGradient.addColorStop(0.7, 'rgba(120, 120, 120, 0.5)');
+        radialGradient.addColorStop(0.9, 'rgba(0, 0, 0, 0.8)');
+        radialGradient.addColorStop(1, 'rgba(238, 238, 238, 1)');
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, 300, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fillStyle = radialGradient;
+        ctx.fill();
+    }
+</script>
+
+
+

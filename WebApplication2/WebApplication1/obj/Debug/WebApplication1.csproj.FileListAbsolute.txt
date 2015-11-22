@@ -1,0 +1,3 @@
+D:\Projects\WebApplication2\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+D:\Projects\WebApplication2\WebApplication1\obj\Debug\Maticsoft.Web.Global.resources
+D:\Projects\WebApplication2\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache

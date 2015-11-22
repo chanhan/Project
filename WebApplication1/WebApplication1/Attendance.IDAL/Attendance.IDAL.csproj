@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F89AA736-2987-4EFE-9EDE-E820260EEB44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GDSBG.MiABU.Attendance.IDAL</RootNamespace>
+    <AssemblyName>Attendance.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HRM\EmployeeData\IGdsAttEmployeesVDal.cs" />
+    <Compile Include="HRM\EmployeeData\IHrmEmpMoveTempDal.cs" />
+    <Compile Include="HRM\EmployeeData\IHrmEmpOtherMoveDal.cs" />
+    <Compile Include="HRM\EmployeeData\IHrmEmpOtherMoveImportDal.cs" />
+    <Compile Include="HRM\EmployeeData\IHrmEmpPremiumInfoDal.cs" />
+    <Compile Include="HRM\IDepartmentDal.cs" />
+    <Compile Include="HRM\IHrmDepartmentDal.cs" />
+    <Compile Include="HRM\IOrgEmployeeDal.cs" />
+    <Compile Include="HRM\IOrgmanagerDal.cs" />
+    <Compile Include="HRM\ITWCadreDal.cs" />
+    <Compile Include="HRM\Support\IEmpSupportInDal.cs" />
+    <Compile Include="HRM\Support\IEmpSupportOutDal.cs" />
+    <Compile Include="Hr\KQM\KaoQinData\IKQMLeaveApplyExportDal.cs" />
+    <Compile Include="Hr\KQM\KaoQinData\IKQMLeaveApplyForm_ZBLHDal.cs" />
+    <Compile Include="Hr\KQM\Query\IKQMAbsentMonthDal.cs" />
+    <Compile Include="Hr\KQM\Query\IReportKaoQinSumDal.cs" />
+    <Compile Include="Hr\PCM\IDal_LeaveApplyApprove.cs" />
+    <Compile Include="Hr\PCM\IGetEmpViewDal.cs" />
+    <Compile Include="Hr\PCM\IKaoQinDataDal.cs" />
+    <Compile Include="Hr\PCM\IMonthtotalDal.cs" />
+    <Compile Include="Hr\PCM\IPCMLeaveApplyDal.cs" />
+    <Compile Include="ImportExcel\IImportExcelDal.cs" />
+    <Compile Include="KQM\AttendanceData\IConfigSendMessageDal.cs" />
+    <Compile Include="KQM\AttendanceData\ISendMessageDal.cs" />
+    <Compile Include="KQM\KaoQinData\IEmployeeShiftDal.cs" />
+    <Compile Include="KQM\AttendanceData\IKQMLeaveYearImportDal.cs" />
+    <Compile Include="KQM\AttendanceData\IKQMReGetKaoQinDal.cs" />
+    <Compile Include="KQM\AttendanceData\ISchduleDataDal.cs" />
+    <Compile Include="KQM\BasicData\IBellCardDal.cs" />
+    <Compile Include="KQM\BasicData\IBGCalendarDal.cs" />
+    <Compile Include="KQM\BasicData\IBUcalendarDal.cs" />
+    <Compile Include="KQM\BasicData\IEmployeeDal.cs" />
+    <Compile Include="KQM\BasicData\IExceptReasonDal.cs" />
+    <Compile Include="KQM\BasicData\IKqmParameterEditDal.cs" />
+    <Compile Include="KQM\BasicData\IKqmParameterEmpDal.cs" />
+    <Compile Include="KQM\BasicData\IKqmParameterEmpEditDal.cs" />
+    <Compile Include="KQM\BasicData\IKqmParameterEmpTempDal.cs" />
+    <Compile Include="KQM\BasicData\IKqmRulesDal.cs" />
+    <Compile Include="KQM\BasicData\ILeaveTypeDal.cs" />
+    <Compile Include="KQM\BasicData\INetSignInSetDal.cs" />
+    <Compile Include="KQM\BasicData\IRelationSelectorDal.cs" />
+    <Compile Include="KQM\BasicData\IOTMTypeDal.cs" />
+    <Compile Include="KQM\KaoQinData\IKQMEvectionApplyDal.cs" />
+    <Compile Include="KQM\KaoQinData\IKQMMoveShiftDal.cs" />
+    <Compile Include="KQM\KaoQinData\IKQMMoveShiftTempDal.cs" />
+    <Compile Include="KQM\OTM\IOTMActivityApplyDal.cs" />
+    <Compile Include="KQM\OTM\IOTMActivityApplyTempDal.cs" />
+    <Compile Include="KQM\OTM\IOTMRemainDal.cs" />
+    <Compile Include="KQM\OTM\IRealapplyDal.cs" />
+    <Compile Include="KQM\Query\IBellCardQueryDal.cs" />
+    <Compile Include="KQM\Query\IKaoQinQryDal.cs" />
+    <Compile Include="KQM\Query\IKQMEvectionQryFormDal.cs" />
+    <Compile Include="KQM\Query\IKQMLeaveApplyYearQryDal.cs" />
+    <Compile Include="KQM\Query\IKqmLeaveQryFormDal.cs" />
+    <Compile Include="KQM\Query\IKQMSelfServiceDal.cs" />
+    <Compile Include="KQM\Query\INightAllowanceToExcelDal.cs" />
+    <Compile Include="KQM\Query\OTM\IOTMDetailQryDal.cs" />
+    <Compile Include="KQM\Query\OTM\IOTMExceptionQryDal.cs" />
+    <Compile Include="KQM\Query\OTM\IOTMRealQryDal.cs" />
+    <Compile Include="KQM\Query\OTM\IOTMTotalQryDal.cs" />
+    <Compile Include="SystemManage\SystemData\IAnswerDal.cs" />
+    <Compile Include="SystemManage\SystemData\IEmpAnswerDal.cs" />
+    <Compile Include="SystemManage\SystemData\IEmpPaperDal.cs" />
+    <Compile Include="SystemManage\SystemData\IFaqDal.cs" />
+    <Compile Include="SystemManage\SystemData\IFormManageDal.cs" />
+    <Compile Include="SystemManage\SystemData\IInfoNoticesDal.cs" />
+    <Compile Include="SystemManage\SystemData\IPaperDal.cs" />
+    <Compile Include="SystemManage\SystemData\IQuestionDal.cs" />
+    <Compile Include="SystemManage\SystemData\IServiceDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IPowerChangeDal.cs" />
+    <Compile Include="KQM\BasicData\ITypeDataDal.cs" />
+    <Compile Include="KQM\BasicData\IWorkShiftDal.cs" />
+    <Compile Include="SystemManage\SystemData\IParameterDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IAuthorityDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IChangPwdDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\SystemSafety\ICompanyAssignDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IModuleDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IPersonDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IPersonLevelDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IDepartmentAssignDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IRoleDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IRolesDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\IRolesRoleDal.cs" />
+    <Compile Include="SystemManage\SystemSafety\ISynclogDal.cs" />
+    <Compile Include="WFReporter\IAbsentReportDal.cs" />
+    <Compile Include="WFReporter\IInnerTeacherSalaryDal.cs" />
+    <Compile Include="WFReporter\IOTReporterDal.cs" />
+    <Compile Include="WFReporter\IRewardReporterDal.cs" />
+    <Compile Include="WorkFlow\IDal_AbnormalAttendanceHandle.cs" />
+    <Compile Include="WorkFlow\IDal_SigningScheduleQuery.cs" />
+    <Compile Include="WorkFlow\IOverTimeDal.cs" />
+    <Compile Include="WorkFlow\IWFMManagerLeaveData.cs" />
+    <Compile Include="WorkFlow\IWFProjectApplyDal.cs" />
+    <Compile Include="WorkFlow\IWFSignCenterDal.cs" />
+    <Compile Include="WorkFlow\IWFSignLogAndMap.cs" />
+    <Compile Include="WorkFlow\IWorkFlowBillChangeAuditFlowDal.cs" />
+    <Compile Include="WorkFlow\IWorkFlowCardMakeupDal.cs" />
+    <Compile Include="WorkFlow\IWorkFlowLimitDal.cs" />
+    <Compile Include="WorkFlow\IWorkFlowSetDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance.Common\Attendance.Common.csproj">
+      <Project>{29CCFADC-3E99-4E60-BD1E-7431C5B7B0E7}</Project>
+      <Name>Attendance.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.Model\Attendance.Model.csproj">
+      <Project>{167A1761-B496-4E40-BDB2-3A1F7AD7D2BB}</Project>
+      <Name>Attendance.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

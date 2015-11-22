@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD21E3AF-BEA6-4356-B1A7-54635D7785A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BLL\mssccprj.scc" />
+    <Content Include="BLL\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="BLL\obj\Debug\ResolveAssemblyReference.cache" />
+    <Content Include="BLL\Properties\vssver2.scc" />
+    <Content Include="BLL\vssver2.scc" />
+    <Content Include="Common\DEncrypt\vssver2.scc" />
+    <Content Include="Common\mssccprj.scc" />
+    <Content Include="Common\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Common\Properties\vssver2.scc" />
+    <Content Include="Common\vssver2.scc" />
+    <Content Include="DAL\mssccprj.scc" />
+    <Content Include="DAL\obj\Debug\build.force" />
+    <Content Include="DAL\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="DAL\obj\Debug\ResolveAssemblyReference.cache" />
+    <Content Include="DAL\Properties\vssver2.scc" />
+    <Content Include="DAL\vssver2.scc" />
+    <Content Include="DBUtility\mssccprj.scc" />
+    <Content Include="DBUtility\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="DBUtility\Properties\vssver2.scc" />
+    <Content Include="DBUtility\vssver2.scc" />
+    <Content Include="Model\mssccprj.scc" />
+    <Content Include="Model\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Model\Properties\vssver2.scc" />
+    <Content Include="Model\vssver2.scc" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web\css\vssver2.scc" />
+    <Content Include="Web\ErrorLog.log" />
+    <Content Include="Web\Images\vssver2.scc" />
+    <Content Include="Web\js\vssver2.scc" />
+    <Content Include="Web\MasterPage.master" />
+    <Content Include="Web\mssccprj.scc" />
+    <Content Include="Web\obj\Debug\build.force" />
+    <Content Include="Web\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Web\obj\Debug\GenerateResource.read.1.tlog" />
+    <Content Include="Web\obj\Debug\GenerateResource.write.1.tlog" />
+    <Content Include="Web\obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="Web\Properties\Settings.settings" />
+    <Content Include="Web\Properties\vssver2.scc" />
+    <Content Include="Web\vssver2.scc" />
+    <Content Include="Web\Web References\com.frisocrm.sms\Reference.map" />
+    <Content Include="Web\Web References\com.frisocrm.sms\ReturnStatus.datasource" />
+    <None Include="Web\Web References\com.frisocrm.sms\SendSMSService2.wsdl" />
+    <Content Include="Web\Web References\com.frisocrm.sms\vssver2.scc" />
+    <Content Include="Web\Web.config" />
+    <Content Include="Web\webctrl_client\1_0\Images\vssver2.scc" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\vssver2.scc" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\vssver2.scc" />
+    <Content Include="Web\webctrl_client\1_0\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BLL\bin\Debug\Maticsoft.BLL.dll" />
+    <Content Include="BLL\bin\Debug\Maticsoft.BLL.pdb" />
+    <Content Include="BLL\bin\Debug\Maticsoft.Common.dll" />
+    <Content Include="BLL\bin\Debug\Maticsoft.Common.pdb" />
+    <Content Include="BLL\bin\Debug\Maticsoft.DAL.dll" />
+    <Content Include="BLL\bin\Debug\Maticsoft.DAL.pdb" />
+    <Content Include="BLL\bin\Debug\Maticsoft.DBUtility.dll" />
+    <Content Include="BLL\bin\Debug\Maticsoft.DBUtility.pdb" />
+    <Content Include="BLL\bin\Debug\Maticsoft.Model.dll" />
+    <Content Include="BLL\bin\Debug\Maticsoft.Model.pdb" />
+    <Content Include="BLL\BLL.csproj" />
+    <Content Include="BLL\BLL.csproj.vspscc" />
+    <Content Include="BLL\obj\Debug\BLL.csproj.FileListAbsolute.txt" />
+    <Content Include="BLL\obj\Debug\Maticsoft.BLL.dll" />
+    <Content Include="BLL\obj\Debug\Maticsoft.BLL.pdb" />
+    <Content Include="Common\bin\Debug\Maticsoft.Common.dll" />
+    <Content Include="Common\bin\Debug\Maticsoft.Common.pdb" />
+    <Content Include="Common\Common.csproj" />
+    <Content Include="Common\Common.csproj.vspscc" />
+    <Content Include="Common\obj\Debug\Common.csproj.FileListAbsolute.txt" />
+    <Content Include="Common\obj\Debug\Maticsoft.Common.dll" />
+    <Content Include="Common\obj\Debug\Maticsoft.Common.pdb" />
+    <Content Include="DAL\bin\Debug\Maticsoft.Common.dll" />
+    <Content Include="DAL\bin\Debug\Maticsoft.Common.pdb" />
+    <Content Include="DAL\bin\Debug\Maticsoft.DAL.dll" />
+    <Content Include="DAL\bin\Debug\Maticsoft.DAL.pdb" />
+    <Content Include="DAL\bin\Debug\Maticsoft.DBUtility.dll" />
+    <Content Include="DAL\bin\Debug\Maticsoft.DBUtility.pdb" />
+    <Content Include="DAL\bin\Debug\Maticsoft.Model.dll" />
+    <Content Include="DAL\bin\Debug\Maticsoft.Model.pdb" />
+    <Content Include="DAL\DAL.csproj" />
+    <Content Include="DAL\DAL.csproj.vspscc" />
+    <Content Include="DAL\obj\Debug\DAL.csproj.FileListAbsolute.txt" />
+    <Content Include="DAL\obj\Debug\Maticsoft.DAL.dll" />
+    <Content Include="DAL\obj\Debug\Maticsoft.DAL.pdb" />
+    <Content Include="DBUtility\bin\Debug\Maticsoft.DBUtility.dll" />
+    <Content Include="DBUtility\bin\Debug\Maticsoft.DBUtility.pdb" />
+    <Content Include="DBUtility\DBUtility.csproj" />
+    <Content Include="DBUtility\DBUtility.csproj.vspscc" />
+    <Content Include="DBUtility\obj\Debug\DBUtility.csproj.FileListAbsolute.txt" />
+    <Content Include="DBUtility\obj\Debug\Maticsoft.DBUtility.dll" />
+    <Content Include="DBUtility\obj\Debug\Maticsoft.DBUtility.pdb" />
+    <Content Include="Model\bin\Debug\Maticsoft.Model.dll" />
+    <Content Include="Model\bin\Debug\Maticsoft.Model.pdb" />
+    <Content Include="Model\Model.csproj" />
+    <Content Include="Model\Model.csproj.vspscc" />
+    <Content Include="Model\obj\Debug\Maticsoft.Model.dll" />
+    <Content Include="Model\obj\Debug\Maticsoft.Model.pdb" />
+    <Content Include="Model\obj\Debug\Model.csproj.FileListAbsolute.txt" />
+    <Content Include="Web.config" />
+    <Content Include="Web\bin\Maticsoft.BLL.dll" />
+    <Content Include="Web\bin\Maticsoft.BLL.pdb" />
+    <Content Include="Web\bin\Maticsoft.Common.dll" />
+    <Content Include="Web\bin\Maticsoft.Common.pdb" />
+    <Content Include="Web\bin\Maticsoft.DAL.dll" />
+    <Content Include="Web\bin\Maticsoft.DAL.pdb" />
+    <Content Include="Web\bin\Maticsoft.DBUtility.dll" />
+    <Content Include="Web\bin\Maticsoft.DBUtility.pdb" />
+    <Content Include="Web\bin\Maticsoft.Model.dll" />
+    <Content Include="Web\bin\Maticsoft.Model.pdb" />
+    <Content Include="Web\bin\Maticsoft.Web.dll" />
+    <Content Include="Web\bin\Maticsoft.Web.pdb" />
+    <Content Include="Web\CallCenter.aspx" />
+    <Content Include="Web\CodeExchange.aspx" />
+    <Content Include="Web\css\css.css" />
+    <Content Include="Web\Default.aspx" />
+    <Content Include="Web\EasyLid.aspx" />
+    <Content Include="Web\Global.asax" />
+    <Content Include="Web\Images\block.gif" />
+    <Content Include="Web\Images\line01.gif" />
+    <Content Include="Web\Images\top02.gif" />
+    <Content Include="Web\Images\up.gif" />
+    <Content Include="Web\js\calendar1.js" />
+    <Content Include="Web\js\CheckBox.js" />
+    <Content Include="Web\Login.aspx" />
+    <Content Include="Web\obj\Debug\Maticsoft.Web.dll" />
+    <Content Include="Web\obj\Debug\Maticsoft.Web.pdb" />
+    <Content Include="Web\obj\Debug\TempPE\Web References.com.frisocrm.sms.Reference.cs.dll" />
+    <Content Include="Web\obj\Debug\Web.csproj.FileListAbsolute.txt" />
+    <Content Include="Web\Style.css" />
+    <None Include="Web\Web References\com.frisocrm.sms\SendSMSService2.disco" />
+    <Content Include="Web\Web.csproj" />
+    <Content Include="Web\Web.csproj.user" />
+    <Content Include="Web\Web.csproj.vspscc" />
+    <Content Include="Web\Web.Publish.xml" />
+    <Content Include="Web\webctrl_client\1_0\Images\folder.gif" />
+    <Content Include="Web\webctrl_client\1_0\Images\folderopen.gif" />
+    <Content Include="Web\webctrl_client\1_0\Images\html.gif" />
+    <Content Include="Web\webctrl_client\1_0\Images\root.gif" />
+    <Content Include="Web\webctrl_client\1_0\MultiPage.htc" />
+    <Content Include="Web\webctrl_client\1_0\TabStrip.htc" />
+    <Content Include="Web\webctrl_client\1_0\toolbar.htc" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\f.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\fminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\fplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\i.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\L.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\Lminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\Lplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\minus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\plus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\r.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\Rminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\Rplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\F.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Fminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Fplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\I.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\L.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Lminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Lplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\minus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\plus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\r.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Rminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Rplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\T.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Tminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\Tplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\rtl\white.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\T.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\Tminus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\Tplus.gif" />
+    <Content Include="Web\webctrl_client\1_0\TreeImages\white.gif" />
+    <Content Include="Web\webctrl_client\1_0\treeview.htc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CodeData.cs" />
+    <Compile Include="BLL\CustomerData.cs" />
+    <Compile Include="BLL\DeliveryData.cs" />
+    <Compile Include="BLL\ErrormsgData.cs" />
+    <Compile Include="BLL\MsgData.cs" />
+    <Compile Include="BLL\Properties\AssemblyInfo.cs" />
+    <Compile Include="BLL\ReciveMsgBLL.cs" />
+    <Compile Include="BLL\SysManage.cs" />
+    <Compile Include="Common\Assistant.cs" />
+    <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\DataCache.cs" />
+    <Compile Include="Common\DEncrypt\DEncrypt.cs" />
+    <Compile Include="Common\DEncrypt\DESEncrypt.cs" />
+    <Compile Include="Common\DEncrypt\HashEncode.cs" />
+    <Compile Include="Common\DEncrypt\RSACryption.cs" />
+    <Compile Include="Common\HttpProc.cs" />
+    <Compile Include="Common\INIFile.cs" />
+    <Compile Include="Common\MessageBox.cs" />
+    <Compile Include="Common\PageValidate.cs" />
+    <Compile Include="Common\Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\RMB.cs" />
+    <Compile Include="Common\StringPlus.cs" />
+    <Compile Include="Common\TimeParser.cs" />
+    <Compile Include="Common\UrlOper.cs" />
+    <Compile Include="DAL\CodeData.cs" />
+    <Compile Include="DAL\CustomerData.cs" />
+    <Compile Include="DAL\DeliveryData.cs" />
+    <Compile Include="DAL\ErrormsgData.cs" />
+    <Compile Include="DAL\MsgData.cs" />
+    <Compile Include="DAL\Properties\AssemblyInfo.cs" />
+    <Compile Include="DAL\ReciveMsgDAL.cs" />
+    <Compile Include="DAL\SysManage.cs" />
+    <Compile Include="DBUtility\CommandInfo.cs" />
+    <Compile Include="DBUtility\DbHelperOleDb.cs" />
+    <Compile Include="DBUtility\DbHelperOra.cs" />
+    <Compile Include="DBUtility\DbHelperSQL.cs" />
+    <Compile Include="DBUtility\DbHelperSQLP.cs" />
+    <Compile Include="DBUtility\DESEncrypt.cs" />
+    <Compile Include="DBUtility\OracleHelper.cs" />
+    <Compile Include="DBUtility\Properties\AssemblyInfo.cs" />
+    <Compile Include="DBUtility\PubConstant.cs" />
+    <Compile Include="DBUtility\SQLHelper.cs" />
+    <Compile Include="Model\CodeData.cs" />
+    <Compile Include="Model\CustomerData.cs" />
+    <Compile Include="Model\DeliveryData.cs" />
+    <Compile Include="Model\ErrormsgData.cs" />
+    <Compile Include="Model\MsgData.cs" />
+    <Compile Include="Model\Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\SysNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\CallCenter.aspx.cs">
+      <DependentUpon>CallCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CallCenter.aspx.designer.cs">
+      <DependentUpon>CallCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CodeExchange.aspx.cs">
+      <DependentUpon>CodeExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CodeExchange.aspx.designer.cs">
+      <DependentUpon>CodeExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\EasyLid.aspx.cs">
+      <DependentUpon>EasyLid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\EasyLid.aspx.designer.cs">
+      <DependentUpon>EasyLid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Properties\Settings.Designer.cs" />
+    <Compile Include="Web\Web References\com.frisocrm.sms\Reference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\obj\Debug\Maticsoft.Web.Global.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\obj\Debug\TempPE\" />
+    <Folder Include="Common\obj\Debug\TempPE\" />
+    <Folder Include="DAL\obj\Debug\TempPE\" />
+    <Folder Include="DBUtility\obj\Debug\TempPE\" />
+    <Folder Include="Model\obj\Debug\TempPE\" />
+    <Folder Include="Web\Components\" />
+    <Folder Include="Web\Lib\" />
+    <Folder Include="Web\Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16542</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16542/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

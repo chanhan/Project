@@ -1,0 +1,10 @@
+D:\Projects\Wcf\WCFClient\bin\Debug\WCFClient.exe.config
+D:\Projects\Wcf\WCFClient\bin\Debug\WCFClient.exe
+D:\Projects\Wcf\WCFClient\bin\Debug\WCFClient.pdb
+D:\Projects\Wcf\WCFClient\bin\Debug\IWCFService.dll
+D:\Projects\Wcf\WCFClient\bin\Debug\WCFModel.dll
+D:\Projects\Wcf\WCFClient\bin\Debug\IWCFService.pdb
+D:\Projects\Wcf\WCFClient\bin\Debug\WCFModel.pdb
+D:\Projects\Wcf\WCFClient\obj\Debug\WCFClient.csprojResolveAssemblyReference.cache
+D:\Projects\Wcf\WCFClient\obj\Debug\WCFClient.exe
+D:\Projects\Wcf\WCFClient\obj\Debug\WCFClient.pdb

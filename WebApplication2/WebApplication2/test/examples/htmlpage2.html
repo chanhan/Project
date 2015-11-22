@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PaoPaoGame</title>
+    <!--     <script type="text/javascript" src="src/Main.js"></script> -->
+    <script type="text/javascript">
+        var context = null;
+        var image = null;
+        function loadImage() {
+            var main = document.getElementById("maincanvas");
+            if (main == null)
+                return false;
+            context = main.getContext("2d");
+            drawImage();
+        }
+
+        function drawImage() {
+            //反色效果
+            var imgSrc = document.getElementById("image");
+            context.drawImage(imgSrc, 0, 0);
+            var imgd = context.getImageData(0, 0, 398, 552);
+            var pix = imgd.data;
+            for (var i = 0, n = pix.length; i < n; i += 4) {
+                pix[i] = 255 - pix[i];
+                pix[i + 1] = 255 - pix[i + 1];
+                pix[i + 2] = 255 - pix[i + 2];
+            }
+            context.putImageData(imgd, 0, 0, 398, 552);
+
+            //透明度效果
+            var imgSrc_alpha = document.getElementById("image_alpha");
+            context.drawImage(imgSrc_alpha, 400, 0, 398, 552);
+            var imgd_alpha = context.getImageData(400, 0, 398, 552);
+
+            var pix_alpha = imgd_alpha.data;
+            for (var j = 3, n = pix_alpha.length; j < n; j += 4) {
+                pix_alpha[j] = pix_alpha[j] * 0.2;
+            }
+            context.putImageData(imgd_alpha, 400, 0, 398);
+        }
+    </script>
+</head>
+<body onload="loadImage()">
+    <canvas id="maincanvas" width="800" height="600">
+        Sorry, your browser doesn't support canvas, please use Firefox3.6+, Safari5+, Chrome, IE9 etc.
+    </canvas>
+    <img src="images/cat.png" width="398" height="552" id="image" />
+    <img src="http://www.mojingpic.com/test/packaged/images/dog.jpg" width="398" height="552" id="image_alpha" />
+</body>
+</html>  

@@ -1,0 +1,12 @@
+D:\Projects\Wcf\Wcf\bin\Wcf.dll.config
+D:\Projects\Wcf\Wcf\bin\Wcf.dll
+D:\Projects\Wcf\Wcf\bin\Wcf.pdb
+D:\Projects\Wcf\Wcf\bin\DataAccess.dll
+D:\Projects\Wcf\Wcf\bin\WCFModel.dll
+D:\Projects\Wcf\Wcf\bin\DataAccess.pdb
+D:\Projects\Wcf\Wcf\bin\WCFModel.pdb
+D:\Projects\Wcf\Wcf\obj\Release\Wcf.csprojResolveAssemblyReference.cache
+D:\Projects\Wcf\Wcf\obj\Release\Wcf.dll
+D:\Projects\Wcf\Wcf\obj\Release\Wcf.pdb
+D:\Projects\Wcf\Wcf\bin\WCFMessage.dll
+D:\Projects\Wcf\Wcf\bin\WCFMessage.pdb

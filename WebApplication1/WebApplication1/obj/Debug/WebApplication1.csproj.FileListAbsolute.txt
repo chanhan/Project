@@ -1,0 +1,14 @@
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.ControlText.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.FunctionText.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.Message.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.ControlText.en-US.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.ControlText.zh-CN.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.ControlText.zh-TW.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.FunctionText.en-US.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.FunctionText.zh-CN.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.FunctionText.zh-TW.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.Message.en-US.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.Message.zh-CN.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Attendance.Web.App_GlobalResources.Message.zh-TW.resources
+D:\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache

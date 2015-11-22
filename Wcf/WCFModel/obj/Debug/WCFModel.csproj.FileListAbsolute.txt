@@ -1,0 +1,4 @@
+D:\Projects\Wcf\WCFModel\bin\Debug\WCFModel.dll
+D:\Projects\Wcf\WCFModel\bin\Debug\WCFModel.pdb
+D:\Projects\Wcf\WCFModel\obj\Debug\WCFModel.dll
+D:\Projects\Wcf\WCFModel\obj\Debug\WCFModel.pdb

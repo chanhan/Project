@@ -1,0 +1,7 @@
+D:\Projects\Wcf\WCFMessage\bin\Release\WCFMessage.dll
+D:\Projects\Wcf\WCFMessage\bin\Release\WCFMessage.pdb
+D:\Projects\Wcf\WCFMessage\bin\Release\WCFModel.dll
+D:\Projects\Wcf\WCFMessage\bin\Release\WCFModel.pdb
+D:\Projects\Wcf\WCFMessage\obj\Release\WCFMessage.csprojResolveAssemblyReference.cache
+D:\Projects\Wcf\WCFMessage\obj\Release\WCFMessage.dll
+D:\Projects\Wcf\WCFMessage\obj\Release\WCFMessage.pdb

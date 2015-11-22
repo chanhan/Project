@@ -1,0 +1,1090 @@
+﻿
+*::-moz-selection {
+    background-color: #ffffcc;
+    color: #555555;
+}
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection {
+    background-color: #f1c1c2;
+    color: #222222;
+}
+.ui *::-moz-selection {
+    background-color: #cce2ff;
+}
+html, body {
+    font-size: 15px;
+}
+body#example {
+    background: url("../images/bg.jpg") repeat scroll 0 0 #fcfcfc;
+    color: #555555;
+    font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0;
+    min-width: 320px;
+    padding: 0;
+}
+body > .content {
+    background: url("../images/bg.jpg") repeat scroll 0 0 #fcfcfc;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Source Sans Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+ul.list {
+    list-style-type: disc;
+}
+ul.list li {
+    list-style-position: outside;
+}
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 0 20px;
+    padding: 50px 0 5px;
+}
+h4 + p {
+    margin: 0 0 20px;
+}
+pre {
+    background-color: #f0f0f0;
+}
+pre.console {
+    background-color: transparent;
+    font-family: "Monaco","Menlo","Ubuntu Mono","Consolas","source-code-pro",monospace;
+    height: 300px;
+    line-height: 1.6;
+    overflow: auto;
+}
+code {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-family: Courier New;
+    font-size: 14px;
+    margin: 0.25em;
+    padding: 0.125em 0.5em;
+    vertical-align: middle;
+}
+pre code {
+    border: medium none;
+    padding: 0;
+}
+table pre, table code {
+    background-color: transparent;
+    margin: 0 !important;
+    padding: 0;
+}
+p {
+    margin: 1em 0;
+}
+p:first-child {
+    margin-top: 0;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+a {
+    color: #009fda;
+    text-decoration: none;
+}
+a:hover {
+    color: #00baff;
+}
+#example #menu .item {
+    border-radius: 0;
+}
+#example #menu .hide.item {
+    display: none;
+}
+#example #menu .item .item {
+    font-size: 0.875rem;
+}
+#example .segment > .dimmer {
+    z-index: 800;
+}
+#example > .content > .page > .segment, #example > .segment {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 0 3em;
+    padding-bottom: 30px;
+    padding-top: 70px;
+}
+#example > .tab.segment {
+    margin-bottom: 2em;
+    padding-bottom: 0;
+}
+#example > .tab.segment .fixed .tabular.menu {
+    position: fixed;
+    top: 50px;
+}
+#example > .tab.segment .vertical.menu {
+    display: none;
+    margin: 2rem 0 1rem;
+}
+#example > .tab.segment .tabular.menu {
+    border-bottom: medium none;
+    margin: 2rem 0 0;
+}
+#example > .tab.segment .tabular.menu .active.item {
+    background-color: #fafafa;
+    border-bottom-color: #fafafa;
+}
+#example .download.menu {
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+#example .main.menu {
+    box-sizing: border-box;
+    min-width: 320px;
+    transition: margin 0.3s ease 0s;
+    z-index: 900;
+}
+#example .main.menu iframe {
+    margin: 0;
+}
+#example .features {
+    list-style-position: inside;
+    margin: 10px 0 0;
+    padding: 0;
+}
+#example .features li {
+    font-weight: bold;
+    list-style-type: disc;
+    margin: 0 0 10px;
+}
+#example .advertisement {
+    float: right;
+    margin-left: 2em;
+}
+body.guide .main h3 {
+    margin: 2rem 0 0.5rem;
+}
+body.guide .main.container > * {
+    max-width: 800px;
+}
+#example.playground {
+    min-width: 1000px;
+}
+#example.playground > .title.grid {
+    padding-top: 60px;
+}
+#example .ui.items .menu .item {
+    box-shadow: none;
+}
+#example.item .text.example .item {
+    min-height: 150px;
+}
+#example .error.masthead {
+    margin-top: -290px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+#example .error.masthead .container {
+    position: relative;
+    z-index: 100;
+}
+#example .masthead {
+    background-color: #00b5ad;
+    border-bottom: medium none;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+    margin-top: 38px;
+    overflow: hidden;
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+}
+#example .masthead:before {
+    animation-duration: 80s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: masthead;
+    animation-timing-function: linear;
+    background: url("/images/tile-bg.png") repeat fixed 0 0 #00b5ad;
+    content: "";
+    height: 500%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 50% 0;
+    width: 500%;
+    z-index: 1;
+}
+@keyframes masthead {
+0% {
+    background-position: 0 0;
+}
+50% {
+    background-position: -50% -100%;
+}
+100% {
+    background-position: -100% -200%;
+}
+}
+@keyframes masthead {
+0% {
+    background-position: 0 0;
+}
+50% {
+    background-position: -50% -100%;
+}
+100% {
+    background-position: -100% -200%;
+}
+}
+#example .masthead .grid {
+    position: relative;
+    z-index: 2;
+}
+#example .masthead .column {
+    display: table;
+}
+#example .introduction {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+#example .advertisement {
+    display: table-cell;
+    float: none;
+    padding-left: 2em;
+    vertical-align: top;
+}
+#example #carbonads-container {
+    float: right;
+}
+#example .advertisement .carbonad {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+#example .advertisement .carbonad-text {
+    font-size: 12px;
+    height: auto;
+    line-height: 1.3;
+}
+#example .carbonad-tag {
+    text-align: left;
+}
+#example .inverted.advertisement .carbonad {
+    background-color: rgba(0, 31, 30, 0.5);
+    border: medium none;
+    height: auto;
+    overflow: hidden;
+    padding: 6px 8px 15px;
+}
+#example .inverted.advertisement .carbonad-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+#example .inverted.advertisement .carbonad-tag {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 10px;
+}
+#example .inverted.advertisement .carbonad-tag a {
+    color: rgba(255, 255, 255, 0.8);
+}
+#example .inverted.advertisement .carbonad-tag a:hover {
+    color: #ffffff;
+}
+#example .masthead .labeled.button {
+    left: 0;
+    margin-right: 1em;
+    position: relative;
+    top: 0;
+    width: auto !important;
+}
+#example .masthead.segment h1 {
+    color: #ffffff;
+    font-size: 5em;
+    line-height: 1.2;
+    margin: -20px 0 0;
+    padding-bottom: 0;
+}
+#example .masthead strike {
+    color: rgba(0, 0, 0, 0.2);
+}
+#example .masthead h2 {
+    border-bottom: medium none;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 1;
+    margin: -10px 0 16px;
+}
+#example .masthead .menu {
+    width: 375px;
+}
+#example .masthead p {
+    font-size: 1.5em;
+    margin: 1em 0 1.5em;
+    padding: 0;
+}
+#example .footer.link.list {
+    display: block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.ui.transparent.menu {
+    opacity: 0.95;
+}
+#example .container {
+    margin: 0 auto;
+    width: 915px;
+}
+#example .solid, #example .stripe {
+    padding: 50px 0;
+}
+#example .dark.stripe {
+    background: url("/images/dark-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+#example .stripe .column .label {
+    margin-bottom: 1em;
+}
+#example .solid {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+}
+#example .solid .column {
+    color: #555555;
+}
+#example .solid .column p b {
+    color: rgba(0, 0, 0, 0.9);
+}
+#example .solid .column p {
+    color: rgba(0, 0, 0, 0.5);
+}
+#example .stripe .message {
+    margin: 2em 0;
+}
+#example .shortcuts {
+    clear: both;
+    float: right;
+}
+#example .launch.button {
+    position: fixed;
+    top: 63px;
+    width: 70px;
+    z-index: 500;
+}
+#example.index .main.menu {
+    top: 0;
+}
+#example.index pre.console {
+    height: 120px;
+}
+#example.index .attached.launch.button {
+    top: 96px;
+}
+#example .launch.button .text {
+    display: none;
+}
+#example .main.container {
+    padding-bottom: 100px;
+    position: relative;
+}
+#example .main.container > h2 {
+    transition: color 0.5s ease 0s;
+}
+#example .swap {
+    background: url("http://beta.myfav.es/images/themes/bg/subtle/subtle-handmade-paper.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#example .peek {
+    left: -230px;
+    position: absolute;
+    top: 0;
+    width: 180px;
+}
+#example .ui.tab.segment {
+    padding: 1.5em 2em;
+}
+#example .example .circular.segment {
+    height: 175px;
+    width: 175px;
+}
+#example.popup .example .popup {
+    color: #ff0000;
+}
+#example .position.example .icon {
+    margin: 0;
+    position: absolute;
+}
+#example .position.example .segment {
+    height: 250px;
+    width: 250px;
+}
+#example .position.example .segment .icon:nth-of-type(1) {
+    left: 3em;
+    top: 3em;
+}
+#example .position.example .segment .icon:nth-of-type(2) {
+    left: 50%;
+    margin-left: -1em;
+    top: 3em;
+}
+#example .position.example .segment .icon:nth-of-type(3) {
+    right: 3em;
+    top: 3em;
+}
+#example .position.example .segment .icon:nth-of-type(4) {
+    margin-top: -1em;
+    right: 3em;
+    top: 50%;
+}
+#example .position.example .segment .icon:nth-of-type(5) {
+    bottom: 3em;
+    right: 3em;
+}
+#example .position.example .segment .icon:nth-of-type(6) {
+    bottom: 3em;
+    left: 50%;
+    margin-left: -1em;
+}
+#example .position.example .segment .icon:nth-of-type(7) {
+    bottom: 3em;
+    left: 3em;
+}
+#example .position.example .segment .icon:nth-of-type(8) {
+    left: 3em;
+    margin-top: -1em;
+    top: 50%;
+}
+#example .main.ui.grid {
+    position: relative;
+}
+#example .example .toggle.button {
+    min-width: 200px;
+}
+#example .example .language.label {
+    margin: 1em 0 0.75em;
+}
+#example .icon.example .grid {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+#example .icon.example .grid .code {
+    position: static;
+}
+#example .icon.example .grid .column {
+    color: #888888;
+    margin-bottom: 2em;
+    opacity: 0.8;
+    text-align: center;
+    transition: margin-left 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+}
+#example .icon.example .column .icon {
+    color: #333333;
+    display: block;
+    font-size: 2em;
+    margin: 0 auto 0.25em;
+    opacity: 1;
+    transition: all 0.2s ease-out 0s;
+}
+#example .icon.example .grid .column:hover .icon {
+    color: #009fda;
+    transform: scale(1.5);
+}
+#example .another.icon.example {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+#example .another.example {
+    border-top: medium none;
+    margin-top: 0;
+    padding-top: 2em;
+}
+#example .another.example i.code {
+    top: 0;
+}
+#example .example > p {
+    color: #888888;
+}
+#example .peek .menu .active:nth-child(1) {
+    border-right-color: #00b9f0;
+    color: #00b9f0;
+}
+#example .peek .menu .active:nth-child(2) {
+    border-right-color: #56bb73;
+    color: #56bb73;
+}
+#example .peek .menu .active:nth-child(3) {
+    border-right-color: #ef3f49;
+    color: #ef3f49;
+}
+#example .peek .menu .active:nth-child(4) {
+    border-right-color: #a24096;
+    color: #a24096;
+}
+#example .main h2.group {
+    color: #a24096;
+}
+#example .peek > .menu {
+    margin-left: 0;
+    width: 180px;
+}
+#example.overview h2.ui.header {
+    margin-bottom: 0;
+}
+#example.overview .example {
+    margin: 0;
+    min-height: 0 !important;
+    overflow: hidden;
+    padding: 0.5em 0;
+}
+#example.overview .example .ui.header, #example.overview .example p {
+    float: right;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+#example.overview .example p {
+    float: left;
+    font-size: 1rem;
+    padding: 0 0 0 0.3em;
+    width: auto;
+}
+#example .sticky-wrapper.stuck {
+    height: 0 !important;
+    transition: margin-left 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
+}
+#example .sticky-wrapper.stuck .peek {
+    left: 50%;
+    margin-left: -685px;
+    position: fixed;
+    top: 75px;
+}
+#example.left.pushed .sticky-wrapper .peek {
+    margin-left: -132.5px;
+    padding-left: 132.5px;
+}
+#example.left.pushed .sticky-wrapper.stuck .peek {
+    margin-left: -817.5px;
+    padding-left: 132.5px;
+}
+#example .settings.table {
+    margin-bottom: 20px;
+}
+#example .settings.table td:first-child {
+    font-weight: bold;
+}
+#example .settings.table td:nth-child(2n) {
+    width: 100px;
+}
+#example .existing.annotation {
+}
+#example div.code.hide {
+    display: none;
+}
+#example div.code {
+    height: 200px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+#example div.code {
+    background-color: transparent;
+    font-size: 14px;
+    margin: -1em;
+    padding: 5px 0;
+}
+#example .label + div.code {
+    margin-top: 1.5em;
+}
+#example div.code .ace_gutter {
+    background-color: #fafafa;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    color: #999999;
+}
+#example div.code .ace_gutter-cell {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#example div.code .ace_bracket {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#example div.code .ace_indent-guide {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+}
+#example table .instructive.segment {
+    background-color: transparent;
+    border: 0 none;
+    box-shadow: none;
+    margin: -0.4em -0.7em;
+    padding: 0;
+}
+#example table .instructive.segment .code {
+    margin: 0;
+}
+#example table .instructive.segment div.code .ace_identifier, #example table .instructive.segment div.code .ace_line {
+    color: #555555;
+}
+#example .ui.label + .instructive.segment {
+    margin-top: 0;
+}
+#example .instructive.segment em {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: normal;
+}
+#example .instructive.segment .title + em {
+    float: right;
+}
+#example div.code .ace_gutter, #example div.code .ace_scroller {
+    background-color: transparent;
+    margin: 14px 10px;
+    overflow: visible;
+}
+#example div.code .ace_scrollbar {
+    background-color: transparent;
+    overflow: hidden;
+}
+#example div.code .ace_line, #example div.code .ace_line span {
+    transition: color 1s ease-out 0s;
+}
+#example div.code .ace_line {
+    color: #555555;
+}
+#example div.code .ace_tag {
+    color: #dcbcd3;
+}
+#example div.code .ace_attribute-name {
+    color: #f4c5c5;
+}
+#example div.code .ace_content {
+}
+#example div.code .ace_string {
+    color: #00a59d;
+}
+#example div.code .ace_cursor {
+    border-left: medium none;
+}
+#example div.code .ace_paren {
+    color: #cccccc;
+}
+#example div.code .ace_keyword {
+    color: #cccccc;
+}
+#example div.code .ace_identifier {
+    color: #cccccc;
+}
+#example div.code .ace_punctuation {
+    color: #cccccc;
+}
+#example div.code .ace_active_line {
+    background-color: #fbfbe5;
+}
+#example div.code:hover .ace_line {
+    color: #555555;
+}
+#example div.code:hover .ace_tag {
+    color: #892a6f;
+}
+#example div.code:hover .ace_attribute-name {
+    color: #934e4e;
+}
+#example div.code:hover .ace_content {
+}
+#example div.code:hover .ace_string {
+    color: #00a59d;
+}
+#example div.code:hover .ace_cursor {
+}
+#example div.code:hover .ace_paren {
+    color: #555555;
+}
+#example div.code:hover .ace_keyword {
+    color: #555555;
+}
+#example div.code:hover .ace_identifier {
+    color: #555555;
+}
+#example div.code:hover .ace_scrollbar {
+    overflow: hidden !important;
+}
+#example div.code:hover .ace_punctuation {
+    color: #555555;
+}
+#example div.code:hover .ace_active_line {
+    background-color: #fbfbe5;
+}
+#example .no.example i.code {
+    display: none;
+}
+#example .example:first-child, #example h2 + .example, #example h3 + .example, #example h4 + .example {
+    border-top: medium none;
+    margin-top: 0;
+    padding-top: 0;
+}
+#example h2 + .example i.code, #example h3 + .example i.code, #example h4 + .example i.code {
+    top: 0;
+}
+#example .example > h4 {
+    margin-bottom: 0;
+}
+#example .clearing.example {
+    clear: both;
+}
+#example .example {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin: 1em 0;
+    padding: 1em 0;
+    position: relative;
+}
+#example .example .grid i.code {
+    right: 25%;
+}
+#example .example i.code {
+    color: #555555;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    transition: opacity 0.3s ease-out 0s;
+}
+#example .example > i.code:before {
+    content: "";
+    font-family: "Basic Icons";
+}
+#example .example:hover i.code {
+    opacity: 0.7;
+}
+#example .example:hover i.code:hover {
+    opacity: 1;
+}
+#example .highlighted.example {
+    min-height: 390px;
+}
+#example .highlighted.example .grid, #example .ui.type.items .image .grid {
+    animation: 15s ease 0s normal none infinite grid;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+}
+#example .highlighted.example .grid .row, #example .ui.type.items .image .grid .row {
+    border-top: 1px solid #dddddd;
+}
+#example .highlighted.example .grid .column, #example .ui.type.items .image .grid .column {
+    background-color: #f4f4f4;
+    box-shadow: 0 0 0 1px #e2e2e2;
+    min-height: 50px;
+}
+#example .highlighted.example .grid .segment, #example .ui.type.items .image .grid .segment {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px #dddddd;
+    min-height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+@keyframes grid {
+0% {
+    width: 100%;
+}
+40% {
+    width: 70%;
+}
+60% {
+    width: 70%;
+}
+100% {
+    width: 100%;
+}
+}
+@keyframes grid {
+0% {
+    width: 100%;
+}
+40% {
+    width: 70%;
+}
+60% {
+    width: 70%;
+}
+100% {
+    width: 100%;
+}
+}
+#example .ui.type.items > .item {
+    min-height: 255px;
+}
+#example .ui.type.items > .item > .image {
+    height: 165px;
+    padding: 1em;
+    vertical-align: middle;
+}
+.ui.menu p:only-child {
+    margin: 0;
+}
+.ui.menu a {
+    cursor: pointer;
+}
+body.progress .ui.progress .bar {
+    animation: 10s ease-in-out 0s normal none infinite finish;
+}
+@keyframes finish {
+0% {
+    width: 0;
+}
+40% {
+    width: 100%;
+}
+100% {
+    width: 100%;
+}
+}
+@keyframes finish {
+0% {
+    width: 0;
+}
+40% {
+    width: 100%;
+}
+100% {
+    width: 100%;
+}
+}
+#example.feed .example .segment {
+    max-width: 800px;
+}
+#example .fixed .launch {
+    display: none;
+}
+#example .designer .icon {
+    font-family: "Basic Icons";
+}
+#example .fixed.column .sticky-wrapper {
+    height: 0 !important;
+}
+#example .fixed.column .fixed, #example .fixed.segment .fixed {
+    perspective: 2000px;
+    position: fixed;
+    top: 65px;
+    transform-style: preserve-3d;
+}
+@media only screen and (max-width: 1725px) {
+#example .container {
+    margin-left: 325px;
+    margin-right: 100px;
+    width: auto;
+}
+#example.index .container {
+    margin-left: 8em;
+    margin-right: 8em;
+}
+#example .sticky-wrapper.stuck .peek {
+    left: 95px;
+    margin-left: 0;
+}
+#example.left.pushed .sticky-wrapper .peek {
+    margin-left: -275px;
+    padding-left: 275px;
+}
+#example.left.pushed .sticky-wrapper.stuck .peek {
+    margin-left: 0;
+    padding-left: 275px;
+}
+}
+@media only screen and (max-width: 1500px) {
+#example.index .icon.header .icon {
+    font-size: 3em;
+}
+}
+@media only screen and (max-width: 1050px) {
+#example .fixed .section, #example .fixed .title b {
+    display: none;
+}
+#example .stripe .header .code.icon {
+    display: none;
+}
+#example .fixed .container {
+    margin: 0 auto;
+    width: auto;
+}
+#example .attached.launch.button {
+    display: none;
+}
+#example .fixed .launch {
+    display: inline-block;
+}
+#example .sticky-wrapper {
+    display: none;
+}
+#example .container {
+    margin: 0 30px 0;
+    width: auto;
+}
+#example #example .right.attached.launch {
+    display: none;
+}
+}
+@media only screen and (max-width: 780px) {
+pre.console {
+    height: 150px;
+}
+#example.index .masthead {
+    padding: 50px 0 15px;
+    text-align: center;
+}
+#example.index .masthead h1 {
+    font-size: 3em;
+}
+#example.index .masthead h1 .icon {
+    display: none;
+}
+#example.index .masthead .button {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+#example.index .masthead h2 {
+    font-size: 1.25em;
+    margin: 0 0 1em;
+}
+#example.index .masthead p {
+    font-size: 1.35em;
+}
+#example.index .container {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#example.index .icon.header .icon {
+    font-size: 3em;
+}
+#example .introduction {
+    display: block;
+}
+#example .advertisement {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+}
+#example #menu .hide.item {
+    display: block;
+}
+#example #menu .item > .icon {
+    font-size: 1em !important;
+}
+#example .inverted.advertisement .carbonad {
+    height: 109px;
+}
+#example .inverted.advertisement .carbonad-img {
+    margin-top: 0;
+}
+#example #carbonads-container {
+    float: none;
+}
+#example .carbonad {
+    width: auto;
+}
+#example .carbonad-text, #example .carbonad-tag {
+    display: block;
+    float: none;
+    margin-left: 160px;
+    text-align: left;
+    width: 170px;
+}
+}
+@media only screen and (max-width: 600px) {
+#example .icon.example .grid .column {
+    width: 33.33%;
+}
+}
+@media only screen and (max-width: 600px) {
+#example .main.menu .borderless.item {
+    display: none;
+}
+#example .fixed .developer, #example .fixed .designer, #example .fixed .previous, #example .fixed .next {
+    display: none;
+}
+#example > .tab.segment .tabular.menu {
+    display: none;
+}
+#example > .tab.segment .vertical.menu {
+    display: block;
+}
+}
+@media only screen and (max-width: 450px) {
+#example .main.menu .icon.item {
+    display: none;
+}
+#example .main.menu .github.item {
+    display: block;
+}
+#example .main.menu .github.item:before {
+    display: none;
+}
+#example .carbonad {
+    height: 135px;
+}
+#example .carbonad .carbonad-text {
+    width: 90px;
+}
+}
+@media only screen and (min-width: 1725px) {
+#example .container {
+    width: 1100px;
+}
+#example .sticky-wrapper.stuck .peek {
+    margin-left: -780px;
+}
+#example.left.pushed .main.menu {
+    margin-left: -132px;
+}
+}
+@media only screen and (min-width: 2300px) {
+#example .container {
+    width: 1320px;
+}
+#example .sticky-wrapper.stuck .peek {
+    margin-left: -890px;
+}
+}
+@media only screen and (max-width: 998px) {
+#example.index .main.menu .container {
+    padding: 0 4%;
+    width: auto;
+}
+#example.transition .examples {
+    width: 100%;
+}
+#example.transition .examples .pointing.below.label {
+    display: none;
+}
+}
+@media only screen and (min-width: 998px) {
+#example.index .main.menu .container {
+    padding: 0 8%;
+    width: auto;
+}
+#example .examples {
+    margin-right: 400px;
+}
+#example .fixed.column, #example .fixed.column .fixed {
+    float: right;
+    width: 300px;
+}
+}
+@media only screen and (min-width: 1500px) {
+#example.index .main.menu .container {
+    padding: 0 13%;
+    width: auto;
+}
+#example .examples {
+    margin-right: 500px;
+}
+#example .fixed.column, #example .fixed.column .fixed {
+    float: right;
+    width: 400px;
+}
+}
+@media only screen and (min-width: 1750px) {
+#example.index .main.menu .container {
+    padding: 0 18%;
+    width: auto;
+}
+}
+@media only screen and (min-width: 2000px) {
+#example.index .main.menu .container {
+    padding: 0 23%;
+    width: auto;
+}
+}
+.uyan {
+    margin: 1px 100px 20px;
+}

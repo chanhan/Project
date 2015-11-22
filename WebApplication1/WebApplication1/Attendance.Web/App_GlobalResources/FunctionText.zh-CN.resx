@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="abnormalattendancehandle" xml:space="preserve">
+    <value>异常处理</value>
+  </data>
+  <data name="EmpExperience" xml:space="preserve">
+    <value>厂外经历</value>
+  </data>
+  <data name="FunAttScheduleData" xml:space="preserve">
+    <value>排班作业</value>
+  </data>
+  <data name="FuncActivityApplyForm" xml:space="preserve">
+    <value>免卡人员加班导入</value>
+  </data>
+  <data name="FuncBellCardQuery" xml:space="preserve">
+    <value>原始刷卡数据</value>
+  </data>
+  <data name="FuncBillManager" xml:space="preserve">
+    <value>订单管理</value>
+  </data>
+  <data name="FuncBUCalendar" xml:space="preserve">
+    <value>BU行事历</value>
+  </data>
+  <data name="FuncChangPwd" xml:space="preserve">
+    <value>修改密码/信箱</value>
+  </data>
+  <data name="FuncConfigSendMessage" xml:space="preserve">
+    <value>邮件提醒</value>
+  </data>
+  <data name="FuncDepartment" xml:space="preserve">
+    <value>组织扩建</value>
+  </data>
+  <data name="FuncEmpData" xml:space="preserve">
+    <value>员工资料</value>
+  </data>
+  <data name="FuncExceptReason" xml:space="preserve">
+    <value>异常原因类别</value>
+  </data>
+  <data name="FuncFaqAnswer" xml:space="preserve">
+    <value>问题回复</value>
+  </data>
+  <data name="FuncHRM" xml:space="preserve">
+    <value>人事行政</value>
+  </data>
+  <data name="FuncHRMEmpQuery" xml:space="preserve">
+    <value>组织人员查询</value>
+  </data>
+  <data name="FuncHRMOrg" xml:space="preserve">
+    <value>组织资料</value>
+  </data>
+  <data name="FuncHRMOrgMagInfo" xml:space="preserve">
+    <value>组织管理者资料</value>
+  </data>
+  <data name="FuncHRMOrgPersGr" xml:space="preserve">
+    <value>人员编组</value>
+  </data>
+  <data name="FuncIndex" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="FuncKaoQinQry" xml:space="preserve">
+    <value>考勤结果查询</value>
+  </data>
+  <data name="FuncKLeaveTravelQuery" xml:space="preserve">
+    <value>请假出差查询</value>
+  </data>
+  <data name="FuncKQMAbsentMonth" xml:space="preserve">
+    <value>缺勤统计报表</value>
+  </data>
+  <data name="FuncKqmBasic" xml:space="preserve">
+    <value>基本资料</value>
+  </data>
+  <data name="FuncKQMBellCardForm" xml:space="preserve">
+    <value>卡钟资料维护</value>
+  </data>
+  <data name="FuncKQMBGCalendarForm" xml:space="preserve">
+    <value>BG行事历</value>
+  </data>
+  <data name="FuncKQMEmployeeShift" xml:space="preserve">
+    <value>排班作业</value>
+  </data>
+  <data name="FuncKQMEvectionApply" xml:space="preserve">
+    <value>外出申请</value>
+  </data>
+  <data name="FuncKqmKQData" xml:space="preserve">
+    <value>考勤作业</value>
+  </data>
+  <data name="FuncKqmKQLeaveData" xml:space="preserve">
+    <value>请假出差</value>
+  </data>
+  <data name="FuncKqmKQLeaveTravel" xml:space="preserve">
+    <value>请假出差</value>
+  </data>
+  <data name="FuncKqmLeaveQry" xml:space="preserve">
+    <value>请假明细查询</value>
+  </data>
+  <data name="FuncKQMMakeupReport" xml:space="preserve">
+    <value>未刷补卡次数统计</value>
+  </data>
+  <data name="FuncKqmManage" xml:space="preserve">
+    <value>考勤加班</value>
+  </data>
+  <data name="FunckQMMoveShift" xml:space="preserve">
+    <value>弹性调班</value>
+  </data>
+  <data name="FuncKqmParameterForm" xml:space="preserve">
+    <value>考勤参数设定</value>
+  </data>
+  <data name="FuncKQMQuery" xml:space="preserve">
+    <value>考勤查询</value>
+  </data>
+  <data name="FuncKQMReGetKaoQin" xml:space="preserve">
+    <value>重新计算</value>
+  </data>
+  <data name="FuncKqmRules" xml:space="preserve">
+    <value>缺勤规则设定</value>
+  </data>
+  <data name="FuncKTravelDetialQuery" xml:space="preserve">
+    <value>出差明细查询</value>
+  </data>
+  <data name="FuncLeaveApplyYearQry" xml:space="preserve">
+    <value>年休假统计查询</value>
+  </data>
+  <data name="FuncLeaveType" xml:space="preserve">
+    <value>请假类别定义</value>
+  </data>
+  <data name="FuncLeaveYearImport" xml:space="preserve">
+    <value>已休年休假导入</value>
+  </data>
+  <data name="FuncModule" xml:space="preserve">
+    <value>系统模组</value>
+  </data>
+  <data name="FuncMultyMedia" xml:space="preserve">
+    <value>多媒体管理</value>
+  </data>
+  <data name="FuncNetSignInSet" xml:space="preserve">
+    <value>网上签到名单设定</value>
+  </data>
+  <data name="FuncNightAllowanceQry" xml:space="preserve">
+    <value>夜宵补助统计</value>
+  </data>
+  <data name="FuncOTM" xml:space="preserve">
+    <value>加班作业</value>
+  </data>
+  <data name="FuncOTMDetailQry" xml:space="preserve">
+    <value>加班明细查询</value>
+  </data>
+  <data name="FuncOTMQuery" xml:space="preserve">
+    <value>加班查询</value>
+  </data>
+  <data name="FuncOTMTotalQry" xml:space="preserve">
+    <value>加班汇总查询</value>
+  </data>
+  <data name="FuncOTMTransaction" xml:space="preserve">
+    <value>加班类别查询</value>
+  </data>
+  <data name="FuncOTMType" xml:space="preserve">
+    <value>加班类别定义</value>
+  </data>
+  <data name="FuncPCMKaoQinQry" xml:space="preserve">
+    <value>考勤查询</value>
+  </data>
+  <data name="FuncPCMMonthtotalQuery" xml:space="preserve">
+    <value>月加班汇总查询</value>
+  </data>
+  <data name="FuncPersonAdmin" xml:space="preserve">
+    <value>人事行政</value>
+  </data>
+  <data name="FuncPersonManage" xml:space="preserve">
+    <value>用户资料</value>
+  </data>
+  <data name="FuncPersonnal" xml:space="preserve">
+    <value>个人中心</value>
+  </data>
+  <data name="FuncQuery" xml:space="preserve">
+    <value>查询统计</value>
+  </data>
+  <data name="FuncRealApplyForm" xml:space="preserve">
+    <value>有效加班</value>
+  </data>
+  <data name="FuncRemain" xml:space="preserve">
+    <value>剩余加班导入</value>
+  </data>
+  <data name="FuncReportKaoQinDay" xml:space="preserve">
+    <value>出勤日报表</value>
+  </data>
+  <data name="FuncReportKaoQinSum" xml:space="preserve">
+    <value>总部周边出勤日报表</value>
+  </data>
+  <data name="FuncRoleCode" xml:space="preserve">
+    <value>角色设定</value>
+  </data>
+  <data name="FuncRolesCode" xml:space="preserve">
+    <value>群组设定</value>
+  </data>
+  <data name="FuncSelfServiceQuery" xml:space="preserve">
+    <value>员工自助查询</value>
+  </data>
+  <data name="FuncSendMessage" xml:space="preserve">
+    <value>短信息提醒</value>
+  </data>
+  <data name="FuncSupport" xml:space="preserve">
+    <value>支援人力</value>
+  </data>
+  <data name="FuncSupportIn" xml:space="preserve">
+    <value>内部支援</value>
+  </data>
+  <data name="FuncSupportOut" xml:space="preserve">
+    <value>外部支援</value>
+  </data>
+  <data name="FuncSynclog" xml:space="preserve">
+    <value>系统日志管理</value>
+  </data>
+  <data name="FuncSysAnnouncementRelease" xml:space="preserve">
+    <value>系统公告发布</value>
+  </data>
+  <data name="FuncSysData" xml:space="preserve">
+    <value>系统数据</value>
+  </data>
+  <data name="FuncSysFormUpload" xml:space="preserve">
+    <value>表单上传</value>
+  </data>
+  <data name="FuncSysManage" xml:space="preserve">
+    <value>系统管理</value>
+  </data>
+  <data name="FuncSysPara" xml:space="preserve">
+    <value>系统参数</value>
+  </data>
+  <data name="FuncSysParameter" xml:space="preserve">
+    <value>系统参数</value>
+  </data>
+  <data name="FuncSysSafety" xml:space="preserve">
+    <value>系统安全</value>
+  </data>
+  <data name="FuncTWCadre" xml:space="preserve">
+    <value>派驻干部资料</value>
+  </data>
+  <data name="FuncWorkFLowSet" xml:space="preserve">
+    <value>签核流程定义</value>
+  </data>
+  <data name="FuncWorkShift" xml:space="preserve">
+    <value>班别定义维护</value>
+  </data>
+  <data name="FunEmpInfo" xml:space="preserve">
+    <value>员工资料</value>
+  </data>
+  <data name="FunWFMManagerLeaveForm" xml:space="preserve">
+    <value>签核代理设定</value>
+  </data>
+  <data name="FunWorkFlow" xml:space="preserve">
+    <value>电子签核</value>
+  </data>
+  <data name="FunWorkFlowLimit" xml:space="preserve">
+    <value>签核流程限定</value>
+  </data>
+  <data name="OverTime" xml:space="preserve">
+    <value>加班预报</value>
+  </data>
+  <data name="signingschedulequery" xml:space="preserve">
+    <value>签核进度查询</value>
+  </data>
+  <data name="WFCardMakeup" xml:space="preserve">
+    <value>未刷补卡</value>
+  </data>
+  <data name="FuncKqmKQLeaveApply" xml:space="preserve">
+    <value>请假申请</value>
+  </data>
+  <data name="FuncOTMMonthTotal" xml:space="preserve">
+    <value>月加班汇总签核</value>
+  </data>
+  <data name="FuncOTReporter" xml:space="preserve">
+    <value>加班统计表</value>
+  </data>
+  <data name="FuncWFReporter" xml:space="preserve">
+    <value>电子签核报表</value>
+  </data>
+  <data name="FuncLeaveReportView" xml:space="preserve">
+    <value>出差人员及津贴统计表</value>
+  </data>
+  <data name="FuncOtherAllowance" xml:space="preserve">
+    <value>其他补项统计</value>
+  </data>
+  <data name="FuncReward" xml:space="preserve">
+    <value>奖金统计</value>
+  </data>
+  <data name="FuncAbsenceMonthlyReport" xml:space="preserve">
+    <value>月缺勤统计报表</value>
+  </data>
+  <data name="FuncAnserList" xml:space="preserve">
+    <value>问题回复</value>
+  </data>
+  <data name="FuncArrangementImport" xml:space="preserve">
+    <value>排班资料汇入</value>
+  </data>
+  <data name="FuncAssessText" xml:space="preserve">
+    <value>绩效考核</value>
+  </data>
+  <data name="FuncAttCodeManage" xml:space="preserve">
+    <value>考勤基本代码维护</value>
+  </data>
+  <data name="FuncAttComparison" xml:space="preserve">
+    <value>考勤资料比对</value>
+  </data>
+  <data name="FuncAttendance" xml:space="preserve">
+    <value>考勤</value>
+  </data>
+  <data name="FuncAttendanceMonthlyReport" xml:space="preserve">
+    <value>月出勤明细报表</value>
+  </data>
+  <data name="FuncAttInfoImport" xml:space="preserve">
+    <value>考勤资料汇入</value>
+  </data>
+  <data name="FuncAttManage" xml:space="preserve">
+    <value>出勤维护</value>
+  </data>
+  <data name="FuncAttReport" xml:space="preserve">
+    <value>考勤报表</value>
+  </data>
+  <data name="FuncAttThanSearch" xml:space="preserve">
+    <value>考勤比对查询</value>
+  </data>
+  <data name="FuncBarginRemit" xml:space="preserve">
+    <value>人员合同汇整</value>
+  </data>
+  <data name="FuncBasicCodeManage" xml:space="preserve">
+    <value>基本代码维护</value>
+  </data>
+  <data name="FuncBlackName" xml:space="preserve">
+    <value>管控名单资料管理</value>
+  </data>
+  <data name="FuncCalendar" xml:space="preserve">
+    <value>行事历</value>
+  </data>
+  <data name="FuncCalendarMaintain" xml:space="preserve">
+    <value>行事历维护</value>
+  </data>
+  <data name="FuncCancelControlConfig" xml:space="preserve">
+    <value>解除管控项目设置</value>
+  </data>
+  <data name="FuncCancelControlList" xml:space="preserve">
+    <value>解除管控名单管理</value>
+  </data>
+  <data name="FuncCardInfoSearch" xml:space="preserve">
+    <value>刷卡资料查询</value>
+  </data>
+  <data name="FuncCenterCodeManage" xml:space="preserve">
+    <value>中央代码管理</value>
+  </data>
+  <data name="FuncCodePosition" xml:space="preserve">
+    <value>职系中央代码查询</value>
+  </data>
+  <data name="FuncCompareLogSearch" xml:space="preserve">
+    <value>比对日志查询</value>
+  </data>
+  <data name="FuncControlManager" xml:space="preserve">
+    <value>页面控件管控</value>
+  </data>
+  <data name="FuncCoptClass" xml:space="preserve">
+    <value>继承排班</value>
+  </data>
+  <data name="FuncCopyClass" xml:space="preserve">
+    <value>排班考勤</value>
+  </data>
+  <data name="FuncDataMaintenance" xml:space="preserve">
+    <value>功能清单维护</value>
+  </data>
+  <data name="FuncDetailReportSearch" xml:space="preserve">
+    <value>员工详细资料报表</value>
+  </data>
+  <data name="FuncDimissionSearch" xml:space="preserve">
+    <value>离职资料查询</value>
+  </data>
+  <data name="FuncEmloyeeLastTransfer" xml:space="preserve">
+    <value>人事薪资异动（最后一次）</value>
+  </data>
+  <data name="FuncEmpAccommodationSearch" xml:space="preserve">
+    <value>员工住宿资料查询</value>
+  </data>
+  <data name="FuncEmpAssessReport" xml:space="preserve">
+    <value>员工考核鉴定表</value>
+  </data>
+  <data name="FuncEmpBasicInfoImport" xml:space="preserve">
+    <value>员工基本资料汇入</value>
+  </data>
+  <data name="FuncEmpBasicInfoSearch" xml:space="preserve">
+    <value>员工基本资料查询</value>
+  </data>
+  <data name="FuncEmpChangeImport" xml:space="preserve">
+    <value>员工异动资料汇入</value>
+  </data>
+  <data name="FuncEmpChangeStatistic" xml:space="preserve">
+    <value>人员异动统计</value>
+  </data>
+  <data name="FuncEmpContractImport" xml:space="preserve">
+    <value>员工合同资料汇入</value>
+  </data>
+  <data name="FuncEmpContracts" xml:space="preserve">
+    <value>员工合同资料查询</value>
+  </data>
+  <data name="FuncEmpDimissionImport" xml:space="preserve">
+    <value>员工离职资料汇入</value>
+  </data>
+  <data name="FuncEmpHrm" xml:space="preserve">
+    <value>人员行政</value>
+  </data>
+  <data name="FuncEmployeeAccess" xml:space="preserve">
+    <value>员工调出作业</value>
+  </data>
+  <data name="FuncEmployeeAllTransfer" xml:space="preserve">
+    <value>人事薪资异动明细（全部）</value>
+  </data>
+  <data name="FuncEmployeeCallIn2" xml:space="preserve">
+    <value>员工调入作业</value>
+  </data>
+  <data name="FuncEmployeedimission" xml:space="preserve">
+    <value>员工离职作业</value>
+  </data>
+  <data name="FuncEmployeeSuspend" xml:space="preserve">
+    <value>员工停薪留职</value>
+  </data>
+  <data name="FuncEmployeeTransferring" xml:space="preserve">
+    <value>员工异动作业</value>
+  </data>
+  <data name="FuncEmployeeTransSearch" xml:space="preserve">
+    <value>员工异动查询</value>
+  </data>
+  <data name="FuncEmpNoManage" xml:space="preserve">
+    <value>员工工号管理</value>
+  </data>
+  <data name="FuncEmpPerformanceAppraisal" xml:space="preserve">
+    <value>员工绩效考核资料汇入</value>
+  </data>
+  <data name="FuncEmpPerformanceSearch" xml:space="preserve">
+    <value>员工绩效考核查询</value>
+  </data>
+  <data name="FuncEmpPremiumImport" xml:space="preserve">
+    <value>员工奖惩资料汇入</value>
+  </data>
+  <data name="FuncEmpStatisticReport" xml:space="preserve">
+    <value>人员新进明细表</value>
+  </data>
+  <data name="FuncEmpWorkExpSearch" xml:space="preserve">
+    <value>员工工作经验查询</value>
+  </data>
+  <data name="FuncESgined" xml:space="preserve">
+    <value>电子签核</value>
+  </data>
+  <data name="FuncESginedOfLongHua" xml:space="preserve">
+    <value>龙华GDSBG电子签核</value>
+  </data>
+  <data name="FuncESginedOfTaiBei" xml:space="preserve">
+    <value>台北电子签核</value>
+  </data>
+  <data name="FuncESginedOfZbzb" xml:space="preserve">
+    <value>龙华总部周边电子签核</value>
+  </data>
+  <data name="FuncForgotCardImport" xml:space="preserve">
+    <value>忘卡资料汇入</value>
+  </data>
+  <data name="FuncForgotCardManage" xml:space="preserve">
+    <value>忘卡资料管理</value>
+  </data>
+  <data name="FuncHolidayMaintain" xml:space="preserve">
+    <value>固定节假日维护</value>
+  </data>
+  <data name="FuncHrmBasicInfoSearch" xml:space="preserve">
+    <value>人事资料报表</value>
+  </data>
+  <data name="FuncHrmCode" xml:space="preserve">
+    <value>人事行政基本代码</value>
+  </data>
+  <data name="FuncHrmInfoEdit" xml:space="preserve">
+    <value>人事资料批量编辑</value>
+  </data>
+  <data name="FuncHrmInfoImport" xml:space="preserve">
+    <value>人事资料汇入</value>
+  </data>
+  <data name="FuncHrmInfoImportEasy" xml:space="preserve">
+    <value>人事基本资料汇入（简易）</value>
+  </data>
+  <data name="FuncHrmInfoImportSearch" xml:space="preserve">
+    <value>人事资料上传查询</value>
+  </data>
+  <data name="FuncHrmInfoUnusualTest" xml:space="preserve">
+    <value>人事资料异常稽核</value>
+  </data>
+  <data name="FuncHrmManageList" xml:space="preserve">
+    <value>人事管控名单</value>
+  </data>
+  <data name="FuncImportSearch" xml:space="preserve">
+    <value>资料上传状况查询</value>
+  </data>
+  <data name="FuncIngoingRemit" xml:space="preserve">
+    <value>新进人员汇整</value>
+  </data>
+  <data name="FuncLeaveInfoImport" xml:space="preserve">
+    <value>請假資料匯入</value>
+  </data>
+  <data name="FuncLeaveInfoManage" xml:space="preserve">
+    <value>請假資料管理</value>
+  </data>
+  <data name="FuncLeftMenu" xml:space="preserve">
+    <value>员工资料</value>
+  </data>
+  <data name="FuncManualCardImport" xml:space="preserve">
+    <value>手工签卡资料汇入</value>
+  </data>
+  <data name="FuncManualCardManage" xml:space="preserve">
+    <value>手工签卡资料管理</value>
+  </data>
+  <data name="FuncManualCardReport" xml:space="preserve">
+    <value>手工签卡报表</value>
+  </data>
+  <data name="FuncMonthlyDetailReport" xml:space="preserve">
+    <value>月加班明细报表</value>
+  </data>
+  <data name="FuncNightMonthlyReport" xml:space="preserve">
+    <value>月夜班出勤明细报表</value>
+  </data>
+  <data name="FuncNormalQuestion" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="FuncNotesSendManagementExcel" xml:space="preserve">
+    <value>邮件发送EXCEL管理</value>
+  </data>
+  <data name="FuncNotesSendManagementMail" xml:space="preserve">
+    <value>邮件发送内容管理</value>
+  </data>
+  <data name="FuncOnLineQuestion" xml:space="preserve">
+    <value>在线提问</value>
+  </data>
+  <data name="FuncOnLineQuestionList" xml:space="preserve">
+    <value>在线 提问</value>
+  </data>
+  <data name="FuncOrganizationHomePage" xml:space="preserve">
+    <value>人事组织管理</value>
+  </data>
+  <data name="FuncOrganizationManage" xml:space="preserve">
+    <value>组织资料维护</value>
+  </data>
+  <data name="FuncOrganizationMove" xml:space="preserve">
+    <value>组织异动作业</value>
+  </data>
+  <data name="FuncOrgBasicCodeManage" xml:space="preserve">
+    <value>组织基本代码维护</value>
+  </data>
+  <data name="FuncOrgQueryExport" xml:space="preserve">
+    <value>组织资料查询</value>
+  </data>
+  <data name="FuncOTDailyReport" xml:space="preserve">
+    <value>日加班汇总报表</value>
+  </data>
+  <data name="FuncOTMonthlyReport" xml:space="preserve">
+    <value>月加班汇总报表</value>
+  </data>
+  <data name="FuncOtOvertimesImport" xml:space="preserve">
+    <value>加班资料汇入</value>
+  </data>
+  <data name="FuncOutBusiness" xml:space="preserve">
+    <value>外出汇总报表</value>
+  </data>
+  <data name="FuncOutlookCode" xml:space="preserve">
+    <value>系统设定</value>
+  </data>
+  <data name="FuncOverTimeCarryDown" xml:space="preserve">
+    <value>加班结转</value>
+  </data>
+  <data name="FuncOverTimesManage" xml:space="preserve">
+    <value>加班资料管理</value>
+  </data>
+  <data name="FuncParamtersManager" xml:space="preserve">
+    <value>代码参数规则设定</value>
+  </data>
+  <data name="FuncPerformanceUploadSearch" xml:space="preserve">
+    <value>绩效考核上传查询</value>
+  </data>
+  <data name="FuncPersonchange" xml:space="preserve">
+    <value>人事异动作业</value>
+  </data>
+  <data name="FuncPersonelData" xml:space="preserve">
+    <value>员工基本资料维护</value>
+  </data>
+  <data name="FuncPersonInfoSearch" xml:space="preserve">
+    <value>人事资料查询</value>
+  </data>
+  <data name="FuncPersonInfo_PhotoRefresh" xml:space="preserve">
+    <value>員工照片批量刷新</value>
+  </data>
+  <data name="FuncPersonnelBasicHomPage" xml:space="preserve">
+    <value>人事资料管理</value>
+  </data>
+  <data name="FuncPremiumSearch" xml:space="preserve">
+    <value>员工奖惩资料查询</value>
+  </data>
+  <data name="FuncPremiumTypes" xml:space="preserve">
+    <value>员工奖惩资料管理</value>
+  </data>
+  <data name="FuncPremiumUploadSearch" xml:space="preserve">
+    <value>奖惩资料上传查询</value>
+  </data>
+  <data name="FuncPreOverTimeStatistic" xml:space="preserve">
+    <value>加班与提报状况汇总表</value>
+  </data>
+  <data name="FuncQuestionList" xml:space="preserve">
+    <value>问题提问</value>
+  </data>
+  <data name="FuncRegionCodeManage" xml:space="preserve">
+    <value>招募省市县代码管理</value>
+  </data>
+  <data name="FuncResidencePermitInfo" xml:space="preserve">
+    <value>暂住证批量汇入</value>
+  </data>
+  <data name="FuncResidencePermitInfoSearch" xml:space="preserve">
+    <value>员工暂住证查询</value>
+  </data>
+  <data name="FuncReveivePersonTransIn" xml:space="preserve">
+    <value>接待系统新进人员转入</value>
+  </data>
+  <data name="FuncRightsManage" xml:space="preserve">
+    <value>权限管理</value>
+  </data>
+  <data name="FuncRoleRightsManagement" xml:space="preserve">
+    <value>决赛权限管理</value>
+  </data>
+  <data name="FuncSequenceClass" xml:space="preserve">
+    <value>循环排班</value>
+  </data>
+  <data name="FuncShifInfpManage" xml:space="preserve">
+    <value>班表信息维护</value>
+  </data>
+  <data name="FuncShifSearch" xml:space="preserve">
+    <value>员工排班查询</value>
+  </data>
+  <data name="FuncShiftAtion" xml:space="preserve">
+    <value>排班操作</value>
+  </data>
+  <data name="FuncShiftDailyReport" xml:space="preserve">
+    <value>出勤日报表</value>
+  </data>
+  <data name="FuncShifWork" xml:space="preserve">
+    <value>员工排班作业</value>
+  </data>
+  <data name="FuncTakeOffSearch" xml:space="preserve">
+    <value>剩余调休时数查询</value>
+  </data>
+  <data name="FuncTest" xml:space="preserve">
+    <value>人事资料统计报表</value>
+  </data>
+  <data name="FuncTestSolationConfig" xml:space="preserve">
+    <value>稽核项目设置</value>
+  </data>
+  <data name="FuncTestWork" xml:space="preserve">
+    <value>稽核作业</value>
+  </data>
+  <data name="FuncTrpTravel" xml:space="preserve">
+    <value>外出/出差管理</value>
+  </data>
+  <data name="FuncTrpTravelManage" xml:space="preserve">
+    <value>外出管理</value>
+  </data>
+  <data name="FuncUnusualCarryDown" xml:space="preserve">
+    <value>异常结转</value>
+  </data>
+  <data name="FuncUnusualManage" xml:space="preserve">
+    <value>异常资料管理</value>
+  </data>
+  <data name="FuncUploadDepart" xml:space="preserve">
+    <value>组织资料汇入</value>
+  </data>
+  <data name="FuncUploadEmpCancelControl" xml:space="preserve">
+    <value>解除管控资料汇入</value>
+  </data>
+  <data name="FuncUploadEmployeeEducation" xml:space="preserve">
+    <value>员工教育背景资料汇入</value>
+  </data>
+  <data name="FuncUploadEmpSpecialTraining" xml:space="preserve">
+    <value>员工特别训练资料汇入</value>
+  </data>
+  <data name="FuncUploadYidongCancel" xml:space="preserve">
+    <value>取消员工异动作业汇入</value>
+  </data>
+  <data name="FuncUserAuthorityConfig" xml:space="preserve">
+    <value>用户页面权限明细</value>
+  </data>
+  <data name="FuncUserManage" xml:space="preserve">
+    <value>用户账号管理</value>
+  </data>
+  <data name="FuncUserPasswordManage" xml:space="preserve">
+    <value>用戶密碼修改</value>
+  </data>
+  <data name="FuncUserRightsManage" xml:space="preserve">
+    <value>用户权限管理</value>
+  </data>
+  <data name="FuncVacationRules" xml:space="preserve">
+    <value>年休假控制</value>
+  </data>
+  <data name="FuncYearVacationManage" xml:space="preserve">
+    <value>年休假管理</value>
+  </data>
+  <data name="FuncYearVacationReport" xml:space="preserve">
+    <value>年休假报表</value>
+  </data>
+  <data name="FuncAbsentReporter" xml:space="preserve">
+    <value>缺勤统计表</value>
+  </data>
+  <data name="FuncInnerTeacherSalary" xml:space="preserve">
+    <value>内部讲师费统计</value>
+  </data>
+  <data name="FuncOtherSubsidy" xml:space="preserve">
+    <value>其他津贴统计</value>
+  </data>
+  <data name="FuncPostSubsidy" xml:space="preserve">
+    <value>岗位津贴统计</value>
+  </data>
+  <data name="FuncSalaryExReporter" xml:space="preserve">
+    <value>薪资异常统计</value>
+  </data>
+</root>

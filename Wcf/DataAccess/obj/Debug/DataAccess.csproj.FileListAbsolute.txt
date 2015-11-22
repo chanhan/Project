@@ -1,0 +1,5 @@
+D:\Projects\Wcf\DataAccess\bin\Debug\DataAccess.dll.config
+D:\Projects\Wcf\DataAccess\bin\Debug\DataAccess.dll
+D:\Projects\Wcf\DataAccess\bin\Debug\DataAccess.pdb
+D:\Projects\Wcf\DataAccess\obj\Debug\DataAccess.dll
+D:\Projects\Wcf\DataAccess\obj\Debug\DataAccess.pdb

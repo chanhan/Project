@@ -1,0 +1,16 @@
+﻿@model GuestBookMVC.Models.UserForm
+@{
+    ViewBag.Title = "TestForm3";
+}
+
+<h2>TestForm3</h2>
+<form>
+
+    使用者名称：    <input type="text" name="UserName" value="" /><br>
+    @*使用者名称为：@Model<br>*@
+    密码：    <input type="text" name="Password" value="" /><br>
+    @*密码为：@Model<br>*@
+    名称：    <input type="text" name="Name" value="" /><br>
+    @*称为：@Model<br>*@
+    <input type="submit" />
+</form>

@@ -1,0 +1,225 @@
+BODY {
+	BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-SIZE: 12px; LEFT: 0pt; MARGIN: 0px; OVERFLOW: auto; BORDER-LEFT: #ffffff 0px solid; BORDER-BOTTOM: #ffffff 0px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; SCROLLBAR-BASE-COLOR: #ffffff; POSITION: absolute; TOP: 0pt; BACKGROUND-COLOR: #ffffff
+}
+A:visited {
+	COLOR: #660099; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #cc6633; TEXT-DECORATION: none
+}
+A.ul:visited {
+	COLOR: #000050; TEXT-DECORATION: none
+}
+A.ul:link {
+	COLOR: #000050; TEXT-DECORATION: none
+}
+A.ul:hover {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.ul:active {
+	COLOR: #cc6633; TEXT-DECORATION: none
+}
+A.white:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.blue:visited {
+	COLOR: #2b4fa5; TEXT-DECORATION: none
+}
+A.blue:link {
+	COLOR: #2b4fa5; TEXT-DECORATION: none
+}
+A.blue:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.blue:active {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.title:visited {
+	COLOR: #ffb400; TEXT-DECORATION: none
+}
+A.title:link {
+	COLOR: #ffb400; TEXT-DECORATION: none
+}
+A.title:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.title:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.grey:visited {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.grey:link {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.grey:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.grey:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.color_body {
+	BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-SIZE: 12px; LEFT: 0pt; MARGIN: 0px; OVERFLOW: auto; BORDER-LEFT: #ffffff 0px solid; BORDER-BOTTOM: #ffffff 0px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; SCROLLBAR-BASE-COLOR: #ffffff; POSITION: absolute; TOP: 0pt; BACKGROUND-COLOR: #ffffff
+}
+DIV {
+	OVERFLOW: auto; SCROLLBAR-BASE-COLOR: #f9f9f5
+}
+.td_seperator {
+	BACKGROUND-IMAGE: url(images/seperator2.bmp)
+}
+.td_toolbar {
+	BACKGROUND-IMAGE: url(images/toolbarbg2.bmp)
+}
+.td_label {
+	FONT-WEIGHT: lighter; FONT-SIZE: 12px; BORDER-BOTTOM: #ffffff 0px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.td_label_view {
+	FONT-WEIGHT: lighter; FONT-SIZE: 12px; BORDER-BOTTOM: #eeeeee 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #dfe8fa
+}
+.td_input {
+	BORDER-RIGHT: #eeeeee 0px solid; FONT-SIZE: 12px; BORDER-BOTTOM: #eeeeee 0px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.top_table {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; BORDER-BOTTOM: 1px; BACKGROUND-COLOR: #cddeff
+}
+.inner_table {
+	BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-COLOR: #ffffff; BORDER-TOP-COLOR: #ffffff; BACKGROUND-COLOR: #f7f7f7; BORDER-RIGHT-COLOR: #ffffff
+}
+.tr_table_title {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(images/tabletitlebg2.bmp); FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ebeefc
+}
+.tr_header {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(images/title_0.gif); FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ededed
+}
+.tr_data {
+	BACKGROUND-COLOR: #ffffff
+}
+.tr_data1 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #f0f8ff
+}
+.tr_data_over {
+	BACKGROUND-IMAGE: url(images/overbg.bmp); CURSOR: hand
+}
+.tr_data_out {
+	BACKGROUND-IMAGE: none; CURSOR: default; BACKGROUND-COLOR: #ffffff
+}
+.tr_data_out1 {
+	BACKGROUND-IMAGE: none; CURSOR: default; BACKGROUND-COLOR: #f0fff0
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+SELECT {
+	FONT-SIZE: 12px; WIDTH: 150px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+IFRAME {
+	BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; MARGIN: 0px; BORDER-LEFT: #ffffff 0px solid; BORDER-BOTTOM: #ffffff 0px solid
+}
+.input_textBox {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/inputbg2.bmp); MARGIN: 1px; BORDER-LEFT: #7f9db9 1px solid; BORDER-BOTTOM: #7f9db9 1px solid; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.input_textBox_noborder {
+	BORDER-RIGHT: #7f9db9 1px; BORDER-TOP: #7f9db9 1px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/inputbg.bmp); MARGIN: 1px; BORDER-LEFT: #7f9db9 1px; BORDER-BOTTOM: #7f9db9 1px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.input_button {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/buttonbg.bmp); MARGIN: 1px; BORDER-LEFT: #7f9db9 1px solid; CURSOR: hand; COLOR: #000000; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.input_button_over {
+	BORDER-RIGHT: blue 1px solid; BORDER-TOP: blue 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/overbg.bmp); MARGIN: 1px; BORDER-LEFT: blue 1px solid; CURSOR: hand; COLOR: blue; BORDER-BOTTOM: blue 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.input_ddl {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #7f9db9 1px solid; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.li_error {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: red; FONT-STYLE: oblique; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.li_warning {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: #ff9933; FONT-STYLE: oblique; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.li_message {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: green; FONT-STYLE: oblique; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.menu_item_over {
+	BACKGROUND-IMAGE: url(../../images/overbg.bmp); CURSOR: hand
+}
+.menu_item_out {
+	CURSOR: default
+}
+.path_title {
+	FONT-WEIGHT: bold; COLOR: blue; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.tab_current {
+	BACKGROUND-POSITION: 50% bottom; BACKGROUND-IMAGE: url(../../images/First1.gif); BACKGROUND-REPEAT: no-repeat
+}
+.tab_normal {
+	BACKGROUND-POSITION: 50% bottom; BACKGROUND-IMAGE: url(../../images/First2.gif); BACKGROUND-REPEAT: no-repeat
+}
+.selected_button {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/First1.gif); MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: blue; BORDER-BOTTOM: blue 0px solid; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.audit_button {
+	BORDER-RIGHT: #7f9db9 0px solid; BORDER-TOP: #7f9db9 0px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../images/First2.gif); MARGIN: 0px; BORDER-LEFT: #7f9db9 0px solid; CURSOR: hand; COLOR: #000000; BORDER-BOTTOM: #7f9db9 0px solid; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+
+.AspNetPager
+{
+	color: #999;
+	margin-top: 5px;
+	float: right;
+	margin-right: 5px;
+}
+.AspNetPager a, .AspNetPager .NowIndex
+{
+	text-decoration: none;
+	float: left;
+	padding: 0 5px;
+	border: 1px solid #ddd;
+	background: #ffff;
+	margin: 0 2px;
+	font-size: 11px;
+	color: #000;
+}
+.AspNetPager a:hover
+{
+	background-color: #E61636;
+	color: #fff;
+	border: 1px solid #E61636;
+	text-decoration: none;
+}
+.AspNetPager .NowIndex
+{
+	font-weight: bold;
+	color: #fff;
+	background: #E61636;
+	border: 1px solid #E61636;
+}
+
+
+.img_hidden
+{
+    display: none;
+}
+
+.img_show
+{
+    visibility: visible;
+}

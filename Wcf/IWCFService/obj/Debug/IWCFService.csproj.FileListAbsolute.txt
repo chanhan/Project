@@ -1,0 +1,7 @@
+D:\Projects\Wcf\IWCFService\bin\Debug\IWCFService.dll
+D:\Projects\Wcf\IWCFService\bin\Debug\IWCFService.pdb
+D:\Projects\Wcf\IWCFService\bin\Debug\WCFModel.dll
+D:\Projects\Wcf\IWCFService\bin\Debug\WCFModel.pdb
+D:\Projects\Wcf\IWCFService\obj\Debug\IWCFService.csprojResolveAssemblyReference.cache
+D:\Projects\Wcf\IWCFService\obj\Debug\IWCFService.dll
+D:\Projects\Wcf\IWCFService\obj\Debug\IWCFService.pdb

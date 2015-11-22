@@ -1,0 +1,4 @@
+D:\Projects\WCFDemo\WCFData\bin\Debug\WCFData.dll
+D:\Projects\WCFDemo\WCFData\bin\Debug\WCFData.pdb
+D:\Projects\WCFDemo\WCFData\obj\Debug\WCFData.dll
+D:\Projects\WCFDemo\WCFData\obj\Debug\WCFData.pdb

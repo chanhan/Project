@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+      @*  @Styles.Render("~/Content/css")*@
+        @Styles.Render("~/Content/style")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+@*<body>
+    <div id="header" class="wrap">
+        <div class="logo">
+            <img src="@Url.Content(" ~ />Images/logo.png")"/>
+        </div>
+       @if(Session["admin"]!=null)
+        {
+        <div class="menu">
+            @Html.ActionLink("发布房屋信息","Edit","House",null,new{ @class="btn"})
+            <a href="@Url.Content(" ~ />Account/Out")" class="btn">退出</a>
+        </div>
+        } 
+    </div>
+    <div id="main" class="wrap">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+</body>*@
+    <body>
+        <header>
+            <div id="header" class="wrap">
+                <div class="logo">
+                    <img src="@Url.Content("~/Images/logo.png")" />
+                </div>
+                @if (Session["admin"] != null)
+                {
+                    <div class="menu">
+                        @Html.ActionLink("发布房屋信息", "Edit", "House", null, new { @class = "btn" })
+                        <a href="@Url.Content("~/Account/Out")" class="btn">退出</a>
+                    </div>
+                }
+            </div>
+        </header>
+        <div id="main" class="wrap">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        @*<footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - 我的 ASP.NET MVC 应用程序</p>
+                </div>
+            </div>
+        </footer>*@
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

@@ -1,0 +1,5 @@
+D:\Projects\Wcf\DataAccess\bin\Release\DataAccess.dll.config
+D:\Projects\Wcf\DataAccess\bin\Release\DataAccess.dll
+D:\Projects\Wcf\DataAccess\bin\Release\DataAccess.pdb
+D:\Projects\Wcf\DataAccess\obj\Release\DataAccess.dll
+D:\Projects\Wcf\DataAccess\obj\Release\DataAccess.pdb

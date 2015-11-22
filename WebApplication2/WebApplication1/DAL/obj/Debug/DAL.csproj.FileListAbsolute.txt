@@ -1,0 +1,11 @@
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.DAL.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.DAL.pdb
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.Common.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.DBUtility.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.Model.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.Model.pdb
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.Common.pdb
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\bin\Debug\Maticsoft.DBUtility.pdb
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\obj\Debug\Maticsoft.DAL.dll
+E:\vssworkfolder\Friso\EasyLid\source\FrisoEasyLid\DAL\obj\Debug\Maticsoft.DAL.pdb

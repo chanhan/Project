@@ -1,0 +1,8 @@
+D:\Projects\WebApplication2\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Projects\WebApplication2\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Projects\WebApplication2\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Projects\WebApplication2\ConsoleApplication1\bin\Debug\Demo.dll
+D:\Projects\WebApplication2\ConsoleApplication1\bin\Debug\Demo.pdb
+D:\Projects\WebApplication2\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Projects\WebApplication2\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Projects\WebApplication2\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

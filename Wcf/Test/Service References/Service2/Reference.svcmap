@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4bed9bac-7c16-48b7-b376-84312e60aca3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8082/Service2.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service2.wsdl" MetadataType="Wsdl" ID="7eb1deb5-bb79-41b5-92d6-2ce40a77dc62" SourceId="1" SourceUrl="http://samplelife:8082/Service2.svc?wsdl" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="65ea5c5a-7c89-48f7-addb-a22bfe37c22a" SourceId="1" SourceUrl="http://samplelife:8082/Service2.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service2.disco" MetadataType="Disco" ID="0d16a0a3-940b-46a7-90e1-a9767b6e30cb" SourceId="1" SourceUrl="http://samplelife:8082/Service2.svc?disco" />
+    <MetadataFile FileName="Service21.xsd" MetadataType="Schema" ID="4c9c93d3-4d48-43cb-b6cf-46f4f9d67676" SourceId="1" SourceUrl="http://samplelife:8082/Service2.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

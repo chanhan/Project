@@ -1,0 +1,57 @@
+﻿@model HouseRent.Models.House
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>House</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Floorage)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Floorage)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Contract)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Contract)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublishTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublishTime)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.HouseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

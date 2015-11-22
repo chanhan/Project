@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maticsoft.Web</RootNamespace>
+    <AssemblyName>Maticsoft.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LtpPageControl, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CallCenter.aspx" />
+    <Content Include="CodeExchange.aspx" />
+    <Content Include="css\css.css" />
+    <Content Include="EasyLid.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\block.gif" />
+    <Content Include="Images\line01.gif" />
+    <Content Include="Images\top02.gif" />
+    <Content Include="Images\up.gif" />
+    <Content Include="js\calendar1.js" />
+    <Content Include="js\CheckBox.js" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.frisocrm.sms\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.frisocrm.sms\ReturnStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.frisocrm.sms\SendSMSService2.disco" />
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="webctrl_client\1_0\Images\folder.gif" />
+    <Content Include="webctrl_client\1_0\Images\folderopen.gif" />
+    <Content Include="webctrl_client\1_0\Images\html.gif" />
+    <Content Include="webctrl_client\1_0\Images\root.gif" />
+    <Content Include="webctrl_client\1_0\MultiPage.htc" />
+    <Content Include="webctrl_client\1_0\TabStrip.htc" />
+    <Content Include="webctrl_client\1_0\toolbar.htc" />
+    <Content Include="webctrl_client\1_0\TreeImages\f.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\fminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\fplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\i.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\L.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\minus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\plus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\r.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\F.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Fminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Fplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\I.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\L.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\minus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\plus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\r.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\T.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\white.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\T.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\white.gif" />
+    <Content Include="webctrl_client\1_0\treeview.htc" />
+    <None Include="Web References\com.frisocrm.sms\SendSMSService2.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallCenter.aspx.cs">
+      <DependentUpon>CallCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CallCenter.aspx.designer.cs">
+      <DependentUpon>CallCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeExchange.aspx.cs">
+      <DependentUpon>CodeExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeExchange.aspx.designer.cs">
+      <DependentUpon>CodeExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EasyLid.aspx.cs">
+      <DependentUpon>EasyLid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EasyLid.aspx.designer.cs">
+      <DependentUpon>EasyLid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.frisocrm.sms\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://sms.frisocrm.com/Api/WebService/SendSMSService2.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.frisocrm.sms\</RelPath>
+      <UpdateFromURL>http://sms.frisocrm.com/Api/WebService/SendSMSService2.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Maticsoft_Web_com_frisocrm_sms_SendSMSService2</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

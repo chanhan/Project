@@ -1,0 +1,96 @@
+﻿.Default
+{
+	font-size:smaller;
+	font-family:Tahoma; 
+}
+
+table 
+{ 
+	padding:0px;
+	border-collapse:collapse; 
+}
+
+.DropDownLook
+{
+	padding:0px;
+	border-style:solid;
+	border-width:1px;
+}
+
+.DivClose
+{
+	display:none;
+	position:absolute;
+	width:250px;
+	height:220px;
+	border-style:solid;
+	border-color:Gray; 
+	border-width:1px;
+	background-color:#99A479;
+}
+
+.LabelClose
+{
+	vertical-align:text-top; 
+	position:absolute;
+	bottom:0px;
+	font-family:Verdana;
+}
+
+.DivCheckBoxList
+{
+	display:none;
+	background-color:White;
+	width:250px;
+	position:absolute;
+	height:200px;
+	overflow-y:auto; 
+	overflow-x:hidden;
+	border-style:solid;
+	border-color:Gray; 
+	border-width:1px;
+}
+
+.CheckBoxList
+{
+	position:relative;
+	width:250px;
+	height:10px; 
+	overflow:scroll;
+	font-size:small;
+}
+.WF_input_Button2
+{
+	height: 25px;
+	background-color:White;
+	background-image: url('../../CSS/Images_new/EMP_BUTTON_01.gif');
+	background-repeat: repeat-x; 
+	background-position-x: center; 
+	width: 45; 
+	text-align: center; border-bottom-color:#000000;
+	 
+}
+.WF_input_Button4
+{
+	height: 25px;
+	background-color:White;
+	background-image: url('../../CSS/Images_new/EMP_BUTTON_04.gif');
+	background-repeat: repeat-x; 
+	background-position-x: center; 
+	width: 65; 
+	text-align: center; border-bottom-color:#000000;
+	 
+}
+
+.WF_input_Button6
+{
+	height: 25px;
+	background-color:White;
+	background-image: url('../../CSS/Images_new/EMP_BUTTON_06.gif');
+	background-repeat: repeat-x; 
+	background-position-x: center; 
+	width: 85; 
+	text-align: center; border-bottom-color:#000000;
+	 
+}
+/**顯示為藍色字體**/

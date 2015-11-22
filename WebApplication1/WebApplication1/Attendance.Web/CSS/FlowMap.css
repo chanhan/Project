@@ -1,0 +1,22 @@
+﻿.smallDiv
+{
+	float:left;
+	width:110px; 
+	padding-bottom:10px;
+}
+.bigDiv
+{
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+	padding:0 auto;
+	width:600px;
+
+}
+.buji
+{ 
+	background:url("../images/buji.png") no-repeat top center;
+}
+li{ float:left; width:110px; margin-bottom:20px;  padding-top:80px;}
+.flow_title{ font-size:12px; padding:0; margin:0;text-indent:0px; font-weight:bold;}
+.flow_emp { line-height:24px; border-bottom:2px dotted #e1e1e1;}

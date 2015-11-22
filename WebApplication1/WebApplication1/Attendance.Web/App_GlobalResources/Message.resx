@@ -1,0 +1,2106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptMSGNotNull" xml:space="preserve">
+    <value>接受短信欄位不能為空，請輸入！</value>
+  </data>
+  <data name="AcceptMSGOnlyYorN" xml:space="preserve">
+    <value>接受短信欄位只能是Y或者N，請確認！</value>
+  </data>
+  <data name="AddFailed" xml:space="preserve">
+    <value>新增失敗！</value>
+  </data>
+  <data name="AddSuccess" xml:space="preserve">
+    <value>新增成功！</value>
+  </data>
+  <data name="AllowFlagNotNull" xml:space="preserve">
+    <value>是否允許BU開戶欄位不能為空，請輸入！</value>
+  </data>
+  <data name="AllowFlagOnlyYorN" xml:space="preserve">
+    <value>是否允許BU開戶欄位只能是Y或者N，請確認！</value>
+  </data>
+  <data name="AtLastOneChoose" xml:space="preserve">
+    <value>請至少選擇一筆數據記錄</value>
+  </data>
+  <data name="ChangeFailed" xml:space="preserve">
+    <value>權限交接失敗！</value>
+  </data>
+  <data name="ChangeSuccess" xml:space="preserve">
+    <value>權限交接成功!</value>
+  </data>
+  <data name="CnameNotNull" xml:space="preserve">
+    <value>中文名不能為空</value>
+  </data>
+  <data name="CompanyIdNotNull" xml:space="preserve">
+    <value>公司代碼不能為空</value>
+  </data>
+  <data name="ConditionNotNull" xml:space="preserve">
+    <value>請點擊"條件",以進行查詢!</value>
+  </data>
+  <data name="ConfirmDisable" xml:space="preserve">
+    <value>該角色具有系統功能的權限，確認要失效嗎？</value>
+  </data>
+  <data name="CopyConfirm" xml:space="preserve">
+    <value>您確認要執行此項操作嗎？</value>
+  </data>
+  <data name="DataExist" xml:space="preserve">
+    <value>所新增用戶已存在，不可新增!</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>確認刪除選中的數據？</value>
+  </data>
+  <data name="DeleteFailed" xml:space="preserve">
+    <value>刪除失敗</value>
+  </data>
+  <data name="DeleteNotNull" xml:space="preserve">
+    <value>請先選擇所要刪除的數據!</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>刪除成功</value>
+  </data>
+  <data name="DepCodeNotNull" xml:space="preserve">
+    <value>單位不能為空</value>
+  </data>
+  <data name="DisableConfirm" xml:space="preserve">
+    <value>確定失效此模組嗎?</value>
+  </data>
+  <data name="DisableFailed" xml:space="preserve">
+    <value>失效失败！</value>
+  </data>
+  <data name="DisableSuccess" xml:space="preserve">
+    <value>失效成功！</value>
+  </data>
+  <data name="EnableAndSave" xml:space="preserve">
+    <value>該群組已失效，是否執行生效并存儲所勾選的角色？</value>
+  </data>
+  <data name="EnableFailed" xml:space="preserve">
+    <value>生效失败!</value>
+  </data>
+  <data name="EnableSuccess" xml:space="preserve">
+    <value>生效成功！</value>
+  </data>
+  <data name="IfAdminNotNull" xml:space="preserve">
+    <value>系統管理不能為空</value>
+  </data>
+  <data name="LanguageNotNull" xml:space="preserve">
+    <value>語言不能為空</value>
+  </data>
+  <data name="MailNotNull" xml:space="preserve">
+    <value>郵件地址不能為空！</value>
+  </data>
+  <data name="ModuleEditCheck" xml:space="preserve">
+    <value>請選擇一名角色！</value>
+  </data>
+  <data name="NewMustNotOld" xml:space="preserve">
+    <value>原權限擁有者與現權限交接者不能相同!</value>
+  </data>
+  <data name="NewPasswordEqualsOld" xml:space="preserve">
+    <value>新密碼不能與舊密碼相同！</value>
+  </data>
+  <data name="NewPasswordNotValid" xml:space="preserve">
+    <value>新 密碼不符合難度要求！</value>
+  </data>
+  <data name="NewPsnNotExist" xml:space="preserve">
+    <value>現權限交接者人事資料不存在!</value>
+  </data>
+  <data name="NewPsnRoleIsExist" xml:space="preserve">
+    <value>現權限交接者已擁有權限!</value>
+  </data>
+  <data name="NewPwdAgainNotNull" xml:space="preserve">
+    <value>確認密碼不能為空！</value>
+  </data>
+  <data name="NewPwdNotNull" xml:space="preserve">
+    <value>新密碼不能為空！</value>
+  </data>
+  <data name="NoItemSelected" xml:space="preserve">
+    <value>尚未選中數據！</value>
+  </data>
+  <data name="NonDepartment" xml:space="preserve">
+    <value>無滿足條件的組織可供保存！</value>
+  </data>
+  <data name="NoRolesSelected" xml:space="preserve">
+    <value>尚未選擇群組！</value>
+  </data>
+  <data name="OldPsnRoleNotExist" xml:space="preserve">
+    <value>原權限擁者沒有權限!</value>
+  </data>
+  <data name="OldPwdNotNull" xml:space="preserve">
+    <value>舊密碼不能為空！</value>
+  </data>
+  <data name="OldPwdNotTrue" xml:space="preserve">
+    <value>舊密碼不正確，請重新輸入！</value>
+  </data>
+  <data name="OrderIDNotNumber" xml:space="preserve">
+    <value>數序號必須輸入數字!</value>
+  </data>
+  <data name="PersoncodeNotNull" xml:space="preserve">
+    <value>人員不能為空</value>
+  </data>
+  <data name="PhoneFmtNotTrue" xml:space="preserve">
+    <value>分機號碼必須是十一位數字！</value>
+  </data>
+  <data name="PleaseEnterNewPsn" xml:space="preserve">
+    <value>請輸入現權限交接者並點擊查詢!</value>
+  </data>
+  <data name="PleaseEnterOldPsn" xml:space="preserve">
+    <value>請輸入原權限擁有者並點擊查詢!</value>
+  </data>
+  <data name="ResetPasswordFailed" xml:space="preserve">
+    <value>密碼初始化失敗</value>
+  </data>
+  <data name="ResetPasswordSuccess" xml:space="preserve">
+    <value>密碼初始化成功</value>
+  </data>
+  <data name="RoleCodeNotNull" xml:space="preserve">
+    <value>角色代码欄位不能为空，請輸入！</value>
+  </data>
+  <data name="RoleDeleteCheck" xml:space="preserve">
+    <value>请至少选择一条记录！</value>
+  </data>
+  <data name="RoleDeleteConfirm" xml:space="preserve">
+    <value>确定删除此角色吗？</value>
+  </data>
+  <data name="RoleDisableConfirm" xml:space="preserve">
+    <value>該角色具有系統功能的權限，確認要失效嗎？</value>
+  </data>
+  <data name="RoleExist" xml:space="preserve">
+    <value>角色已存在!</value>
+  </data>
+  <data name="RolesCodeIsExist" xml:space="preserve">
+    <value>群組已存在！</value>
+  </data>
+  <data name="RolesCodeNotNull" xml:space="preserve">
+    <value>群組代碼欄位不能為空，請輸入！</value>
+  </data>
+  <data name="RolesDisableConfirm" xml:space="preserve">
+    <value>該群組具有角色設置，確認要失效嗎？</value>
+  </data>
+  <data name="SaveConfim" xml:space="preserve">
+    <value>确定要保存數據嗎?</value>
+  </data>
+  <data name="SaveFailed" xml:space="preserve">
+    <value>存儲失敗！</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>存儲成功！</value>
+  </data>
+  <data name="StringFormNotRight" xml:space="preserve">
+    <value>輸入字串格式不正確.</value>
+  </data>
+  <data name="TelFmtNotTrue" xml:space="preserve">
+    <value>分機號碼必須是五位數字！</value>
+  </data>
+  <data name="TextBoxNotNull" xml:space="preserve">
+    <value>欄位不可為空,請輸入!</value>
+  </data>
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>確認密碼與新密碼不一致！</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>更新失敗！</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>更新成功！</value>
+  </data>
+  <data name="RulesDeleteConfirm" xml:space="preserve">
+    <value>確認要刪除數據記錄嗎?</value>
+  </data>
+  <data name="RulesNotNumber" xml:space="preserve">
+    <value>欄位必須輸入數字!</value>
+  </data>
+  <data name="G123mNotNumber" xml:space="preserve">
+    <value>平時加班(原G1)每月上限+休息日上班(原G2)每月上限+節假日上班(原G3)每月上限欄位必須輸入數字!</value>
+  </data>
+  <data name="G12mNotNumber" xml:space="preserve">
+    <value>平時加班(原G1)每月上限+休息日(原G2)上班每月上限欄位必須輸入數字!</value>
+  </data>
+  <data name="G13mNotNumber" xml:space="preserve">
+    <value>平時加班(原G1)每月上限+節假日上班(原G3每月上限)欄位必須輸入數字!</value>
+  </data>
+  <data name="G1dNotNumber" xml:space="preserve">
+    <value>平時加班(原G1)每日上限欄位必須輸入數字!</value>
+  </data>
+  <data name="G1mNotNumber" xml:space="preserve">
+    <value>平時加班(原G1)每月上限欄位必須輸入數字!</value>
+  </data>
+  <data name="G2dNotNumber" xml:space="preserve">
+    <value>休息日上班(原G2)每日上限欄位必須輸入數字!</value>
+  </data>
+  <data name="G2mNotNumber" xml:space="preserve">
+    <value>休息日上班(原G2)每月上限欄位必須輸入數字!</value>
+  </data>
+  <data name="G3dNotNumber" xml:space="preserve">
+    <value>節假日上班(原G3)每日上限欄位必須輸入數字!</value>
+  </data>
+  <data name="PMMoreThanOneH" xml:space="preserve">
+    <value>加班前休息不能小於一小時</value>
+  </data>
+  <data name="MustBwtOnTime" xml:space="preserve">
+    <value>中間休息時間必須在上班時間段內</value>
+  </data>
+  <data name="G123NumberControl" xml:space="preserve">
+    <value>事業群以外的用戶G1+G2+G3每月&lt;=60</value>
+  </data>
+  <data name="G13NumberControl" xml:space="preserve">
+    <value>事業群以外的用戶G1+G3每月&lt;=36</value>
+  </data>
+  <data name="G123mAndG1mAndG2mAndG3d" xml:space="preserve">
+    <value>“G1+G2+G3每月上限(含專案)”不能小於“G1每月上限”+“G2每月上限”+“G3每日上限”</value>
+  </data>
+  <data name="G12mAndG1mAndG2d" xml:space="preserve">
+    <value>“G1+G2每月上限”必須等於“G1每月上限”+“G2每月上限”</value>
+  </data>
+  <data name="G13mAndG1dAndG1mAndG3d" xml:space="preserve">
+    <value>“G1+G3每月上限”不能小於“G1每月上限”+“G3每日上限”</value>
+  </data>
+  <data name="G1mAndG1d" xml:space="preserve">
+    <value>“G1每月上限”不能小於G1每日上限</value>
+  </data>
+  <data name="G2mAndG2d" xml:space="preserve">
+    <value>“G2每月上限”不能小於G2每日上限</value>
+  </data>
+  <data name="SaveConfirm" xml:space="preserve">
+    <value>確定要保存數據嗎？</value>
+  </data>
+  <data name="PMLaterThanOffTime" xml:space="preserve">
+    <value>加班前休息開始時間必須等於工作時段結束時間</value>
+  </data>
+  <data name="PMMoreThanFiveH" xml:space="preserve">
+    <value>加班前休息時間錯誤！</value>
+  </data>
+  <data name="G12mAndG1mAndG2m" xml:space="preserve">
+    <value>“G1+G2每月上限”必須等於“G1每月上限”+“G2每月上限”</value>
+  </data>
+  <data name="NotesNotNull" xml:space="preserve">
+    <value>Notes不能為空</value>
+  </data>
+  <data name="WorkNoNotNull" xml:space="preserve">
+    <value>工號不能為空!</value>
+  </data>
+  <data name="DeleteAttTypeConfirm" xml:space="preserve">
+    <value>確認要刪除數據記錄嗎？</value>
+  </data>
+  <data name="EmpNotExist" xml:space="preserve">
+    <value>員工資料不存在！</value>
+  </data>
+  <data name="EmpDeleteCheck" xml:space="preserve">
+    <value>請至少選擇一筆數據記錄！</value>
+  </data>
+  <data name="NotOnlyOne" xml:space="preserve">
+    <value>資料重複</value>
+  </data>
+  <data name="WrongDate" xml:space="preserve">
+    <value>非法日期或時間格式錯誤，請參照格式:2012/01/01</value>
+  </data>
+  <data name="OnlyOneDirectlyunder" xml:space="preserve">
+    <value>該組織直屬主管已存在</value>
+  </data>
+  <data name="ModuleCodeIsExist" xml:space="preserve">
+    <value>模組代碼已經存在!</value>
+  </data>
+  <data name="ToLaterThanFrom" xml:space="preserve">
+    <value>結束時間請早於開始時間！</value>
+  </data>
+  <data name="EnableConfirm" xml:space="preserve">
+    <value>確定生效此模組嗎?</value>
+  </data>
+  <data name="LvTypeExist" xml:space="preserve">
+    <value>該代碼已經存在，不可新增！</value>
+  </data>
+  <data name="CantChangToLac" xml:space="preserve">
+    <value>不能變更為哺乳期班別，組織排班表中在使用該班別！</value>
+  </data>
+  <data name="NightMustTwoDays" xml:space="preserve">
+    <value>晚班必須跨天！</value>
+  </data>
+  <data name="OnlyNightTwoDays" xml:space="preserve">
+    <value>只有晚班才可以跨天！</value>
+  </data>
+  <data name="ShiftIsUsedNoDelete" xml:space="preserve">
+    <value>班別應用中不能刪除！</value>
+  </data>
+  <data name="WorkMoreThanEightH" xml:space="preserve">
+    <value>您的工作時間不能超過8小時！</value>
+  </data>
+  <data name="WorkMustEightH" xml:space="preserve">
+    <value>您的工作時間必須等於8小時！</value>
+  </data>
+  <data name="ErrDepcodeNull" xml:space="preserve">
+    <value>單位代碼不能為空！</value>
+  </data>
+  <data name="ErrWorknoNull" xml:space="preserve">
+    <value>工號不能為空</value>
+  </data>
+  <data name="btnBack" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="btnImport" xml:space="preserve">
+    <value>導入</value>
+  </data>
+  <data name="ErrDeputyNotFind" xml:space="preserve">
+    <value>代理人工號不在權限下</value>
+  </data>
+  <data name="ErrIsbgaudit" xml:space="preserve">
+    <value>是否群級輸入應為Y或N</value>
+  </data>
+  <data name="ErrIsbgauditNull" xml:space="preserve">
+    <value>是否群級不能為空</value>
+  </data>
+  <data name="ErrIsdirectlyunder" xml:space="preserve">
+    <value>是否直屬主管輸入應為Y或N</value>
+  </data>
+  <data name="ErrIsdirectlyunderNull" xml:space="preserve">
+    <value>是否直屬主管不能為空</value>
+  </data>
+  <data name="ErrNotesNull" xml:space="preserve">
+    <value>Notes不能為空</value>
+  </data>
+  <data name="ErrWorknoNotFind" xml:space="preserve">
+    <value>工號不在權限下</value>
+  </data>
+  <data name="ErrIsNotKaoQin" xml:space="preserve">
+    <value>是否免考勤輸入應為Y或N!</value>
+  </data>
+  <data name="DepNameNotNull" xml:space="preserve">
+    <value>組織不能為空！</value>
+  </data>
+  <data name="IsKaoQinNotNull" xml:space="preserve">
+    <value>是否考勤不能為空</value>
+  </data>
+  <data name="LocalNameNotNull" xml:space="preserve">
+    <value>姓名不能為空！</value>
+  </data>
+  <data name="AddressNotNull" xml:space="preserve">
+    <value>安裝位置不能為空</value>
+  </data>
+  <data name="BellNoNotNull" xml:space="preserve">
+    <value>卡鐘編號不能為空</value>
+  </data>
+  <data name="BellSizeNotNull" xml:space="preserve">
+    <value>型號規格不能為空</value>
+  </data>
+  <data name="BellTypeNotNull" xml:space="preserve">
+    <value>卡鐘類別不能為空</value>
+  </data>
+  <data name="ManufacturerNotNull" xml:space="preserve">
+    <value>廠商不能為空</value>
+  </data>
+  <data name="PickDataIPNotNull" xml:space="preserve">
+    <value>采集電腦IP不能為空</value>
+  </data>
+  <data name="PortIPNotNull" xml:space="preserve">
+    <value>端口IP不能為空</value>
+  </data>
+  <data name="ProduceIDNotNull" xml:space="preserve">
+    <value>廠商ID不能為空</value>
+  </data>
+  <data name="AssignInfo" xml:space="preserve">
+    <value>人已分配到組：</value>
+  </data>
+  <data name="ClassGroupNotBelong" xml:space="preserve">
+    <value>課組編號不屬於該部門</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>請選中所有人員!</value>
+  </data>
+  <data name="SelectEmployIsNotNull" xml:space="preserve">
+    <value>選中人員不能為空！</value>
+  </data>
+  <data name="SelectFirst" xml:space="preserve">
+    <value>請先選擇分配人員的課/組!</value>
+  </data>
+  <data name="ErrDate" xml:space="preserve">
+    <value>日期格式錯誤:請參照(2012/01/01)！</value>
+  </data>
+  <data name="ErrDepNotFind" xml:space="preserve">
+    <value>組織不存在！</value>
+  </data>
+  <data name="ErrDepNotNull" xml:space="preserve">
+    <value>組織不能為空！</value>
+  </data>
+  <data name="ErrIsKaoQin" xml:space="preserve">
+    <value>是否考勤只能為Y或N！</value>
+  </data>
+  <data name="ErrLevelNotFind" xml:space="preserve">
+    <value>資位不存在！</value>
+  </data>
+  <data name="ErrLocalNameNotNull" xml:space="preserve">
+    <value>姓名不能為空！</value>
+  </data>
+  <data name="ErrManagerNotFind" xml:space="preserve">
+    <value>管理職不存在！</value>
+  </data>
+  <data name="ErrSex" xml:space="preserve">
+    <value>性別只能為男或女;</value>
+  </data>
+  <data name="ErrStatusNotFind" xml:space="preserve">
+    <value>在職狀態不存在;</value>
+  </data>
+  <data name="ErrWorkNo" xml:space="preserve">
+    <value>工號有誤(工號不存在或不在權限內);</value>
+  </data>
+  <data name="ErrWorkNoRepeat" xml:space="preserve">
+    <value>存在重複的資料！</value>
+  </data>
+  <data name="EmptyConfirm" xml:space="preserve">
+    <value>確認將‘選中人員區的所有人員’進行清除編組嗎？</value>
+  </data>
+  <data name="EmptyFailed" xml:space="preserve">
+    <value>清除編組失敗</value>
+  </data>
+  <data name="EmptySuccess" xml:space="preserve">
+    <value>清除編組成功</value>
+  </data>
+  <data name="ErrorInfo" xml:space="preserve">
+    <value>系統出錯</value>
+  </data>
+  <data name="HolidayFlag" xml:space="preserve">
+    <value>節假日</value>
+  </data>
+  <data name="WorkFlag" xml:space="preserve">
+    <value>工作日</value>
+  </data>
+  <data name="ErrDepNameNotFind" xml:space="preserve">
+    <value>部門名稱不存在！</value>
+  </data>
+  <data name="ErrDepnameNull" xml:space="preserve">
+    <value>部門名稱不能為空！</value>
+  </data>
+  <data name="ErrHolidayFlag" xml:space="preserve">
+    <value>是否節假日必須為‘Y’或‘N’</value>
+  </data>
+  <data name="ErrHolidayFlagNotEquals" xml:space="preserve">
+    <value>是否節假日必須與BG行事歷保持一致！</value>
+  </data>
+  <data name="ErrHolidayFlagNull" xml:space="preserve">
+    <value>是否節假日不能為空！</value>
+  </data>
+  <data name="ErrWorkDayNull" xml:space="preserve">
+    <value>日期不能為空</value>
+  </data>
+  <data name="ErrWorkFlag" xml:space="preserve">
+    <value>是否工作日必須為‘Y’或‘N’</value>
+  </data>
+  <data name="ErrWorkFlagNull" xml:space="preserve">
+    <value>是否工作日不能為空！</value>
+  </data>
+  <data name="ErrOrgCodeNull" xml:space="preserve">
+    <value>課組編號不能為空</value>
+  </data>
+  <data name="ErrorWorkNoNull" xml:space="preserve">
+    <value>工號不能為空</value>
+  </data>
+  <data name="ErrTeamCodeOut" xml:space="preserve">
+    <value>該員工不是所屬部門下的課或組</value>
+  </data>
+  <data name="ErrWorkNameNull" xml:space="preserve">
+    <value>姓名不能為空</value>
+  </data>
+  <data name="ErrWorkNoAndWorkNameNotConsistency" xml:space="preserve">
+    <value>工號和姓名不一致</value>
+  </data>
+  <data name="ErrWorkNoNotEXIST" xml:space="preserve">
+    <value>工號不存在</value>
+  </data>
+  <data name="ErrMoreDepName" xml:space="preserve">
+    <value>部門名稱有重複的，請輸入費用代碼！</value>
+  </data>
+  <data name="EmpBasicInfoNotExist" xml:space="preserve">
+    <value>員工基本資料不存在!</value>
+  </data>
+  <data name="DepNameOrWorkNoNotNull" xml:space="preserve">
+    <value>請選擇單位或輸入工號進行查詢！</value>
+  </data>
+  <data name="YearName" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="ErrRemain" xml:space="preserve">
+    <value>剩餘加班格式錯誤:(0-99999.9);</value>
+  </data>
+  <data name="ErrYearMonth" xml:space="preserve">
+    <value>年月格式錯誤，請參照:201201！</value>
+  </data>
+  <data name="QueryBatchWorkNo" xml:space="preserve">
+    <value>批量查詢（輸入工號以回車區分）</value>
+  </data>
+  <data name="CancelAudit" xml:space="preserve">
+    <value>確定要取消核准嗎？</value>
+  </data>
+  <data name="ErrLeaveDaysNull" xml:space="preserve">
+    <value>已休天數不能為空</value>
+  </data>
+  <data name="ErrLeaveYearNull" xml:space="preserve">
+    <value>年份不能為空</value>
+  </data>
+  <data name="IsUsedNow" xml:space="preserve">
+    <value>該員工的信息已審核或正在簽核中</value>
+  </data>
+  <data name="WorkNoIsWrong" xml:space="preserve">
+    <value>工號有誤（工號不存在或已離職）</value>
+  </data>
+  <data name="YearIsWrong" xml:space="preserve">
+    <value>年份不正確</value>
+  </data>
+  <data name="LeaveDaysIsWrong" xml:space="preserve">
+    <value>休假天數超出範圍</value>
+  </data>
+  <data name="ErrYearFormat" xml:space="preserve">
+    <value>年份不是數字類型或者不足四位</value>
+  </data>
+  <data name="LeaveDaysMustNUmber" xml:space="preserve">
+    <value>原單位已休天數必須為數字</value>
+  </data>
+  <data name="EffDateNotNull" xml:space="preserve">
+    <value>生效日期不能為空</value>
+  </data>
+  <data name="EmpNoNotNull" xml:space="preserve">
+    <value>工号不能为空</value>
+  </data>
+  <data name="MoveTypeNotNull" xml:space="preserve">
+    <value>異動類型不能為空</value>
+  </data>
+  <data name="AfterValueNameNotNull" xml:space="preserve">
+    <value>異動后不能為空</value>
+  </data>
+  <data name="DataCodeError" xml:space="preserve">
+    <value>參數代碼錯誤</value>
+  </data>
+  <data name="BeforeAfterDataCodeSame" xml:space="preserve">
+    <value>異動前與異動后參數代碼相同</value>
+  </data>
+  <data name="recordExists" xml:space="preserve">
+    <value>記錄已存在</value>
+  </data>
+  <data name="InportRealApplyConfirm" xml:space="preserve">
+    <value>確定要轉入有效加班嗎？</value>
+  </data>
+  <data name="BellNo" xml:space="preserve">
+    <value>卡鐘號</value>
+  </data>
+  <data name="CardNo" xml:space="preserve">
+    <value>卡ID</value>
+  </data>
+  <data name="CardTime" xml:space="preserve">
+    <value>刷卡時間</value>
+  </data>
+  <data name="LocalName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>序號</value>
+  </data>
+  <data name="ReadTime" xml:space="preserve">
+    <value>採集時間</value>
+  </data>
+  <data name="WorkNo" xml:space="preserve">
+    <value>工號</value>
+  </data>
+  <data name="ImportTypeInfo" xml:space="preserve">
+    <value>按預報</value>
+  </data>
+  <data name="KQDateNotNull" xml:space="preserve">
+    <value>考勤日不能為空！</value>
+  </data>
+  <data name="CardDateNotNull" xml:space="preserve">
+    <value>刷卡日期不能為空！</value>
+  </data>
+  <data name="SIGNINOUT" xml:space="preserve">
+    <value>網上簽到簽退</value>
+  </data>
+  <data name="SIGNMAKEUP" xml:space="preserve">
+    <value>未刷補卡</value>
+  </data>
+  <data name="WorkNoFirst" xml:space="preserve">
+    <value>請先填寫工號!</value>
+  </data>
+  <data name="WorkNONotExist" xml:space="preserve">
+    <value>工號不存在</value>
+  </data>
+  <data name="checkreget" xml:space="preserve">
+    <value>已超出系統設定操作日期範圍，在此日期之後不允許再變更上月及以前的考勤數據</value>
+  </data>
+  <data name="ShiftDateNotNull" xml:space="preserve">
+    <value>排班日期不能為空</value>
+  </data>
+  <data name="FailedCount" xml:space="preserve">
+    <value>操作失敗記錄數</value>
+  </data>
+  <data name="SuccessCount" xml:space="preserve">
+    <value>操作成功記錄數</value>
+  </data>
+  <data name="CheckQuery" xml:space="preserve">
+    <value>請選輸入條件查詢</value>
+  </data>
+  <data name="checkapproveflag" xml:space="preserve">
+    <value>隻能修改狀態為未核準的數據</value>
+  </data>
+  <data name="CounQuery0" xml:space="preserve">
+    <value>只計算查詢部份</value>
+  </data>
+  <data name="CounQuery1" xml:space="preserve">
+    <value>按照組織全部計算</value>
+  </data>
+  <data name="ConfirmConfirmData" xml:space="preserve">
+    <value>確定要確認數據記錄嗎?</value>
+  </data>
+  <data name="ConfirmOnTime" xml:space="preserve">
+    <value>該筆異動資料已經確認無需再次確認！</value>
+  </data>
+  <data name="DeleteConfirmed" xml:space="preserve">
+    <value>該筆異動資料已經確認不可刪除！</value>
+  </data>
+  <data name="ErrAfterValueNull" xml:space="preserve">
+    <value>異動后不能為空</value>
+  </data>
+  <data name="ErrEffDateNotRight" xml:space="preserve">
+    <value>生效日期格式不正確</value>
+  </data>
+  <data name="ErrEffDateNull" xml:space="preserve">
+    <value>生效日期必輸</value>
+  </data>
+  <data name="ErrMoveAfterValueCode" xml:space="preserve">
+    <value>加班類別無效</value>
+  </data>
+  <data name="ErrMoveAfterValueCodeNotEqualMoveBeforeValueCode" xml:space="preserve">
+    <value>異動前與異動后的值不能相同</value>
+  </data>
+  <data name="ErrDateFormat" xml:space="preserve">
+    <value>起止時間格式不正確</value>
+  </data>
+  <data name="ErrEndDateNull" xml:space="preserve">
+    <value>結束時間不能為空</value>
+  </data>
+  <data name="ErrNotLess" xml:space="preserve">
+    <value>開始日期不能小於當前日期</value>
+  </data>
+  <data name="ErrShiftNoNull" xml:space="preserve">
+    <value>班別不能為空</value>
+  </data>
+  <data name="ErrStartDateNull" xml:space="preserve">
+    <value>開始時間不能為空</value>
+  </data>
+  <data name="ConfirmBatchConfirm" xml:space="preserve">
+    <value>確定要執行此作業嗎?</value>
+  </data>
+  <data name="ConfirmFailed" xml:space="preserve">
+    <value>確認失敗</value>
+  </data>
+  <data name="ConfirmSuccess" xml:space="preserve">
+    <value>確認成功</value>
+  </data>
+  <data name="ConfirmUnConfirmData" xml:space="preserve">
+    <value>確認要取消確認該筆數據記錄嗎？</value>
+  </data>
+  <data name="UnConfirmFailed" xml:space="preserve">
+    <value>取消確認失敗</value>
+  </data>
+  <data name="UnConfirmOnTime" xml:space="preserve">
+    <value>該筆異動資料尚未確認無需取消確認！</value>
+  </data>
+  <data name="UnConfirmSuccess" xml:space="preserve">
+    <value>取消確認成功</value>
+  </data>
+  <data name="checknoworkdateg2" xml:space="preserve">
+    <value>上班日期必須為G2</value>
+  </data>
+  <data name="checkworkdateg1" xml:space="preserve">
+    <value>調班日期必須為G1</value>
+  </data>
+  <data name="duplicate" xml:space="preserve">
+    <value>已存在相同信息!</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="MoveShiftCheckTimeQty" xml:space="preserve">
+    <value>調班時數必須為</value>
+  </data>
+  <data name="WorkTime0" xml:space="preserve">
+    <value>時數必須大於0!</value>
+  </data>
+  <data name="FaileCount" xml:space="preserve">
+    <value>失敗筆數：</value>
+  </data>
+  <data name="SuccCount" xml:space="preserve">
+    <value>成功筆數：</value>
+  </data>
+  <data name="checknoworkdate" xml:space="preserve">
+    <value>上班日期不能小於當前日期</value>
+  </data>
+  <data name="checknoworkdateot" xml:space="preserve">
+    <value>上班日期不能申報G2加班</value>
+  </data>
+  <data name="checkworkdate" xml:space="preserve">
+    <value>調班日期不能小於當前日期</value>
+  </data>
+  <data name="NoDataExport" xml:space="preserve">
+    <value>沒有數據可供導出!</value>
+  </data>
+  <data name="ShiftNotOnly" xml:space="preserve">
+    <value>存在重複排班，請修改存在的排班后再作業</value>
+  </data>
+  <data name="Errchecknoworkdate" xml:space="preserve">
+    <value>上班日期不能小於當前日期</value>
+  </data>
+  <data name="Errcheckworkdate" xml:space="preserve">
+    <value>調班日期不能小於當前日期</value>
+  </data>
+  <data name="ErrNoWorkDateNull" xml:space="preserve">
+    <value>上班日期不能為空</value>
+  </data>
+  <data name="ErrWorkDateNull" xml:space="preserve">
+    <value>調班日期不能為空</value>
+  </data>
+  <data name="DataIsExist" xml:space="preserve">
+    <value>存在重複的記錄</value>
+  </data>
+  <data name="checktimeqty" xml:space="preserve">
+    <value>調班時數錯誤</value>
+  </data>
+  <data name="ErrTimeQty0" xml:space="preserve">
+    <value>時數必須大於0</value>
+  </data>
+  <data name="ErrTimeQtyNull" xml:space="preserve">
+    <value>時數不能為空</value>
+  </data>
+  <data name="timeerror" xml:space="preserve">
+    <value>時間錯誤</value>
+  </data>
+  <data name="operatedepartmentext" xml:space="preserve">
+    <value>只能對課級、組級、線級進行操作！</value>
+  </data>
+  <data name="NecessayNotNull" xml:space="preserve">
+    <value>必輸欄位不能為空</value>
+  </data>
+  <data name="extdepartmentdelete" xml:space="preserve">
+    <value>該組織下有員工資料，不能進行此操作</value>
+  </data>
+  <data name="operatedepartmentdelete" xml:space="preserve">
+    <value>該組織下屬有擴建組織，不能刪除!</value>
+  </data>
+  <data name="DepartmentNotExist" xml:space="preserve">
+    <value>切入部門不存在！</value>
+  </data>
+  <data name="DataSaveFailed" xml:space="preserve">
+    <value>資料保存失敗！</value>
+  </data>
+  <data name="DataSaveSuccess" xml:space="preserve">
+    <value>資料保存成功！</value>
+  </data>
+  <data name="CannotDelete" xml:space="preserve">
+    <value>該組織下屬存在擴建組織或存在該組織員工資料，無法刪除！</value>
+  </data>
+  <data name="DepCodeAutoError" xml:space="preserve">
+    <value>組織代碼獲取錯誤！</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>沒有數據</value>
+  </data>
+  <data name="data" xml:space="preserve">
+    <value>確定要保存數據嗎？</value>
+  </data>
+  <data name="savecomplete" xml:space="preserve">
+    <value>保存成功！</value>
+  </data>
+  <data name="NoticeDateMustBeToday" xml:space="preserve">
+    <value>公告日期必須為當前日期！</value>
+  </data>
+  <data name="DeleteNoticeConfirm" xml:space="preserve">
+    <value>確定刪除此公告嗎？</value>
+  </data>
+  <data name="EndDateLaterThanStartDate" xml:space="preserve">
+    <value>結束日期必須大於開始日期！</value>
+  </data>
+  <data name="JoinDateNotNull" xml:space="preserve">
+    <value>入廠日期不能為空！</value>
+  </data>
+  <data name="DuplicateState" xml:space="preserve">
+    <value>工號在人事資料中已存在!原因可能為：1、總部周邊員工;2、正在支援中.</value>
+  </data>
+  <data name="LevelNotNull" xml:space="preserve">
+    <value>資位不能為空！</value>
+  </data>
+  <data name="OverTimeTypeNotNull" xml:space="preserve">
+    <value>加班類別不能為空！</value>
+  </data>
+  <data name="SexNotNull" xml:space="preserve">
+    <value>性別不能為空！</value>
+  </data>
+  <data name="StateNotNull" xml:space="preserve">
+    <value>狀態不能為空！</value>
+  </data>
+  <data name="SubDepNameNotNull" xml:space="preserve">
+    <value>所屬部門不能為空！</value>
+  </data>
+  <data name="SupportDeptNameNotNull" xml:space="preserve">
+    <value>支援部門不能為空！</value>
+  </data>
+  <data name="DeleteFormConfirm" xml:space="preserve">
+    <value>確定刪除？</value>
+  </data>
+  <data name="ConfirmNewFormOverride" xml:space="preserve">
+    <value>新上傳的表單會覆蓋原來的表單，是否繼續？</value>
+  </data>
+  <data name="UploadDateMustBeToday" xml:space="preserve">
+    <value>上傳日期必須為當前日期</value>
+  </data>
+  <data name="OtmG2Remark" xml:space="preserve">
+    <value>休息日上班</value>
+  </data>
+  <data name="OtmG3Remark" xml:space="preserve">
+    <value>法定假日上班</value>
+  </data>
+  <data name="YearMonthNotNull" xml:space="preserve">
+    <value>年月不能為空</value>
+  </data>
+  <data name="ErrDateFormat2" xml:space="preserve">
+    <value>不合法的日期格式或者日期超出限定範圍！</value>
+  </data>
+  <data name="AuditUnaudit" xml:space="preserve">
+    <value>不能審核非未核准的申請單</value>
+  </data>
+  <data name="AuditUncancelaudit" xml:space="preserve">
+    <value>非已核准的申請單不能取消</value>
+  </data>
+  <data name="DataReturn" xml:space="preserve">
+    <value>確定要執行此作業嗎?</value>
+  </data>
+  <data name="DdeleteApplyovertimeEnd" xml:space="preserve">
+    <value>非未核准狀態的記錄不能刪</value>
+  </data>
+  <data name="DeleteApplyovertimeEnd" xml:space="preserve">
+    <value>非未核准狀態的記錄不能刪除</value>
+  </data>
+  <data name="KqmOtmTypeError" xml:space="preserve">
+    <value>加班類型錯誤</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ErrCostCodeNull" xml:space="preserve">
+    <value>費用代碼不能為空！</value>
+  </data>
+  <data name="ErrJoinDateNull" xml:space="preserve">
+    <value>入廠時間不能為空！</value>
+  </data>
+  <data name="ErrLevelName" xml:space="preserve">
+    <value>資位不能為空或不存在！</value>
+  </data>
+  <data name="ErrLocalNameNull" xml:space="preserve">
+    <value>姓名不能為空！</value>
+  </data>
+  <data name="ErrManagerName" xml:space="preserve">
+    <value>管理職不能為空或不存在！</value>
+  </data>
+  <data name="ErrOverTimeType" xml:space="preserve">
+    <value>加班類別不能為空或不存在！</value>
+  </data>
+  <data name="ErrSourceDeptNameNull" xml:space="preserve">
+    <value>所屬部門不能為空；</value>
+  </data>
+  <data name="ErrSupportDeptNameNull" xml:space="preserve">
+    <value>支援部門不能為空；</value>
+  </data>
+  <data name="ErrSupportDeptNotExist" xml:space="preserve">
+    <value>支援部門不存在或不是部門層級！</value>
+  </data>
+  <data name="OtmAdvanceapplyWorksixdaymessage" xml:space="preserve">
+    <value>您已經連續工作6天,確認是否需要加班?</value>
+  </data>
+  <data name="copyok" xml:space="preserve">
+    <value>復制完成！復制成功：{0}筆,復制失敗：{1}筆.</value>
+  </data>
+  <data name="NempnonoExit" xml:space="preserve">
+    <value>新工號不存在！</value>
+  </data>
+  <data name="NotDataExp" xml:space="preserve">
+    <value>沒有數據可以導出!</value>
+  </data>
+  <data name="ReplaceError" xml:space="preserve">
+    <value>批量替換失敗！</value>
+  </data>
+  <data name="ReplaceOK" xml:space="preserve">
+    <value>批量替換成功！</value>
+  </data>
+  <data name="selecedDept" xml:space="preserve">
+    <value>請先選擇部門！</value>
+  </data>
+  <data name="YempnonotExit" xml:space="preserve">
+    <value>原工號不存在！</value>
+  </data>
+  <data name="ActivityHoursCountError" xml:space="preserve">
+    <value>專案加班一天之內每人只有1筆</value>
+  </data>
+  <data name="ActivityHoursError" xml:space="preserve">
+    <value>專案加班時數必須大於0.5小時</value>
+  </data>
+  <data name="ActivityHoursG1Error" xml:space="preserve">
+    <value>G1專案加班時數不能大於16小時</value>
+  </data>
+  <data name="ActivityHoursG2Error" xml:space="preserve">
+    <value>G2,G3專案加班時數不能大於24小時</value>
+  </data>
+  <data name="AdvanceaplyCheckLactation" xml:space="preserve">
+    <value>哺乳期員工不允許上班</value>
+  </data>
+  <data name="CheckMonthTotal" xml:space="preserve">
+    <value>當月月加班匯總已核准</value>
+  </data>
+  <data name="CheckOTMType" xml:space="preserve">
+    <value>沒有定義加班類別上限</value>
+  </data>
+  <data name="EmployeeNoAtwork" xml:space="preserve">
+    <value>非在職員工</value>
+  </data>
+  <data name="KQShift" xml:space="preserve">
+    <value>班別</value>
+  </data>
+  <data name="NotAllowApplyOT" xml:space="preserve">
+    <value>H類(年薪制)及I類(三期)人員不允許申報加班</value>
+  </data>
+  <data name="NotAllowApplyOTG1" xml:space="preserve">
+    <value>F類人員不允許申報G1加班</value>
+  </data>
+  <data name="OtmErrorOTType" xml:space="preserve">
+    <value>未定義加班類別</value>
+  </data>
+  <data name="OTMType" xml:space="preserve">
+    <value>加班類型</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>不能為空</value>
+  </data>
+  <data name="WorkSixDay" xml:space="preserve">
+    <value>連續上班六天</value>
+  </data>
+  <data name="NameIsNotExist" xml:space="preserve">
+    <value>您所輸入的代理人姓名，系統不存在！</value>
+  </data>
+  <data name="NameNotExist" xml:space="preserve">
+    <value>您所輸入的姓名，系統不存在！</value>
+  </data>
+  <data name="SubmitPaper" xml:space="preserve">
+    <value>該問卷您已提交！</value>
+  </data>
+  <data name="NotNullOrEmpty" xml:space="preserve">
+    <value>不能為空</value>
+  </data>
+  <data name="MoreThanOneSupport" xml:space="preserve">
+    <value>同一工號不能不存多筆支援中記錄！</value>
+  </data>
+  <data name="ErrDeputyNameNll" xml:space="preserve">
+    <value>代理人姓名不能為空！</value>
+  </data>
+  <data name="ErrDeputyNoNotNll" xml:space="preserve">
+    <value>代理人工號不能為空！</value>
+  </data>
+  <data name="ErrDeputyReason" xml:space="preserve">
+    <value>請選擇代理原因！</value>
+  </data>
+  <data name="KQMIsNotKaoQin" xml:space="preserve">
+    <value>免考勤不能為空</value>
+  </data>
+  <data name="NotAllowNotKaoQin" xml:space="preserve">
+    <value>考勤參數設定不允許設定免考勤</value>
+  </data>
+  <data name="friday" xml:space="preserve">
+    <value>週五</value>
+  </data>
+  <data name="monday" xml:space="preserve">
+    <value>週一</value>
+  </data>
+  <data name="saturday" xml:space="preserve">
+    <value>週六</value>
+  </data>
+  <data name="sunday" xml:space="preserve">
+    <value>週日</value>
+  </data>
+  <data name="thursday" xml:space="preserve">
+    <value>週四</value>
+  </data>
+  <data name="tuesday" xml:space="preserve">
+    <value>周二</value>
+  </data>
+  <data name="wednesday" xml:space="preserve">
+    <value>週三</value>
+  </data>
+  <data name="DeputyDateNotNll" xml:space="preserve">
+    <value>代理日期不能為空！</value>
+  </data>
+  <data name="EndDateNotNull" xml:space="preserve">
+    <value>結束日期不能為空！</value>
+  </data>
+  <data name="EndLaterThanStart" xml:space="preserve">
+    <value>結束日期必須大於開始日期！</value>
+  </data>
+  <data name="StartDateNotNull" xml:space="preserve">
+    <value>開始日期不能為空！</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>您沒有該組織層級的權限！</value>
+  </data>
+  <data name="QueryWithinTwoMonths" xml:space="preserve">
+    <value>您只能查詢兩個月內的數據！</value>
+  </data>
+  <data name="LeaveDaysLessThanCan" xml:space="preserve">
+    <value>已休天數必須是小於可休天數的</value>
+  </data>
+  <data name="EmpNoInput" xml:space="preserve">
+    <value>請輸入工號</value>
+  </data>
+  <data name="EmpNoNotExist" xml:space="preserve">
+    <value>工號不存在</value>
+  </data>
+  <data name="DataFormatError" xml:space="preserve">
+    <value>Excel數據格式錯誤!</value>
+  </data>
+  <data name="DataIsNotFound" xml:space="preserve">
+    <value>導出數據不存在!</value>
+  </data>
+  <data name="FailToSaveData" xml:space="preserve">
+    <value>數據保存失敗！</value>
+  </data>
+  <data name="FailToUpload" xml:space="preserve">
+    <value>Exel上傳到服務器失敗!</value>
+  </data>
+  <data name="FileIsNotFound" xml:space="preserve">
+    <value>文件不存在，請確認后在輸入!</value>
+  </data>
+  <data name="IsNotExcel" xml:space="preserve">
+    <value>該文檔非Excel文本，請確認后再輸入!</value>
+  </data>
+  <data name="NumberOfFailed" xml:space="preserve">
+    <value>,上傳失敗筆數：</value>
+  </data>
+  <data name="NumberOfSuccessed" xml:space="preserve">
+    <value>上傳成功筆數：</value>
+  </data>
+  <data name="PathIsNull" xml:space="preserve">
+    <value>導入路徑為空,請選擇要匯入的Excel文件!</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>組織名稱不能為空.</value>
+  </data>
+  <data name="uploading" xml:space="preserve">
+    <value>System is Loading......</value>
+  </data>
+  <data name="forgetcardnumber" xml:space="preserve">
+    <value>忘卡次數</value>
+  </data>
+  <data name="AccountEntityError" xml:space="preserve">
+    <value>會計實體錯誤</value>
+  </data>
+  <data name="CheckAreaCode" xml:space="preserve">
+    <value>當組織有費用代碼時，區域不能為空</value>
+  </data>
+  <data name="CheckAreaCodeChange" xml:space="preserve">
+    <value>區域代碼因涉及SITEID,不允許變更</value>
+  </data>
+  <data name="ChoiceDepCode" xml:space="preserve">
+    <value>請選擇組織名稱</value>
+  </data>
+  <data name="CostCodeError" xml:space="preserve">
+    <value>費用代碼設定錯誤</value>
+  </data>
+  <data name="DepLevel" xml:space="preserve">
+    <value>層級代碼</value>
+  </data>
+  <data name="DepLevelError" xml:space="preserve">
+    <value>組織層級設定錯誤</value>
+  </data>
+  <data name="NoPrivileged" xml:space="preserve">
+    <value>你沒有權限進行此操作.</value>
+  </data>
+  <data name="NotExist" xml:space="preserve">
+    <value>不存在</value>
+  </data>
+  <data name="ParentDepCode" xml:space="preserve">
+    <value>父組織</value>
+  </data>
+  <data name="ParentDeptError" xml:space="preserve">
+    <value>父組織設置錯誤</value>
+  </data>
+  <data name="PersonQty" xml:space="preserve">
+    <value>人數</value>
+  </data>
+  <data name="QueryError" xml:space="preserve">
+    <value>事業群級因資料太多不允許查詢</value>
+  </data>
+  <data name="bfw_bfw_kqm_KaoQinQuery_KQDate" xml:space="preserve">
+    <value>考勤日</value>
+  </data>
+  <data name="common_message_required" xml:space="preserve">
+    <value>不能為空.</value>
+  </data>
+  <data name="common_message_datenotnull" xml:space="preserve">
+    <value>開始日期和結束日期不能為空.</value>
+  </data>
+  <data name="bfw_bfw_kqm_kaoqindata_checkconfirm" xml:space="preserve">
+    <value>隻能核準狀態為未核準的數據.</value>
+  </data>
+  <data name="bfw_bfw_kqm_kaoqindata_checkunconfirm" xml:space="preserve">
+    <value>隻能取消核準狀態為已核準的數據.</value>
+  </data>
+  <data name="common_message_successcount" xml:space="preserve">
+    <value>成功筆數</value>
+  </data>
+  <data name="common_message_errorcount" xml:space="preserve">
+    <value>失敗筆數</value>
+  </data>
+  <data name="common_message_data_select" xml:space="preserve">
+    <value>請至少選擇一筆數據記錄!</value>
+  </data>
+  <data name="common_message_nodataexport" xml:space="preserve">
+    <value>沒有數據可供導出!</value>
+  </data>
+  <data name="common_message_uploadxls" xml:space="preserve">
+    <value>只允許上傳Excel文件,請重新上傳!!</value>
+  </data>
+  <data name="bfw_hrm_errorworkno" xml:space="preserve">
+    <value>工號有誤(工號不存在或已離職或不在權限內)</value>
+  </data>
+  <data name="common_message_data_errordate" xml:space="preserve">
+    <value>日期格式有誤</value>
+  </data>
+  <data name="bfw_bfw_kqm_kaoqindata_errorrkaoqindata" xml:space="preserve">
+    <value>補加班上下班卡隻能處理考勤結果中加班卡未空及系統設定考勤日期內的資料</value>
+  </data>
+  <data name="bfw_hrm_upsuccesscount" xml:space="preserve">
+    <value>上傳成功筆數</value>
+  </data>
+  <data name="bfw_hrm_upsfailcount" xml:space="preserve">
+    <value>上傳失敗筆數</value>
+  </data>
+  <data name="common_message_audit_unsendaudit" xml:space="preserve">
+    <value>非未核准的申請單不能送簽</value>
+  </data>
+  <data name="common_message_billcount" xml:space="preserve">
+    <value>產生簽核單據數</value>
+  </data>
+  <data name="common_message_noworkflow" xml:space="preserve">
+    <value>沒有定義簽核流程</value>
+  </data>
+  <data name="common_message_uploading" xml:space="preserve">
+    <value>System is Loading......</value>
+  </data>
+  <data name="kqm_kaoqindata_errorreasontype" xml:space="preserve">
+    <value>異常類別有誤</value>
+  </data>
+  <data name="kqm_KaoQinQueryReasonType" xml:space="preserve">
+    <value>異常類別</value>
+  </data>
+  <data name="common_times" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="kaoqindata_forgetcardnumber" xml:space="preserve">
+    <value>每月申請未刷補卡次數超出</value>
+  </data>
+  <data name="kqm_kaoqindata_checknightkqdata" xml:space="preserve">
+    <value>不能未刷補卡當天晚班的考勤資料</value>
+  </data>
+  <data name="kqm_kaoqindata_errorrkaoqindata" xml:space="preserve">
+    <value>補上下班卡隻能處理考勤結果為曠工、未刷、加班漏刷、未加班及系統設定考勤日期內的資料</value>
+  </data>
+  <data name="makeup_checkrepeat" xml:space="preserve">
+    <value>已處理過當日該時段刷卡異常</value>
+  </data>
+  <data name="ErrorInformationSlipt" xml:space="preserve">
+    <value>!</value>
+  </data>
+  <data name="MustSameWithBU" xml:space="preserve">
+    <value>是否節假日必須與BG行事歷保持一致！</value>
+  </data>
+  <data name="kaoqindata_checkreget" xml:space="preserve">
+    <value>已超出系統設定操作日期范圍,此日期之後不允許再變更上月及以前考勤數據</value>
+  </data>
+  <data name="WrongFilePath" xml:space="preserve">
+    <value>文件路徑錯誤!</value>
+  </data>
+  <data name="CopyFailed" xml:space="preserve">
+    <value>權限複製失敗!</value>
+  </data>
+  <data name="CopySucssess" xml:space="preserve">
+    <value>權限複製成功！</value>
+  </data>
+  <data name="UnAudit" xml:space="preserve">
+    <value>不能審核非未核准的申請單!</value>
+  </data>
+  <data name="ConfirmReturn" xml:space="preserve">
+    <value>確定要執行此作業嗎?</value>
+  </data>
+  <data name="NoSelect" xml:space="preserve">
+    <value>請選擇要送簽的申請單!</value>
+  </data>
+  <data name="UnCancelAudit" xml:space="preserve">
+    <value>非已核准的申請單不能取消！</value>
+  </data>
+  <data name="UnSendAudit" xml:space="preserve">
+    <value>非未核准的申請單不能送簽!</value>
+  </data>
+  <data name="StartDateEndDateNotNull" xml:space="preserve">
+    <value>開始日期和結束日期不能為空</value>
+  </data>
+  <data name="ErrWorkNoDuplicate" xml:space="preserve">
+    <value>工號在人事資料表中已存在(本土員工或支援中員工)！</value>
+  </data>
+  <data name="NetSignDateExit" xml:space="preserve">
+    <value>簽到起止日期含有已設定過的日期！</value>
+  </data>
+  <data name="wfm_message_checkresendaudit" xml:space="preserve">
+    <value>隻有拒簽有單據才可以重新發起簽核！</value>
+  </data>
+  <data name="wfm_message_checksendnotes" xml:space="preserve">
+    <value>已核準不能重新發送Notes！</value>
+  </data>
+  <data name="wfm_message_checkbatchdisaudit" xml:space="preserve">
+    <value>狀態已核準不能終止簽核流程！</value>
+  </data>
+  <data name="common_message_trans_complete" xml:space="preserve">
+    <value>事務處理完成.</value>
+  </data>
+  <data name="wfm_message_checkchangeauditflow" xml:space="preserve">
+    <value>已核準不能變更簽核流程.</value>
+  </data>
+  <data name="common_message_data_return" xml:space="preserve">
+    <value>確定要執行此作業嗎?</value>
+  </data>
+  <data name="common_message_sendaudit_noselect" xml:space="preserve">
+    <value>請選擇要送簽的申請單</value>
+  </data>
+  <data name="OrderIdNotNull" xml:space="preserve">
+    <value>順序號不能為空！</value>
+  </data>
+  <data name="ableRest" xml:space="preserve">
+    <value>能請假</value>
+  </data>
+  <data name="alreadyRest" xml:space="preserve">
+    <value>已請假</value>
+  </data>
+  <data name="PersonInfoNotExist" xml:space="preserve">
+    <value>員工資料不存在！</value>
+  </data>
+  <data name="SystemAuto" xml:space="preserve">
+    <value>系統自動生成</value>
+  </data>
+  <data name="otm_nowshiftno" xml:space="preserve">
+    <value>您現在的班別是</value>
+  </data>
+  <data name="common_message_checkorgmovesenga" xml:space="preserve">
+    <value>第一個簽核人必須是調出部門直屬主管！</value>
+  </data>
+  <data name="common_message_checkorgmovesengb" xml:space="preserve">
+    <value>調出部門直屬主管只能有一個!</value>
+  </data>
+  <data name="common_message_checksavechangeauditflow" xml:space="preserve">
+    <value>請至少新增一筆待簽核人員</value>
+  </data>
+  <data name="billno_copy_success" xml:space="preserve">
+    <value>單號複製成功</value>
+  </data>
+  <data name="wfm_message_billdeleted" xml:space="preserve">
+    <value>簽核單據不存在，請確認是否已送簽</value>
+  </data>
+  <data name="common_message_checkdeletestate" xml:space="preserve">
+    <value>隻能刪除未簽核狀態的數據</value>
+  </data>
+  <data name="common_message_checkmovestate" xml:space="preserve">
+    <value>隻有未核準的才可以移動</value>
+  </data>
+  <data name="noauditman" xml:space="preserve">
+    <value>找不到簽核人</value>
+  </data>
+  <data name="wfm_billauditflow_errorworkno" xml:space="preserve">
+    <value>簽核人重復，不能新增!</value>
+  </data>
+  <data name="wfm_nosign_message" xml:space="preserve">
+    <value>未送簽的單據不能查看流程圖!</value>
+  </data>
+  <data name="ChooseOtherMoveTypeFirst" xml:space="preserve">
+    <value>請先選擇異動類別！</value>
+  </data>
+  <data name="OnlyNoAudit" xml:space="preserve">
+    <value>只有未核准和拒簽的才能刪除！</value>
+  </data>
+  <data name="OnlySelectByCar" xml:space="preserve">
+    <value>您只能选择派车、自搭车和其他三种方式！</value>
+  </data>
+  <data name="OnlySelectWalk" xml:space="preserve">
+    <value>您只能选择步行或者乘球车两种方式！</value>
+  </data>
+  <data name="ErrEvectionBy" xml:space="preserve">
+    <value>外出方式不為給定的方式</value>
+  </data>
+  <data name="ErrEvectionByNull" xml:space="preserve">
+    <value>外出方式不能為空</value>
+  </data>
+  <data name="ErrEvectionReasonNull" xml:space="preserve">
+    <value>外出原因不能為空</value>
+  </data>
+  <data name="ErrEvectionTime" xml:space="preserve">
+    <value>外出時間格式不正確</value>
+  </data>
+  <data name="ErrEvectionTimeNull" xml:space="preserve">
+    <value>外出時間不能為空</value>
+  </data>
+  <data name="ErrEvectionType" xml:space="preserve">
+    <value>外出範圍不為0或1</value>
+  </data>
+  <data name="ErrEvectionTypeNull" xml:space="preserve">
+    <value>外出範圍不能為空</value>
+  </data>
+  <data name="ErrReturnTime" xml:space="preserve">
+    <value>預計返回時間格式不正確</value>
+  </data>
+  <data name="ErrReturnTimeNull" xml:space="preserve">
+    <value>預計返回時間不能為空</value>
+  </data>
+  <data name="ErrApplyTypeNull" xml:space="preserve">
+    <value>申請類別不能為空</value>
+  </data>
+  <data name="ErrEndDateNotRight" xml:space="preserve">
+    <value>結束日期格式不正確</value>
+  </data>
+  <data name="ErrEndTimeNotRight" xml:space="preserve">
+    <value>結束時間格式不正確</value>
+  </data>
+  <data name="ErrEndTimeNull" xml:space="preserve">
+    <value>结束时间必输</value>
+  </data>
+  <data name="ErrLeaveTypeNull" xml:space="preserve">
+    <value>請假類別必輸</value>
+  </data>
+  <data name="ErrReasonNull" xml:space="preserve">
+    <value>原因不能為空</value>
+  </data>
+  <data name="ErrStartDateNotRight" xml:space="preserve">
+    <value>開始日期格式不正確</value>
+  </data>
+  <data name="ErrStartTimeNotRight" xml:space="preserve">
+    <value>開始時間格式不正確</value>
+  </data>
+  <data name="ErrStartTimeNull" xml:space="preserve">
+    <value>開始時間不能為空</value>
+  </data>
+  <data name="ErrLeaveTotal" xml:space="preserve">
+    <value>沒有定義班別</value>
+  </data>
+  <data name="ErrLeaveTotalNumber" xml:space="preserve">
+    <value>時數不一致</value>
+  </data>
+  <data name="ErrWorkNotNull" xml:space="preserve">
+    <value>工號不能為空</value>
+  </data>
+  <data name="OnlyNoCanModify" xml:space="preserve">
+    <value>只有未核准和拒簽的才能修改！</value>
+  </data>
+  <data name="ErrReturnTimeWrong" xml:space="preserve">
+    <value>返回時間必須晚於外出時間</value>
+  </data>
+  <data name="NoDataAudit" xml:space="preserve">
+    <value>請先查詢出要核準的資料!</value>
+  </data>
+  <data name="wfm_inworknum" xml:space="preserve">
+    <value>今日在職人數：</value>
+  </data>
+  <data name="wfm_leavenum" xml:space="preserve">
+    <value>請假人數：</value>
+  </data>
+  <data name="wfm_billauditcount" xml:space="preserve">
+    <value>此單需簽核人數：</value>
+  </data>
+  <data name="ConfirmHoursTooLarge" xml:space="preserve">
+    <value>確認時數不應大於結束時間與開始時間之差</value>
+  </data>
+  <data name="wfm_message_approvecomplete" xml:space="preserve">
+    <value>簽核已完成</value>
+  </data>
+  <data name="wfm_message_approveerror" xml:space="preserve">
+    <value>簽核失敗,申請人所在組織未定義簽核流程</value>
+  </data>
+  <data name="wfm_message_disapprovecomplete" xml:space="preserve">
+    <value>拒簽成功</value>
+  </data>
+  <data name="Duplicationofdata" xml:space="preserve">
+    <value>模板中有重複數據</value>
+  </data>
+  <data name="EffDateNowDate" xml:space="preserve">
+    <value>該生效日期之內的單據已經存在</value>
+  </data>
+  <data name="wfm_disapprove" xml:space="preserve">
+    <value>拒簽項</value>
+  </data>
+  <data name="wfm_disapprove_remark" xml:space="preserve">
+    <value>請填寫拒簽意見</value>
+  </data>
+  <data name="wfm_advancenum" xml:space="preserve">
+    <value>預報加班人數：</value>
+  </data>
+  <data name="wfm_advancepercent" xml:space="preserve">
+    <value>加班比率：</value>
+  </data>
+  <data name="choose_defaultvalue" xml:space="preserve">
+    <value>--請選擇--</value>
+  </data>
+  <data name="check_workno" xml:space="preserve">
+    <value>工號重復</value>
+  </data>
+  <data name="check_delete_data" xml:space="preserve">
+    <value>請選擇需要刪除的數據</value>
+  </data>
+  <data name="check_doctype" xml:space="preserve">
+    <value>請選擇單據類型!</value>
+  </data>
+  <data name="check_leavedays" xml:space="preserve">
+    <value>請選擇請假天數!</value>
+  </data>
+  <data name="check_shiwei" xml:space="preserve">
+    <value>請選擇師資位!</value>
+  </data>
+  <data name="check_manager" xml:space="preserve">
+    <value>請選擇管理職!</value>
+  </data>
+  <data name="check_leavetype" xml:space="preserve">
+    <value>請選擇請假類型!</value>
+  </data>
+  <data name="check_overtimetype" xml:space="preserve">
+    <value>請選擇加班類型!</value>
+  </data>
+  <data name="check_chucai" xml:space="preserve">
+    <value>請選擇出差類型!</value>
+  </data>
+  <data name="check_chucaidays" xml:space="preserve">
+    <value>請選擇出差天數!</value>
+  </data>
+  <data name="check_limit_add" xml:space="preserve">
+    <value>請選擇數據行！</value>
+  </data>
+  <data name="wfm_message_data_disapprove" xml:space="preserve">
+    <value>請輸入簽核意見</value>
+  </data>
+  <data name="wfm_message_disaudit" xml:space="preserve">
+    <value>您確定要拒簽此張簽核單據?</value>
+  </data>
+  <data name="bfw_kqm_leaveapply_ablerest" xml:space="preserve">
+    <value>標準可休</value>
+  </data>
+  <data name="bfw_kqm_leaveapply_alreadyrest" xml:space="preserve">
+    <value>已休</value>
+  </data>
+  <data name="bfw_kqm_PCMAdvanceApplyForm_noDelect" xml:space="preserve">
+    <value>非未核准狀態的記錄不能刪除</value>
+  </data>
+  <data name="otm_exception_errorshiftno" xml:space="preserve">
+    <value>找不到員工當前班別</value>
+  </data>
+  <data name="overtime_date" xml:space="preserve">
+    <value>加班日期</value>
+  </data>
+  <data name="start_time" xml:space="preserve">
+    <value>開始時間</value>
+  </data>
+  <data name="end_time" xml:space="preserve">
+    <value>結束時間</value>
+  </data>
+  <data name="times" xml:space="preserve">
+    <value>時數</value>
+  </data>
+  <data name="overtime_desc" xml:space="preserve">
+    <value>加班內容</value>
+  </data>
+  <data name="kqm_otm_advanceapply" xml:space="preserve">
+    <value>工作日每天</value>
+  </data>
+  <data name="kqm_otm_advanceapply_error" xml:space="preserve">
+    <value>后不能新增、修改加班預報</value>
+  </data>
+  <data name="kqm_otm_advanceapply_workflag" xml:space="preserve">
+    <value>今天你是非工作日,不能新增、修改加班申請。</value>
+  </data>
+  <data name="otm_message_checkadvancedaysbefore" xml:space="preserve">
+    <value>補預報加班日期超出系統設定范圍天數</value>
+  </data>
+  <data name="pcm_advanceapply_ismoveleave" xml:space="preserve">
+    <value>是否調休</value>
+  </data>
+  <data name="otm_errorhours" xml:space="preserve">
+    <value>加班時數不正確</value>
+  </data>
+  <data name="otm_othourerror" xml:space="preserve">
+    <value>加班時數最少為0.5</value>
+  </data>
+  <data name="otm_exception_errorshiftno_1" xml:space="preserve">
+    <value>找不到您的班別，請先排班！</value>
+  </data>
+  <data name="common_message_otm_multi_repeart" xml:space="preserve">
+    <value>一天內多筆加班時間不能交叉或重複</value>
+  </data>
+  <data name="common_message_Leaveovertime_repeart" xml:space="preserve">
+    <value>請假中不能申報加班</value>
+  </data>
+  <data name="common_message_otm_worktime_checkg3" xml:space="preserve">
+    <value>加班時間段內含有正常工作時間，零點以后不允許申報加班</value>
+  </data>
+  <data name="common_message_otm_worktime_repeart" xml:space="preserve">
+    <value>工作時間或休息時間內不能預報加班</value>
+  </data>
+  <data name="common_message_otm_etmrepeart" xml:space="preserve">
+    <value>加班時段與教育訓練時段重復</value>
+  </data>
+  <data name="common_message_duplicate" xml:space="preserve">
+    <value>資料重復</value>
+  </data>
+  <data name="common_sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="common_monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="common_tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="common_wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="common_thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="common_friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="common_saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="common_message_querydatecheck" xml:space="preserve">
+    <value>只允許查詢兩個月內的數據</value>
+  </data>
+  <data name="common_message_otm_checkadvanceisg3" xml:space="preserve">
+    <value>日期不是法定假日,不能在此申報加班</value>
+  </data>
+  <data name="otm_isg2rest_error" xml:space="preserve">
+    <value>是否調休(Y|N)輸入錯誤</value>
+  </data>
+  <data name="kqm_otm_planadjust" xml:space="preserve">
+    <value>計劃調休日期</value>
+  </data>
+  <data name="kqm_otm_advanceapply_sendaudit" xml:space="preserve">
+    <value>后不能送簽單據</value>
+  </data>
+  <data name="kqm_otm_g3kuantian" xml:space="preserve">
+    <value>G3加班后一天不允許跨天申報</value>
+  </data>
+  <data name="kqm_addsessn" xml:space="preserve">
+    <value>新增資料成功</value>
+  </data>
+  <data name="common_org_besel" xml:space="preserve">
+    <value>備選人員</value>
+  </data>
+  <data name="common_org_sel" xml:space="preserve">
+    <value>選中人員</value>
+  </data>
+  <data name="common_message_data_no_select_employees" xml:space="preserve">
+    <value>請選擇人員</value>
+  </data>
+  <data name="common_success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="common_fault" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+  <data name="copy_sesse_1" xml:space="preserve">
+    <value>單號復制成功</value>
+  </data>
+  <data name="choess_no" xml:space="preserve">
+    <value>請選擇單據</value>
+  </data>
+  <data name="choess_OrgCode" xml:space="preserve">
+    <value>請選擇單位!</value>
+  </data>
+  <data name="Succ_sign" xml:space="preserve">
+    <value>已成功送簽!</value>
+  </data>
+  <data name="Error_sign" xml:space="preserve">
+    <value>送簽失敗!</value>
+  </data>
+  <data name="NotDeleteFlow" xml:space="preserve">
+    <value>不能刪除流程中的案件!</value>
+  </data>
+  <data name="InportSessce" xml:space="preserve">
+    <value>提示：此筆已導入成功，已連續工作6天。!</value>
+  </data>
+  <data name="deptcodenotexit" xml:space="preserve">
+    <value>部門代碼不存在</value>
+  </data>
+  <data name="deptcodenotisnull" xml:space="preserve">
+    <value>部門代碼不能為空</value>
+  </data>
+  <data name="overtimenotisnull" xml:space="preserve">
+    <value>加班類型不能為空</value>
+  </data>
+  <data name="leaveinfonotisnull" xml:space="preserve">
+    <value>請假信息不可為空</value>
+  </data>
+  <data name="outawayisnotnull" xml:space="preserve">
+    <value>出差信息不可為空</value>
+  </data>
+  <data name="doctypenotexit" xml:space="preserve">
+    <value>單據類型不存在</value>
+  </data>
+  <data name="doctypenotidnull" xml:space="preserve">
+    <value>單據類型不能為空</value>
+  </data>
+  <data name="supvisor" xml:space="preserve">
+    <value>主管:</value>
+  </data>
+  <data name="inthiswayexit" xml:space="preserve">
+    <value>在此部門必須存在</value>
+  </data>
+  <data name="thisdeptcanhavesup" xml:space="preserve">
+    <value>此部門必須有主管</value>
+  </data>
+  <data name="signdoc" xml:space="preserve">
+    <value>簽核</value>
+  </data>
+  <data name="notdatacopy" xml:space="preserve">
+    <value>沒有數據復制</value>
+  </data>
+  <data name="surecancopyflow" xml:space="preserve">
+    <value>確定需要復制該流程嗎?</value>
+  </data>
+  <data name="chosedept" xml:space="preserve">
+    <value>請選擇部門</value>
+  </data>
+  <data name="surehaddeletedeptallsigndata" xml:space="preserve">
+    <value>確定要刪除此部門的所有簽核數據?</value>
+  </data>
+  <data name="oldempisnotnull" xml:space="preserve">
+    <value>原工號不能為空</value>
+  </data>
+  <data name="newempisnotnull" xml:space="preserve">
+    <value>新工號不能為空</value>
+  </data>
+  <data name="oldempandnewempnotsame" xml:space="preserve">
+    <value>原工號不能和新工號不能相同</value>
+  </data>
+  <data name="surereplacethisempno" xml:space="preserve">
+    <value>確定要替換此工號嗎?</value>
+  </data>
+  <data name="yousurecannotthisdate" xml:space="preserve">
+    <value>您確認要拒簽此筆記錄嗎?</value>
+  </data>
+  <data name="youcanclickagreenotsignsave" xml:space="preserve">
+    <value>您可以點擊同意按鈕來拒簽勾選部分,點退單將拒簽全部;</value>
+  </data>
+  <data name="overtimebeforesex" xml:space="preserve">
+    <value>加班前休息</value>
+  </data>
+  <data name="bfw_otm_monthtotal_checkrelsalary" xml:space="preserve">
+    <value>小數點後隻能精確到.5</value>
+  </data>
+  <data name="CantMoreThanApply" xml:space="preserve">
+    <value>實發加班時數不能大於申報加班時數</value>
+  </data>
+  <data name="CantMoreThanControl" xml:space="preserve">
+    <value>實發加班時數不能大於管控</value>
+  </data>
+  <data name="MonthTotalForm" xml:space="preserve">
+    <value>月加班匯總表</value>
+  </data>
+  <data name="AuthorizerDateNotNull" xml:space="preserve">
+    <value>核准日期不能為空</value>
+  </data>
+  <data name="AuthorizerNotNull" xml:space="preserve">
+    <value>核准人不能為空</value>
+  </data>
+  <data name="CommonMessageAuditUnaudit" xml:space="preserve">
+    <value>不能審核非未核准的申請單</value>
+  </data>
+  <data name="ConfirmCancle" xml:space="preserve">
+    <value>您確定要退回嗎?</value>
+  </data>
+  <data name="DayNotNull" xml:space="preserve">
+    <value>天數不能為空</value>
+  </data>
+  <data name="FailedCounts" xml:space="preserve">
+    <value>失敗筆數</value>
+  </data>
+  <data name="LeaveDateAndOutDate" xml:space="preserve">
+    <value>請假結束日期不能大於離職日期</value>
+  </data>
+  <data name="LeaveDayCountNotRight" xml:space="preserve">
+    <value>請假天數或時數不正確</value>
+  </data>
+  <data name="LeaveTypeNotNull" xml:space="preserve">
+    <value>請假類別不能為空</value>
+  </data>
+  <data name="NoApprovalBillNoVerify" xml:space="preserve">
+    <value>非已核准的申請單不能取消審核</value>
+  </data>
+  <data name="NoApprovalNoAudit" xml:space="preserve">
+    <value>非未核准的申請單不能送簽</value>
+  </data>
+  <data name="NoApprovalNoCanel" xml:space="preserve">
+    <value>非已核准的申請不能銷假</value>
+  </data>
+  <data name="NoCloseBillNoCancel" xml:space="preserve">
+    <value>非已結案的申請單不能取消</value>
+  </data>
+  <data name="NoDefineFlow" xml:space="preserve">
+    <value>沒有定義簽核流程</value>
+  </data>
+  <data name="OverDate" xml:space="preserve">
+    <value>已超出系統設定操作日期范圍,此日期之後不允許再變更上月及以前考勤數據 ：</value>
+  </data>
+  <data name="OvertopOperateDate" xml:space="preserve">
+    <value>已超出系統設定操作日期范圍,此日期之後不允許再變更上月及以前考勤數據：</value>
+  </data>
+  <data name="ProduceBillConut" xml:space="preserve">
+    <value>產生簽核單據數</value>
+  </data>
+  <data name="SelectBill" xml:space="preserve">
+    <value>請選擇要核准的申請單</value>
+  </data>
+  <data name="SelectCancelBill" xml:space="preserve">
+    <value>請選擇要取消銷假的申請單</value>
+  </data>
+  <data name="SuccssedCount" xml:space="preserve">
+    <value>成功筆數</value>
+  </data>
+  <data name="WatchProgress" xml:space="preserve">
+    <value>查看進度</value>
+  </data>
+  <data name="flow_levelremark" xml:space="preserve">
+    <value>'課級主管','部級主管'</value>
+  </data>
+  <data name="ApplyConsortNotSame" xml:space="preserve">
+    <value>申請人與配偶不能為同一人</value>
+  </data>
+  <data name="ApplySuccessClickAudit" xml:space="preserve">
+    <value>申請成功,請選中後點擊送簽</value>
+  </data>
+  <data name="BillRefuseAudit" xml:space="preserve">
+    <value>您還有一張相同假別的請假單處於拒簽中</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>確定刪除嗎？</value>
+  </data>
+  <data name="ConfirmSaveData" xml:space="preserve">
+    <value>確定要保存數據嗎?</value>
+  </data>
+  <data name="ConsortBg" xml:space="preserve">
+    <value>配偶所在事業群</value>
+  </data>
+  <data name="ConsortBgNotNull" xml:space="preserve">
+    <value>配偶所在事業群不能為空</value>
+  </data>
+  <data name="ConsortCode" xml:space="preserve">
+    <value>資位</value>
+  </data>
+  <data name="ConsortEmpNoErr" xml:space="preserve">
+    <value>配偶工號錯誤</value>
+  </data>
+  <data name="ConsortIn" xml:space="preserve">
+    <value>配偶是否在集團</value>
+  </data>
+  <data name="ConsortInNotNull" xml:space="preserve">
+    <value>配偶是否在集團不能為空</value>
+  </data>
+  <data name="ConsortLevelCodeNotNull" xml:space="preserve">
+    <value>層級代碼不能為空</value>
+  </data>
+  <data name="ConsortName" xml:space="preserve">
+    <value>配偶姓名</value>
+  </data>
+  <data name="ConsortNameNotNull" xml:space="preserve">
+    <value>配偶姓名不能為空</value>
+  </data>
+  <data name="ConsortWorkNo" xml:space="preserve">
+    <value>配偶工號</value>
+  </data>
+  <data name="ConsortWorkNoNotNull" xml:space="preserve">
+    <value>配偶工號不能為空</value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>文件不存在</value>
+  </data>
+  <data name="HaveApplyed" xml:space="preserve">
+    <value>在請假申請中申請了</value>
+  </data>
+  <data name="InputWorkNoFirst" xml:space="preserve">
+    <value>請先填寫工號！</value>
+  </data>
+  <data name="LeaveApplyError" xml:space="preserve">
+    <value>請假類別有誤</value>
+  </data>
+  <data name="LeaveApplyTotalError" xml:space="preserve">
+    <value>總假期超過管控上限</value>
+  </data>
+  <data name="LeaveDaySame" xml:space="preserve">
+    <value>請假日期有重復天數</value>
+  </data>
+  <data name="NoErrorData" xml:space="preserve">
+    <value>没有错误数据！</value>
+  </data>
+  <data name="NoteFormateNotRight" xml:space="preserve">
+    <value>Notes格式不正確,正確格式:De-Hua Liu/PCE/FOXCONN</value>
+  </data>
+  <data name="OverMostHours" xml:space="preserve">
+    <value>超出調休最大時數</value>
+  </data>
+  <data name="PersonLimitType" xml:space="preserve">
+    <value>個人不允許申請此假別</value>
+  </data>
+  <data name="ProxyApplyNoSame" xml:space="preserve">
+    <value>代理人和申請人不能為同一人</value>
+  </data>
+  <data name="ProxyWorkNameNotNull" xml:space="preserve">
+    <value>代理人姓名不能為空</value>
+  </data>
+  <data name="ProxyWorkNoNotNull" xml:space="preserve">
+    <value>代理人工号不能為空</value>
+  </data>
+  <data name="SaveingAndAudit" xml:space="preserve">
+    <value>保存時是否執行電子簽核送签</value>
+  </data>
+  <data name="SaveSuccessAndAudit" xml:space="preserve">
+    <value>保存成功,送簽成功</value>
+  </data>
+  <data name="SaveSuccessNoAudit" xml:space="preserve">
+    <value>保存成功,送簽時發生錯誤(沒有定義簽核流程)</value>
+  </data>
+  <data name="ShiftNoNotSame" xml:space="preserve">
+    <value>開始日期班別與結束日期班別不一致</value>
+  </data>
+  <data name="TimeFormateErr" xml:space="preserve">
+    <value>時間格式有誤</value>
+  </data>
+  <data name="Tip" xml:space="preserve">
+    <value>溫馨提示(系統允許預調休)：申請時數大於當前可調休時數</value>
+  </data>
+  <data name="TotalLeaveDayOver" xml:space="preserve">
+    <value>總假期超過管控上限或當月月加班匯總已核準</value>
+  </data>
+  <data name="AuditFaile" xml:space="preserve">
+    <value>核准失敗</value>
+  </data>
+  <data name="AuditSucccess" xml:space="preserve">
+    <value>核准成功</value>
+  </data>
+  <data name="CancelAuditFaile" xml:space="preserve">
+    <value>取消核准失敗</value>
+  </data>
+  <data name="CancelAuditSucccess" xml:space="preserve">
+    <value>取消核准成功</value>
+  </data>
+  <data name="DateThreeMonths" xml:space="preserve">
+    <value>起止日期需要相差3個月以上！</value>
+  </data>
+  <data name="EndDateFormateNotRight" xml:space="preserve">
+    <value>結束日期格式不正確！</value>
+  </data>
+  <data name="NoApprovalOrRefuseNoUpdate" xml:space="preserve">
+    <value>未核准和拒簽的案件記錄不能修改！</value>
+  </data>
+  <data name="ProxyNotExists" xml:space="preserve">
+    <value>代理人不存在</value>
+  </data>
+  <data name="ProxyNotNull" xml:space="preserve">
+    <value>代理人不能為空</value>
+  </data>
+  <data name="StartDateAndEndDate" xml:space="preserve">
+    <value>開始時間小於結束時間</value>
+  </data>
+  <data name="StartDateFormateNotRight" xml:space="preserve">
+    <value>開始日期格式不正確！</value>
+  </data>
+  <data name="CanOnlyChooseOne" xml:space="preserve">
+    <value>您只能選擇一條記錄！</value>
+  </data>
+  <data name="ErrorApplyType" xml:space="preserve">
+    <value>申請類別有誤</value>
+  </data>
+  <data name="ErrorLeaveType" xml:space="preserve">
+    <value>請假類別有誤</value>
+  </data>
+  <data name="ErrorWorNoOrAccessWorkNo" xml:space="preserve">
+    <value>工號有誤(工號不存在或已離職或不在權限內)</value>
+  </data>
+  <data name="NoAuthorityForLeaveType" xml:space="preserve">
+    <value>沒有權限請此類別的假</value>
+  </data>
+  <data name="EnableAndSaveRole" xml:space="preserve">
+    <value>該角色已經失效,是否執行生效并保存?</value>
+  </data>
+  <data name="ModuleCodeEquleParent" xml:space="preserve">
+    <value>模组代码与其父模组代码不能相同!</value>
+  </data>
+  <data name="ErrStartTimeOrEndTime" xml:space="preserve">
+    <value>開始時間或結束時間格式不正確</value>
+  </data>
+  <data name="ErrBellNoNotExist" xml:space="preserve">
+    <value>卡鐘編號不存在</value>
+  </data>
+  <data name="ShiftNoNotNull" xml:space="preserve">
+    <value>班別不能為空</value>
+  </data>
+  <data name="ErrWorkNoInEmployee" xml:space="preserve">
+    <value>工號在人事資料中已存在!原因可能為：1、本土員工;2、派駐幹部！</value>
+  </data>
+  <data name="ErrWrongDate" xml:space="preserve">
+    <value>日期不正確</value>
+  </data>
+  <data name="ImportInfoIsWrong" xml:space="preserve">
+    <value>導入的數據不正確</value>
+  </data>
+  <data name="CanntLowerThanIsLan" xml:space="preserve">
+    <value>您的工作時間不能低於哺乳期上班時間下限!</value>
+  </data>
+  <data name="ExceptionCodeNoNull" xml:space="preserve">
+    <value>異常編號不能為空！</value>
+  </data>
+  <data name="ExceptionNameNoNull" xml:space="preserve">
+    <value>異常名不能為空！</value>
+  </data>
+  <data name="IsSalaryNoNull" xml:space="preserve">
+    <value>扣薪否不能為空！</value>
+  </data>
+  <data name="OnlyYOrN" xml:space="preserve">
+    <value>扣薪否格式不正確(Y/N)！</value>
+  </data>
+  <data name="DeleteStatusNotIs03" xml:space="preserve">
+    <value>非未核準或拒簽狀態不能刪除!</value>
+  </data>
+  <data name="UpdateStatusNotIs03" xml:space="preserve">
+    <value>非未核準或拒簽狀態不能修改!</value>
+  </data>
+  <data name="NoWorkDateHasOT" xml:space="preserve">
+    <value>上班日期存在加班信息</value>
+  </data>
+  <data name="NoWorTimeBetweenOT" xml:space="preserve">
+    <value>上班時間與當日加班時間衝突</value>
+  </data>
+  <data name="WorkDateHasOT" xml:space="preserve">
+    <value>調班日期存在加班信息</value>
+  </data>
+  <data name="WorTimeBetweenOT" xml:space="preserve">
+    <value>調班時間與當日加班時間衝突</value>
+  </data>
+</root>

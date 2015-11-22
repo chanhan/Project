@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B83CACED-D288-472A-916A-49EA5B5B8A4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GDSBG.MiABU.Attendance.BLL</RootNamespace>
+    <AssemblyName>Attendance.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLBase.cs" />
+    <Compile Include="HRM\DepartmentBll.cs" />
+    <Compile Include="HRM\EmployeeData\GdsAttEmployeesVBll.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpMoveTempBll.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveBll.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveImportBll.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpPremiumInfoBll.cs" />
+    <Compile Include="HRM\HrmDepartmentBll.cs" />
+    <Compile Include="HRM\OrgEmployeeBll.cs" />
+    <Compile Include="HRM\OrgmanagerBll.cs" />
+    <Compile Include="HRM\Support\EmpSupportInBll.cs" />
+    <Compile Include="HRM\Support\EmpSupportOutBll.cs" />
+    <Compile Include="HRM\TWCadreBll.cs" />
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyExportBll.cs" />
+    <Compile Include="Hr\KQM\KaoQinData\KQMLeaveApplyForm_ZBLHBll.cs" />
+    <Compile Include="Hr\KQM\Query\KQMAbsentMonthBll.cs" />
+    <Compile Include="Hr\KQM\Query\ReportKaoQinSumBll.cs" />
+    <Compile Include="Hr\PCM\GetEmpViewBll.cs" />
+    <Compile Include="Hr\PCM\KaoQinDataBll.cs" />
+    <Compile Include="Hr\PCM\Bll_LeaveApplyApprove.cs" />
+    <Compile Include="Hr\PCM\MonthtotalBll.cs" />
+    <Compile Include="Hr\PCM\PCMLeaveApplyBll.cs" />
+    <Compile Include="ImportExcel\ImportExcelBll.cs" />
+    <Compile Include="KQM\AttendanceData\ConfigSendMessageFormBll.cs" />
+    <Compile Include="KQM\AttendanceData\SendMessageBll.cs" />
+    <Compile Include="KQM\KaoQinData\EmployeeShiftBll.cs" />
+    <Compile Include="KQM\AttendanceData\KQMLeaveYearImportBll.cs" />
+    <Compile Include="KQM\AttendanceData\KQMReGetKaoQinBll.cs" />
+    <Compile Include="KQM\AttendanceData\SchduleDataBll.cs" />
+    <Compile Include="KQM\BasicData\BellCardBll.cs" />
+    <Compile Include="KQM\BasicData\BGCalendarBll.cs" />
+    <Compile Include="KQM\BasicData\BUCalendarBll.cs" />
+    <Compile Include="KQM\BasicData\EmployeeBll.cs" />
+    <Compile Include="KQM\BasicData\ExceptReasonBll.cs" />
+    <Compile Include="KQM\BasicData\KqmParameterEditBll.cs" />
+    <Compile Include="KQM\BasicData\KqmParameterEmpBll.cs" />
+    <Compile Include="KQM\BasicData\KqmParameterEmpEditBll.cs" />
+    <Compile Include="KQM\BasicData\KqmParameterEmpTempBll.cs" />
+    <Compile Include="KQM\BasicData\KqmRulesBll.cs" />
+    <Compile Include="KQM\BasicData\LeaveTypeBll.cs" />
+    <Compile Include="KQM\BasicData\NetSignInSetBll.cs" />
+    <Compile Include="KQM\BasicData\OTMTypeBll.cs" />
+    <Compile Include="KQM\BasicData\RelationSelectorBll.cs" />
+    <Compile Include="KQM\BasicData\TypeDataBll.cs" />
+    <Compile Include="KQM\BasicData\WorkShiftBll.cs" />
+    <Compile Include="KQM\KaoQinData\KQMEvectionApplyBll.cs" />
+    <Compile Include="KQM\KaoQinData\KQMMoveShiftBll.cs" />
+    <Compile Include="KQM\KaoQinData\KQMMoveShiftTempBll.cs" />
+    <Compile Include="KQM\OTM\OTMActivityApplyBll.cs" />
+    <Compile Include="KQM\OTM\OTMActivityApplyTempBll.cs" />
+    <Compile Include="KQM\OTM\OTMRemainBll.cs" />
+    <Compile Include="KQM\OTM\RealapplyBll.cs" />
+    <Compile Include="KQM\Query\BellCardQueryBll.cs" />
+    <Compile Include="KQM\Query\KaoQinQryBll.cs" />
+    <Compile Include="KQM\Query\KQMEvectionQryFormBll.cs" />
+    <Compile Include="KQM\Query\KQMLeaveApplyYearQryBll.cs" />
+    <Compile Include="KQM\Query\KqmLeaveQryFormBll.cs" />
+    <Compile Include="KQM\Query\KQMSelfServiceBll.cs" />
+    <Compile Include="KQM\Query\NightAllowanceToExcelBll.cs" />
+    <Compile Include="KQM\Query\OTM\OTMDetailQryBll.cs" />
+    <Compile Include="KQM\Query\OTM\OTMExceptionQryBll.cs" />
+    <Compile Include="KQM\Query\OTM\OTMRealQryBll.cs" />
+    <Compile Include="KQM\Query\OTM\OTMTotalQryBll.cs" />
+    <Compile Include="SystemManage\SystemData\AnswerBll.cs" />
+    <Compile Include="SystemManage\SystemData\EmpAnswerBll.cs" />
+    <Compile Include="SystemManage\SystemData\EmpPaperBll.cs" />
+    <Compile Include="SystemManage\SystemData\FaqBll.cs" />
+    <Compile Include="SystemManage\SystemData\FormManageBll.cs" />
+    <Compile Include="SystemManage\SystemData\InfoNoticesBll.cs" />
+    <Compile Include="SystemManage\SystemData\PaperBll.cs" />
+    <Compile Include="SystemManage\SystemData\QuestionBll.cs" />
+    <Compile Include="SystemManage\SystemData\ServiceBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\PowerChangeBll.cs" />
+    <Compile Include="SystemManage\SystemData\ParameterBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\AuthorityBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\ChangPwdBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\SystemSafety\CompanyAssignBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\ModuleBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\PersonBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\PersonLevelBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\DepartmentAssignBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\RoleBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\RolesBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\RolesRoleBll.cs" />
+    <Compile Include="SystemManage\SystemSafety\SynclogBll.cs" />
+    <Compile Include="WFReporter\AbsentReportBll.cs" />
+    <Compile Include="WFReporter\InnerTeacherSalaryBll.cs" />
+    <Compile Include="WFReporter\OTReporterBll.cs" />
+    <Compile Include="WFReporter\RewardReporterBll.cs" />
+    <Compile Include="WorkFlow\Bll_AbnormalAttendanceHandle.cs" />
+    <Compile Include="WorkFlow\Bll_SigningScheduleQuery.cs" />
+    <Compile Include="WorkFlow\OverTimeBll.cs" />
+    <Compile Include="WorkFlow\WFMManagerLeaveData.cs" />
+    <Compile Include="WorkFlow\WFProjectApplyBll.cs" />
+    <Compile Include="WorkFlow\WFSignCenterBll.cs" />
+    <Compile Include="WorkFlow\WFSignLogAndMap.cs" />
+    <Compile Include="WorkFlow\WorkFlowBillChangeAuditFlowBll.cs" />
+    <Compile Include="WorkFlow\WorkFlowCardMakeupBll.cs" />
+    <Compile Include="WorkFlow\WorkFlowLimitBll.cs" />
+    <Compile Include="WorkFlow\WorkFlowSetBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance.Common\Attendance.Common.csproj">
+      <Project>{29CCFADC-3E99-4E60-BD1E-7431C5B7B0E7}</Project>
+      <Name>Attendance.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.DALFactory\Attendance.DALFactory.csproj">
+      <Project>{95E095A3-93A4-4829-8CAE-D907A9E268D3}</Project>
+      <Name>Attendance.DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.IDAL\Attendance.IDAL.csproj">
+      <Project>{F89AA736-2987-4EFE-9EDE-E820260EEB44}</Project>
+      <Name>Attendance.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance.Model\Attendance.Model.csproj">
+      <Project>{167A1761-B496-4E40-BDB2-3A1F7AD7D2BB}</Project>
+      <Name>Attendance.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

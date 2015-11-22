@@ -1,0 +1,22 @@
+﻿*{ padding:0; margin:0;}
+div,dl,dt,dd,th,td,ul,ol,li,form,p,img,table{ border:0; list-style:none;}
+a{ text-decoration:none;}
+body{ background:#e4e4e4; }
+h1,h2,h3,h4,h5,h6{ font-family:"宋体";}
+.clear{ clear:both; font-size:0; line-height:0; visibility: hidden;}
+
+.loginPanel{ width:1040px; height:776px; background:url(images/dengluyeBG.jpg) no-repeat; position:absolute; left:50%; margin-left:-520px; }
+.LandLogo h1{ position:absolute; width:352px; height:61px; top:100px; left:360px; background:url(images/headline.gif) no-repeat; text-indent:-2999px;}
+.LandPic{ position:absolute; width:362px; height:264px; left:196px; top:190px; background:url(images/PIC1.jpg) no-repeat;}
+.UserLoginBG{ width:247px; height:202px; position:absolute; right:205px; top:208px; padding:15px 15px 0 15px;}
+.UserLogin h1{width:88px;height:23px; margin-left:90px;text-indent:-4544px; background: url(images/yonghudenglu.jpg) no-repeat; margin-bottom:10px !important; margin-bottom:-6px;}
+.UserLogin 	ul li{ width:247px; height:24px; float:left; margin-bottom:15px !important; margin-bottom:10px;}
+.UserLogin 	ul li h2{ width:auto; line-height:24px; vertical-align:middle; font:"宋体"; color:#606060; float:left; font-size:16px; height:24px;}
+.UserLogin 	ul li input{ width:165px; height:18px; font-size:16px; padding:3px 2px !important; padding:0px -1px; font-family:"宋体"; border:solid 1px silver;}	
+.UserLogin  ul li input.Short{width:70px;}
+.UserLogin ul li input.Login{ border-style:none; height:30px; width:89px; padding:0px 0px; margin-left:20px;margin-right:15px; float:left; cursor:pointer; background:url(images/dengluBtn.jpg) no-repeat;}
+.UserLogin ul li input.ChangeP{ border-style:none; height:30px; width:89px; padding:0px 0px; margin-left:15px;margin-right:15px; float:left; cursor:pointer; background: url(images/xiugaimimaBtn.jpg) no-repeat;}
+.ValidateCode{ cursor:pointer; height:28px; margin-left:15px; vertical-align:bottom;}
+.ForgotP a{ position:absolute; right:2px; bottom:2px; font-size:12px; font-family:"宋体"; color:#d4113a; text-decoration:underline;}
+
+#divChangePassword input{width:150px; border:solid 1px silver;}

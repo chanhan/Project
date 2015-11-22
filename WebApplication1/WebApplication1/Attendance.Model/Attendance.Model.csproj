@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{167A1761-B496-4E40-BDB2-3A1F7AD7D2BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GDSBG.MiABU.Attendance.Model</RootNamespace>
+    <AssemblyName>Attendance.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HRM\DepartmentModel.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpMoveTempModel.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpPremiumInfoModel.cs" />
+    <Compile Include="HRM\Support\EmpSupportInModel.cs" />
+    <Compile Include="HRM\Support\EmpSupportOutModel.cs" />
+    <Compile Include="Hr\PCM\GetEmpViewModel.cs" />
+    <Compile Include="Hr\PCM\KaoQinDataModel.cs" />
+    <Compile Include="KQM\AttendanceData\ConfigSendMessageModel.cs" />
+    <Compile Include="KQM\AttendanceData\SendMessageModel.cs" />
+    <Compile Include="KQM\KaoQinData\LeaveApplyTempModel.cs" />
+    <Compile Include="KQM\KaoQinData\EmployeeShiftModel.cs" />
+    <Compile Include="KQM\KaoQinData\KQMEvectionApplyModel.cs" />
+    <Compile Include="KQM\KaoQinData\LeaveApplyViewModel.cs" />
+    <Compile Include="KQM\KaoQinData\MoveShiftModel.cs" />
+    <Compile Include="KQM\KaoQinData\MoveShiftTempModel.cs" />
+    <Compile Include="KQM\Query\NightAllowanceToExcelModel.cs" />
+    <Compile Include="KQM\Query\BellCardDatahisVModel.cs" />
+    <Compile Include="HRM\EmployeeData\GdsAttEmployeesVModel.cs" />
+    <Compile Include="HRM\EmployeeData\HrmEmpOtherMoveModel.cs" />
+    <Compile Include="HRM\OrgmanagerModel.cs" />
+    <Compile Include="HRM\TWCadreModel.cs" />
+    <Compile Include="ImportExcel\ImportExcelModel.cs" />
+    <Compile Include="KQM\AttendanceData\KQMLeaveYearImportModel.cs" />
+    <Compile Include="KQM\AttendanceData\KQMReGetKaoQinModel.cs" />
+    <Compile Include="KQM\AttendanceData\ScheduleDataModel.cs" />
+    <Compile Include="KQM\BasicData\AttKQParamsEmpEditModel.cs" />
+    <Compile Include="KQM\BasicData\AttKQParamsEmpModel.cs" />
+    <Compile Include="KQM\BasicData\AttKQParamsEmpTempModel.cs" />
+    <Compile Include="KQM\BasicData\AttKQParamsOrgModel.cs" />
+    <Compile Include="KQM\BasicData\BellCardModel.cs" />
+    <Compile Include="KQM\BasicData\BGCalendarModel.cs" />
+    <Compile Include="KQM\BasicData\BUCalendarModel.cs" />
+    <Compile Include="KQM\BasicData\EmployeeModel.cs" />
+    <Compile Include="KQM\BasicData\ExceptReasonModel.cs" />
+    <Compile Include="KQM\BasicData\KqmRulesModel.cs" />
+    <Compile Include="KQM\BasicData\LeaveTypeModel.cs" />
+    <Compile Include="KQM\BasicData\NetSignInSetModel.cs" />
+    <Compile Include="KQM\BasicData\TypeDataModel.cs" />
+    <Compile Include="KQM\BasicData\WorkShiftModel.cs" />
+    <Compile Include="KQM\OTM\ActivityTempModel.cs" />
+    <Compile Include="KQM\OTM\ActivityModel.cs" />
+    <Compile Include="KQM\OTM\OTMRemainModel.cs" />
+    <Compile Include="KQM\OTM\RealapplyModel.cs" />
+    <Compile Include="KQM\Query\BellCardDataModel.cs" />
+    <Compile Include="KQM\Query\EvectionApplyVModel.cs" />
+    <Compile Include="KQM\Query\KaoQinDataQueryModel.cs" />
+    <Compile Include="KQM\Query\KQMLeaveApplyYearQryModel.cs" />
+    <Compile Include="KQM\Query\KqmLeaveQryFormModel.cs" />
+    <Compile Include="KQM\Query\OTM\OTMAdvanceApplyQryModel.cs" />
+    <Compile Include="KQM\Query\OTM\OTMExceptionApplyQryModel.cs" />
+    <Compile Include="KQM\Query\OTM\OTMRealApplyQryModel.cs" />
+    <Compile Include="KQM\Query\OTM\OTMTotalQryModel.cs" />
+    <Compile Include="ModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\SystemData\AnswerModel.cs" />
+    <Compile Include="SystemManage\SystemData\EmpAnswerModel.cs" />
+    <Compile Include="SystemManage\SystemData\EmpPaperModel.cs" />
+    <Compile Include="SystemManage\SystemData\FaqModel.cs" />
+    <Compile Include="SystemManage\SystemData\FormModel.cs" />
+    <Compile Include="SystemManage\SystemData\InfoNoticesModel.cs" />
+    <Compile Include="SystemManage\SystemData\PaperModel.cs" />
+    <Compile Include="SystemManage\SystemData\ParameterModel.cs" />
+    <Compile Include="KQM\BasicData\AttTypeModel.cs" />
+    <Compile Include="SystemManage\SystemData\QuestionModel.cs" />
+    <Compile Include="SystemManage\SystemData\ServiceModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\AuthorityModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\LoginInModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\ModuleModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\PersonLevelModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\PersonModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\RoleModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\RolesModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\RolesRoleModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\SynclogModel.cs" />
+    <Compile Include="SystemManage\SystemSafety\UserModel.cs" />
+    <Compile Include="WFReporter\AbsentReporterModel.cs" />
+    <Compile Include="WFReporter\RewardReporterModel.cs" />
+    <Compile Include="WFReporter\TeacherInModel.cs" />
+    <Compile Include="WorkFlow\Mod_AbnormalAttendanceHandle.cs" />
+    <Compile Include="WorkFlow\Mod_SigningScheduleQuery.cs" />
+    <Compile Include="WorkFlow\OverTimeModel.cs" />
+    <Compile Include="WorkFlow\WorkFlowApplyModel.cs" />
+    <Compile Include="WorkFlow\WorkFlowBillChangeAuditFlowModel.cs" />
+    <Compile Include="WorkFlow\WorkFlowCardMakeupModel.cs" />
+    <Compile Include="WorkFlow\WorkFLowLimitModel.cs" />
+    <Compile Include="WorkFlow\WorkFlowSetModel.cs" />
+    <Compile Include="WorkFlow\WorkFlowSignModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Attendance.Common\Attendance.Common.csproj">
+      <Project>{29CCFADC-3E99-4E60-BD1E-7431C5B7B0E7}</Project>
+      <Name>Attendance.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

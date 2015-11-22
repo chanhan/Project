@@ -1,0 +1,593 @@
+body
+{
+	background-color: #FFFFFF;
+	color: #000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	font-family: Tahoma;
+}
+td
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+
+/*********************************************************************************/
+/* Table */
+.table_title_area
+{
+	cursor: hand;
+	border: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table_data_area
+{
+	border: solid 1px #c0ddff;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tr_title_center
+{
+	background: url(../../CSS/Images_new/left_back_02.gif);
+}
+.tr_title_center_1
+{
+	background: url(../../../CSS/Images_new/left_back_02.gif);
+}
+
+
+.tr_data_1
+{
+	width: 100%;
+
+	background-color: #efefef;
+}
+
+.tr_data_2
+{
+
+	width: 100%;
+}
+
+
+/*TextBox*/
+.input_textBox_1
+{
+	border: Black 1px solid;
+	font-size: 12px;
+	background-color: #efefef;
+	margin: 1px;
+	background-repeat: repeat-x;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+.input_textBox_2
+{
+	border: Black 1px solid;
+	font-size: 12px;
+	margin: 1px;
+	background-repeat: repeat-x;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+.input_textBox_noborder_1
+{
+	border: Black 1px none;
+	font-size: 12px;
+	background-color: #efefef;
+	margin: 1px;
+	background-repeat: repeat-x;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+.input_textBox_noborder_2
+{
+	border: Black 1px none;
+	font-size: 12px;
+	margin: 1px;
+	background-repeat: repeat-x;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+
+/* LinkButtom */
+.input_linkbutton_over
+{
+	font-size: 12px;
+	margin: 1px;
+	cursor: hand;
+	color: Red;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_linkbutton
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: Black;
+	text-decoration: none;
+}
+
+
+/* UtralWebGrid */
+.tr_header
+{
+	font-weight: bold;
+	height: 25px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #BDDBFF;
+	border-color: Blue;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.tr_data_dif
+{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f0f8ff;
+}
+
+/*Button*/
+.button_1 {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px;  BACKGROUND-IMAGE: url(../../CSS/Images_new/EMP_BUTTON_01.gif); MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: black; BORDER-BOTTOM: blue 0px none; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif;width:45px;height:20px;
+}
+.button_2 {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url('../../../CSS/Images_new/EMP_BUTTON_01.gif'); 
+MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: black; BORDER-BOTTOM: blue 0px none; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif;width:45px;
+}
+.button_large {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px;  BACKGROUND-IMAGE: url(../../CSS/Images_new/EMP_BUTTON_04.gif); MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: black; BORDER-BOTTOM: blue 0px none; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif;width:65px;height:20px;
+}
+.button_morelarge {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px;  BACKGROUND-IMAGE: url(../../CSS/Images_new/EMP_BUTTON_06.gif); MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: black; BORDER-BOTTOM: blue 0px none; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif;width:85px;height:20px;
+}
+.button_mostlarge {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px;  BACKGROUND-IMAGE: url(../../CSS/Images_new/EMP_BUTTON_08.gif); MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: black; BORDER-BOTTOM: blue 0px none; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif;width:100px;height:20px;
+}
+.selected_button {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../../CSS/Images_new/org_top01_new.gif); MARGIN: 0px; BORDER-LEFT: blue 0px solid; CURSOR: hand; COLOR: blue; BORDER-BOTTOM: blue 0px none; BACKGROUND-REPEAT: no-repeat;  background-color:Transparent;
+}
+.audit_button {
+	BORDER-RIGHT: #7f9db9 0px solid; BORDER-TOP: #7f9db9 0px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../../../CSS/Images_new/org_top01_a_new.gif); MARGIN: 0px; BORDER-LEFT: #7f9db9 0px solid; CURSOR: hand; COLOR: blue; BORDER-BOTTOM: blue 0px solid; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif;background-color:Transparent;
+}
+/*********************************************************************************/
+
+
+
+.TextBreakAll
+{
+	word-break: break-all;
+}
+.TextCenterBreakAll
+{
+	text-align: center;
+	word-break: break-all;
+}
+/* Index.aspx Start */
+.IndexAnnounce
+{
+	color: red;
+	word-break: break-all;
+}
+.NavigateBar
+{
+	cursor: hand;
+	padding-right: 10px;
+	width: 128px;
+	padding-top: 15px;
+	height: 36px;
+	text-align: right;
+	background-repeat: no-repeat;
+}
+.edline
+{
+	font-size: 12px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	background-color: Transparent;
+}
+.HiddenScollBar
+{
+	overflow: auto;
+	scrollbar-shadow-color: #D0E2FF;
+	word-break: break-all;
+	scrollbar-arrow-color: #A2C7FF;
+	scrollbar-darkshadow-color: #E7F0FF;
+	scrollbar-base-color: #D0E2FF;
+}
+/* Index.aspx End */
+/* Left Menu Start */
+.WorkSpace2
+{
+	padding-right: 60px;
+	background: url(../../CSS/Images_new/left002_a.gif) no-repeat;
+	width: 196px;
+	cursor: hand;
+	padding-top: 8px;
+	height: 38px;
+	text-align: right;
+}
+.WorkSpace1
+{
+	padding-right: 60px;
+	background: url(../../CSS/Images_new/left002.gif) no-repeat;
+	width: 196px;
+	cursor: hand;
+	padding-top: 8px;
+	height: 38px;
+	text-align: right;
+}
+.CustomSpace2
+{
+	padding-right: 60px;
+	background: url(../../CSS/Images_new/left001_a.gif) no-repeat;
+	width: 196px;
+	cursor: hand;
+	padding-top: 8px;
+	height: 38px;
+	text-align: right;
+}
+.CustomSpace1
+{
+	padding-right: 60px;
+	background: url(../../CSS/Images_new/left001.gif) no-repeat;
+	width: 196px;
+	cursor: hand;
+	padding-top: 8px;
+	height: 38px;
+	text-align: right;
+}
+.MemoField
+{
+	overflow: auto;
+	scrollbar-shadow-color: #ffffff;
+	word-break: break-all;
+	scrollbar-arrow-color: red;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-base-color: #ffffff;
+	height: 100px;
+}
+.Item
+{
+	background: url(../../CSS/Images_new/left_back_02.gif);
+	text-align: center;
+	word-break: break-all;
+}
+.ItemDetail
+{
+	background: url(../../CSS/Images_new/xm_back.gif);
+	height: 30px;
+	word-break: break-all;
+}
+.ItemDetailImage
+{
+	vertical-align: top;
+	width: 30px;
+	padding-top: 8px;
+	text-align: center;
+}
+.ItemDetailContent
+{
+	padding-top: 6px;
+	vertical-align: top;
+	padding-right: 10px;
+	line-height: 34px;
+	text-align: left;
+	word-break: break-all;
+}
+.ItemDetailContent:first-line
+{
+	line-height: normal;
+}
+.DownArrow
+{
+	background: url(../../CSS/Images_new//down.gif) no-repeat;
+	height: 6px;
+	text-align: center;
+	cursor: hand;
+}
+.UpArrow
+{
+	background: url(../../CSS/Images_new//up.gif) no-repeat;
+	height: 6px;
+	text-align: center;
+	cursor: hand;
+}
+
+.2ndTitleBar
+{
+	cursor: hand;
+}
+/* Left Menu End */
+/* button ,textbox */
+.font
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.fontColor
+{
+	color: Red;
+}
+
+
+input
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	border-width: 1px;
+	border-color: Black;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.input
+{
+	border-width: 1px;
+	border-color: Black;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+
+/*Must input Color*/
+.bgColorMust
+{
+	background-color: Cornsilk;
+}
+/*System Data of Input Color*/
+.bgColorSystem
+{
+	background-color: #DEE7EF;
+}
+
+/*dropdown list */
+select
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.select
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	border-width: 1px;
+	border-color: Black;
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+/*lable*/
+span
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.span
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+
+/* checkbox,radiobutton ,checkboxlist,radiobuttonlist */
+label
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.label
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+.fontblack_lab /* black lable */
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	color: Black;
+}
+
+.fontwhite_lab /* white lable*/
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	color: Black;
+}
+
+.fontred_lab /* red lable */
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	color: Red;
+}
+.div_style
+{
+	border-right: #7EB1FF 1px solid;
+	border-top: #7EB1FF 1px solid;
+	overflow: auto;
+	border-left: #7EB1FF 1px solid;
+	border-bottom: #7EB1FF 1px solid;
+}
+.table_style
+{
+	border-right: #FFF0D0 1px solid;
+	border-top: #E7F0FF 1px solid;
+	border-left: #FFF0D0 1px solid;
+	border-bottom: #FFF0D0 1px solid;
+}
+.TextRight
+{
+	text-align: right;
+}
+.TextKeepWord
+{
+	word-break: keep-all;
+	text-align: center;
+}
+
+
+.CategoryTitle
+{
+	padding-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.cssbutton
+{
+	color: black;
+	text-decoration: none;
+	font: "Tahoma" , "Lucida Grande" , "Trebuchet MS" , Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+.cssbutton:visited
+{
+	color: black;
+}
+
+.cssbutton:hover
+{
+	color: #CC0000;
+}
+
+.cssbutton:active
+{
+	color: #CC0000;
+}
+/* tree style*/
+/* tabstrip start*/
+.glowingtabs
+{
+	float: left;
+	width: 100%;
+	font-size: 90%;
+	line-height: normal;
+}
+
+.glowingtabs ul
+{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 0px; /*Left offset of entire tab menu relative to page*/
+	padding: 0;
+	white-space: nowrap;
+}
+
+.glowingtabs li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.glowingtabs a
+{
+	float: left;
+	background: url(../images_new/title_left.gif) no-repeat left top;
+	margin: 0;
+	margin-right: 0px; /*spacing between each tab*/
+	padding: 0 0 0 7px;
+	text-decoration: none;
+	cursor: hand;
+}
+
+.glowingtabs a span
+{
+	float: left;
+	display: block;
+	background: url(../images_new/title_right.gif) no-repeat right top;
+	padding: 4px 12px 2px 3px;
+	color: #3B3B3B;
+	text-align: center;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.glowingtabs a span
+{
+	float: none;
+}
+/* End IE5-Mac hack */
+
+.glowingtabs a:hover
+{
+	/*onMouseover style*/
+	background-position: 0% -23px;
+}
+
+.glowingtabs a:hover span
+{
+	/*onMouseover style*/
+	background-position: 100% -23px;
+}
+
+.glowingtabs .current a
+{
+	background-position: 0% -23px;
+}
+
+.glowingtabs .current a span
+{
+	background-position: 100% -23px;
+}
+
+/* tabstrip end*/
+
+/* 實現單線表格 start*/
+.solidtable
+{
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.solidtable td
+{
+	background: white;
+	font-family: Tahoma, MS Shell Dlg;
+	word-wrap: break-word;
+	font-size: 12px;
+	height: 25px;
+	border: 1px solid red;
+}
+/* 實現單線表格 end*/
+.TableLimitCell
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+*
+{
+	scrollbar-shadow-color: #BBDAFF;
+	word-break: break-all;
+	scrollbar-arrow-color: #66B2FF;
+	scrollbar-darkshadow-color: #A2C0FF;
+	scrollbar-base-color: RED;
+	scrollbar-3dlight-color: #FEFEFE; /*- 最外左 -*/
+	scrollbar-highlight-color: #E7F0FE; /*- 左二 -*/
+	scrollbar-face-color: #D0E2FF; /*- 面子 -*/
+	scrollbar-track-color: #EFEFFF; /*- 滑道 -*/
+}
+
+.input_ddl {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #7f9db9 1px solid; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+.tr_data1 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #f0f8ff
+}
+
+.tr_data_new {
+	BACKGROUND-COLOR: #ffffff
+}
